@@ -60,14 +60,14 @@
           <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl">{{item.title}}</a></h3>
           <div class="col-12 col-md-8">
             <ul class="list-unstyled" style="margin-bottom:0">
-              <li>{{item.creator}}</li>
-              <li>{{item.publisher}} {{item.issued}}</li>
+              <li><i class="bi bi-emoji-smile"></i>{{item.creator}}</li>
+              <li><i class="bi bi-building"></i>{{item.publisher}} <i class="bi bi-calendar"></i>{{item.issued}}</li>
             </ul>
           </div>
           <div class="col-12 col-md-4">
             <ul class="list-unstyled">
-              <li>{{item.isbn}}</li>
-              <li>所蔵館数: {{item.ownerCount}}</li>
+              <li><i class="bi bi-upc"></i><span class="visually-hidden">ISBN: </span>{{item.isbn}}</li>
+              <li><i class="bi bi-bookshelf"></i><span class="visually-hidden">所蔵館数: </span>{{item.ownerCount}}</li>
             </ul>
           </div>
           <div class="col-12 text-muted overflow-hidden" v-if="item.introduction" style="max-height:4.5rem">
@@ -99,7 +99,9 @@
       data() {
         return {
           items: null,
-          totalResults: null
+          totalResults: null,
+          reviewAverage: null,
+          reviewAverage: null
         }
       }
     })
@@ -109,7 +111,7 @@
     async function getIntro(isbn) {
       let openBDUrl = "https://api.openbd.jp/v1/get?isbn=" + isbn
       let openBDJson = await getJson(openBDUrl)
-      if (openBDJson) {
+      if (openBDJson[0]) {
         let txtArray = openBDJson[0].onix.CollateralDetail.TextContent
         for (var i in txtArray) {
           if (txtArray[i].TextType == "03") {
@@ -118,6 +120,22 @@
         }
       }
     }
+
+    /*
+    async function getReview(isbn) {
+      let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?format=json&applicationId=1053729486094210141&isbn=" + isbn
+      let rakutenJson = await getJson(rakutenUrl)
+      if (rakutenJson.Items[0]) {
+        let reviewAverage = rakutenJson.Items[0].Item.reviewAverage
+        let reviewCount = rakutenJson.Items[0].Item.reviewCount
+        return {
+          reviewAverage: reviewAverage,
+          reviewCount: reviewCount
+        }
+      }
+    }
+    */
+
 
     async function doSearch() {
       //初期化
@@ -154,10 +172,26 @@
       }
       console.log(items)
       resList.items = items;
+
       for (var i in items) {
         let intro = await getIntro(items[i].isbn)
         resList.items[i].introduction = intro
       }
+
+      //レビュー取得処理 調整中
+      /*
+      for (var i in items) {
+        let reviewInfo = await getReview(items[i].isbn)
+        if(reviewInfo){
+          if (reviewInfo.reviewCount > 0) {
+            console.log(reviewInfo)
+            resList.items[i].reviewCount = reviewInfo.reviewCount
+            resList.items[i].reviewAvarage = reviewInfo.reviewAvarage
+          }
+        }
+      }
+      */
+
     }
 
   </script>
