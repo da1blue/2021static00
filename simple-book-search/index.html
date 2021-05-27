@@ -19,19 +19,32 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  <header class="container">
+    <div class="row g-2 mb-2 mt-2">
+      <h1 class="fs-3 col-10">Simple Book Search</h1>
+      <div class="col-2 d-grid">
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#aboutModal">
+          About
+        </button>
+      </div>
+    </div>
+  </header>
   <article class="container">
-    <h1>Simple Book Search</h1>
     <h2 class="visually-hidden">検索フォーム</h2>
-    <form name="searchConditions" class="row g-2 mb-4">
+    <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
       <div class="col-12 col-lg-6">
-        <div class="form-floating">
-          <input type="text" class="form-control" id="keyword" value="Web デザイン"></input>
+        <div class="form-floating input-group">
+          <input type="text" class="form-control" id="keyword" v-bind:value="keyword"></input>
           <label for="keyword" class="form-label">キーワード</label>
+          <button class="btn btn-outline-secondary" type="button" id="button-random" onClick="setRandomKeyword();">
+            <i class="bi bi-dice-6"></i>おまかせ
+          </button>
         </div>
+      </div>
       </div>
       <div class="col-12 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
-          <input type="number" class="form-control" id="from" value="2016"></input>
+          <input type="number" class="form-control" id="from" value="2019"></input>
           <label for="from" class="form-label">出版年（開始）</label>
         </div>
       </div>
@@ -42,8 +55,8 @@
         </div>
       </div>
       </div>
-      <div class="col-12 col-md-2 col-lg-2">
-        <button type="button" class="btn btn-primary" style="height:100%;width:100%" onclick="doSearch()">
+      <div class="col-12 col-md-2 col-lg-2 d-grid">
+        <button type="button" class="btn btn-primary" onclick="doSearch()">
           <i class="bi bi-search"></i>検索
         </button>
       </div>
@@ -57,17 +70,34 @@
             onerror="this.classList.add('invisible')">
         </div>
         <div class="col-10 row align-top">
-          <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl">{{item.title}}</a></h3>
+          <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl" class="text-decoration-none">{{item.title}}</a></h3>
           <div class="col-12 col-md-8">
             <ul class="list-unstyled" style="margin-bottom:0">
-              <li><i class="bi bi-emoji-smile"></i>{{item.creator}}</li>
-              <li><i class="bi bi-building"></i>{{item.publisher}} <i class="bi bi-calendar"></i>{{item.issued}}</li>
+              <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
+              <li><i class="bi bi-building text-secondary"></i>{{item.publisher}} <i
+                  class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
             </ul>
           </div>
           <div class="col-12 col-md-4">
             <ul class="list-unstyled" style="margin-bottom:0">
-              <li><i class="bi bi-upc"></i><span class="visually-hidden">ISBN: </span>{{item.isbn}}</li>
-              <li><i class="bi bi-bookshelf"></i><span class="visually-hidden">所蔵館数: </span>{{item.ownerCount}}</li>
+              <li><i class="bi bi-upc text-secondary"></i><span class="visually-hidden">ISBN: </span>{{item.isbn}}</li>
+              <li>
+                <i class="bi bi-bookshelf text-secondary"></i><span class="visually-hidden">所蔵館数:
+                </span>{{item.ownerCount}}
+                <i class="bi bi-star-fill text-secondary"></i><span class="visually-hidden">レビュー: </span>
+                <span v-if="item.reviewCount &lt; 0" class="spinner-border spinner-border-sm text-light" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </span>
+                <span v-else-if="item.reviewCount > 0 && item.reviewAverage != '0.0' ">
+                  <span class="visually-hidden">平均</span>{{item.reviewAverage}}(<span
+                    class="visually-hidden">レビュー件数</span><a v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
+                </span>
+                <span v-else-if="item.reviewCount > 0 && item.reviewAverage == '0.0' ">
+                  <span class="visually-hidden">平均</span>－(<span class="visually-hidden">レビュー件数</span><a
+                    v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
+                </span>
+                <span v-else="">－</span>
+              </li>
             </ul>
           </div>
           <div class="col-12 text-muted overflow-hidden" v-if="item.introduction" style="max-height:4.5rem">
@@ -77,10 +107,43 @@
       </div>
     </section>
   </article>
+
+  <!-- Modal -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="About" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="exampleModalLabel">About</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>キーワードと出版年をもとに本を検索することができます。</p>
+          <p>書誌情報とあわせて、書影・内容紹介・所蔵機関数・レビュー平均点・レビュー件数を表示することでページを行き来せずに本を探せることを目指しています。</p>
+          <h3 class="fs-6">Data Source</h3>
+          <p>以下のAPIを使用しています</p>
+          <ul>
+            <li><a href="https://support.nii.ac.jp/ja/cinii/api/api_outline">CiNii Books</a> : 書誌情報</li>
+            <li><a href="https://iss.ndl.go.jp/information/api">NDL Search</a> : 書影（JPRO）</li>
+            <li><a href="https://opencd.jp">OpenBD</a> : 内容紹介</li>
+            <li><a href="https://webservice.rakuten.co.jp/api/booksbooksearch/">Rakuten Books</a> : レビュー
+            </li>
+          </ul>
+          </p>
+          <h3 class="fs-6">Contact:</h3>
+          <p>つくったひと： Daichi M. (@da1blue)</p>
+          <p>なにかありましたら、<i class="bi bi-twitter"></i><a href="https://twitter.com/da1blue">Twitter</a>または<i
+              class="bi bi-mailbox"></i><a href="https://marshmallow-qa.com/da1blue">マシュマロ</a>からご連絡ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
-    function ciniiReqUrlBuilder(p = 1) {
-      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?format=json&ndc=&sortorder=5"
-      let keyword = document.forms.searchConditions.keyword.value;
+    function ciniiReqUrlBuilder(keyword = null, p = 1) {
+      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?appID=ILGSStPRnKHJ3fdXOvuF&format=json&type=1&sortorder=5"
+      if(keyword == null){
+        keyword = document.forms.searchConditions.keyword.value;
+      }
       let from = document.forms.searchConditions.from.value;
       let to = document.forms.searchConditions.to.value;
       ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
@@ -90,23 +153,29 @@
       return ciniiReqUrl;
     }
     async function getJson(url) {
-      //console.log("requesting: "+url);
       return await (await fetch(url)).json();
     }
-
 
     const resListApp = Vue.createApp({
       data() {
         return {
           items: null,
-          totalResults: null,
-          reviewAverage: null,
-          reviewAverage: null
+          totalResults: null
         }
       }
     })
 
     const resList = resListApp.mount('#resList')
+
+    const inputFormApp = Vue.createApp({
+      data() {
+        return {
+          keyword: "大学"
+        }
+      }
+    })
+
+    const inputForm = inputFormApp.mount('#inputForm')
 
     async function getIntro(isbn) {
       let openBDUrl = "https://api.openbd.jp/v1/get?isbn=" + isbn
@@ -121,26 +190,38 @@
       }
     }
 
-    
     async function getReview(isbn) {
-      let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1053729486094210141";
-      rakutenUrl += "&elements=isbn,reviewCount,reviewAverage,itemCaption,largeImageUrl"
+      let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1053729486094210141&formatVersion=2";
+      rakutenUrl += "&elements=isbn,reviewCount,reviewAverage,itemUrl,largeImageUrl"
       rakutenUrl += "&isbn=" + isbn;
-      let rakutenJson = window.setTimeout( function() {await getJson(rakutenUrl);}, 1000 );
+      let rakutenJson = null;
+      rakutenJson = await getJson(rakutenUrl);
       if (rakutenJson.Items) {
-        console.log(rakutenJson.Items[0])
         let reviewAverage = rakutenJson.Items[0].reviewAverage;
         let reviewCount = rakutenJson.Items[0].reviewCount;
+        let rakutenItemUrl = rakutenJson.Items[0].itemUrl;
         return {
           reviewAverage: reviewAverage,
-          reviewCount: reviewCount
+          reviewCount: reviewCount,
+          rakutenItemUrl: rakutenItemUrl
         }
       }
     }
-    
 
+    //おまかせ検索
+    let keywordJson = null
+    async function setRandomKeyword() {
+      const keywordUrl = "./keyword.json";
+      if(! keywordJson){
+        keywordJson = await getJson(keywordUrl);
+      }
+      let num = Math.floor(Math.random() * keywordJson.keywords.length);
+      keyword = keywordJson.keywords[num]
+      inputForm.keyword = keyword;
+      doSearch(keyword)
+    };
 
-    async function doSearch() {
+    async function doSearch(keyword = null) {
       //初期化
       thumbnailImgElm = document.getElementsByClassName("thumbnail");
       for (let i = 0; i < thumbnailImgElm.length; i++) {
@@ -149,8 +230,13 @@
       resList.items = [];
       resList.totalResults = null;
 
-
-      let url = ciniiReqUrlBuilder();
+      let url = null;
+      if(keyword){
+        url = ciniiReqUrlBuilder(keyword);
+      }else{
+        url = ciniiReqUrlBuilder();
+      }
+      
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
       const totalResults = ciniiList["@graph"][0]["opensearch:totalResults"];
@@ -170,34 +256,48 @@
           let isbn = item["dcterms:hasPart"][0]["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1")
           exItem.isbn = isbn
           exItem.thumbnailUrl = "https://iss.ndl.go.jp/thumbnail/" + isbn
+          exItem.reviewCount = -1
         }
         items.push(exItem)
       }
       console.log(items)
       resList.items = items;
 
-      for (var i in items) {
-        let intro = await getIntro(items[i].isbn)
-        resList.items[i].introduction = intro
-      }
-
-      //レビュー取得処理 調整中
-      
-      for (var i in items) {
-        let reviewInfo = await getReview(items[i].isbn)
-        if(reviewInfo){
-          if (reviewInfo.reviewCount > 0) {
-            //console.log(reviewInfo)
-            //resList.items[i].reviewCount = reviewInfo.reviewCount
-            //resList.items[i].reviewAvarage = reviewInfo.reviewAvarage
-          }
+      //内容紹介（OpenBD）
+      (async function () {
+        let i = 0;
+        for await (let item of items) {
+          let intro = await getIntro(item.isbn)
+          resList.items[i].introduction = intro
+          i += 1;
+          await new Promise(resolve => setTimeout(resolve, 100));
         }
-      }
-      
+      }());
+
+      //レビュー取得(Rakuten)
+      (async function () {
+        let i = 0;
+        for await (let item of items) {
+          await new Promise(resolve => setTimeout(resolve, 1000));
+          let reviewInfo = null;
+          reviewInfo = await getReview(item.isbn);
+          if (reviewInfo) {
+            resList.items[i].reviewCount = reviewInfo.reviewCount
+            resList.items[i].reviewAverage = reviewInfo.reviewAverage
+            resList.items[i].rakutenItemUrl = reviewInfo.rakutenItemUrl
+          } else {
+            resList.items[i].reviewCount = 0
+          }
+          i += 1;
+        }
+      }());
 
     }
 
   </script>
+  <style>
+    .bi{margin-right: 0.2rem;}
+  </style>
 </body>
 
 </html>
