@@ -2,11 +2,10 @@
 <html lang="ja">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap + Icon CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -15,6 +14,7 @@
 </head>
 
 <body>
+  <!-- Bootstrap + Vue.js Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
@@ -121,20 +121,23 @@
       }
     }
 
-    /*
+    
     async function getReview(isbn) {
-      let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?format=json&applicationId=1053729486094210141&isbn=" + isbn
-      let rakutenJson = await getJson(rakutenUrl)
-      if (rakutenJson.Items[0]) {
-        let reviewAverage = rakutenJson.Items[0].Item.reviewAverage
-        let reviewCount = rakutenJson.Items[0].Item.reviewCount
+      let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1053729486094210141";
+      rakutenUrl += "elements=isbn,reviewCount,reviewAverage,itemCaption,largeImageUrl"
+      rakutenUrl += "isbn=" + isbn;
+      let rakutenJson = await getJson(rakutenUrl);
+      if (rakutenJson.Items) {
+        console.log(rakutenJson.Items[0])
+        let reviewAverage = rakutenJson.Items[0].reviewAverage;
+        let reviewCount = rakutenJson.Items[0].reviewCount;
         return {
           reviewAverage: reviewAverage,
           reviewCount: reviewCount
         }
       }
     }
-    */
+    
 
 
     async function doSearch() {
@@ -179,18 +182,18 @@
       }
 
       //レビュー取得処理 調整中
-      /*
+      
       for (var i in items) {
         let reviewInfo = await getReview(items[i].isbn)
         if(reviewInfo){
           if (reviewInfo.reviewCount > 0) {
-            console.log(reviewInfo)
-            resList.items[i].reviewCount = reviewInfo.reviewCount
-            resList.items[i].reviewAvarage = reviewInfo.reviewAvarage
+            //console.log(reviewInfo)
+            //resList.items[i].reviewCount = reviewInfo.reviewCount
+            //resList.items[i].reviewAvarage = reviewInfo.reviewAvarage
           }
         }
       }
-      */
+      
 
     }
 
