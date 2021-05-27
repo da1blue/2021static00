@@ -124,8 +124,8 @@
     
     async function getReview(isbn) {
       let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1053729486094210141";
-      rakutenUrl += "elements=isbn,reviewCount,reviewAverage,itemCaption,largeImageUrl"
-      rakutenUrl += "isbn=" + isbn;
+      rakutenUrl += "&elements=isbn,reviewCount,reviewAverage,itemCaption,largeImageUrl"
+      rakutenUrl += "&isbn=" + isbn;
       let rakutenJson = await getJson(rakutenUrl);
       if (rakutenJson.Items) {
         console.log(rakutenJson.Items[0])
