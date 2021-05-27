@@ -126,7 +126,7 @@
       let rakutenUrl = "https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1053729486094210141";
       rakutenUrl += "&elements=isbn,reviewCount,reviewAverage,itemCaption,largeImageUrl"
       rakutenUrl += "&isbn=" + isbn;
-      let rakutenJson = await getJson(rakutenUrl);
+      let rakutenJson = window.setTimeout( function() {await getJson(rakutenUrl);}, 1000 );
       if (rakutenJson.Items) {
         console.log(rakutenJson.Items[0])
         let reviewAverage = rakutenJson.Items[0].reviewAverage;
