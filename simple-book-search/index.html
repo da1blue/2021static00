@@ -11,7 +11,7 @@
   <title>Simple Book Search</title>
   <link rel="preconnect" href="https://ci.nii.ac.jp" />
   <link rel="preconnect" href="https://iss.ndl.go.jp" />
-  <link rel="preconnect" href="https://api.openbd.jp" />
+  <link rel="preconnect" href="https://api.open.jp" />
   <link rel="preconnect" href="https://app.rakuten.co.jp" />
 </head>
 
@@ -254,8 +254,8 @@
     async function doSearch(keyword = null) {
       //初期化
       thumbnailImgElm = document.querySelectorAll(".thumbnail");
-      for (let i = 0; i < thumbnailImgElm.length; i++) {
-        thumbnailImgElm[i].classList.remove("invisible")
+      for (let elm of thumbnailImgElm) {
+        elm.classList.remove("invisible")
       }
       resList.items = [];
       resList.totalResults = null;
@@ -345,7 +345,7 @@
     // おまかせ検索実施
     setRandomKeyword();
 
-  </>
+  </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css" />
