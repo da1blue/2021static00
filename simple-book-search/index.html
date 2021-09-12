@@ -48,13 +48,13 @@
       </div>
       <div class="col-12 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
-          <input type="number" class="form-control" id="from" value="2019"></input>
+          <input type="number" class="form-control" id="from" value=""></input>
           <label for="from" class="form-label">出版年（開始）</label>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
-          <input type="number" class="form-control" id="to" value="2021"></input>
+          <input type="number" class="form-control" id="to" value=""></input>
           <label for="to" class="form-label">出版年（終了）</label>
         </div>
       </div>
@@ -248,6 +248,11 @@
       inputForm.keyword = keyword;
       doSearch(keyword)
     };
+
+    //From, To 入力
+    document.querySelector("#from") = (new Date()).getFullYear() -4 ;
+    document.querySelector("#to")= (new Date()).getFullYear();
+    
 
     async function doSearch(keyword = null) {
       //初期化
