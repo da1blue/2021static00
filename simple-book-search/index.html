@@ -249,11 +249,6 @@
       doSearch(keyword)
     };
 
-    //From, To 入力
-    document.querySelector("#from") = (new Date()).getFullYear() -4 ;
-    document.querySelector("#to")= (new Date()).getFullYear();
-    
-
     async function doSearch(keyword = null) {
       //初期化
       thumbnailImgElm = document.querySelectorAll(".thumbnail");
@@ -342,6 +337,10 @@
       }
     }
 
+    // From, To 入力
+    document.querySelector("#from").value = (new Date()).getFullYear() -4 ;
+    document.querySelector("#to").value= (new Date()).getFullYear();
+    // おまかせ検索実施
     setRandomKeyword();
 
   </script>
