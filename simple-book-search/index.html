@@ -278,7 +278,7 @@
           ownerCount: item["cinii:ownerCount"],
         }
         if (item["dcterms:hasPart"]) {
-          if(item["dcterms:hasPart"][0]["@id"].match(/urn:isbn:([0-9X]{10}|[0-9]{13})/)){
+          if (item["dcterms:hasPart"][0]["@id"].match(/urn:isbn:([0-9X]{10}|[0-9]{13})/)) {
             let isbn = item["dcterms:hasPart"][0]["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1")
             exItem.isbn = isbn
             exItem.thumbnailUrl = "https://iss.ndl.go.jp/thumbnail/" + isbn
@@ -296,7 +296,7 @@
       (async function () {
         let i = 0;
         for await (let item of items) {
-          if(item.isbn){
+          if (item.isbn) {
             let intro = await getIntro(item.isbn)
             resList.items[i].introduction = intro
           }
@@ -311,7 +311,7 @@
         for await (let item of items) {
           let reviewInfo = null;
           await new Promise(resolve => setTimeout(resolve, 1000));
-          if(item.isbn){
+          if (item.isbn) {
             reviewInfo = await getReview(item.isbn);
             if (reviewInfo) {
               resList.items[i].reviewCount = reviewInfo.reviewCount
@@ -330,13 +330,17 @@
     setRandomKeyword();
 
   </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     .bi {
       margin-right: 0.2rem;
     }
-
     #resList {
       text-align: justify;
+    }
+    body{
+      font-family: YakuHanJP, "Noto Sans JP", "Yu Gothic", "游ゴシック", sans-serif;
     }
   </style>
 </body>
