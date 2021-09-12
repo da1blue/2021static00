@@ -74,10 +74,10 @@
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
           <div class="col-2" style="position: relative; min-height: 3em;">
-            <img v-if="item.isbn" v-bind:src="item.thumbnailUrl" alt="" class="img-fluid thumbnail"
+            <img v-if="item.isbn" v-bind:src="item.thumbnailUrl" alt="" class="img-fluid thumbnail w-100"
               onerror="this.classList.add('invisible')" />
             <i class="bi bi-book text-secondary"
-              style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 0.75rem; z-index: -1;">
+              style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 1rem; z-index: -1;">
             </i>
           </div>
           <div class="col-10 align-top">
