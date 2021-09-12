@@ -172,8 +172,7 @@
       ciniiReqUrl += "&appID=";
       ciniiReqUrl += [5329, 5041, 6889, 6889, 13456, 6400, 6724, 12100, 5625, 5184, 5476, 2601, 10404, 10000, 7744, 6241, 13924, 13689, 4900].map(c => String.fromCodePoint(Math.sqrt(c))).join('')
       ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
-      ciniiReqUrl += "&year_from=" + from;
-      ciniiReqUrl += "&year_to=" + to;
+      ciniiReqUrl += "&year_from=" + from; + "&year_to=" + to;
       ciniiReqUrl += "&p=" + p;
       return ciniiReqUrl;
     }
