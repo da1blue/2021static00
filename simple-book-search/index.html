@@ -85,8 +85,9 @@
           <div class="col-9 col-sm-10 align-top">
             <div class="row">
               <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl"
-                  class="text-decoration-none">{{item.title}}</a><span v-if="item.series" class="fs-6 fw-normal">
-                  ({{item.series}})</span></h3>
+                  class="text-decoration-none">{{item.title}}</a>
+                  <span v-if="item.series" class="fw-normal">{{item.edition}}</span>
+                  <span v-if="item.series" class="fs-6 fw-normal">({{item.series}})</span></h3>
               <div class="col-12 col-md-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
@@ -280,6 +281,7 @@
           creator: item["dc:creator"],
           issued: item["dc:date"],
           publisher: item["dc:publisher"].join(", "),
+          edition: item["prism:edition"],
           ownerCount: item["cinii:ownerCount"],
         }
         if (item["dcterms:hasPart"]) {
