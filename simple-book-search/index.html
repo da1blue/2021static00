@@ -256,7 +256,7 @@
 
     async function doSearch(keyword = null) {
       //初期化
-      thumbnailImgElm = document.getElementsByClassName("thumbnail");
+      thumbnailImgElm = document.querySelectorAll(".thumbnail");
       for (let i = 0; i < thumbnailImgElm.length; i++) {
         thumbnailImgElm[i].classList.remove("invisible")
       }
