@@ -18,18 +18,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-  <header class="container">
-    <div class="row g-2 mb-2 mt-2">
-      <h1 class="fs-3 col-10">Simple Book Search</h1>
-      <div class="col-2 d-grid">
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#aboutModal">
-          About
-        </button>
+  <script src="https://unpkg.com/vue@3.2.11/dist/vue.global.js"></script>
+  <!-- ヘッダ -->
+  <header class="text-white bg-dark">
+    <div class="container">
+      <div class="row g-2 mb-2 pt-2">
+        <h1 class="fs-3 col-10">Simple Book Search</h1>
+        <div class="col-2 d-grid my-2">
+          <button type="button" class="btn btn-light py-1" data-bs-toggle="modal" data-bs-target="#aboutModal">
+            About
+          </button>
+        </div>
       </div>
     </div>
   </header>
   <article class="container">
+    <!-- 検索条件 -->
     <h2 class="visually-hidden">検索フォーム</h2>
     <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
       <div class="col-12 col-lg-6">
@@ -61,47 +65,62 @@
         </button>
       </div>
     </form>
-    <section id="resList" class="row row-cols-1 g-2">
-      <h2 class="visually-hidden">検索結果</h2>
-      <p v-if="totalResults">{{totalResults}}件ヒット</p>
-      <div class="row col-12 mb-4" v-for="item in items">
-        <div class="col-2">
-          <img v-if="item.isbn" v-bind:src="item.thumbnailUrl" alt="" class="img-fluid thumbnail"
-            onerror="this.classList.add('invisible')">
-        </div>
-        <div class="col-10 row align-top">
-          <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl" class="text-decoration-none">{{item.title}}</a></h3>
-          <div class="col-12 col-md-8">
-            <ul class="list-unstyled" style="margin-bottom:0">
-              <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
-              <li><i class="bi bi-building text-secondary"></i>{{item.publisher}} <i
-                  class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
-            </ul>
+    <!-- 検索結果 -->
+    <section id="resList" class="row g-2">
+      <div class="col-12">
+        <h2 class="visually-hidden">検索結果</h2>
+        <p v-if="totalResults">{{totalResults}}件ヒット</p>
+      </div>
+      <div class="col-12">
+        <div v-for="item in items" class="mb-4 row">
+          <div class="col-2" style="position: relative; min-height: 3em;">
+            <img v-if="item.isbn" v-bind:src="item.thumbnailUrl" alt="" class="img-fluid thumbnail"
+              onerror="this.classList.add('invisible')" />
+            <i class="bi bi-book text-secondary"
+              style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 0.75rem; z-index: -1;">
+            </i>
           </div>
-          <div class="col-12 col-md-4">
-            <ul class="list-unstyled" style="margin-bottom:0">
-              <li><i class="bi bi-upc text-secondary"></i><span class="visually-hidden">ISBN: </span>{{item.isbn}}</li>
-              <li>
-                <i class="bi bi-bookshelf text-secondary"></i><span class="visually-hidden">所蔵館数:
-                </span>{{item.ownerCount}}
-                <i class="bi bi-star-fill text-secondary"></i><span class="visually-hidden">レビュー: </span>
-                <span v-if="item.reviewCount &lt; 0" class="spinner-border spinner-border-sm text-light" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </span>
-                <span v-else-if="item.reviewCount > 0 && item.reviewAverage != '0.0' ">
-                  <span class="visually-hidden">平均</span>{{item.reviewAverage}}(<span
-                    class="visually-hidden">レビュー件数</span><a v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
-                </span>
-                <span v-else-if="item.reviewCount > 0 && item.reviewAverage == '0.0' ">
-                  <span class="visually-hidden">平均</span>－(<span class="visually-hidden">レビュー件数</span><a
-                    v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
-                </span>
-                <span v-else="">－</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 text-muted overflow-hidden" v-if="item.introduction" style="max-height:4.5rem">
-            <small>{{item.introduction}}</small>
+          <div class="col-10 align-top">
+            <div class="row">
+              <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl"
+                  class="text-decoration-none">{{item.title}}</a><span v-if="item.series" class="fs-6 fw-normal">
+                  ({{item.series}})</span></h3>
+              <div class="col-12 col-md-8">
+                <ul class="list-unstyled" style="margin-bottom:0">
+                  <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
+                  <li><i class="bi bi-building text-secondary"></i>{{item.publisher}} <i
+                      class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4">
+                <ul class="list-unstyled" style="margin-bottom:0">
+                  <li><i class="bi bi-upc text-secondary"></i><span class="visually-hidden">ISBN: </span>{{item.isbn}}
+                  </li>
+                  <li>
+                    <i class="bi bi-bookshelf text-secondary"></i><span class="visually-hidden">所蔵館数:
+                    </span>{{item.ownerCount}}
+                    <i class="bi bi-star-fill text-secondary"></i><span class="visually-hidden">レビュー: </span>
+                    <span v-if="item.reviewCount &lt; 0" class="spinner-border spinner-border-sm text-light"
+                      role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </span>
+                    <span v-else-if="item.reviewCount > 0 && item.reviewAverage != '0.0' ">
+                      <span class="visually-hidden">平均</span>{{item.reviewAverage}}(<span
+                        class="visually-hidden">レビュー件数</span><a
+                        v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
+                    </span>
+                    <span v-else-if="item.reviewCount > 0 && item.reviewAverage == '0.0' ">
+                      <span class="visually-hidden">平均</span>－(<span class="visually-hidden">レビュー件数</span><a
+                        v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
+                    </span>
+                    <span v-else="">－</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 text-muted overflow-hidden" v-if="item.introduction" style="max-height:4.5rem">
+              <small>{{item.introduction}}</small>
+            </div>
           </div>
         </div>
       </div>
@@ -140,12 +159,14 @@
 
   <script>
     function ciniiReqUrlBuilder(keyword = null, p = 1) {
-      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?appID=ILGSStPRnKHJ3fdXOvuF&format=json&type=1&sortorder=5"
-      if(keyword == null){
+      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?&format=json&type=1&sortorder=5"
+      if (keyword == null) {
         keyword = document.forms.searchConditions.keyword.value;
       }
       let from = document.forms.searchConditions.from.value;
       let to = document.forms.searchConditions.to.value;
+      ciniiReqUrl += "&appID=";
+      ciniiReqUrl += [5329, 5041, 6889, 6889, 13456, 6400, 6724, 12100, 5625, 5184, 5476, 2601, 10404, 10000, 7744, 6241, 13924, 13689, 4900].map(c => String.fromCodePoint(Math.sqrt(c))).join('')
       ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
       ciniiReqUrl += "&year_from=" + from;
       ciniiReqUrl += "&year_to=" + to;
@@ -170,7 +191,7 @@
     const inputFormApp = Vue.createApp({
       data() {
         return {
-          keyword: "大学"
+          keyword: ""
         }
       }
     })
@@ -185,6 +206,8 @@
         for (var i in txtArray) {
           if (txtArray[i].TextType == "03") {
             return txtArray[i].Text
+          } else {
+            return
           }
         }
       }
@@ -205,6 +228,8 @@
           reviewCount: reviewCount,
           rakutenItemUrl: rakutenItemUrl
         }
+      } else {
+        return;
       }
     }
 
@@ -212,7 +237,7 @@
     let keywordJson = null
     async function setRandomKeyword() {
       const keywordUrl = "./keyword.json";
-      if(! keywordJson){
+      if (!keywordJson) {
         keywordJson = await getJson(keywordUrl);
       }
       let num = Math.floor(Math.random() * keywordJson.keywords.length);
@@ -231,12 +256,12 @@
       resList.totalResults = null;
 
       let url = null;
-      if(keyword){
+      if (keyword) {
         url = ciniiReqUrlBuilder(keyword);
-      }else{
+      } else {
         url = ciniiReqUrlBuilder();
       }
-      
+
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
       const totalResults = ciniiList["@graph"][0]["opensearch:totalResults"];
@@ -253,22 +278,28 @@
           ownerCount: item["cinii:ownerCount"],
         }
         if (item["dcterms:hasPart"]) {
-          let isbn = item["dcterms:hasPart"][0]["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1")
-          exItem.isbn = isbn
-          exItem.thumbnailUrl = "https://iss.ndl.go.jp/thumbnail/" + isbn
-          exItem.reviewCount = -1
+          if (item["dcterms:hasPart"][0]["@id"].match(/urn:isbn:([0-9X]{10}|[0-9]{13})/)) {
+            let isbn = item["dcterms:hasPart"][0]["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1")
+            exItem.isbn = isbn
+            exItem.thumbnailUrl = "https://iss.ndl.go.jp/thumbnail/" + isbn
+            exItem.reviewCount = -1
+          }
+        }
+        if (item["dcterms:isPartOf"]) {
+          exItem.series = item["dcterms:isPartOf"][0]["dc:title"]
         }
         items.push(exItem)
       }
-      console.log(items)
       resList.items = items;
 
       //内容紹介（OpenBD）
       (async function () {
         let i = 0;
         for await (let item of items) {
-          let intro = await getIntro(item.isbn)
-          resList.items[i].introduction = intro
+          if (item.isbn) {
+            let intro = await getIntro(item.isbn)
+            resList.items[i].introduction = intro
+          }
           i += 1;
           await new Promise(resolve => setTimeout(resolve, 100));
         }
@@ -279,24 +310,38 @@
         let i = 0;
         for await (let item of items) {
           let reviewInfo = null;
-          reviewInfo = await getReview(item.isbn);
-          if (reviewInfo) {
-            resList.items[i].reviewCount = reviewInfo.reviewCount
-            resList.items[i].reviewAverage = reviewInfo.reviewAverage
-            resList.items[i].rakutenItemUrl = reviewInfo.rakutenItemUrl
-          } else {
-            resList.items[i].reviewCount = 0
-          }
           await new Promise(resolve => setTimeout(resolve, 1000));
+          if (item.isbn) {
+            reviewInfo = await getReview(item.isbn);
+            if (reviewInfo) {
+              resList.items[i].reviewCount = reviewInfo.reviewCount
+              resList.items[i].reviewAverage = reviewInfo.reviewAverage
+              resList.items[i].rakutenItemUrl = reviewInfo.rakutenItemUrl
+            } else {
+              resList.items[i].reviewCount = 0
+            }
+          }
           i += 1;
         }
       }());
 
     }
 
+    setRandomKeyword();
+
   </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    .bi{margin-right: 0.2rem;}
+    .bi {
+      margin-right: 0.2rem;
+    }
+    #resList {
+      text-align: justify;
+    }
+    body{
+      font-family: YakuHanJP, "Noto Sans JP", "Yu Gothic", "游ゴシック", sans-serif;
+    }
   </style>
 </body>
 
