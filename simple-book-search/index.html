@@ -45,29 +45,29 @@
     <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
       <div class="col-12 col-lg-6">
         <div class="form-floating input-group">
-          <input type="text" class="form-control" id="keyword" v-bind:value="keyword"></input>
+          <input type="text" class="form-control col-8 col-sm-9 col-md-10 col-lg-9" id="keyword" v-bind:value="keyword"></input>
           <label for="keyword" class="form-label">キーワード</label>
-          <button class="btn btn-outline-secondary" type="button" id="button-random" onClick="setRandomKeyword();">
+          <button class="btn btn-outline-secondary col-4 col-sm-3 col-md-2 col-lg-3" type="button" id="button-random" onClick="setRandomKeyword();">
             <i class="bi bi-dice-6"></i>おまかせ
           </button>
         </div>
       </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-5 col-lg-2">
+      <div class="col-6 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
           <input type="number" class="form-control" id="from" value=""></input>
           <label for="from" class="form-label">出版年（開始）</label>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-5 col-lg-2">
+      <div class="col-6 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
           <input type="number" class="form-control" id="to" value=""></input>
           <label for="to" class="form-label">出版年（終了）</label>
         </div>
       </div>
       </div>
-      <div class="col-12 col-md-2 col-lg-2 d-grid">
-        <button type="button" class="btn btn-primary" onclick="doSearch()">
+      <div class="col-12 col-md-2 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
+        <button type="button" class="btn btn-primary py-2" onclick="doSearch()">
           <i class="bi bi-search"></i>検索
         </button>
       </div>
