@@ -45,9 +45,11 @@
     <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
       <div class="col-12 col-lg-6">
         <div class="form-floating input-group">
-          <input type="text" class="form-control col-8 col-sm-9 col-md-10 col-lg-9" id="keyword" v-bind:value="keyword"></input>
+          <input type="text" class="form-control col-8 col-sm-9 col-md-10 col-lg-9" id="keyword"
+            v-bind:value="keyword"></input>
           <label for="keyword" class="form-label">キーワード</label>
-          <button class="btn btn-outline-secondary col-4 col-sm-3 col-md-2 col-lg-3" type="button" id="button-random" onClick="setRandomKeyword();">
+          <button class="btn btn-outline-secondary col-4 col-sm-3 col-md-2 col-lg-3" type="button" id="button-random"
+            onClick="setRandomKeyword();">
             <i class="bi bi-dice-6"></i>おまかせ
           </button>
         </div>
@@ -97,6 +99,13 @@
           </li>
         </ul>
       </nav>
+      <!-- Loading -->
+      <div id="loading" class="invisible col-12 d-flex justify-content-center my-10">
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <!-- Results -->
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
           <div class="col-3 col-sm-2" style="position: relative; min-height: 3em;">
@@ -112,27 +121,27 @@
                 <span v-if="item.edition" class="fw-normal">{{item.edition}}</span>
                 <span v-if="item.series" class="fs-6 fw-normal">({{item.series}})</span>
               </h3>
-              <div class="col-12 col-md-8">
+              <div class="col-12 col-md-7 col-lg-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
                   <li><i class="bi bi-building text-secondary"></i>{{item.publisher}} <i
                       class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
                 </ul>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-5 col-lg-4">
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li v-if="!item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
                     v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span>{{item.isbn}}
-                    <i class="bi bi-arrow-up-right-square-fill text-dark"></i>
+                    <i class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
                   <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
                     v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span>{{isbnObj.code}} <span
                       v-if="isbnObj.title">({{isbnObj.title}})</span>
-                    <i class="bi bi-arrow-up-right-square-fill text-dark"></i>
+                    <i class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
                   <li>
                     <i class="bi bi-bookshelf text-secondary"></i><span class="visually-hidden">所蔵館数:
@@ -351,7 +360,9 @@
 
     // 検索機能本体
     async function doSearch(keyword = null, from = null, to = null, p = 1) {
+      
       //初期化
+      document.querySelector("#loading").classList.remove("invisible")
       thumbnailImgElm = document.querySelectorAll(".thumbnail");
       for (let elm of thumbnailImgElm) {
         elm.classList.remove("invisible")
@@ -438,10 +449,12 @@
             let isbnObjArray = []
             for (let hasPart of detailJson["@graph"][0]["dcterms:hasPart"]) {
               if (hasPart["@id"].match(/urn:isbn:([0-9X]{10}|[0-9]{13})/)) {
-                isbnObjArray.push({
-                  code: hasPart["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1"),
-                  title: hasPart["dc:title"]
-                })
+                if (!hasPart["dc:title"].match(/^: \[.+\]$/)) {
+                  isbnObjArray.push({
+                    code: hasPart["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1"),
+                    title: hasPart["dc:title"]
+                  })
+                }
               }
             }
             exItem.isbnObjArray = isbnObjArray;
@@ -453,6 +466,7 @@
           items.push(exItem)
         }
         resList.items = items;
+        document.querySelector("#loading").classList.add("invisible")
       }
 
       //内容紹介（OpenBD）
@@ -508,7 +522,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap&subset=japanese"
+    rel="stylesheet" />
   <style>
     .bi {
       margin-right: 0.2rem;
