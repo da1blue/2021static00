@@ -20,7 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.11/dist/vue.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.11/dist/vue.global.min.js"></script>
   <!-- ヘッダ -->
   <header class="text-white bg-dark">
     <div class="container">
@@ -69,10 +69,18 @@
     </form>
     <!-- 検索結果 -->
     <section id="resList" class="row g-2">
-      <div class="col-12">
+      <div class="col-12" style="min-height: 2rem;">
         <h2 class="visually-hidden">検索結果</h2>
-        <p v-if="totalResults">{{totalResults}}件ヒット</p>
+        <p v-if="totalResults">{{totalResults}}件中 {{(p - 1) * 20 + 1 }} 件目～ {{p * 20}} 件目を表示中
+        </p>
       </div>
+      <nav class="col-12" aria-label="pagination">
+        <ul class="pagination justify-content-center">
+          <li v-for="page in pages" class="page-item" v-bind:class="{'active': page == p}">
+            <a class="page-link" href="#" v-bind:onclick="'doSearch(null,null,null,' + page +');'">{{page}}</a>
+          </li>
+        </ul>
+      </nav>
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
           <div class="col-3 col-sm-2" style="position: relative; min-height: 3em;">
@@ -84,10 +92,10 @@
           </div>
           <div class="col-9 col-sm-10 align-top">
             <div class="row">
-              <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl"
-                  class="text-decoration-none">{{item.title}}</a>
-                  <span v-if="item.edition" class="fw-normal">{{item.edition}}</span>
-                  <span v-if="item.series" class="fs-6 fw-normal">({{item.series}})</span></h3>
+              <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl" class="text-decoration-none">{{item.title}}</a>
+                <span v-if="item.edition" class="fw-normal">{{item.edition}}</span>
+                <span v-if="item.series" class="fs-6 fw-normal">({{item.series}})</span>
+              </h3>
               <div class="col-12 col-md-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
@@ -127,6 +135,13 @@
           </div>
         </div>
       </div>
+      <nav class="col-12" aria-label="pagination">
+        <ul class="pagination justify-content-center">
+          <li v-for="page in pages" class="page-item" v-bind:class="{'active': page == p}">
+            <a class="page-link" href="#" v-bind:onclick="'doSearch(null,null,null,' + page +');'">{{page}}</a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </article>
 
@@ -165,35 +180,7 @@
   </div>
 
   <script>
-    function ciniiReqUrlBuilder(keyword = null, p = 1) {
-      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?&format=json&type=1&sortorder=5"
-      if (keyword == null) {
-        keyword = document.forms.searchConditions.keyword.value;
-      }
-      let from = document.forms.searchConditions.from.value;
-      let to = document.forms.searchConditions.to.value;
-      ciniiReqUrl += "&appID=";
-      ciniiReqUrl += [5329, 5041, 6889, 6889, 13456, 6400, 6724, 12100, 5625, 5184, 5476, 2601, 10404, 10000, 7744, 6241, 13924, 13689, 4900].map(c => String.fromCodePoint(Math.sqrt(c))).join('')
-      ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
-      ciniiReqUrl += "&year_from=" + from; + "&year_to=" + to;
-      ciniiReqUrl += "&p=" + p;
-      return ciniiReqUrl;
-    }
-    async function getJson(url) {
-      return await (await fetch(url)).json();
-    }
-
-    const resListApp = Vue.createApp({
-      data() {
-        return {
-          items: null,
-          totalResults: null
-        }
-      }
-    })
-
-    const resList = resListApp.mount('#resList')
-
+    // 検索フォーム（Vue）
     const inputFormApp = Vue.createApp({
       data() {
         return {
@@ -201,8 +188,35 @@
         }
       }
     })
-
     const inputForm = inputFormApp.mount('#inputForm')
+    // 検索結果（Vue）
+    const resListApp = Vue.createApp({
+      data() {
+        return {
+          items: [],
+          totalResults: null,
+          pages: [],
+          p: null
+        }
+      }
+    })
+    const resList = resListApp.mount('#resList')
+
+    function ciniiReqUrlBuilder(keyword = "", from = 2017, to = 2021, p = 1) {
+      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?&format=json&type=1&sortorder=5"
+      ciniiReqUrl += "&appID=";
+      ciniiReqUrl += [5329, 5041, 6889, 6889, 13456, 6400, 6724, 12100, 5625, 5184, 5476, 2601, 10404, 10000, 7744, 6241, 13924, 13689, 4900].map(c => String.fromCodePoint(Math.sqrt(c))).join('')
+      ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
+      ciniiReqUrl += "&year_from=" + from; + "&year_to=" + to;
+      ciniiReqUrl += "&count=" + 20;
+      ciniiReqUrl += "&p=" + p;
+      return ciniiReqUrl;
+    }
+    async function getJson(url) {
+      return await (await fetch(url)).json();
+    }
+
+
 
     async function getIntro(isbn) {
       let openBDUrl = "https://api.openbd.jp/v1/get?isbn=" + isbn
@@ -249,10 +263,11 @@
       let num = Math.floor(Math.random() * keywordJson.keywords.length);
       keyword = keywordJson.keywords[num]
       inputForm.keyword = keyword;
-      doSearch(keyword)
+      doSearch()
     };
 
-    async function doSearch(keyword = null) {
+    // 検索機能本体
+    async function doSearch(keyword = null, from = null, to = null, p = 1) {
       //初期化
       thumbnailImgElm = document.querySelectorAll(".thumbnail");
       for (let elm of thumbnailImgElm) {
@@ -260,27 +275,58 @@
       }
       resList.items = [];
       resList.totalResults = null;
-
+      // 検索式(URL)生成
       let url = null;
-      if (keyword) {
-        url = ciniiReqUrlBuilder(keyword);
-      } else {
-        url = ciniiReqUrlBuilder();
+      if (from == null) {
+        from = document.forms.searchConditions.from.value;
       }
-
+      if (to == null) {
+        to = document.forms.searchConditions.from.value;
+      }
+      if (keyword == null) {
+        keyword = document.forms.searchConditions.keyword.value;
+      }
+      url = ciniiReqUrlBuilder(keyword, from, to, p);
+      console.log(url);
+      // 検索実行
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
       const totalResults = ciniiList["@graph"][0]["opensearch:totalResults"];
       resList.totalResults = totalResults;
+      let pageNum = Math.ceil(resList.totalResults / 20)
+      //ページ処理
+      let pageMax = pageNum + 1
+      if (pageNum <= 5) {
+        pageMax = pageNum;
+      } else if (pageNum > 5) {
+        pageMax = 5;
+      } else if (pageNum >= p + 2) {
+        pageMax = p + 2;
+      } else if (pageNum == p + 1) {
+        pageMax = pageNum;
+      } else {
+        pageMax = p;
+      }
+      let pageMin = 1
+      if (p > 3) {
+        pageMin = p - 2;
+      }
+      resList.pages = [...Array(pageMax).keys()].map(i => i + pageMin);
+      resList.p = p;
+      //
       let items = []
       for (var i in resItems) {
         item = resItems[i]
+        let itemPublisher = null
+        if (item["dc:publisher"]) {
+          itemPublisher = item["dc:publisher"].join(", ");
+        }
         let exItem = {
           title: item["title"],
           ciniiUrl: item["@id"],
           creator: item["dc:creator"],
           issued: item["dc:date"],
-          publisher: item["dc:publisher"].join(", "),
+          publisher: itemPublisher,
           edition: item["prism:edition"],
           ownerCount: item["cinii:ownerCount"],
         }
@@ -317,7 +363,7 @@
         let i = 0;
         for await (let item of items) {
           let reviewInfo = null;
-          await new Promise(resolve => setTimeout(resolve, 1000));
+          await new Promise(resolve => setTimeout(resolve, 1000 + (i*200)));
           if (item.isbn) {
             reviewInfo = await getReview(item.isbn);
             if (reviewInfo) {
@@ -333,6 +379,7 @@
       }());
 
     }
+
     // キーワードでEnter押下時に検索実行
     document.querySelector("#keyword").addEventListener("keydown", logKey);
     function logKey(e) {
@@ -356,9 +403,11 @@
     .bi {
       margin-right: 0.2rem;
     }
+
     #resList {
       text-align: justify;
     }
+
     body {
       font-family: YakuHanJP, "Noto Sans JP", "Yu Gothic", "游ゴシック", sans-serif;
     }
