@@ -122,12 +122,14 @@
                     v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span>{{item.isbn}}
+                    <i class="bi bi-arrow-up-right-square-fill text-dark"></i>
                   </li>
                   <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
                     v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span>{{isbnObj.code}} <span
                       v-if="isbnObj.title">({{isbnObj.title}})</span>
+                    <i class="bi bi-arrow-up-right-square-fill text-dark"></i>
                   </li>
                   <li>
                     <i class="bi bi-bookshelf text-secondary"></i><span class="visually-hidden">所蔵館数:
@@ -189,6 +191,7 @@
         <div class="modal-body">
           <div class="d-grid gap-2 col-10 mx-auto">
             <a v-bind:href="link.url" v-for="link in links" class="btn btn-outline-primary">
+              <i v-bind:class="link.icon"></i>
               {{link.name}} で探す
             </a>
           </div>
@@ -231,30 +234,37 @@
         links() {
           return [
             {
+              icon: "bi bi-building",
               name: "NDLサーチ",
               url: "https://iss.ndl.go.jp/api/openurl?isbn=" + this.isbn
             },
             {
+              icon: "bi bi-building",
               name: "カーリル",
               url: "https://calil.jp/book/" + this.isbn + "/search?pref=%E6%9D%B1%E4%BA%AC%E9%83%BD"
             },
             {
+              icon: "bi bi-truck",
               name: "Amazon.co.jp",
               url: "https://www.amazon.co.jp/s?i=stripbooks&k=" + this.isbn
             },
             {
+              icon: "bi bi-shop",
               name: "e-Hon",
               url: "https://www.e-hon.ne.jp/bec/SA/Detail?refISBN=" + this.isbn
             },
             {
+              icon: "bi bi-shop",
               name: "Honto",
               url: "https://honto.jp/netstore/search.html?k=" + this.isbn
             },
             {
+              icon: "bi bi-shop",
               name: "Honya Club",
               url: "https://www.honyaclub.com/shop/goods/search.aspx?cat_t=00&search_detail.x=x&isbn=" + this.isbn
             },
             {
+              icon: "bi bi-truck",
               name: "楽天ブックス",
               url: "https://books.rakuten.co.jp/search?sitem=" + this.isbn
             }
