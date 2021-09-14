@@ -134,7 +134,7 @@
                     v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span>{{item.isbn}}
-                    <i class="bi bi-arrow-up-right-square-fill text-info"></i>
+                    <i v-if="item.isbn" class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
                   <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
                     v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'">
@@ -298,7 +298,7 @@
     function ciniiReqUrlBuilder(keyword = "", from = 2017, to = 2021, p = 1) {
       let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?&format=json&type=1&sortorder=5"
       ciniiReqUrl += "&appID=";
-      ciniiReqUrl += [5329, 5041, 6889, 6889, 13456, 6400, 6724, 12100, 5625, 5184, 5476, 2601, 10404, 10000, 7744, 6241, 13924, 13689, 4900].map(c => String.fromCodePoint(Math.sqrt(c))).join('')
+      ciniiReqUrl += [5329, 5042, 6891, 6892, 13460, 6405, 6730, 12107, 5633, 5193, 5486, 2612, 10416, 10013, 7758, 6256, 13940, 13706, 4918].map((c , i) => String.fromCodePoint(Math.sqrt(c - i))).join('')
       ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
       ciniiReqUrl += "&year_from=" + from; + "&year_to=" + to;
       ciniiReqUrl += "&count=" + 20;
@@ -377,7 +377,7 @@
       for (let elm of thumbnailImgElm) {
         elm.classList.remove("invisible")
       }
-      resList.items = [];
+      resList.items = null;
       resList.totalResults = null;
       // 検索式(URL)生成
       let url = null;
@@ -479,29 +479,41 @@
               for (topicObj of topicObjArray) {
                 let topicSp = topicObj["dc:title"].split("--")
                 for (topic of topicSp) {
-                  topics.push(topic.trim())
+                  topic = topic.trim()
+                  if(topic.match(/.+,\s.+\(\d{3,4}[-～〜]\d{4}\)/)){
+                    topic = topic.replace(/(.+,\s.+)\(\d{3,4}[-～〜]\d{4}\)/,"$1")
+                  }
+                  if(topic.match(/.+,\s.+,\s\d{3,4}[-～〜]\d{4}/)){
+                    topic = topic.replace(/(.+,\s.+),\s\d{3,4}[-～〜]\d{4}/,"$1")
+                  }
+                  topics.push(topic)
                 }
               }
               resList.items[i].topics = Array.from(new Set(topics));
             }
             // ISBN複数処理
-            /*
-            if (isbnArray.length > 1) {
-              const detailJson = await getJson(item["@id"] + ".json");
+            if (item.isbn) {
               let isbnObjArray = []
               for (let hasPart of detailJson["@graph"][0]["dcterms:hasPart"]) {
                 if (hasPart["@id"].match(/urn:isbn:([0-9X]{10}|[0-9]{13})/)) {
-                  if (!hasPart["dc:title"].match(/^: \[.+\]$/)) {
+                  if (hasPart["dc:title"]) {
+                    if (!hasPart["dc:title"].match(/^: \[.+\]$/)) {
+                      isbnObjArray.push({
+                        code: hasPart["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1"),
+                        title: hasPart["dc:title"]
+                      })
+                    }
+                  } else {
                     isbnObjArray.push({
                       code: hasPart["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1"),
-                      title: hasPart["dc:title"]
                     })
                   }
                 }
               }
-              exItem.isbnObjArray = isbnObjArray;
+              if (isbnObjArray.length) {
+                resList.items[i].isbnObjArray = isbnObjArray;
+              }
             }
-            */
           }
           i += 1;
           await new Promise(resolve => setTimeout(resolve, 100));
