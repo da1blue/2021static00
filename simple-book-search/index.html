@@ -56,13 +56,13 @@
       </div>
       <div class="col-6 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
-          <input type="number" class="form-control" id="from" value=""></input>
+          <input type="number" class="form-control" id="from" v-bind:value="from" />
           <label for="from" class="form-label">出版年（開始）</label>
         </div>
       </div>
       <div class="col-6 col-sm-6 col-md-5 col-lg-2">
         <div class="form-floating">
-          <input type="number" class="form-control" id="to" value=""></input>
+          <input type="number" class="form-control" id="to" v-bind:value="to" />
           <label for="to" class="form-label">出版年（終了）</label>
         </div>
       </div>
@@ -221,7 +221,9 @@
     const inputFormApp = Vue.createApp({
       data() {
         return {
-          keyword: ""
+          keyword: "",
+          from: null,
+          to: null
         }
       }
     })
@@ -538,23 +540,24 @@
           i += 1;
         }
       }());
-
-
-
-      // キーワードでEnter押下時に検索実行
-      document.querySelector("#keyword").addEventListener("keydown", logKey);
-      function logKey(e) {
-        if (e.keyCode == 13) {
-          doSearch();
-        }
-      }
-
-      // From, To 入力
-      document.querySelector("#from").value = (new Date()).getFullYear() - 4;
-      document.querySelector("#to").value = (new Date()).getFullYear();
-      // おまかせ検索実施
-      setRandomKeyword();
     }
+
+
+    // キーワードでEnter押下時に検索実行
+    document.querySelector("#keyword").addEventListener("keydown", logKey);
+    function logKey(e) {
+      if (e.keyCode == 13) {
+        doSearch();
+      }
+    }
+
+    //from,to
+    inputForm.from = (new Date()).getFullYear() - 4;
+    inputForm.to = (new Date()).getFullYear();
+
+    // おまかせ検索実施
+    setRandomKeyword();
+
 
   </script>
 
