@@ -557,6 +557,9 @@
 
     // キーワードでEnter押下時に検索実行
     document.querySelector("#keyword").addEventListener("keydown", logKey);
+    document.querySelector("#from").addEventListener("keydown", logKey);
+    document.querySelector("#to").addEventListener("keydown", logKey);
+    
     function logKey(e) {
       if (e.keyCode == 13) {
         doSearch();
