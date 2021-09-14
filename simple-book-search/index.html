@@ -139,8 +139,8 @@
                   <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
                     v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'">
                     <i class="bi bi-upc text-secondary"></i>
-                    <span class="visually-hidden">ISBN: </span>{{isbnObj.code}} <span
-                      v-if="isbnObj.title">({{isbnObj.title}})</span>
+                    <span class="visually-hidden">ISBN: </span>{{isbnObj.code}} <small
+                      v-if="isbnObj.title">({{isbnObj.title}})</small>
                     <i class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
                   <li>
