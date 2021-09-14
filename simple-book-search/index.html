@@ -80,6 +80,7 @@
         <h2 class="visually-hidden">検索結果</h2>
         <p v-if="totalResults > 0">{{totalResults}}件中 {{(p - 1) * 20 + 1 }} 件目～ {{(p - 1) * 20 + items.length}} 件目を表示中
         </p>
+        <p v-if="totalResults == 0">0件</p>
       </div>
       <!-- ページネーション -->
       <nav class="col-12" aria-label="pagination">
@@ -347,7 +348,7 @@
 
     //おまかせ検索
     let keywordJson = null
-    async function setRandomKeyword() {
+    async function setRandomKeyword(go = false) {
       const keywordUrl = "./keyword.json";
       if (!keywordJson) {
         keywordJson = await getJson(keywordUrl);
@@ -355,7 +356,9 @@
       let num = Math.floor(Math.random() * keywordJson.keywords.length);
       keyword = keywordJson.keywords[num]
       inputForm.keyword = keyword;
-      doSearch(keyword);
+      if (go) {
+        doSearch(keyword);
+      }
     };
 
     // 検索機能本体
