@@ -164,12 +164,12 @@
                   </li>
                 </ul>
               </div>
+              <div class="col-12 " v-if="item.topics">
+                <button v-for="topic in item.topics" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
+                  v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
+              </div>
             </div>
-            <div class="col-12 " v-if="item.topics">
-              <button v-for="topic in item.topics" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
-                v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
-            </div>
-            <div class="col-12 text-muted overflow-hidden" v-if="item.introduction" style="max-height:4.5rem">
+            <div class="col-12 text-muted overflow-hidden introduction" v-if="item.introduction">
               <small>{{item.introduction}}</small>
             </div>
           </div>
@@ -298,7 +298,7 @@
     function ciniiReqUrlBuilder(keyword = "", from = 2017, to = 2021, p = 1) {
       let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?&format=json&type=1&sortorder=5"
       ciniiReqUrl += "&appID=";
-      ciniiReqUrl += [5329, 5042, 6891, 6892, 13460, 6405, 6730, 12107, 5633, 5193, 5486, 2612, 10416, 10013, 7758, 6256, 13940, 13706, 4918].map((c , i) => String.fromCodePoint(Math.sqrt(c - i))).join('')
+      ciniiReqUrl += [5329, 5042, 6891, 6892, 13460, 6405, 6730, 12107, 5633, 5193, 5486, 2612, 10416, 10013, 7758, 6256, 13940, 13706, 4918].map((c, i) => String.fromCodePoint(Math.sqrt(c - i))).join('')
       ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
       ciniiReqUrl += "&year_from=" + from; + "&year_to=" + to;
       ciniiReqUrl += "&count=" + 20;
@@ -480,11 +480,11 @@
                 let topicSp = topicObj["dc:title"].split("--")
                 for (topic of topicSp) {
                   topic = topic.trim()
-                  if(topic.match(/.+,\s.+\(\d{1,4}[-～〜]\d{1,4}\)/)){
-                    topic = topic.replace(/(.+,\s.+)\(\d{1,4}[-～〜]\d{1,4}\)/,"$1")
+                  if (topic.match(/.+,\s.+\(\d{1,4}[-～〜]\d{1,4}\)/)) {
+                    topic = topic.replace(/(.+,\s.+)\(\d{1,4}[-～〜]\d{1,4}\)/, "$1")
                   }
-                  if(topic.match(/.+,\s.+,\s\d{1,4}[-～〜]\d{1,4}/)){
-                    topic = topic.replace(/(.+,\s.+),\s\d{1,4}[-～〜]\d{1,4}/,"$1")
+                  if (topic.match(/.+,\s.+,\s\d{1,4}[-～〜]\d{1,4}/)) {
+                    topic = topic.replace(/(.+,\s.+),\s\d{1,4}[-～〜]\d{1,4}/, "$1")
                   }
                   topics.push(topic)
                 }
@@ -559,7 +559,7 @@
     document.querySelector("#keyword").addEventListener("keydown", logKey);
     document.querySelector("#from").addEventListener("keydown", logKey);
     document.querySelector("#to").addEventListener("keydown", logKey);
-    
+
     function logKey(e) {
       if (e.keyCode == 13) {
         doSearch();
@@ -593,6 +593,15 @@
 
     body {
       font-family: YakuHanJP, "Noto Sans JP", "Yu Gothic", "游ゴシック", sans-serif;
+    }
+
+    div.introduction {
+      max-height: 6rem;
+    }
+    @media (min-width: 576px) {
+      div.introduction {
+        max-height: 4.5rem;
+      }
     }
   </style>
   <!-- About Modal -->
