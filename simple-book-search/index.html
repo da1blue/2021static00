@@ -480,11 +480,11 @@
                 let topicSp = topicObj["dc:title"].split("--")
                 for (topic of topicSp) {
                   topic = topic.trim()
-                  if(topic.match(/.+,\s.+\(\d{3,4}[-～〜]\d{4}\)/)){
-                    topic = topic.replace(/(.+,\s.+)\(\d{3,4}[-～〜]\d{4}\)/,"$1")
+                  if(topic.match(/.+,\s.+\(\d{1,4}[-～〜]\d{1,4}\)/)){
+                    topic = topic.replace(/(.+,\s.+)\(\d{1,4}[-～〜]\d{1,4}\)/,"$1")
                   }
-                  if(topic.match(/.+,\s.+,\s\d{3,4}[-～〜]\d{4}/)){
-                    topic = topic.replace(/(.+,\s.+),\s\d{3,4}[-～〜]\d{4}/,"$1")
+                  if(topic.match(/.+,\s.+,\s\d{1,4}[-～〜]\d{1,4}/)){
+                    topic = topic.replace(/(.+,\s.+),\s\d{1,4}[-～〜]\d{1,4}/,"$1")
                   }
                   topics.push(topic)
                 }
