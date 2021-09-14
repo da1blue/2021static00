@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-    crossorigin="anonymous">
   <link rel="preconnect" href="https://ci.nii.ac.jp" />
   <link rel="preconnect" href="https://iss.ndl.go.jp" />
   <link rel="preconnect" href="https://api.open.jp" />
@@ -15,11 +13,12 @@
 </head>
 
 <body>
-  <!-- Bootstrap + Vue.js Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+  <!-- Load Essential Script -->
   <script src="https://cdn.jsdelivr.net/npm/vue@3.2.11/dist/vue.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" crossorigin="anonymous" />
+  <link rel="preload" as="script" onload="this.rel='script'; this.onload=null;"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" />
   <!-- ヘッダ -->
   <header class="text-white bg-dark">
     <div class="container">
@@ -598,6 +597,7 @@
     div.introduction {
       max-height: 6rem;
     }
+
     @media (min-width: 576px) {
       div.introduction {
         max-height: 4.5rem;
