@@ -211,7 +211,7 @@
       }
       orgKeys = Object.keys(orgSongDict)
       let num = Math.floor(Math.random() * orgKeys.length);
-      keyword = "org:"+orgKeys[num];
+      keyword = "org:" + orgKeys[num];
       inputForm.keyword = keyword;
       if (go) {
         //doSearch(keyword);
@@ -240,19 +240,21 @@
 
       let matchedItems = []
 
-      if(keyword.match(/^org:([a-zA-Z])/))
-
-      for (cover in coverDict) {
-        if (coverDict[cover]["orgYtId"] == keyword) {
-          let itemInfo = coverDict[cover]
-          itemInfo["id"] = cover
-          itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg"
-          itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0"
-          itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
-          itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
-          matchedItems.push(itemInfo)
+      if (keyword.match(/^org:([a-zA-Z])/)) {
+        orgYtId = keyword.replace(/^org:([a-zA-Z])/, "$1")
+        for (cover in coverDict) {
+          if (coverDict[cover]["orgYtId"] == keyword) {
+            let itemInfo = coverDict[cover]
+            itemInfo["id"] = cover
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg"
+            itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0"
+            itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
+            itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
+            matchedItems.push(itemInfo)
+          }
         }
       }
+
 
       resList.items = matchedItems
       console.log(resList.items)
