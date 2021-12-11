@@ -265,30 +265,13 @@
       let matched = []
       for(cover in coverDict){
         if(coverDict[cover]["orgYtId"] == keyword){
-          matched.add(cover)
+          matched.push(cover)
         }
       }
       
       console.log(matched)
 
 
-
-      // 検索式(URL)生成
-      /*
-      let url = null;
-      if (from == null) {
-        from = document.forms.searchConditions.from.value;
-      }
-      if (to == null) {
-        to = document.forms.searchConditions.to.value;
-      }
-      if (keyword != null) {
-        inputForm.keyword = keyword;
-      } else {
-        keyword = document.forms.searchConditions.keyword.value;
-      }
-      url = ciniiReqUrlBuilder(keyword, from, to, p);
-      */
 
 
       // 検索実行
@@ -355,7 +338,7 @@
             exItem.reviewCount = -1;
             // 書影は最新刊
             let isbnLatest = isbnArray[isbnArray.length - 1];
-            exItem.thumbnailUrl = "https://iss.ndl.go.jp/thumbnail/" + isbnLatest;
+            exItem.thumbnailUrl = "https://i.ytimg.com/vi/" + ytId + "/hqdefault.jpg";
           }
         }
         //シリーズ名処理
