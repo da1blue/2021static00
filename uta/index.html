@@ -93,7 +93,8 @@
         <div v-for="item in items" class="mb-4 row">
           <div class="col-4 col-sm-3" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden"></iframe>
-            <button class="thBtn w-100" onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
+            <button class="thBtn w-100"
+              onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
               <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" />
             </button>
             <i class="bi bi-book text-secondary"
@@ -110,18 +111,18 @@
                   <li v-for="singer in item.singers" style="display: inline-block;">
                     <i class="bi bi-mic-fill text-secondary"></i>{{singer}}
                   </li>
-                  <li><i class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-5 col-lg-4">
-                <ul class="list-unstyled" style="margin-bottom:0">
-                  <li><i class="bi bi-upc text-secondary"></i>{{item.id}}</li>
                   <li><i class="bi bi-soundwave"></i>
                     <a v-bind:href="item.orgYtUrl" class="code text-decoration-none">
                       {{item.orgYtId}}
                     </a>
                     <i class="bi bi-youtube"></i>
                   </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-5 col-lg-4">
+                <ul class="list-unstyled" style="margin-bottom:0">
+                  <li><i class="bi bi-upc text-secondary"></i>{{item.id}}</li>
+                  <li><i class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
                 </ul>
               </div>
               <div class="col-12 " v-if="item.topics">
@@ -210,7 +211,7 @@
       }
       orgKeys = Object.keys(orgSongDict)
       let num = Math.floor(Math.random() * orgKeys.length);
-      keyword = orgKeys[num];
+      keyword = "org:"+orgKeys[num];
       inputForm.keyword = keyword;
       if (go) {
         //doSearch(keyword);
@@ -238,6 +239,9 @@
       }
 
       let matchedItems = []
+
+      if(keyword.match(/^org:([a-zA-Z])/))
+
       for (cover in coverDict) {
         if (coverDict[cover]["orgYtId"] == keyword) {
           let itemInfo = coverDict[cover]
@@ -339,7 +343,6 @@
       background: none;
       border: 0;
     }
-
   </style>
   <!-- About Modal -->
   <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="About" aria-hidden="true">
