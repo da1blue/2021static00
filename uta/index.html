@@ -101,7 +101,7 @@
           <div class="col-9 col-sm-10 align-top">
             <div class="row">
               <h3 class="fs-5 col-12">
-                <a v-bind:href="item.ciniiUrl" class="text-decoration-none">{{item.label}}</a>
+                <a v-bind:href="item.ytUrl" class="text-decoration-none">{{item.label}}</a>
               </h3>
               <div class="col-12 col-md-7 col-lg-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
@@ -114,16 +114,18 @@
               <div class="col-12 col-md-5 col-lg-4">
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li><i class="bi bi-upc text-secondary"></i>{{item.id}}</li>
-                  <li><i class="bi bi-soundwave"></i>{{item.orgYtId}}</li>
+                  <li><i class="bi bi-soundwave"></i>
+                    <a v-bind:href="item.orgYtUrl" class="text-decoration-none">
+                      {{item.orgYtId}}
+                    </a>
+                    <i class="bi bi-youtube"></i>
+                  </li>
                 </ul>
               </div>
               <div class="col-12 " v-if="item.topics">
                 <button v-for="topic in item.topics" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
                   v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
-            </div>
-            <div class="col-12 text-muted overflow-hidden introduction" v-if="item.introduction">
-              <small>{{item.introduction}}</small>
             </div>
           </div>
         </div>
@@ -238,7 +240,9 @@
         if (coverDict[cover]["orgYtId"] == keyword) {
           let itemInfo = coverDict[cover]
           itemInfo["id"] = cover
-          itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover+ "/mqdefault.jpg"
+          itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg"
+          itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
+          itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
           matchedItems.push(itemInfo)
         }
       }
