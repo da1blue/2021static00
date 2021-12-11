@@ -105,7 +105,9 @@
               </h3>
               <div class="col-12 col-md-7 col-lg-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
-                  <li v-for="singer in item.singers"><i class="bi bi-emoji-smile text-secondary"></i>{{singer}}</li>
+                  <li v-for="singer in item.singers" style="display: inline-block;">
+                    <i class="bi bi-mic-fill text-secondary"></i>{{singer}}
+                  </li>
                   <li><i class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
                 </ul>
               </div>
