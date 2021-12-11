@@ -97,9 +97,6 @@
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
               <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" alt="" />
             </button>
-            <i class="bi bi-book text-secondary"
-              style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 1rem; z-index: -1;">
-            </i>
           </div>
           <div class="col-6 col-sm-8 col-md-9 align-top">
             <div class="row">
@@ -139,7 +136,25 @@
       </div>
       <!-- 追加情報 -->
       <div v-if="searchType == 'org'" class="col-12">
-        <!-- {{exInfo}} -->
+        <h2 class="col-12 visually-hidden">原曲</h2>
+        <div class="col-6 col-sm-4 col-md-3" style="position: relative; min-height: 3em;">
+          <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
+          <button class="thBtn w-100"
+            onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
+            <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" alt="" class="w-100" />
+          </button>
+        </div>
+        <div class="col-6 col-sm-8 col-md-9 align-top">
+          <div class="row">
+            <h3 class="fs-5 col-12 h5">
+              <a v-bind:href="exInfo.ytUrl" class="text-decoration-none">{{exInfo.orgTitle}}</a>
+            </h3>
+            <div class="col-12 col-md-7 col-lg-8">
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+            </div>
+          </div>
+        </div>
       </div>
       <!-- ページネーション -->
       <nav class="col-12" aria-label="pagination">
@@ -299,6 +314,8 @@
         let _exInfo = {};
         _exInfo["orgYtId"] = orgYtId;
         _exInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
+        _exInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + orgYtId + "/mqdefault.jpg";
+        _exInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
         _exInfo["orgTitle"] = orgSongDict[orgYtId];
         _exInfo["relSongIds"] = Object.keys(cosSimDict[orgYtId]);
         _exInfo["relSongs"] = [];
@@ -356,11 +373,7 @@
       }
 
       resList.items = shuffle(_items)
-
-      console.log(resList.items);
-
       resList.totalResults = matchedItems.length;
-
 
       //ページ処理
       resList.p = p;
