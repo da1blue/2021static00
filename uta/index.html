@@ -263,13 +263,15 @@
       }
 
       let matchedId = []
+      let items = []
       for(cover in coverDict){
         if(coverDict[cover]["orgYtId"] == keyword){
           matchedId.push(cover)
-          resList.items.push(coverDict[cover])
+          items.push(coverDict[cover])
         }
       }
       
+      resList.items = items
       console.log(resList.items)
 
 
