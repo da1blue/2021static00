@@ -100,15 +100,13 @@
           </div>
           <div class="col-9 col-sm-10 align-top">
             <div class="row">
-              <h3 class="fs-5 col-12"><a v-bind:href="item.ciniiUrl" class="text-decoration-none">{{item.title}}</a>
-                <span v-if="item.edition" class="fw-normal">{{item.edition}}</span>
-                <span v-if="item.series" class="fs-6 fw-normal">({{item.series}})</span>
+              <h3 class="fs-5 col-12">
+                <a v-bind:href="item.ciniiUrl" class="text-decoration-none">{{item.label}}</a>
               </h3>
               <div class="col-12 col-md-7 col-lg-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
-                  <li><i class="bi bi-emoji-smile text-secondary"></i>{{item.creator}}</li>
-                  <li><i class="bi bi-building text-secondary"></i>{{item.publisher}} <i
-                      class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
+                  <li v-for="singer in item.singers"><i class="bi bi-emoji-smile text-secondary"></i>{{singer}}</li>
+                  <li><i class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
                 </ul>
               </div>
               <div class="col-12 col-md-5 col-lg-4">
@@ -230,7 +228,7 @@
 
     //おまかせ検索
     async function setRandomKeyword(go = false) {
-      if(! orgSongDict){
+      if (!orgSongDict) {
         orgSongDict = await getJson('./orgSongInfo.json');
       }
       orgKeys = Object.keys(orgSongDict)
@@ -254,23 +252,23 @@
       resList.items = null;
       resList.totalResults = null;
 
-      if(! keyword){
+      if (!keyword) {
         keyword = inputForm.keyword
       }
 
-      if(! coverDict){
+      if (!coverDict) {
         coverDict = await getJson('./coverList.json');
       }
 
-      let matchedId = []
       let matchedItems = []
-      for(cover in coverDict){
-        if(coverDict[cover]["orgYtId"] == keyword){
-          matchedId.push(cover)
-          matchedItems.push(coverDict[cover])
+      for (cover in coverDict) {
+        if (coverDict[cover]["orgYtId"] == keyword) {
+          let itemInfo = coverDict[cover]
+          itemInfo["id"] = cover
+          matchedItems.push(itemInfo)
         }
       }
-      
+
       resList.items = matchedItems
       console.log(resList.items)
 
@@ -282,7 +280,7 @@
       const totalResults = ciniiList["@graph"][0]["opensearch:totalResults"];
       resList.totalResults = totalResults;
       */
-      
+
       //ページ処理
       resList.p = p;
       let pageNum = Math.ceil(resList.totalResults / 20)
