@@ -222,13 +222,9 @@
     //初期データロード
 
     //カバー楽曲リスト取得
-    if (!coverDict) {
       const coverDict = await getJson('./coverList.json')
-    }
     //原楽曲リスト取得
-    if (!orgSongDict) {
       const orgSongDict = await getJson('./orgSongList.json')
-    }
     
 
     // 検索機能本体
