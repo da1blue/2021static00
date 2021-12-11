@@ -113,8 +113,7 @@
               </div>
               <div class="col-12 col-md-5 col-lg-4">
                 <ul class="list-unstyled" style="margin-bottom:0">
-                  <li v-if="!item.isbnObjArray" data-bs-toggle="modal"
-                    v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
+                  <li v-if="!item.isbnObjArray" data-bs-toggle="modal" v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span><span class="code">{{item.isbn}}</span>
                     <i v-if="item.isbn" class="bi bi-arrow-up-right-square-fill text-info"></i>
@@ -220,6 +219,18 @@
       }
     };
 
+    //初期データロード
+
+    //カバー楽曲リスト取得
+    if (!coverDict) {
+      const coverDict = await getJson('./coverList.json')
+    }
+    //原楽曲リスト取得
+    if (!orgSongDict) {
+      const orgSongDict = await getJson('./orgSongList.json')
+    }
+    
+
     // 検索機能本体
     async function doSearch(keyword = null, p = 1) {
 
@@ -232,16 +243,8 @@
       resList.items = null;
       resList.totalResults = null;
 
-      
-      //カバー楽曲リスト取得
-      if(! coverDict){
-        const coverDict = await getJson('./coverList.json')
-      }
-      //原楽曲リスト取得
-      if(! orgSongDict){
-        const orgSongDict = await getJson('./orgSongList.json')
-      }
-      //
+
+
 
 
       // 検索式(URL)生成
