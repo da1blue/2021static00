@@ -110,7 +110,7 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li v-for="singer in item.singers" style="display: inline-block;">
                     <button class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
-                      v-on:click="doSearchWithVocal(this.innerText)">
+                      v-on:click="doSearchWithVocal(singer)">
                       <i class="bi bi-mic-fill text-secondary"></i>{{singer}}
                     </button>
                   </li>
