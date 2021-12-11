@@ -91,7 +91,7 @@
       <!-- Results -->
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
-          <div class="col-4 col-sm-3" style="position: relative; min-height: 3em;">
+          <div class="col-6 col-sm-4 col-md-3" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
             <button class="thBtn w-100"
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
@@ -101,7 +101,7 @@
               style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 1rem; z-index: -1;">
             </i>
           </div>
-          <div class="col-8 col-sm-9 align-top">
+          <div class="col-6 col-sm-8 col-md-9 align-top">
             <div class="row">
               <h3 class="fs-5 col-12 h5">
                 <a v-bind:href="item.ytUrl" class="text-decoration-none">{{item.label}}</a>
