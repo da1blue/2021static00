@@ -179,7 +179,7 @@
   </article>
 
   <script>
-    //JSON取得
+    //JSON取得fuction
     async function getJson(url) {
       const res = await fetch(url)
       if (res.ok) {
@@ -196,9 +196,9 @@
     //初期化
     (async function () {
       //カバー楽曲リスト取得
-      const coverDict = await getJson('./coverList.json')
+      var coverDict = await getJson('./coverList.json')
       //原楽曲リスト取得
-      const orgSongDict = await getJson('./orgSongInfo.json')
+      var orgSongDict = await getJson('./orgSongInfo.json')
     }());
 
     // 検索フォーム（Vue）
@@ -229,10 +229,7 @@
     //おまかせ検索
     let keywordJson = null
     async function setRandomKeyword(go = false) {
-      const keywordUrl = "./keyword.json";
-      if (!keywordJson) {
-        keywordJson = await getJson(keywordUrl);
-      }
+      let 
       let num = Math.floor(Math.random() * keywordJson.keywords.length);
       keyword = keywordJson.keywords[num]
       inputForm.keyword = keyword;
