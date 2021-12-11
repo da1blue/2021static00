@@ -283,7 +283,7 @@
       let resNumFrom = (p - 1) * 20 + 1;
       let resNumTo = p * 20;
       if (resList.totalResults < resNumTo) {
-        resNumTo = totalResults;
+        resNumTo = resList.totalResults;
       }
 
       arrNum = Array.from(Array(resNumTo - resNumFrom + 1), (_, i) => i + resNumTo);
