@@ -237,21 +237,10 @@
       let num = Math.floor(Math.random() * orgKeys.length);
       keyword = orgKeys[num];
       inputForm.keyword = keyword;
-    /*
-    
-      let num = Math.floor(Math.random() * keywordJson.keywords.length);
-      keyword = keywordJson.keywords[num]
-      inputForm.keyword = keyword;
       if (go) {
-        doSearch(keyword);
+        //doSearch(keyword);
       }
-    */
     };
-
-
-
-
-
 
     // 検索機能本体
     async function doSearch(keyword = null, p = 1) {
@@ -265,11 +254,19 @@
       resList.items = null;
       resList.totalResults = null;
 
+      if(! coverDict){
+        coverDict = await getJson('./coverList.json');
+      }
+
+      for(cover in coverDict){
+        console.log(cover)
+      }
 
 
 
 
       // 検索式(URL)生成
+      /*
       let url = null;
       if (from == null) {
         from = document.forms.searchConditions.from.value;
@@ -283,6 +280,8 @@
         keyword = document.forms.searchConditions.keyword.value;
       }
       url = ciniiReqUrlBuilder(keyword, from, to, p);
+      */
+
       // 検索実行
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
@@ -310,6 +309,7 @@
         pageNum = 5;
       }
       resList.pages = [...Array(pageNum).keys()].map(i => i + pageMin);
+
       //検索表示
       let items = []
       for (let i in resItems) {
