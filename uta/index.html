@@ -278,8 +278,6 @@
         }
       }
 
-      resList.totalResults = matchedItems.length;
-
       let resNumFrom = (p - 1) * 20 + 1;
       let resNumTo = p * 20;
       if (resList.totalResults < resNumTo) {
@@ -289,6 +287,8 @@
       arrNum = Array.from(Array(resNumTo - resNumFrom + 1), (_, i) => i + resNumTo);
       resList.items = matchedItems[arrNum];
       console.log(resList.items);
+
+      //resList.totalResults = matchedItems.length;
 
 
       // 検索実行
