@@ -137,6 +137,10 @@
           </div>
         </div>
       </div>
+      <!-- 追加情報 -->
+      <div v-if="searchType == 'org'" class="col-12">
+        {{item.title}}
+      </div>
       <!-- ページネーション -->
       <nav class="col-12" aria-label="pagination">
         <ul v-if="pages" class="pagination justify-content-center">
@@ -195,6 +199,8 @@
       coverDict = await getJson('./coverList.json');
       //原楽曲リスト取得
       orgSongDict = await getJson('./orgSongInfo.json');
+      //類似楽曲データ取得
+      cosSimDict = await getJson('./orgSongInfo.json');
     }());
 
     // 検索フォーム（Vue）
@@ -216,7 +222,9 @@
           totalResults: null,
           pages: null,
           pageMax: null,
-          p: null
+          p: null,
+          searchType: null,
+          exInfo: null
         }
       },
       methods: {
@@ -273,6 +281,7 @@
 
       //検索処理（org）
       if (keyword.match(/^org:/)) {
+        resList.searchType = "org"
         orgYtId = keyword.replace(/^org:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["orgYtId"] == orgYtId) {
@@ -285,8 +294,15 @@
             itemInfo["orgTitle"] = orgSongDict[itemInfo["orgYtId"]]["title"]
             matchedItems.push(itemInfo);
           }
+        let _exInfo = {};
+        _exInfo["orgYtId"] = orgYtId;
+        _exInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
+        _exInfo["orgTitle"] = orgSongDict[orgYtId];
+        _exInfo["relSongs"] = Object.keys(cosSimDict[orgYtId]);
+        print(_exInfo)
         }
       } else if (keyword.match(/^voc:/)) {
+        resList.searchType = "voc"
         vocalName = keyword.replace(/^voc:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["singers"].includes(vocalName)) {
