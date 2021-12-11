@@ -254,6 +254,10 @@
       resList.items = null;
       resList.totalResults = null;
 
+      if(! keyword){
+        keyword = inputForm.keyword
+      }
+
       if(! coverDict){
         coverDict = await getJson('./coverList.json');
       }
@@ -261,10 +265,11 @@
       let matched = []
       for(cover in coverDict){
         if(coverDict[cover]["orgYtId"] == keyword){
-          console.log(cover)
+          matched.add(cover)
         }
       }
-
+      
+      console.log(matched)
 
 
 
