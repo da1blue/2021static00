@@ -147,7 +147,7 @@
         <div class="col-6 col-sm-8 col-md-9 align-top">
           <div class="row">
             <h3 class="fs-5 col-12 h5">
-              <a v-bind:href="exInfo.ytUrl" class="text-decoration-none">{{exInfo.orgTitle}}</a>
+              <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none">{{exInfo.orgTitle}}</a>
             </h3>
             <div class="col-12 col-md-7 col-lg-8">
             </div>
@@ -157,7 +157,7 @@
               <ul>
                 <li v-for="relSong in exInfo.relSongs">
                   <button class="btn-sm btn-light" style="border:0; margin-right:0.25rem;"
-                    v-on:click="doSearchWithOrgYtId(id)">
+                    v-on:click="doSearchWithOrgYtId(relSong.id)">
                     {{relSong.title}}
                   </button>
                   <a v-bind:href="relSong.url" class="code text-decoration-none">
@@ -339,8 +339,8 @@
         for (id of _exInfo["relSongIds"]) {
           _song = {
             id: id,
-            title: orgSongDict[id],
-            url: "https://www.youtube.com/watch?v=" + orgSongDict[id]
+            title: orgSongDict[id]["title"],
+            url: "https://www.youtube.com/watch?v=" + id
           }
           _exInfo["relSongs"].push(_song);
         }
