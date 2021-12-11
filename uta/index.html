@@ -265,6 +265,7 @@
         if (coverDict[cover]["orgYtId"] == keyword) {
           let itemInfo = coverDict[cover]
           itemInfo["id"] = cover
+          itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover+ "/mqdefault.jpg"
           matchedItems.push(itemInfo)
         }
       }
