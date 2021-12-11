@@ -303,14 +303,17 @@
         }
       } else {
         for (cover in coverDict) {
-          let itemInfo = coverDict[cover]
-          itemInfo["id"] = cover
-          itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg"
-          itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0"
-          itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
-          itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
-          itemInfo["orgTitle"] = orgSongDict[itemInfo["orgYtId"]]["title"]
-          matchedItems.push(itemInfo)
+          if (coverDict[cover]["label"].match(keyword)) {
+            let itemInfo = coverDict[cover];
+            itemInfo["id"] = cover;
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg";
+            itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
+            itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
+            itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
+            console.log(itemInfo["orgYtId"]);
+            itemInfo["orgTitle"] = orgSongDict[itemInfo["orgYtId"]]["title"];
+            matchedItems.push(itemInfo);
+          }
         }
       }
 
