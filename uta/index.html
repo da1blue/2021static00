@@ -306,49 +306,6 @@
       }
       resList.pages = [...Array(pageNum).keys()].map(i => i + pageMin);
 
-      //検索表示
-      let items = []
-      for (let i in resItems) {
-        item = resItems[i]
-        let itemPublisher = null
-        if (item["dc:publisher"]) {
-          itemPublisher = item["dc:publisher"].join(", ");
-        }
-        let exItem = {
-          title: item["title"],
-          ciniiUrl: item["@id"],
-          creator: item["dc:creator"],
-          issued: item["dc:date"],
-          publisher: itemPublisher,
-          edition: item["prism:edition"],
-          ownerCount: item["cinii:ownerCount"]
-        }
-        //ISBN関係処理
-        if (item["dcterms:hasPart"]) {
-          let isbnArray = []
-          for (let hasPart of item["dcterms:hasPart"]) {
-            if (hasPart["@id"].match(/urn:isbn:([0-9X]{10}|[0-9]{13})/)) {
-              isbnArray.push(
-                hasPart["@id"].replace(/urn:isbn:([0-9X]{10}|[0-9]{13})/, "$1")
-              )
-            }
-          }
-          if (isbnArray.length) {
-            let isbn = isbnArray[0];
-            exItem.isbn = isbn;
-            exItem.reviewCount = -1;
-            // 書影は最新刊
-            let isbnLatest = isbnArray[isbnArray.length - 1];
-            exItem.thumbnailUrl = "https://i.ytimg.com/vi/" + ytId + "/hqdefault.jpg";
-          }
-        }
-        //シリーズ名処理
-        if (item["dcterms:isPartOf"]) {
-          exItem.series = item["dcterms:isPartOf"][0]["dc:title"]
-        }
-        items.push(exItem);
-      }
-
       document.querySelector("#loading").classList.add("invisible");
       resList.items = items;
 
