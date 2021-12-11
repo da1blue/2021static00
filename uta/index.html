@@ -89,15 +89,6 @@
         </div>
       </div>
       <!-- Results -->
-      <style>
-        button.thBtn {
-          width: auto;
-          padding: 0;
-          margin: 0;
-          background: none;
-          border: 0;
-        }
-      </style>
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
           <div class="col-4 col-sm-3" style="position: relative; min-height: 3em;">
@@ -341,15 +332,14 @@
       font-family: 'Noto Sans Mono CJK JP', Consolas, 'Roboto Mono', 'Courier New', monospace;
     }
 
-    div.introduction {
-      max-height: 6rem;
+    button.thBtn {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      background: none;
+      border: 0;
     }
 
-    @media (min-width: 576px) {
-      div.introduction {
-        max-height: 4.5rem;
-      }
-    }
   </style>
   <!-- About Modal -->
   <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="About" aria-hidden="true">
