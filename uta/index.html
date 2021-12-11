@@ -108,17 +108,22 @@
               </h3>
               <div class="col-12 col-md-7 col-lg-8">
                 <ul class="list-unstyled" style="margin-bottom:0">
+                  <i class="bi bi-mic-fill text-secondary"></i>
                   <li v-for="singer in item.singers" style="display: inline-block;">
-                    <button class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
+                    <button class="btn-sm btn-light" style="border:0; margin-right:0.25rem;"
                       v-on:click="doSearchWithVocal(singer)">
-                      <i class="bi bi-mic-fill text-secondary"></i>{{singer}}
+                      {{singer}}
                     </button>
                   </li>
                   <li><i class="bi bi-soundwave"></i>
-                    <a v-bind:href="item.orgYtUrl" class="code text-decoration-none">
+                    <button class="btn-sm btn-light" style="border:0; margin-right:0.25rem;"
+                      v-on:click="doSearchWithOrgYtId(orgYtId)">
                       {{item.orgYtId}}
+                    </button>
+                    <a v-bind:href="item.orgYtUrl" class="code text-decoration-none">
+                      <i class="bi bi-youtube"></i>
                     </a>
-                    <i class="bi bi-youtube"></i>
+
                   </li>
                 </ul>
               </div>
@@ -203,6 +208,10 @@
       methods: {
         doSearchWithVocal: function (vocal) {
           let keyword = "voc:" + vocal;
+          doSearch(keyword);
+        },
+        doSearchWithOrgYtId: function (orgYtId) {
+          let keyword = "org:" + orgYtId;
           doSearch(keyword);
         }
       }
