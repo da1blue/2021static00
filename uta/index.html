@@ -229,8 +229,10 @@
     const resList = resListApp.mount('#resList')
 
     //おまかせ検索
-    let keywordJson = null
     async function setRandomKeyword(go = false) {
+      if(! orgSongDict){
+        orgSongDict = await getJson('./orgSongInfo.json');
+      }
       orgKeys = Object.keys(orgSongDict)
       let num = Math.floor(Math.random() * orgKeys.length);
       keyword = orgKeys[num];
