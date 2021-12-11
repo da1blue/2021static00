@@ -219,13 +219,24 @@
       }
     };
 
-    //初期データロード
-
+    //JSON取得
+    async function getJson(url) {
+      const res = await fetch(url)
+      if (res.ok) {
+        return await res.json();
+      } else if (res.status >= 400) {
+        await new Promise(resolve => setTimeout(resolve, 500));
+        return;
+      } else {
+        await new Promise(resolve => setTimeout(resolve, 100));
+        return;
+      }
+    }
     //カバー楽曲リスト取得
-      const coverDict = await getJson('./coverList.json')
+    const coverDict = await getJson('./coverList.json')
     //原楽曲リスト取得
-      const orgSongDict = await getJson('./orgSongList.json')
-    
+    const orgSongDict = await getJson('./orgSongList.json')
+
 
     // 検索機能本体
     async function doSearch(keyword = null, p = 1) {
