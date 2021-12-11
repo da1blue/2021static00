@@ -113,13 +113,13 @@
               </div>
               <div class="col-12 col-md-5 col-lg-4">
                 <ul class="list-unstyled" style="margin-bottom:0">
-                  <li v-if="!item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
+                  <li v-if="!item.isbnObjArray" data-bs-toggle="modal"
                     v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span><span class="code">{{item.isbn}}</span>
                     <i v-if="item.isbn" class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
-                  <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
+                  <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal"
                     v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span><span class="code">{{isbnObj.code}}</span> <small
@@ -179,26 +179,6 @@
     </section>
   </article>
 
-  <!-- ISBN Modal -->
-  <div class="modal fade" id="isbnModal" tabindex="-1" aria-labelledby="About" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="exampleModalLabel">ISBN: {{isbn}}</h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="d-grid gap-2 col-10 mx-auto">
-            <a v-bind:href="link.url" v-for="link in links" class="btn btn-outline-primary">
-              <i v-bind:class="link.icon"></i>
-              {{link.name}} で探す
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script>
     // 検索フォーム（Vue）
     const inputFormApp = Vue.createApp({
@@ -224,72 +204,6 @@
       }
     })
     const resList = resListApp.mount('#resList')
-    // ISBNモーダル（Vue）
-    const isbnModalApp = Vue.createApp({
-      data() {
-        return {
-          isbn: ""
-        }
-      },
-      computed: {
-        links() {
-          return [
-            {
-              icon: "bi bi-building",
-              name: "NDLサーチ",
-              url: "https://iss.ndl.go.jp/api/openurl?isbn=" + this.isbn
-            },
-            {
-              icon: "bi bi-building",
-              name: "カーリル",
-              url: "https://calil.jp/book/" + this.isbn + "/search?pref=%E6%9D%B1%E4%BA%AC%E9%83%BD"
-            },
-            {
-              icon: "bi bi-truck",
-              name: "Amazon.co.jp",
-              url: "https://www.amazon.co.jp/s?i=stripbooks&k=" + this.isbn
-            },
-            {
-              icon: "bi bi-shop",
-              name: "e-Hon",
-              url: "https://www.e-hon.ne.jp/bec/SA/Detail?refISBN=" + this.isbn
-            },
-            {
-              icon: "bi bi-shop",
-              name: "Honto",
-              url: "https://honto.jp/netstore/search.html?k=" + this.isbn
-            },
-            {
-              icon: "bi bi-shop",
-              name: "Honya Club",
-              url: "https://www.honyaclub.com/shop/goods/search.aspx?cat_t=00&search_detail.x=x&isbn=" + this.isbn
-            },
-            {
-              icon: "bi bi-truck",
-              name: "楽天ブックス",
-              url: "https://books.rakuten.co.jp/search?sitem=" + this.isbn
-            }
-          ]
-        }
-      }
-    })
-    const isbnModal = isbnModalApp.mount('#isbnModal')
-    function selectIsbn(isbn) {
-      isbnModal.isbn = isbn;
-    }
-
-    async function getJson(url) {
-      const res = await fetch(url)
-      if (res.ok) {
-        return await res.json();
-      } else if (res.status >= 400) {
-        await new Promise(resolve => setTimeout(resolve, 500));
-        return;
-      } else {
-        await new Promise(resolve => setTimeout(resolve, 100));
-        return;
-      }
-    }
 
     //おまかせ検索
     let keywordJson = null
@@ -317,6 +231,19 @@
       }
       resList.items = null;
       resList.totalResults = null;
+
+      
+      //カバー楽曲リスト取得
+      if(! coverDict){
+        const coverDict = await getJson('./coverList.json')
+      }
+      //原楽曲リスト取得
+      if(! orgSongDict){
+        const orgSongDict = await getJson('./orgSongList.json')
+      }
+      //
+
+
       // 検索式(URL)生成
       let url = null;
       if (from == null) {
@@ -495,8 +422,6 @@
 
     // キーワードでEnter押下時に検索実行
     document.querySelector("#keyword").addEventListener("keydown", logKey);
-    document.querySelector("#from").addEventListener("keydown", logKey);
-    document.querySelector("#to").addEventListener("keydown", logKey);
 
     function logKey(e) {
       if (e.keyCode == 13) {
