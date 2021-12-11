@@ -288,9 +288,13 @@
 
       //初期化
       document.querySelector("#loading").classList.remove("invisible")
-      thumbnailImgElm = document.querySelectorAll(".thumbnail");
-      for (let elm of thumbnailImgElm) {
-        elm.classList.remove("invisible")
+      thBtns = document.querySelectorAll(".thBtn");
+      for (let elm of thBtns) {
+        elm.classList.remove("visually-hidden")
+      }
+      iframes = document.querySelectorAll("iframe");
+      for (let elm of iframes) {
+        elm.classList.add("visually-hidden")
       }
       resList.items = null;
       resList.totalResults = null;
