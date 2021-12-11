@@ -282,7 +282,7 @@
       //検索処理（org）
       if (keyword.match(/^org:/)) {
         resList.searchType = "org"
-        orgYtId = keyword.replace(/^org:/, "");
+        let orgYtId = keyword.replace(/^org:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["orgYtId"] == orgYtId) {
             let itemInfo = coverDict[cover];
