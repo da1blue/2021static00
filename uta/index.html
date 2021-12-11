@@ -149,12 +149,20 @@
             <h3 class="fs-5 col-12 h5">
               <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none">{{exInfo.orgTitle}}</a>
             </h3>
-            <div class="col-12 col-md-7 col-lg-8">
-            </div>
-            <div class="col-12 col-md-5 col-lg-4">
+            <div class="col-12">
+              <ul class="list-unstyled">
+                <li v-for="singer in item.singers" style="display: inline-block;">
+                  <i class="bi bi-mic-fill text-secondary"></i>
+                  {{singer}}
+                </li>
+                <i class="bi bi-pencil-fill text-secondary"></i>
+                <li v-for="songWriter in item.songWriters" style="display: inline-block;">
+                  {{songWriter}}
+                </li>
+              </ul>
             </div>
             <div class="col-12">
-              <ul>
+              <ul class="list-unstyled">
                 <li v-for="relSong in exInfo.relSongs">
                   <button class="btn-sm btn-light" style="border:0; margin-right:0.25rem;"
                     v-on:click="doSearchWithOrgYtId(relSong.id)">
