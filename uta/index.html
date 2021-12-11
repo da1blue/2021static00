@@ -125,25 +125,6 @@
                       v-if="isbnObj.title">({{isbnObj.title}})</small>
                     <i class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
-                  <li>
-                    <i class="bi bi-bookshelf text-secondary"></i><span class="visually-hidden">所蔵館数:
-                    </span>{{item.ownerCount}}
-                    <i class="bi bi-star-fill text-secondary"></i><span class="visually-hidden">レビュー: </span>
-                    <span v-if="item.reviewCount &lt; 0" class="spinner-border spinner-border-sm text-light"
-                      role="status">
-                      <span class="visually-hidden">Loading...</span>
-                    </span>
-                    <span v-else-if="item.reviewCount > 0 && item.reviewAverage != '0.0' ">
-                      <span class="visually-hidden">平均</span>{{item.reviewAverage}}(<span
-                        class="visually-hidden">レビュー件数</span><a
-                        v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
-                    </span>
-                    <span v-else-if="item.reviewCount > 0 && item.reviewAverage == '0.0' ">
-                      <span class="visually-hidden">平均</span>－(<span class="visually-hidden">レビュー件数</span><a
-                        v-bind:href="item.rakutenItemUrl">{{item.reviewCount}}</a>)
-                    </span>
-                    <span v-else="">－</span>
-                  </li>
                 </ul>
               </div>
               <div class="col-12 " v-if="item.topics">
