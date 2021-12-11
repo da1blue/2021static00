@@ -231,13 +231,19 @@
     //おまかせ検索
     let keywordJson = null
     async function setRandomKeyword(go = false) {
- 
+      orgKeys = Object.keys(orgSongDict)
+      let num = Math.floor(Math.random() * orgKeys.length);
+      keyword = orgKeys[num];
+      inputForm.keyword = keyword;
+    /*
+    
       let num = Math.floor(Math.random() * keywordJson.keywords.length);
       keyword = keywordJson.keywords[num]
       inputForm.keyword = keyword;
       if (go) {
         doSearch(keyword);
       }
+    */
     };
 
 
