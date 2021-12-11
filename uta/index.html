@@ -243,7 +243,7 @@
 
       //検索処理（org）
       if (keyword.match(/^org:([0-9a-zA-Z\-_=]+)/)) {
-        orgYtId = keyword.replace(/^org:)/, "$1")
+        orgYtId = keyword.replace(/^org:/, "")
         for (cover in coverDict) {
           if (coverDict[cover]["orgYtId"] == orgYtId) {
             let itemInfo = coverDict[cover]
@@ -255,8 +255,7 @@
             matchedItems.push(itemInfo)
           }
         }
-      }
-      else {
+      } else {
         for (cover in coverDict) {
           let itemInfo = coverDict[cover]
           itemInfo["id"] = cover
