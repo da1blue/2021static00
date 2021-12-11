@@ -200,9 +200,9 @@
           p: null
         }
       },
-      methods:{
-        doSearchWithVocal: function(vocal){
-          let keyword= "voc:" + vocal;
+      methods: {
+        doSearchWithVocal: function (vocal) {
+          let keyword = "voc:" + vocal;
           doSearch(keyword);
         }
       }
@@ -235,7 +235,11 @@
       resList.items = null;
       resList.totalResults = null;
 
-      keyword = document.forms.searchConditions.keyword.value
+      if (!keyword) {
+        keyword = document.forms.searchConditions.keyword.value;
+      } else {
+        inputForm.keyword = keyword;
+      }
       keyword = keyword.trim()
 
       if (!coverDict) {
