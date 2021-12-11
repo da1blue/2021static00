@@ -92,7 +92,7 @@
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
           <div class="col-4 col-sm-3" style="position: relative; min-height: 3em;">
-            <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden"></iframe>
+            <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
             <button class="thBtn w-100"
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
               <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" />
@@ -242,17 +242,30 @@
       let matchedItems = []
 
       //検索処理（org）
-      if (keyword.match(/^org:([0-9a-zA-Z\-_=]+)/)) {
-        orgYtId = keyword.replace(/^org:/, "")
+      if (keyword.match(/^org:/)) {
+        orgYtId = keyword.replace(/^org:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["orgYtId"] == orgYtId) {
-            let itemInfo = coverDict[cover]
-            itemInfo["id"] = cover
-            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg"
-            itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0"
-            itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
-            itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
-            matchedItems.push(itemInfo)
+            let itemInfo = coverDict[cover];
+            itemInfo["id"] = cover;
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg";
+            itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
+            itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
+            itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
+            matchedItems.push(itemInfo);
+          }
+        }
+      } else if (keyword.match(/^voc:/)) {
+        vocalName = keyword.replace(/^voc:/, "");
+        for (cover in coverDict) {
+          if (coverDict[cover]["singers"].includes(vocalName)) {
+            let itemInfo = coverDict[cover];
+            itemInfo["id"] = cover;
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg";
+            itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
+            itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
+            itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
+            matchedItems.push(itemInfo);
           }
         }
       } else {
@@ -316,10 +329,6 @@
         doSearch();
       }
     }
-
-    //from,to
-    inputForm.from = (new Date()).getFullYear() - 4;
-    inputForm.to = (new Date()).getFullYear();
 
     // おまかせ検索実施
     setRandomKeyword();
