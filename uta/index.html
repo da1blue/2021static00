@@ -194,6 +194,7 @@
     //初期化
     var coverDict;
     var orgSongDict;
+    var cosSimDict;
     (async function () {
       //カバー楽曲リスト取得
       coverDict = await getJson('./coverList.json');
@@ -294,12 +295,21 @@
             itemInfo["orgTitle"] = orgSongDict[itemInfo["orgYtId"]]["title"]
             matchedItems.push(itemInfo);
           }
-        let _exInfo = {};
-        _exInfo["orgYtId"] = orgYtId;
-        _exInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
-        _exInfo["orgTitle"] = orgSongDict[orgYtId];
-        _exInfo["relSongs"] = Object.keys(cosSimDict[orgYtId]);
-        console.log(_exInfo)
+          let _exInfo = {};
+          _exInfo["orgYtId"] = orgYtId;
+          _exInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
+          _exInfo["orgTitle"] = orgSongDict[orgYtId];
+          _exInfo["relSongIds"] = Object.keys(cosSimDict[orgYtId]);
+          _exInfo["relSongs"] = []
+          for (id of _exInfo["relSongIds"]) {
+            _song = {
+              id: id,
+              title: orgSongDict[id],
+              url: "https://www.youtube.com/watch?v=" + orgSongDict[id]
+            } 
+            _exInfo["relSongs"].push(_song)
+          }
+          console.log(_exInfo)
         }
       } else if (keyword.match(/^voc:/)) {
         resList.searchType = "voc"
