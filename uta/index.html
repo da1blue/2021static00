@@ -164,7 +164,7 @@
         await new Promise(resolve => setTimeout(resolve, 500));
         return;
       } else {
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 50));
         return;
       }
     }
@@ -233,6 +233,7 @@
       if (!keyword) {
         keyword = inputForm.keyword
       }
+      keyword = keyword.trim()
 
       if (!coverDict) {
         coverDict = await getJson('./coverList.json');
@@ -240,8 +241,9 @@
 
       let matchedItems = []
 
-      if (keyword.match(/^org:([a-zA-Z])/)) {
-        orgYtId = keyword.replace(/^org:([a-zA-Z])/, "$1")
+      //検索処理（org）
+      if (keyword.match(/^org:([0-9a-zA-Z\-_=]+)/)) {
+        orgYtId = keyword.replace(/^org:)/, "$1")
         for (cover in coverDict) {
           if (coverDict[cover]["orgYtId"] == orgYtId) {
             let itemInfo = coverDict[cover]
@@ -254,7 +256,17 @@
           }
         }
       }
-
+      else {
+        for (cover in coverDict) {
+          let itemInfo = coverDict[cover]
+          itemInfo["id"] = cover
+          itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg"
+          itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0"
+          itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
+          itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
+          matchedItems.push(itemInfo)
+        }
+      }
 
       resList.items = matchedItems
       resList.totalResults = matchedItems.length
