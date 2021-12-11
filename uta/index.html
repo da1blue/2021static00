@@ -118,7 +118,7 @@
                   <li><i class="bi bi-soundwave"></i>
                     <button class="btn-sm btn-light" style="border:0; margin-right:0.25rem;"
                       v-on:click="doSearchWithOrgYtId(item.orgYtId)">
-                      {{item.orgYtId}}
+                      {{item.orgYtTitle}}
                     </button>
                     <a v-bind:href="item.orgYtUrl" class="code text-decoration-none">
                       <i class="bi bi-youtube"></i>
@@ -292,6 +292,7 @@
           itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0"
           itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"]
           itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"]
+          itemInfo["orgTitle"] = orgSongDict[itemInfo["id"]]["title"]
           matchedItems.push(itemInfo)
         }
       }
