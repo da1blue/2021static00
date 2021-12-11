@@ -89,10 +89,19 @@
         </div>
       </div>
       <!-- Results -->
+      <style>
+        button.thBtn {
+          width: auto;
+          padding: 0;
+          margin: 0;
+          background: none;
+          border: 0;
+        }
+      </style>
       <div class="col-12">
         <div v-for="item in items" class="mb-4 row">
           <div class="col-4 col-sm-3" style="position: relative; min-height: 3em;">
-            <button>
+            <button class="thBtn w-100">
               <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" />
             </button>
             <iframe src="https://www.youtube.com/embed/7kGGhprf064?controls=0" frameborder="0"
