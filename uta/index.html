@@ -110,7 +110,7 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li v-for="singer in item.singers" style="display: inline-block;">
                     <button class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
-                      v-bind:onclick="'doSearch(\'voc:\'+singer+'');'">
+                      v-on:click="doSearchWithVocal(this.innerText)">
                       <i class="bi bi-mic-fill text-secondary"></i>{{singer}}
                     </button>
                   </li>
@@ -127,10 +127,6 @@
                   <li><i class="bi bi-upc text-secondary"></i>{{item.id}}</li>
                   <li><i class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
                 </ul>
-              </div>
-              <div class="col-12 " v-if="item.topics">
-                <button v-for="topic in item.topics" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
-                  v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
             </div>
           </div>
@@ -202,6 +198,12 @@
           pages: null,
           pageMax: null,
           p: null
+        }
+      },
+      methods:{
+        doSearchWithVocal: function(vocal){
+          let keyword= "voc:" + vocal;
+          doSearch(keyword);
         }
       }
     })
