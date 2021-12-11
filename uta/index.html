@@ -359,16 +359,6 @@
 
     }
 
-
-    // キーワードでEnter押下時に検索実行
-    document.querySelector("#keyword").addEventListener("keydown", logKey);
-
-    function logKey(e) {
-      if (e.keyCode == 13) {
-        doSearch();
-      }
-    }
-
     // おまかせ検索実施
     setRandomKeyword();
 
