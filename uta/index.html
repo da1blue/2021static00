@@ -285,9 +285,12 @@
       }
 
       let arrNum = Array.from(Array(resNumTo - resNumFrom + 1), (_, i) => i + resNumFrom - 1);
+      let _items = []
       for (num of arrNum){
-        resList.items.push(matchedItems[arrNum]);
+        _items.push(matchedItems[num]);
       }
+
+      resList.items = _items
       
       console.log(resList.items);
 
