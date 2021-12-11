@@ -262,16 +262,15 @@
         coverDict = await getJson('./coverList.json');
       }
 
-      let matched = []
+      let matchedId = []
       for(cover in coverDict){
         if(coverDict[cover]["orgYtId"] == keyword){
-          matched.push(cover)
+          matchedId.push(cover)
+          resList.items.push(coverDict[cover])
         }
       }
       
-      console.log(matched)
-
-
+      console.log(resList.items)
 
 
       // 検索実行
