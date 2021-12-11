@@ -278,9 +278,17 @@
         }
       }
 
-      resList.items = matchedItems
-      resList.totalResults = matchedItems.length
-      console.log(resList.items)
+      resList.totalResults = matchedItems.length;
+
+      let resNumFrom = (p - 1) * 20 + 1;
+      let resNumTo = p * 20;
+      if (totalResults < resNumTo) {
+        resNumTo = totalResults;
+      }
+
+      arrNum = Array.from(Array(resNumTo - resNumFrom + 1), (_, i) => i + resNumTo);
+      resList.items = matchedItems[arrNum];
+      console.log(resList.items);
 
 
       // 検索実行
@@ -294,7 +302,7 @@
       //ページ処理
       resList.p = p;
       let pageNum = Math.ceil(resList.totalResults / 20)
-      let pageMax = pageNum < 10000 ? pageNum : 10000;
+      let pageMax = pageNum < 1000 ? pageNum : 1000;
       resList.pageMax = pageMax;
       if (pageNum <= 5) {
         pageMin = 1;
@@ -305,8 +313,8 @@
       } else if (p >= pageNum - 2) {
         pageMin = pageNum - 4;
         pageNum = 5;
-      } else if (p >= 9998) {
-        pageMin = 9996;
+      } else if (p >= 998) {
+        pageMin = 996;
         pageNum = 5;
       } else {
         pageMin = p - 2;
