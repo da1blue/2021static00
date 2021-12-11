@@ -95,7 +95,7 @@
             <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
             <button class="thBtn w-100"
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
-              <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" />
+              <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" alt="" />
             </button>
             <i class="bi bi-book text-secondary"
               style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 1rem; z-index: -1;">
@@ -103,7 +103,7 @@
           </div>
           <div class="col-8 col-sm-9 align-top">
             <div class="row">
-              <h3 class="fs-5 col-12">
+              <h3 class="fs-5 col-12 h5">
                 <a v-bind:href="item.ytUrl" class="text-decoration-none">{{item.label}}</a>
               </h3>
               <div class="col-12 col-md-7 col-lg-8">
