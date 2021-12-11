@@ -194,11 +194,13 @@
     }
 
     //初期化
+    var coverDict;
+    var orgSongDict;
     (async function () {
       //カバー楽曲リスト取得
-      var coverDict = await getJson('./coverList.json')
+      coverDict = await getJson('./coverList.json');
       //原楽曲リスト取得
-      var orgSongDict = await getJson('./orgSongInfo.json')
+      orgSongDict = await getJson('./orgSongInfo.json');
     }());
 
     // 検索フォーム（Vue）
