@@ -217,20 +217,6 @@
       }
     }
 
-    //配列シャッフル
-    function shuffle(array) {
-      var n = array.length, t, i;
-
-      while (n) {
-        i = Math.floor(Math.random() * n--);
-        t = array[n];
-        array[n] = array[i];
-        array[i] = t;
-      }
-
-      return array;
-    }
-
     //初期化
     var coverDict;
     var orgSongDict;
@@ -392,6 +378,20 @@
         }
       }
 
+      //新しい順でソート
+      function sortByIssued(a, b){
+        let issuedA = a["issued"];
+        let issuedB = b["issued"];
+        let comparison = 0;
+        if(issuedA > issuedB){
+          comparison = 1;
+        }else if(issuedA < issuedB){
+          comparison = -1;
+        }
+        return comparison;
+      }
+      matchedItems.sort((a,b)=>)
+
       let resNumFrom = (p - 1) * 20 + 1;
       let resNumTo = p * 20;
       if (matchedItems.length < resNumTo) {
@@ -404,7 +404,7 @@
         _items.push(matchedItems[num]);
       }
 
-      resList.items = shuffle(_items)
+      resList.items = _items
       resList.totalResults = matchedItems.length;
 
       //ページ処理
