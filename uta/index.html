@@ -89,8 +89,8 @@
         </div>
       </div>
       <!-- 追加情報 -->
-      <aside v-if="searchType == 'org'" class="col-12 pt-2 row bg-light">
-        <h2 class="col-12 h3">原曲</h2>
+      <aside v-if="searchType == 'org'" class="col-12 pt-2 bg-light">
+        <h2 class="col-12 h3">原曲情報</h2>
         <div class="row col-12">
           <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
@@ -107,17 +107,17 @@
               </h3>
               <div class="col-12">
                 <ul class="list-unstyled">
-                  <i class="bi bi-pencil-fill text-secondary"></i>
-                  <span class="visually-hidden">楽曲提供</span>
-                  <li v-for="songWriter in exInfo.songWriters" style="display: inline-block; margin-right: 0.5rem;">
-                    <span class="p-1 mr-2 mb-1">
+                  <li style="display: inline-block; margin-right: 0.5rem;">
+                    <i class="bi bi-pencil-fill text-secondary"></i>
+                    <span class="visually-hidden">楽曲提供</span>
+                    <span v-for="songWriter in exInfo.songWriters" class="p-1 mr-2 mb-1">
                       {{songWriter}}
                     </span>
                   </li>
-                  <i class="bi bi-mic-fill text-secondary"></i>
-                  <span class="visually-hidden">原曲歌唱</span>
-                  <li v-for="singer in exInfo.singers" style="display: inline-block; margin-right: 0.5rem;">
-                    <span class="p-1 mr-2 mb-1">
+                  <li style="display: inline-block; margin-right: 0.5rem;">
+                    <i class="bi bi-mic-fill text-secondary"></i>
+                    <span class="visually-hidden">原曲歌唱</span>
+                    <span v-for="singer in exInfo.singers" class="p-1 mr-2 mb-1">
                       {{singer}}
                     </span>
                   </li>
