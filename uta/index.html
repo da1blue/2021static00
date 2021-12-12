@@ -115,7 +115,7 @@
                     <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(item.orgYtId)">
                       {{item.orgTitle}}
                     </button>
-                    <a v-bind:href="item.orgYtUrl" class="code text-decoration-none">
+                    <a v-bind:href="item.orgYtUrl" class="link-danger text-decoration-none p-2">
                       <i class="bi bi-youtube"></i>
                     </a>
 
@@ -133,8 +133,8 @@
         </div>
       </div>
       <!-- 追加情報 -->
-      <aside v-if="searchType == 'org'" class="col-12 pt-4 row bg-light">
-        <h2 class="col-12">原曲</h2>
+      <aside v-if="searchType == 'org'" class="col-12 pt-2 row bg-light">
+        <h2 class="col-12 h3">原曲</h2>
         <div class="col-6 col-sm-4 col-md-3" style="position: relative; min-height: 3em;">
           <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
           <button class="thBtn w-100"
@@ -145,7 +145,7 @@
         <div class="col-6 col-sm-8 col-md-9 align-top">
           <div class="row">
             <h3 class="fs-5 col-12 h5">
-              <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none">{{exInfo.orgTitle}}</a>
+              <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none link-success">{{exInfo.orgTitle}}</a>
             </h3>
             <div class="col-12">
               <ul class="list-unstyled">
@@ -166,13 +166,13 @@
               </ul>
             </div>
             <div class="col-12">
-              <h3>おすすめ楽曲</h3>
+              <h3 class="h5">おすすめ楽曲</h3>
               <ul class="list-unstyled">
                 <li v-for="relSong in exInfo.relSongs">
                   <button class="btn btn-secondary p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(relSong.id)">
                     {{relSong.title}}
                   </button>
-                  <a v-bind:href="relSong.url" class="code text-decoration-none">
+                  <a v-bind:href="relSong.url" class="link-success text-decoration-none p-2">
                     <i class="bi bi-youtube"></i>
                   </a>
                 </li>
