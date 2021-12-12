@@ -107,14 +107,12 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <i class="bi bi-mic-fill text-secondary"></i>
                   <li v-for="singer in item.singers" style="display: inline-block;">
-                    <button class="btn btn-light p-1 mr-2 mb-1" 
-                      v-on:click="doSearchWithVocal(singer)">
+                    <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithVocal(singer)">
                       {{singer}}
                     </button>
                   </li>
                   <li><i class="bi bi-soundwave"></i>
-                    <button class="btn btn-light p-1 mr-2 mb-1" 
-                      v-on:click="doSearchWithOrgYtId(item.orgYtId)">
+                    <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(item.orgYtId)">
                       {{item.orgTitle}}
                     </button>
                     <a v-bind:href="item.orgYtUrl" class="code text-decoration-none">
@@ -135,8 +133,8 @@
         </div>
       </div>
       <!-- 追加情報 -->
-      <div v-if="searchType == 'org'" class="col-12 row">
-        <h2 class="col-12 visually-hidden">原曲</h2>
+      <aside v-if="searchType == 'org'" class="col-12 pt-4 row bg-light">
+        <h2 class="col-12">原曲</h2>
         <div class="col-6 col-sm-4 col-md-3" style="position: relative; min-height: 3em;">
           <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
           <button class="thBtn w-100"
@@ -161,13 +159,16 @@
                 <li v-for="singer in exInfo.singers" style="display: inline-block; margin-right: 0.5rem;">
                   {{singer}}
                 </li>
+                <li><i class="bi bi-upc text-secondary"></i>
+                  <span class="visually-hidden">原曲ID</span>
+                  {{exInfo.orgYtId}}
+                </li>
               </ul>
             </div>
             <div class="col-12">
               <ul class="list-unstyled">
                 <li v-for="relSong in exInfo.relSongs">
-                  <button class="btn btn-light p-1 mr-2 mb-1" 
-                  v-on:click="doSearchWithOrgYtId(relSong.id)">
+                  <button class="btn btn-secondary p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(relSong.id)">
                     {{relSong.title}}
                   </button>
                   <a v-bind:href="relSong.url" class="code text-decoration-none">
@@ -178,7 +179,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </aside>
       <!-- ページネーション -->
       <nav class="col-12" aria-label="pagination">
         <ul v-if="pages" class="pagination justify-content-center">
