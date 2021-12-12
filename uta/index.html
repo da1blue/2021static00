@@ -107,13 +107,13 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <i class="bi bi-mic-fill text-secondary"></i>
                   <li v-for="singer in item.singers" style="display: inline-block;">
-                    <button class="btn btn-light pt-1 pb-1 mr-2" 
+                    <button class="btn btn-light p-1 mr-2 mb-1" 
                       v-on:click="doSearchWithVocal(singer)">
                       {{singer}}
                     </button>
                   </li>
                   <li><i class="bi bi-soundwave"></i>
-                    <button class="btn btn-light pt-1 pb-1 mr-2" 
+                    <button class="btn btn-light p-1 mr-2 mb-1" 
                       v-on:click="doSearchWithOrgYtId(item.orgYtId)">
                       {{item.orgTitle}}
                     </button>
@@ -166,7 +166,7 @@
             <div class="col-12">
               <ul class="list-unstyled">
                 <li v-for="relSong in exInfo.relSongs">
-                  <button class="btn btn-light pt-1 pb-1 mr-2" 
+                  <button class="btn btn-light p-1 mr-2 mb-1" 
                   v-on:click="doSearchWithOrgYtId(relSong.id)">
                     {{relSong.title}}
                   </button>
