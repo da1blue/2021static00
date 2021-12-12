@@ -93,9 +93,9 @@
         <div v-for="item in items" class="mb-4 row">
           <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
-            <button class="thBtn w-100"
+            <button class="thBtn w-100 ratio ratio-16x9"
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
-              <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" alt="" class="w-100" alt="" />
+              <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" class="w-100" style="object-fit:cover" alt="" />
             </button>
           </div>
           <div class="col-12 col-sm-6 col-md-8 align-top">
@@ -147,7 +147,7 @@
           <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
           <button class="thBtn w-100"
             onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
-            <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" alt="" class="w-100" />
+            <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" class="w-100" style="object-fit:cover" alt="" />
           </button>
         </div>
         <div class="col-12 col-sm-6 col-md-8 align-top">
