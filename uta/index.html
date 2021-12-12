@@ -140,6 +140,24 @@
           </div>
         </div>
       </div>
+      <!-- ページネーション -->
+      <nav class="col-12" aria-label="pagination">
+        <ul v-if="pages" class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link text-secondary" href="#" v-bind:onclick="'doSearch(null,1);'">
+              <i class="bi bi-skip-backward-fill"></i>
+            </a>
+          </li>
+          <li v-for="page in pages" class="page-item" v-bind:class="{'active': page == p}">
+            <a class="page-link" href="#" v-bind:onclick="'doSearch(null,' + page +');'">{{page}}</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-secondary" href="#" v-bind:onclick="'doSearch(null,' + pageMax +');'">
+              <i class="bi bi-skip-forward-fill"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <!-- 追加情報 -->
       <aside v-if="searchType == 'org'" class="col-12 pt-2 row bg-light">
         <h2 class="col-12 h3">原曲</h2>
@@ -195,24 +213,6 @@
           </div>
         </div>
       </aside>
-      <!-- ページネーション -->
-      <nav class="col-12" aria-label="pagination">
-        <ul v-if="pages" class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link text-secondary" href="#" v-bind:onclick="'doSearch(null,1);'">
-              <i class="bi bi-skip-backward-fill"></i>
-            </a>
-          </li>
-          <li v-for="page in pages" class="page-item" v-bind:class="{'active': page == p}">
-            <a class="page-link" href="#" v-bind:onclick="'doSearch(null,' + page +');'">{{page}}</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link text-secondary" href="#" v-bind:onclick="'doSearch(null,' + pageMax +');'">
-              <i class="bi bi-skip-forward-fill"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </section>
   </article>
 
