@@ -60,7 +60,7 @@
     <section id="resList" class="row g-2">
       <div class="col-12" style="min-height: 2.5rem;">
         <h2 class="visually-hidden">検索結果</h2>
-        <p v-if="totalResults > 0">{{totalResults}}件中 {{(p - 1) * 20 + 1 }} 件目～ {{(p - 1) * 20 + items.length}} 件目を表示中
+        <p v-if="totalResults > 0">{{totalResults}}件中 {{(p - 1) * 10 + 1 }} 件目～ {{(p - 1) * 10 + items.length}} 件目を表示中
         </p>
         <p v-if="totalResults == 0">0件</p>
       </div>
@@ -408,8 +408,8 @@
       }
       matchedItems.sort(compareByIssued);
 
-      let resNumFrom = (p - 1) * 20 + 1;
-      let resNumTo = p * 20;
+      let resNumFrom = (p - 1) * 10 + 1;
+      let resNumTo = p * 10;
       if (matchedItems.length < resNumTo) {
         resNumTo = matchedItems.length;
       }
@@ -425,7 +425,7 @@
 
       //ページ処理
       resList.p = p;
-      let pageNum = Math.ceil(resList.totalResults / 20)
+      let pageNum = Math.ceil(resList.totalResults / 10)
       let pageMax = pageNum < 1000 ? pageNum : 1000;
       resList.pageMax = pageMax;
       if (pageNum <= 5) {
