@@ -124,8 +124,16 @@
               </div>
               <div class="col-12 col-md-5 col-lg-4">
                 <ul class="list-unstyled" style="margin-bottom:0">
-                  <li><i class="bi bi-upc text-secondary"></i>{{item.id}}</li>
-                  <li><i class="bi bi-calendar text-secondary"></i>{{item.issued}}</li>
+                  <li><i class="bi bi-upc text-secondary"></i>
+                    <span class="p-1 mr-2 mb-1">
+                      {{item.id}}
+                    </span>
+                  </li>
+                  <li><i class="bi bi-calendar text-secondary"></i>
+                    <span class="p-1 mr-2 mb-1">
+                      {{item.issued.substr(0,10)}}
+                    </span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -152,16 +160,22 @@
                 <i class="bi bi-pencil-fill text-secondary"></i>
                 <span class="visually-hidden">楽曲提供</span>
                 <li v-for="songWriter in exInfo.songWriters" style="display: inline-block; margin-right: 0.5rem;">
-                  {{songWriter}}
+                  <span class="p-1 mr-2 mb-1">
+                    {{songWriter}}
+                  </span>
                 </li>
                 <i class="bi bi-mic-fill text-secondary"></i>
                 <span class="visually-hidden">原曲歌唱</span>
                 <li v-for="singer in exInfo.singers" style="display: inline-block; margin-right: 0.5rem;">
+                  <span class="p-1 mr-2 mb-1">
                   {{singer}}
+                  </span>
                 </li>
                 <li><i class="bi bi-upc text-secondary"></i>
                   <span class="visually-hidden">原曲ID</span>
+                  <span class="p-1 mr-2 mb-1">
                   {{exInfo.orgYtId}}
+                  </span>
                 </li>
               </ul>
             </div>
