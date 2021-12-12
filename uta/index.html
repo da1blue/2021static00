@@ -379,7 +379,7 @@
       }
 
       //新しい順でソート
-      function sortByIssued(a, b){
+      function compareByIssued(a, b){
         let issuedA = a["issued"];
         let issuedB = b["issued"];
         let comparison = 0;
@@ -390,7 +390,7 @@
         }
         return comparison;
       }
-      matchedItems.sort((a,b)=>)
+      matchedItems.sort(compareByIssued);
 
       let resNumFrom = (p - 1) * 20 + 1;
       let resNumTo = p * 20;
