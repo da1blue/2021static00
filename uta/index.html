@@ -94,7 +94,7 @@
         <div class="row col-12">
           <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
-            <button class="thBtn w-100 ratio ratio-16x9"
+            <button class="thBtn w-100 ratio ratio-21x9"
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
               <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" class="w-100" style="object-fit:cover;"
                 alt="" />
@@ -107,14 +107,14 @@
               </h3>
               <div class="col-12">
                 <ul class="list-unstyled">
-                  <li style="display: inline-block; margin-right: 0.5rem;">
+                  <li class="d-inline-block" style="margin-right: 0.5rem;">
                     <i class="bi bi-pencil-fill text-secondary"></i>
                     <span class="visually-hidden">楽曲提供</span>
                     <span v-for="songWriter in exInfo.songWriters" class="p-1 mr-2 mb-1">
                       {{songWriter}}
                     </span>
                   </li>
-                  <li style="display: inline-block; margin-right: 0.5rem;">
+                  <li class="d-inline-block" style="margin-right: 0.5rem;">
                     <i class="bi bi-mic-fill text-secondary"></i>
                     <span class="visually-hidden">原曲歌唱</span>
                     <span v-for="singer in exInfo.singers" class="p-1 mr-2 mb-1">
