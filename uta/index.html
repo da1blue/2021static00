@@ -107,7 +107,7 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <i class="bi bi-mic-fill text-secondary"></i>
                   <li v-for="singer in item.singers" style="display: inline-block;">
-                    <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithVocal(singer)">
+                    <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithVocal(singer)" style="margin-right: 0.5em;">
                       {{singer}}
                     </button>
                   </li>
@@ -145,7 +145,7 @@
         <h2 class="col-12 h3">原曲</h2>
         <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
           <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
-          <button class="thBtn w-100"
+          <button class="thBtn w-100 ratio-16x9"
             onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
             <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" class="w-100" style="object-fit:cover" alt="" />
           </button>
