@@ -272,10 +272,12 @@
         doSearchWithVocal: function (vocal) {
           let keyword = "voc:" + vocal;
           doSearch(keyword);
+          window.scrollTo(top);
         },
         doSearchWithOrgYtId: function (orgYtId) {
           let keyword = "org:" + orgYtId;
           doSearch(keyword);
+          window.scrollTo(top);
         }
       }
     })
