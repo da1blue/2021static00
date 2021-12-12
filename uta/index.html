@@ -95,7 +95,8 @@
             <iframe v-bind:src="item.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
             <button class="thBtn w-100 ratio ratio-16x9"
               onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
-              <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" class="w-100" style="object-fit:cover" alt="" />
+              <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" class="w-100" style="object-fit:cover"
+                alt="" />
             </button>
           </div>
           <div class="col-12 col-sm-6 col-md-8 align-top">
@@ -107,7 +108,8 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <i class="bi bi-mic-fill text-secondary"></i>
                   <li v-for="singer in item.singers" style="display: inline-block;">
-                    <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithVocal(singer)" style="margin-right: 0.5em;">
+                    <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="doSearchWithVocal(singer)"
+                      style="margin-right: 0.5em;">
                       {{singer}}
                     </button>
                   </li>
@@ -161,55 +163,58 @@
       <!-- 追加情報 -->
       <aside v-if="searchType == 'org'" class="col-12 pt-2 row bg-light">
         <h2 class="col-12 h3">原曲</h2>
-        <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
-          <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
-          <button class="thBtn w-100 ratio ratio-16x9"
-            onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
-            <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" class="w-100" style="object-fit:cover;" alt="" />
-          </button>
-        </div>
-        <div class="col-12 col-sm-6 col-md-8 align-top">
-          <div class="row">
-            <h3 class="fs-5 col-12 h5">
-              <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none link-success">{{exInfo.orgTitle}}</a>
-            </h3>
-            <div class="col-12">
-              <ul class="list-unstyled">
-                <i class="bi bi-pencil-fill text-secondary"></i>
-                <span class="visually-hidden">楽曲提供</span>
-                <li v-for="songWriter in exInfo.songWriters" style="display: inline-block; margin-right: 0.5rem;">
-                  <span class="p-1 mr-2 mb-1">
-                    {{songWriter}}
-                  </span>
-                </li>
-                <i class="bi bi-mic-fill text-secondary"></i>
-                <span class="visually-hidden">原曲歌唱</span>
-                <li v-for="singer in exInfo.singers" style="display: inline-block; margin-right: 0.5rem;">
-                  <span class="p-1 mr-2 mb-1">
-                  {{singer}}
-                  </span>
-                </li>
-                <li><i class="bi bi-upc text-secondary"></i>
-                  <span class="visually-hidden">原曲ID</span>
-                  <span class="p-1 mr-2 mb-1">
-                  {{exInfo.orgYtId}}
-                  </span>
-                </li>
-              </ul>
+        <div class="row col-12">
+          <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
+            <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
+            <button class="thBtn w-100 ratio ratio-16x9"
+              onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
+              <img v-if="exInfo.thumbnailUrl" v-bind:src="exInfo.thumbnailUrl" class="w-100" style="object-fit:cover;"
+                alt="" />
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-8 align-top">
+            <div class="row">
+              <h3 class="fs-5 col-12 h5">
+                <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none link-success">{{exInfo.orgTitle}}</a>
+              </h3>
+              <div class="col-12">
+                <ul class="list-unstyled">
+                  <i class="bi bi-pencil-fill text-secondary"></i>
+                  <span class="visually-hidden">楽曲提供</span>
+                  <li v-for="songWriter in exInfo.songWriters" style="display: inline-block; margin-right: 0.5rem;">
+                    <span class="p-1 mr-2 mb-1">
+                      {{songWriter}}
+                    </span>
+                  </li>
+                  <i class="bi bi-mic-fill text-secondary"></i>
+                  <span class="visually-hidden">原曲歌唱</span>
+                  <li v-for="singer in exInfo.singers" style="display: inline-block; margin-right: 0.5rem;">
+                    <span class="p-1 mr-2 mb-1">
+                      {{singer}}
+                    </span>
+                  </li>
+                  <li><i class="bi bi-upc text-secondary"></i>
+                    <span class="visually-hidden">原曲ID</span>
+                    <span class="p-1 mr-2 mb-1">
+                      {{exInfo.orgYtId}}
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-12">
-              <h3 class="h5">おすすめ楽曲</h3>
-              <ul class="list-unstyled">
-                <li v-for="relSong in exInfo.relSongs">
-                  <button class="btn btn-secondary p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(relSong.id)">
-                    {{relSong.title}}
-                  </button>
-                  <a v-bind:href="relSong.url" class="link-success text-decoration-none p-2">
-                    <i class="bi bi-youtube"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div class="col-12">
+            <h3 class="h5">おすすめ楽曲</h3>
+            <ul class="list-unstyled">
+              <li v-for="relSong in exInfo.relSongs" class="d-inline-block">
+                <button class="btn btn-secondary p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(relSong.id)">
+                  {{relSong.title}}
+                </button>
+                <a v-bind:href="relSong.url" class="link-success text-decoration-none p-2">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </aside>
@@ -395,13 +400,13 @@
       }
 
       //新しい順でソート
-      function compareByIssued(a, b){
+      function compareByIssued(a, b) {
         let issuedA = a["issued"];
         let issuedB = b["issued"];
         let comparison = 0;
-        if(issuedA > issuedB){
+        if (issuedA > issuedB) {
           comparison = 1;
-        }else if(issuedA < issuedB){
+        } else if (issuedA < issuedB) {
           comparison = -1;
         }
         return comparison * -1;
