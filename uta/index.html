@@ -107,13 +107,13 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <i class="bi bi-mic-fill text-secondary"></i>
                   <li v-for="singer in item.singers" style="display: inline-block;">
-                    <button class="btn btn-light" style="border:0; margin-right:0.25rem;"
+                    <button class="btn btn-light pt-1 pb-1 mr-2" 
                       v-on:click="doSearchWithVocal(singer)">
                       {{singer}}
                     </button>
                   </li>
                   <li><i class="bi bi-soundwave"></i>
-                    <button class="btn btn-light" style="border:0; margin-right:0.25rem;"
+                    <button class="btn btn-light pt-1 pb-1 mr-2" 
                       v-on:click="doSearchWithOrgYtId(item.orgYtId)">
                       {{item.orgTitle}}
                     </button>
@@ -151,21 +151,23 @@
             </h3>
             <div class="col-12">
               <ul class="list-unstyled">
-                <i class="bi bi-mic-fill text-secondary"></i>
-                <li v-for="singer in exInfo.singers" style="display: inline-block;">
-                  {{singer}}
-                </li>
                 <i class="bi bi-pencil-fill text-secondary"></i>
+                <span class="visually-hidden">楽曲提供</span>
                 <li v-for="songWriter in exInfo.songWriters" style="display: inline-block;">
                   {{songWriter}}
+                </li>
+                <i class="bi bi-mic-fill text-secondary"></i>
+                <span class="visually-hidden">原曲歌唱</span>
+                <li v-for="singer in exInfo.singers" style="display: inline-block;">
+                  {{singer}}
                 </li>
               </ul>
             </div>
             <div class="col-12">
               <ul class="list-unstyled">
                 <li v-for="relSong in exInfo.relSongs">
-                  <button class="btn btn-light" style="border:0; margin-right:0.25rem;"
-                    v-on:click="doSearchWithOrgYtId(relSong.id)">
+                  <button class="btn btn-light pt-1 pb-1 mr-2" 
+                  v-on:click="doSearchWithOrgYtId(relSong.id)">
                     {{relSong.title}}
                   </button>
                   <a v-bind:href="relSong.url" class="code text-decoration-none">
