@@ -334,7 +334,7 @@
           if (coverDict[cover]["orgYtId"] == orgYtId) {
             let itemInfo = coverDict[cover];
             itemInfo["id"] = cover;
-            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg";
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
             itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
             itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
             itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
@@ -345,7 +345,7 @@
         let _exInfo = {};
         _exInfo["orgYtId"] = orgYtId;
         _exInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
-        _exInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + orgYtId + "/mqdefault.jpg";
+        _exInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + orgYtId + "/hqdefault.jpg";
         _exInfo["iframeUrl"] = "https://www.youtube.com/embed/" + orgYtId + "?controls=0";
         _exInfo["singers"] = orgSongDict[orgYtId]["performers"];
         _exInfo["songWriters"] = orgSongDict[orgYtId]["songWriters"];
@@ -369,7 +369,7 @@
           if (coverDict[cover]["singers"].includes(vocalName)) {
             let itemInfo = coverDict[cover];
             itemInfo["id"] = cover;
-            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg";
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
             itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
             itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
             itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
@@ -383,7 +383,7 @@
           if (coverDict[cover]["label"].match(keyword)) {
             let itemInfo = coverDict[cover];
             itemInfo["id"] = cover;
-            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/mqdefault.jpg";
+            itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
             itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
             itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
             itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
