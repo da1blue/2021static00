@@ -297,7 +297,7 @@
     async function doSearch(keyword = null, p = 1) {
 
       //初期化
-      document.querySelector("#loading").classList.remove("invisible")
+      document.querySelector("#loading").classList.remove("visually-hidden")
       thBtns = document.querySelectorAll(".thBtn");
       for (let elm of thBtns) {
         elm.classList.remove("visually-hidden")
@@ -428,7 +428,7 @@
       }
       resList.pages = [...Array(pageNum).keys()].map(i => i + pageMin);
 
-      document.querySelector("#loading").classList.add("invisible");
+      document.querySelector("#loading").classList.add("visually-hidden");
 
     }
 
