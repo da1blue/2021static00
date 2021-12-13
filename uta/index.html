@@ -66,8 +66,8 @@
       </div>
       <!-- 追加情報 -->
       <aside v-if="searchType == 'org'" class="col-12 pt-2 bg-light">
-        <h2 class="col-12 h3">原曲情報</h2>
-        <div class="row col-12">
+        <div v-if="exInfo" class="row col-12">
+          <h2 class="col-12 h3">原曲情報</h2>
           <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
             <button class="thBtn w-100 ratio ratio-21x9"
