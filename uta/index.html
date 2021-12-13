@@ -121,13 +121,6 @@
                       {{singer}}
                     </span>
                   </li>
-                  <li class="visually-hidden">
-                    <i class="bi bi-upc text-secondary"></i>
-                    <span class="visually-hidden">原曲ID</span>
-                    <span class="p-1 mr-2 mb-1">
-                      {{exInfo.orgYtId}}
-                    </span>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -187,12 +180,12 @@
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li class="visually-hidden">
                     <i class="bi bi-upc text-secondary"></i>
-                    <span class="p-1 mr-2 mb-1">
+                    <span v-if="item.id" class="p-1 mr-2 mb-1">
                       {{item.id}}
                     </span>
                   </li>
                   <li><i class="bi bi-calendar text-secondary"></i>
-                    <span class="p-1 mr-2 mb-1">
+                    <span v-if="item.issued" class="p-1 mr-2 mb-1">
                       {{item.issued.substr(0,10)}}
                     </span>
                   </li>
