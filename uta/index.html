@@ -121,13 +121,14 @@
           <div class="col-8 col-sm-8 col-md-9 align-top">
             <h3>{{exInfo.singerName}}</h3>
             <ul>
-              <li>
+              <li v-if="exInfo.ytChannel">
                 <a v-bind:href="'https://www.youtube.com/channel/'+exInfo.ytChannel">
                   <i class="bi bi-youtube text-danger"></i>
                   <span>YouTube</span>
                 </a>
                 <span>({{exInfo.ytChannelsubscriber}})</span>
                 </li>
+              <!--
               <li v-if="exinfo.twitter">
                 <i class="bi bi-twitter text-dark"></i>
                 <span class="visually-hidden">Twitter:</span>
@@ -138,6 +139,7 @@
                   <i class="bi bi-boombox-fill text-dark"></i>
                   <span>Spotify</span></a>
               </li>
+              -->
             </ul>
           </div>
         </div>
