@@ -402,6 +402,7 @@
             itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
             itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
             itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
+            itemInfo["orgYtId"] = coverDict[cover]["orgYtId"];
             itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
             itemInfo["orgTitle"] = orgSongDict[itemInfo["orgYtId"]]["title"];
             matchedItems.push(itemInfo);
