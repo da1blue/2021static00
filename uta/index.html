@@ -382,6 +382,7 @@
         }
         if (singerDict[vocalName]) {
           let _exInfo = {};
+          _exInfo["singerName"] = vocalName;
           _exInfo["ytChannel"] = singerDict[vocalName]["ytChannel"];
           _exInfo["ytPlayList"] = singerDict[vocalName]["ytPlayList"];
           if (singerDict[vocalName]["wikidata"]) {
