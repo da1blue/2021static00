@@ -114,11 +114,11 @@
         </div>
         <div v-if="searchType == 'voc'" class="row col-12">
           <h2 class="col-12 h3">アーティスト情報</h2>
-          <div class="col-4 col-sm-4 col-md-3 align-top">
+          <div class="col-4 col-sm-4 col-md-3 col-lg-2 align-top">
             <img v-if="exInfo.ytChannelThumbnail" v-bind:src="exInfo.ytChannelThumbnail" class="w-100"
               style="object-fit:cover; border-radius:100vh;" alt="" />
           </div>
-          <div class="col-8 col-sm-8 col-md-9 align-top">
+          <div class="col-8 col-sm-8 col-md-9 col-lg-10 align-top">
             <h3>{{exInfo.singerName}}</h3>
             <ul class="list-unstyled">
               <li v-if="exInfo.ytChannel">
@@ -139,7 +139,6 @@
                   <span class="visually-hidden">Twitter:</span>
                   <span class="code">{{exInfo.twitter}}</span>
               </li>
-
               <li v-if="exInfo.wikidata">
                 <a v-bind:href="'http://wikidata.org/entity/'+exInfo.wikidata" class="text-decoration-none">
                   <i class="bi bi-link-45deg text-secondary"></i>
