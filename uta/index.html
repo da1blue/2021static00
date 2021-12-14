@@ -126,7 +126,7 @@
                   <i class="bi bi-youtube text-danger"></i>
                   <span>YouTube</span>
                 </a>
-                <span>({{exInfo.ytChannelsubscriber}})</span>
+                <span>({{(parseFloat(exInfo.ytChannelsubscriber)/10000).toString() + "万件"}})</span>
                 </li>
               <li v-if="exInfo.twitter">
                 <a v-bind:href="'https://twitter.com/'+exInfo.twitter" class="text-decoration-none">
