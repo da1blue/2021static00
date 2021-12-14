@@ -65,8 +65,8 @@
         <p v-if="totalResults == 0">0件</p>
       </div>
       <!-- 追加情報 -->
-      <aside v-if="searchType == 'org'" class="col-12 pt-2 bg-light">
-        <div v-if="exInfo" class="row col-12">
+      <aside v-if="exInfo" class="col-12 pt-2 bg-light">
+        <div v-if="searchType == 'org'" class="row col-12">
           <h2 class="col-12 h3">原曲情報</h2>
           <div class="col-12 col-sm-6 col-md-4" style="position: relative; min-height: 3em;">
             <iframe v-bind:src="exInfo.iframeUrl" frameborder="0" class="w-100 visually-hidden" loading="lazy"></iframe>
@@ -114,6 +114,9 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div v-if="searchType == 'voc'" class="row col-12">
+          <h2 class="col-12 h3">アーティスト情報</h2>
         </div>
       </aside>
       <!-- ページネーション -->
@@ -243,6 +246,8 @@
       orgSongDict = await getJson('./orgSongInfo.json');
       //類似楽曲データ取得
       cosSimDict = await getJson('./cosSim.json');
+      //アーティストリスト取得
+      singerDict = await getJson('./singerList.json');
     }());
 
     // 検索フォーム（Vue）
@@ -379,6 +384,22 @@
             matchedItems.push(itemInfo);
           }
         }
+        if(singerDict[vocalName]){
+          let _exInfo = {};
+          _exInfo["ytChannel"] = singerDict[vocalName]["ytChannel"];
+          _exInfo["ytPlayList"] = singerDict[vocalName]["ytPlayList"];
+          if(singerDict[vocalName]["wikidata"]){
+            _exInfo["wikidata"] = singerDict[vocalName]["wikidata"];
+          }
+          if(singerDict[vocalName]["wikidata"]){
+            _exInfo["twitter"] = singerDict[vocalName]["twitter"];
+          }
+          if(singerDict[vocalName]["wikidata"]){
+            _exInfo["spotify"] = singerDict[vocalName]["spotify"];
+          }
+          _exInfo["wikidata"] = singerDict[vocalName]["wikidata"];
+          resList["exInfo"] = _exInfo;
+        }
       } else {
         for (cover in coverDict) {
           if (coverDict[cover]["label"].match(keyword)) {
@@ -451,6 +472,8 @@
 
       location.hash = keyword;
     }
+
+    console.log(resList)
 
     if (location.hash.match(/^#(org|voc):.+/)) {
       let keyword = location.hash.slice(1);
