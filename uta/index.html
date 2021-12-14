@@ -471,7 +471,7 @@
     console.log(resList)
 
     if (location.hash.match(/^#(org|voc):.+/)) {
-      let keyword = location.hash.slice(1);
+      let keyword = decodeURI(location.hash).slice(1);
       doSearch(keyword);
     }
 
