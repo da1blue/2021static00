@@ -114,6 +114,11 @@
         </div>
         <div v-if="searchType == 'voc'" class="row col-12">
           <h2 class="col-12 h3">アーティスト情報</h2>
+          <div class="col-4 col-sm-4 col-md-3 align-top">
+            <img v-if="exInfo.ytChannelThumbnail" v-bind:src="exInfo.ytChannelThumbnail" class="w-100" style="object-fit:cover;" alt="" />
+          </div>
+          <div class="col-8 col-sm-8 col-md-9 align-top">
+          </div>
         </div>
       </aside>
       <!-- ページネーション -->
