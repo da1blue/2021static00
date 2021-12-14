@@ -396,6 +396,7 @@
         vocalName = keyword.replace(/^voc:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["singers"].includes(vocalName)) {
+            console.log(cover)
             let itemInfo = coverDict[cover];
             itemInfo["id"] = cover;
             itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
