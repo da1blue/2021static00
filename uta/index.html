@@ -123,18 +123,19 @@
             <ul>
               <li>
                 <a v-href="'https://www.youtube.com/channel/'+exInfo.ytChannel">
+                  <i class="bi bi-youtube text-danger"></i>
                   <span>YouTube</span>
                 </a>
                 <span>({{exInfo.ytChannelsubscriber}})</span>
                 </li>
               <li v-if="exinfo.twitter">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-twitter text-dark"></i>
                 <span class="visually-hidden">Twitter:</span>
                 <span class="code">{{exInfo.twitter}}</span>
               </li>
               <li v-if="exinfo.spotify">
                 <a v-bind:href="'https://open.spotify.com/artist/'+exInfo.spotify">
-                  <i class="bi bi-boombox-fill"></i>
+                  <i class="bi bi-boombox-fill text-dark"></i>
                   <span>Spotify</span></a>
               </li>
             </ul>
