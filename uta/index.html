@@ -127,17 +127,25 @@
                   <span>YouTube</span>
                 </a>
                 <span> ({{(parseFloat(exInfo.ytChannelsubscriber)/10000).toString() + "万件"}})</span>
-                </li>
-              <li v-if="exInfo.twitter">
-                <a v-bind:href="'https://twitter.com/'+exInfo.twitter" class="text-decoration-none">
-                <i class="bi bi-twitter text-secondary"></i>
-                <span class="visually-hidden">Twitter:</span>
-                <span class="code">{{exInfo.twitter}}</span>
               </li>
               <li v-if="exInfo.spotify">
                 <a v-bind:href="'https://open.spotify.com/artist/'+exInfo.spotify" class="text-decoration-none">
                   <i class="bi bi-boombox-fill text-secondary"></i>
                   <span>Spotify</span></a>
+              </li>
+              <li v-if="exInfo.twitter">
+                <a v-bind:href="'https://twitter.com/'+exInfo.twitter" class="text-decoration-none">
+                  <i class="bi bi-twitter text-secondary"></i>
+                  <span class="visually-hidden">Twitter:</span>
+                  <span class="code">{{exInfo.twitter}}</span>
+              </li>
+
+              <li v-if="exInfo.wikidata">
+                <a v-bind:href="'http://wikidata.org/entity/'+exInfo.wikidata" class="text-decoration-none">
+                  <i class="bi bi-link-45deg text-secondary"></i>
+                  <span class="visually-hidden">Wikidata:</span>
+                  <span class="code">{{exInfo.wikidata}}</span>
+                </a>
               </li>
             </ul>
           </div>
