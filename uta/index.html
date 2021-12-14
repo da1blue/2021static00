@@ -115,10 +115,29 @@
         <div v-if="searchType == 'voc'" class="row col-12">
           <h2 class="col-12 h3">アーティスト情報</h2>
           <div class="col-4 col-sm-4 col-md-3 align-top">
-            <img v-if="exInfo.ytChannelThumbnail" v-bind:src="exInfo.ytChannelThumbnail" class="w-100" style="object-fit:cover; border-radius:100vh;" alt="" />
+            <img v-if="exInfo.ytChannelThumbnail" v-bind:src="exInfo.ytChannelThumbnail" class="w-100"
+              style="object-fit:cover; border-radius:100vh;" alt="" />
           </div>
           <div class="col-8 col-sm-8 col-md-9 align-top">
             <h3>{{exInfo.singerName}}</h3>
+            <ul>
+              <li>
+                <a v-href="'https://www.youtube.com/channel/'+exInfo.ytChannel">
+                  <span>YouTube</span>
+                </a>
+                <span>({{exInfo.ytChannelsubscriber}})</span>
+                </li>
+              <li v-if="exinfo.twitter">
+                <i class="bi bi-twitter"></i>
+                <span class="visually-hidden">Twitter:</span>
+                <span class="code">{{exInfo.twitter}}</span>
+              </li>
+              <li v-if="exinfo.spotify">
+                <a v-bind:href="'https://open.spotify.com/artist/'+exInfo.spotify">
+                  <i class="bi bi-boombox-fill"></i>
+                  <span>Spotify</span></a>
+              </li>
+            </ul>
           </div>
         </div>
       </aside>
