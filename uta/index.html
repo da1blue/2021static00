@@ -398,14 +398,12 @@
         vocalName = keyword.replace(/^voc:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["singers"].includes(vocalName)) {
-            console.log(cover)
             let itemInfo = coverDict[cover];
             itemInfo["id"] = cover;
             itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
             itemInfo["iframeUrl"] = "https://www.youtube.com/embed/" + cover + "?controls=0";
             itemInfo["ytUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["id"];
             let orgYtId = coverDict[cover]["orgYtId"];
-            console.log(orgYtId);
             itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
             itemInfo["orgTitle"] = orgSongDict[orgYtId]["title"];
             matchedItems.push(itemInfo);
