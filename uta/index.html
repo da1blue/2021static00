@@ -115,7 +115,7 @@
         <div v-if="searchType == 'voc'" class="row col-12">
           <h2 class="col-12 h3">アーティスト情報</h2>
           <div class="col-4 col-sm-4 col-md-3 align-top">
-            <img v-if="exInfo.ytChannelThumbnail" v-bind:src="exInfo.ytChannelThumbnail" class="w-100" style="object-fit:cover;" alt="" />
+            <img v-if="exInfo.ytChannelThumbnail" v-bind:src="exInfo.ytChannelThumbnail" class="w-100" style="object-fit:cover; border-radius:100vh;" alt="" />
           </div>
           <div class="col-8 col-sm-8 col-md-9 align-top">
             <h3>{{exInfo.singerName}}</h3>
