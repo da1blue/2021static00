@@ -120,10 +120,10 @@
           </div>
           <div class="col-8 col-sm-8 col-md-9 align-top">
             <h3>{{exInfo.singerName}}</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li v-if="exInfo.ytChannel">
                 <a v-bind:href="'https://www.youtube.com/channel/'+exInfo.ytChannel">
-                  <i class="bi bi-youtube text-danger"></i>
+                  <i class="bi bi-youtube text-danger text-decoration-none"></i>
                   <span>YouTube</span>
                 </a>
                 <span>({{exInfo.ytChannelsubscriber}})</span>
