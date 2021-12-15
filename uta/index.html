@@ -139,7 +139,7 @@
                   <span class="visually-hidden">Twitter:</span>
                   <span class="code">{{exInfo.twitter}}</span>
               </li>
-              <li v-if="exInfo.wikidata">
+              <li v-if="exInfo.wikidata" v-on:load="getInfoFromWkd();">
                 <a v-bind:href="'http://wikidata.org/entity/'+exInfo.wikidata" class="text-decoration-none">
                   <i class="bi bi-link-45deg text-secondary"></i>
                   <span class="visually-hidden">Wikidata:</span>
@@ -315,6 +315,38 @@
           let keyword = "org:" + orgYtId;
           doSearch(keyword);
           window.scrollTo(top);
+        },
+        getInfoFromWkd: async function (wkd) {
+          let sparqlUrl = 'https://query.wikidata.org/sparql?format=json&query=';
+          const sparqlQuery = `PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+SELECT * WHERE{
+  BIND(wd:`+ wkd + ` AS ?wkd).
+  ?wkd rdfs:label ?label.
+  ?wkpJa schema:about ?wkd ; schema:isPartOf <https://ja.wikipedia.org/> ; schema:name ?wkpName .
+  FILTER (lang(?label) = "ja")
+  OPTIONAL {?wkd wdt:P856 ?url.}
+  OPTIONAL {?wkd wdt:P7085 ?tiktok.}
+}LIMIT 1`;
+          sparqlUrl += encodeURI(sparqlQuery);
+          let wkdRes = await getJson(sparqlUrl);
+          if(wkdRes["results"].length == 1){
+            const wkd0 = wkdRes["results"]["bindings"][0]
+            wkdInfo = {}
+            if(wkd0["wkpJa"]){
+              wkdInfo["wkpJa"] = wkd0["wkpJa"]["value"];
+              wkdInfo["wkpName"] = wkd0["wkpName"]["value"];
+            };
+            if(wkd0["url"]){
+              wkdInfo["url"] = wkd0["url"]["value"];
+            };
+            if(wkd0["tiktok"]){
+              wkdInfo["tiktok"] = wkd0["tiktok"]["value"];
+            };
+            console.log(wkdInfo)
+            resList.exInfo.add(wkdInfo)
+          }
         }
       }
     })
@@ -579,7 +611,7 @@
             <li>
               <a href="./singerList.json"><code>singerList.json</code></a>
               : 歌唱者情報
-              </li>
+            </li>
             <li>
               <a href="./orgSongInfo.json"><code>orgSongList.json</code></a>
               : 原曲情報
@@ -593,7 +625,8 @@
           <p>つくったひと： Daichi Machiya. (@da1blue)</p>
           <p>なにかありましたら、<i class="bi bi-twitter"></i><a href="https://twitter.com/da1blue">Twitter</a>または<i
               class="bi bi-mailbox"></i><a href="https://marshmallow-qa.com/da1blue">マシュマロ</a>からご連絡ください。</p>
-          <small>このサービスのソースコード及び公開しているデータセットはCC BY 4.0での利用を許諾します。なお、YouTubeのAPIにより表示されている画像及び動画は個々の著作権者・著作隣接権者等に帰属します。</small>
+          <small>このサービスのソースコード及び公開しているデータセットはCC BY
+            4.0での利用を許諾します。なお、YouTubeのAPIにより表示されている画像及び動画は個々の著作権者・著作隣接権者等に帰属します。</small>
         </div>
       </div>
     </div>
