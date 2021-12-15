@@ -139,11 +139,17 @@
                   <span class="visually-hidden">Twitter:</span>
                   <span class="code">{{exInfo.twitter}}</span>
               </li>
-              <li v-if="exInfo.wikidata" onload="getInfoFromWkd();">
+              <li v-if="exInfo.wikidata">
                 <a v-bind:href="'http://wikidata.org/entity/'+exInfo.wikidata" class="text-decoration-none">
                   <i class="bi bi-link-45deg text-secondary"></i>
                   <span class="visually-hidden">Wikidata:</span>
                   <span class="code">{{exInfo.wikidata}}</span>
+                </a>
+              </li>
+              <li v-if="exInfo.wkpJa">
+                <a v-bind:href="exInfo.wkpJa" class="text-decoration-none">
+                  <i class="bi bi-journal text-secondary"></i>
+                  <span class="code">Wikipedia : {{exInfo.wkpName}}</span>
                 </a>
               </li>
             </ul>
@@ -463,7 +469,7 @@ SELECT * WHERE{
             _exInfo["spotify"] = singerDict[vocalName]["spotify"];
           }
           resList["exInfo"] = _exInfo;
-          if(resList["exInfo"]["wikidata"]){getInfoFromWkd(resList["exInfo"]["wikidata"])}
+          
         }
       } else {
         for (cover in coverDict) {
@@ -535,6 +541,8 @@ SELECT * WHERE{
       document.querySelector("#loading").classList.add("visually-hidden");
 
       location.hash = keyword;
+
+      if(resList["exInfo"]["wikidata"]){getInfoFromWkd(resList["exInfo"]["wikidata"])}
     }
 
     if (location.hash.match(/^#(org|voc):.+/)) {
