@@ -521,7 +521,7 @@ SELECT * WHERE{
       sparqlUrl += encodeURI(sparqlQuery);
       let wkdRes = await getJson(sparqlUrl);
       console.log(wkdRes);
-      if (wkdRes["results"].length == 1) {
+      if (wkdRes["results"]["bindings"].length == 1) {
         const wkd0 = wkdRes["results"]["bindings"][0]
         wkdInfo = {}
         if (wkd0["wkpJa"]) {
