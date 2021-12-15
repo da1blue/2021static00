@@ -334,6 +334,37 @@
       }
     };
 
+    //Wikidataから取得
+    async function getInfoFromWkd(wkd) {
+      let sparqlUrl = 'https://query.wikidata.org/sparql?format=json&query=';
+      const sparqlQuery = `PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+SELECT * WHERE{
+  BIND(wd:`+ wkd + ` AS ?wkd).
+  ?wkd rdfs:label ?label.
+  ?wkpJa schema:about ?wkd ; schema:isPartOf <https://ja.wikipedia.org/> ; schema:name ?wkpName .
+  FILTER (lang(?label) = "ja")
+  OPTIONAL {?wkd wdt:P856 ?url.}
+  OPTIONAL {?wkd wdt:P7085 ?tiktok.}
+}LIMIT 1`;
+      sparqlUrl += encodeURI(sparqlQuery);
+      let wkdRes = await getJson(sparqlUrl);
+      if (wkdRes["results"]["bindings"].length == 1) {
+        const wkd0 = wkdRes["results"]["bindings"][0]
+        if (wkd0["wkpJa"]) {
+          resList.exInfo["wkpJa"] = wkd0["wkpJa"]["value"];
+          resList.exInfo["wkpName"] = wkd0["wkpName"]["value"];
+        };
+        if (wkd0["url"]) {
+          resList.exInfo["url"] = wkd0["url"]["value"];
+        };
+        if (wkd0["tiktok"]) {
+          resList.exInfo["tiktok"] = wkd0["tiktok"]["value"];
+        };
+      }
+    }
+
     // 検索機能本体
     async function doSearch(keyword = null, p = 1) {
 
@@ -432,6 +463,7 @@
             _exInfo["spotify"] = singerDict[vocalName]["spotify"];
           }
           resList["exInfo"] = _exInfo;
+          if(resList["exInfo"]["wikidata"]){getInfoFromWkd(resList["exInfo"]["wikidata"])}
         }
       } else {
         for (cover in coverDict) {
@@ -504,38 +536,6 @@
 
       location.hash = keyword;
     }
-
-    async function getInfoFromWkd (wkd) {
-      let sparqlUrl = 'https://query.wikidata.org/sparql?format=json&query=';
-      const sparqlQuery = `PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX schema: <http://schema.org/>
-SELECT * WHERE{
-  BIND(wd:`+ wkd + ` AS ?wkd).
-  ?wkd rdfs:label ?label.
-  ?wkpJa schema:about ?wkd ; schema:isPartOf <https://ja.wikipedia.org/> ; schema:name ?wkpName .
-  FILTER (lang(?label) = "ja")
-  OPTIONAL {?wkd wdt:P856 ?url.}
-  OPTIONAL {?wkd wdt:P7085 ?tiktok.}
-}LIMIT 1`;
-      sparqlUrl += encodeURI(sparqlQuery);
-      let wkdRes = await getJson(sparqlUrl);
-      if (wkdRes["results"]["bindings"].length == 1) {
-        const wkd0 = wkdRes["results"]["bindings"][0]
-        if (wkd0["wkpJa"]) {
-          resList.exInfo["wkpJa"] = wkd0["wkpJa"]["value"];
-          resList.exInfo["wkpName"] = wkd0["wkpName"]["value"];
-        };
-        if (wkd0["url"]) {
-          resList.exInfo["url"] = wkd0["url"]["value"];
-        };
-        if (wkd0["tiktok"]) {
-          resList.exInfo["tiktok"] = wkd0["tiktok"]["value"];
-        };
-      }
-    }
-
-    console.log(resList)
 
     if (location.hash.match(/^#(org|voc):.+/)) {
       let keyword = decodeURI(location.hash).slice(1);
