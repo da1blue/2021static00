@@ -1,5 +1,5 @@
 {
-    "comment": "国立国会図書館件名標目表(NDLSH)の一括ダウンロード用ファイルを加工したものを使用しています",
+    "comment": "Web NDL Authoritiesから取得した国立国会図書館件名標目表(NDLSH)の一括ダウンロード用ファイルを加工したものを使用しています",
     "seeAlso": "https://id.ndl.go.jp/information/download/",
     "captured": "2021-09-12",
     "keywords": [
