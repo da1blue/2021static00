@@ -137,7 +137,7 @@
               <li v-if="exInfo.tiktok">
                 <a v-bind:href="'https://www.tiktok.com/@'+exInfo.spotify" class="text-decoration-none">
                   <i class="bi bi-tiktok text-secondary"></i>
-                  <span class="visually-hidden">Tiktok</span>
+                  <span class="visually-hidden">Tiktok: </span>
                   <span class="code">{{exInfo.tiktok}}</span>
                 </a>
               </li>
@@ -149,7 +149,8 @@
               <li v-if="exInfo.wkpJa">
                 <a v-bind:href="exInfo.wkpJa" class="text-decoration-none">
                   <i class="bi bi-journal text-secondary"></i>
-                  <span class="code">Wikipedia : {{exInfo.wkpName}}</span>
+                  <span>Wikipedia: </span>
+                  <span class="code">{{exInfo.wkpName}}</span>
                 </a>
               </li>
               <li v-if="exInfo.wikidata">
