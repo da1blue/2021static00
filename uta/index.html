@@ -520,22 +520,18 @@ SELECT * WHERE{
 }LIMIT 1`;
       sparqlUrl += encodeURI(sparqlQuery);
       let wkdRes = await getJson(sparqlUrl);
-      console.log(wkdRes);
       if (wkdRes["results"]["bindings"].length == 1) {
         const wkd0 = wkdRes["results"]["bindings"][0]
-        wkdInfo = {}
         if (wkd0["wkpJa"]) {
-          wkdInfo["wkpJa"] = wkd0["wkpJa"]["value"];
-          wkdInfo["wkpName"] = wkd0["wkpName"]["value"];
+          resList.exInfo["wkpJa"] = wkd0["wkpJa"]["value"];
+          resList.exInfo["wkpName"] = wkd0["wkpName"]["value"];
         };
         if (wkd0["url"]) {
-          wkdInfo["url"] = wkd0["url"]["value"];
+          resList.exInfo["url"] = wkd0["url"]["value"];
         };
         if (wkd0["tiktok"]) {
-          wkdInfo["tiktok"] = wkd0["tiktok"]["value"];
+          resList.exInfo["tiktok"] = wkd0["tiktok"]["value"];
         };
-        console.log(wkdInfo)
-        resList.exInfo.add(wkdInfo)
       }
     }
 
