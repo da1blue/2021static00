@@ -443,7 +443,6 @@ SELECT * WHERE{
           _exInfo["relSongs"].push(_song);
         }
         resList["exInfo"] = _exInfo;
-
       } else if (keyword.match(/^voc:/)) {
         resList.searchType = "voc"
         vocalName = keyword.replace(/^voc:/, "");
@@ -490,6 +489,7 @@ SELECT * WHERE{
             itemInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + itemInfo["orgYtId"];
             itemInfo["orgTitle"] = orgSongDict[itemInfo["orgYtId"]]["title"];
             matchedItems.push(itemInfo);
+            resList["exInfo"] = {}
           }
         }
       }

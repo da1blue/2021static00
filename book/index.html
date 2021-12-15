@@ -296,9 +296,7 @@
     }
 
     function ciniiReqUrlBuilder(keyword = "", from = 2017, to = 2021, p = 1) {
-      let ciniiReqUrl = "https://ci.nii.ac.jp/books/opensearch/search?&format=json&type=1&sortorder=5"
-      ciniiReqUrl += "&appID=";
-      ciniiReqUrl += [5329, 5042, 6891, 6892, 13460, 6405, 6730, 12107, 5633, 5193, 5486, 2612, 10416, 10013, 7758, 6256, 13940, 13706, 4918].map((c, i) => String.fromCodePoint(Math.sqrt(c - i))).join('')
+      let ciniiReqUrl = "https://da1.blue/prx/cib/format=json&type=1&sortorder=5"
       ciniiReqUrl += "&q=" + encodeURIComponent(keyword);
       ciniiReqUrl += "&year_from=" + from; + "&year_to=" + to;
       ciniiReqUrl += "&count=" + 20;
