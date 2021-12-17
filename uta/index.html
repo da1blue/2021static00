@@ -4,8 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://www.youtube.com" />
   <!-- Metadata -->
   <title>歌ってみたコネクト</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KDGBDHBS1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6KDGBDHBS1');
+  </script>
 </head>
 
 <body>
@@ -476,7 +486,7 @@ SELECT * WHERE{
             _exInfo["spotify"] = singerDict[vocalName]["spotify"];
           }
           resList["exInfo"] = _exInfo;
-          
+
         }
       } else {
         for (cover in coverDict) {
@@ -550,7 +560,7 @@ SELECT * WHERE{
 
       location.hash = keyword;
 
-      if(resList["exInfo"]["wikidata"]){getInfoFromWkd(resList["exInfo"]["wikidata"])}
+      if (resList["exInfo"]["wikidata"]) { getInfoFromWkd(resList["exInfo"]["wikidata"]) }
     }
 
     if (location.hash.match(/^#(org|voc):.+/)) {
