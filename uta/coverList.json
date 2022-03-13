@@ -31,6 +31,14 @@
         ],
         "orgYtId": "_C9DWj6wbB8"
     },
+    "H5o0bZ1gYE0": {
+        "label": "ボトム ／ Cover.dongdang",
+        "issued": "2021-04-13T12:00:18Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "_LQ5B0EwAyg"
+    },
     "Y7iXp0U-jz8": {
         "label": "忘れぬ感情の症状は 『ボトム』／しゆん【歌ってみた】",
         "issued": "2021-03-31T11:34:47Z",
@@ -63,27 +71,19 @@
         ],
         "orgYtId": "_-Vd0ZGB-lo"
     },
-    "aSGcqc-zoyI": {
-        "label": "そらる-死んでしまったのだろうか【歌ってみた】",
-        "issued": "2020-09-19T09:00:01Z",
-        "singers": [
-            "そうま"
-        ],
-        "orgYtId": "_xXenYRkbKs"
-    },
-    "q0brypl8Axg": {
-        "label": "【歌ってみた】死んでしまったのだろうか RAP VERSION covered by 春猿火",
-        "issued": "2020-10-05T10:00:10Z",
-        "singers": [
-            "春猿火"
-        ],
-        "orgYtId": "_xXenYRkbKs"
-    },
     "cuKfW0yxBVU": {
         "label": "死んでしまったのだろうか Covered 【あらき】",
         "issued": "2018-09-16T02:51:27Z",
         "singers": [
             "あらき"
+        ],
+        "orgYtId": "_xXenYRkbKs"
+    },
+    "aSGcqc-zoyI": {
+        "label": "そらる-死んでしまったのだろうか【歌ってみた】",
+        "issued": "2020-09-19T09:00:01Z",
+        "singers": [
+            "そうま"
         ],
         "orgYtId": "_xXenYRkbKs"
     },
@@ -95,15 +95,13 @@
         ],
         "orgYtId": "_xXenYRkbKs"
     },
-    "V654oSE_yhE": {
-        "label": "ロメオ / 夢追翔＆加賀美ハヤト with 緑仙 (Cover)",
-        "issued": "2020-02-14T13:00:13Z",
+    "q0brypl8Axg": {
+        "label": "【歌ってみた】死んでしまったのだろうか RAP VERSION covered by 春猿火",
+        "issued": "2020-10-05T10:00:10Z",
         "singers": [
-            "夢追翔",
-            "加賀美ハヤト",
-            "緑仙"
+            "春猿火"
         ],
-        "orgYtId": "00DPgfp7j3Y"
+        "orgYtId": "_xXenYRkbKs"
     },
     "s2IBPDWqlr4": {
         "label": "ロメオ / HoneyWorks (covered by 緑仙×アンジュ・カトリーナ)",
@@ -119,6 +117,16 @@
         "issued": "2018-03-05T09:03:38Z",
         "singers": [
             "ばぁう"
+        ],
+        "orgYtId": "00DPgfp7j3Y"
+    },
+    "V654oSE_yhE": {
+        "label": "ロメオ / 夢追翔＆加賀美ハヤト with 緑仙 (Cover)",
+        "issued": "2020-02-14T13:00:13Z",
+        "singers": [
+            "夢追翔",
+            "加賀美ハヤト",
+            "緑仙"
         ],
         "orgYtId": "00DPgfp7j3Y"
     },
@@ -155,6 +163,14 @@
         ],
         "orgYtId": "08VDYmUyQi0"
     },
+    "gmJiYoRhO5g": {
+        "label": "【Ado】キライ・キライ・ジガヒダイ！ 歌いました",
+        "issued": "2018-08-26T12:00:06Z",
+        "singers": [
+            "Ado"
+        ],
+        "orgYtId": "0c9958OoTL8"
+    },
     "cbTzyU3thnc": {
         "label": "キライ・キライ・ジガヒダイ！ / 和田たけあき  (covered by 緑仙)",
         "issued": "2019-11-20T13:00:10Z",
@@ -163,13 +179,13 @@
         ],
         "orgYtId": "0c9958OoTL8"
     },
-    "gmJiYoRhO5g": {
-        "label": "【Ado】キライ・キライ・ジガヒダイ！ 歌いました",
-        "issued": "2018-08-26T12:00:06Z",
+    "DYXKnfnzBpU": {
+        "label": "命に嫌われている。/カンザキイオリ（Cover）ver.Sou",
+        "issued": "2018-09-14T12:00:04Z",
         "singers": [
-            "Ado"
+            "Sou"
         ],
-        "orgYtId": "0c9958OoTL8"
+        "orgYtId": "0HYm60Mjm0k"
     },
     "jvYpQGJrxog": {
         "label": "【１０万人記念】実況者が『命に嫌われている。』を全力で歌ってみた【ころん】",
@@ -219,6 +235,14 @@
         ],
         "orgYtId": "0HYm60Mjm0k"
     },
+    "eq8r1ZTma08": {
+        "label": "命に嫌われている。／まふまふ【歌ってみた】",
+        "issued": "2018-01-10T09:00:05Z",
+        "singers": [
+            "まふまふ"
+        ],
+        "orgYtId": "0HYm60Mjm0k"
+    },
     "6bfQWoq-mtc": {
         "label": "命に嫌われている。／歌ってみた【ゆきむら。】",
         "issued": "2020-05-14T11:30:02Z",
@@ -240,6 +264,14 @@
         "issued": "2019-09-07T11:00:13Z",
         "singers": [
             "花譜"
+        ],
+        "orgYtId": "0HYm60Mjm0k"
+    },
+    "Ue0ZXS8XdGg": {
+        "label": "【オリジナルMV】命に嫌われている。を歌ってみた　ver志麻",
+        "issued": "2018-12-02T13:20:01Z",
+        "singers": [
+            "志麻"
         ],
         "orgYtId": "0HYm60Mjm0k"
     },
@@ -275,30 +307,6 @@
         ],
         "orgYtId": "0HYm60Mjm0k"
     },
-    "eq8r1ZTma08": {
-        "label": "命に嫌われている。／まふまふ【歌ってみた】",
-        "issued": "2018-01-10T09:00:05Z",
-        "singers": [
-            "まふまふ"
-        ],
-        "orgYtId": "0HYm60Mjm0k"
-    },
-    "DYXKnfnzBpU": {
-        "label": "命に嫌われている。/カンザキイオリ（Cover）ver.Sou",
-        "issued": "2018-09-14T12:00:04Z",
-        "singers": [
-            "Sou"
-        ],
-        "orgYtId": "0HYm60Mjm0k"
-    },
-    "Ue0ZXS8XdGg": {
-        "label": "【オリジナルMV】命に嫌われている。を歌ってみた　ver志麻",
-        "issued": "2018-12-02T13:20:01Z",
-        "singers": [
-            "志麻"
-        ],
-        "orgYtId": "0HYm60Mjm0k"
-    },
     "OcGhtS13eLs": {
         "label": "【歌ってみた】雨き声残響 covered by 花譜",
         "issued": "2020-01-20T09:00:06Z",
@@ -330,6 +338,14 @@
             "ばぁう"
         ],
         "orgYtId": "0KrOtHdX6bQ"
+    },
+    "VXFppa3mZGk": {
+        "label": "泡沫の夜 ／ Cover.dongdang",
+        "issued": "2021-08-07T11:00:11Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "0nnVWl4qbWM"
     },
     "EO3VAXvwqXk": {
         "label": "へべれけジャンキー 歌ってみた／あほの坂田。",
@@ -379,6 +395,22 @@
         ],
         "orgYtId": "0RU_05zpETo"
     },
+    "ojKQig1aDns": {
+        "label": "【オリジナルMV】マリーゴールド　歌ってみた　【いゔどっと】",
+        "issued": "2018-08-27T11:00:09Z",
+        "singers": [
+            "いゔどっと"
+        ],
+        "orgYtId": "0xSiBpUdW4E"
+    },
+    "HFz1WF4CT08": {
+        "label": "マリーゴールド ／ あいみょん(cover) by 天月",
+        "issued": "2019-08-31T09:00:05Z",
+        "singers": [
+            "天月-あまつき-"
+        ],
+        "orgYtId": "0xSiBpUdW4E"
+    },
     "gD1q-Yt-BPw": {
         "label": "カワキヲアメク / 弾き語り 麻婆豆腐",
         "issued": "2019-10-07T10:00:06Z",
@@ -427,6 +459,14 @@
         ],
         "orgYtId": "1DcgczDzQPk"
     },
+    "2T3L9xgZ6bw": {
+        "label": "Happy Halloween / Junky (covered by 緑仙)",
+        "issued": "2018-10-10T14:09:36Z",
+        "singers": [
+            "緑仙"
+        ],
+        "orgYtId": "1DcgczDzQPk"
+    },
     "JKrsH3Pth_M": {
         "label": "Happy Halloween／莉犬【cover】",
         "issued": "2018-10-31T09:00:02Z",
@@ -435,11 +475,11 @@
         ],
         "orgYtId": "1DcgczDzQPk"
     },
-    "tdT5oGlt4zg": {
-        "label": "【歌ってみた】ブリキノダンス【にじさんじフミ】",
-        "issued": "2021-08-13T14:00:13Z",
+    "MmJhJZWBKOw": {
+        "label": "ブリキノダンス　COVER / un:c（あんく）",
+        "issued": "2021-05-27T09:00:08Z",
         "singers": [
-            "フミ"
+            "un:c"
         ],
         "orgYtId": "1eGgcwcIAPs"
     },
@@ -456,6 +496,14 @@
         "issued": "2018-01-06T09:00:02Z",
         "singers": [
             "そらる"
+        ],
+        "orgYtId": "1eGgcwcIAPs"
+    },
+    "tdT5oGlt4zg": {
+        "label": "【歌ってみた】ブリキノダンス【にじさんじフミ】",
+        "issued": "2021-08-13T14:00:13Z",
+        "singers": [
+            "フミ"
         ],
         "orgYtId": "1eGgcwcIAPs"
     },
@@ -555,6 +603,14 @@
         ],
         "orgYtId": "1s84rIhPuhk"
     },
+    "6mvz6Ho-UsQ": {
+        "label": "海の幽霊 ／ Cover.dongdang",
+        "issued": "2019-09-12T11:00:17Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "1s84rIhPuhk"
+    },
     "pE70G28UIGc": {
         "label": "【歌ってみた】海の幽霊 / covered by ヰ世界情緒",
         "issued": "2021-12-28T10:00:17Z",
@@ -603,6 +659,54 @@
         ],
         "orgYtId": "1wxTksLZ1Mw"
     },
+    "rIGT-yVN3Pk": {
+        "label": "きゅうくらりん / いよわ（Cover） ver.Sou",
+        "issued": "2022-01-22T11:00:25Z",
+        "singers": [
+            "Sou"
+        ],
+        "orgYtId": "2b1IexhKPz4"
+    },
+    "dJU_wawcwPk": {
+        "label": "きゅうくらりん／るぅと【歌ってみた】",
+        "issued": "2022-02-02T10:00:12Z",
+        "singers": [
+            "るぅと"
+        ],
+        "orgYtId": "2b1IexhKPz4"
+    },
+    "Q1hxgfuxqmE": {
+        "label": "【超学生】きゅうくらりん @歌ってみた",
+        "issued": "2022-01-27T10:00:13Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "2b1IexhKPz4"
+    },
+    "zYpU5gRtBKc": {
+        "label": "ハレハレヤ ／ Cover.dongdang",
+        "issued": "2019-12-18T11:00:16Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "2B7MEADeLyA"
+    },
+    "KPlrXTOzegY": {
+        "label": "【超学生】ハレハレヤ @歌ってみた",
+        "issued": "2020-10-22T10:00:06Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "2B7MEADeLyA"
+    },
+    "kvidxNzZDng": {
+        "label": "病名は愛だった　歌ってみた　【いゔどっと】",
+        "issued": "2018-08-08T12:00:05Z",
+        "singers": [
+            "いゔどっと"
+        ],
+        "orgYtId": "2IH-toUoq3w"
+    },
     "r2wM_72u7vs": {
         "label": "そらる-病名は愛だった【歌ってみた】",
         "issued": "2020-04-26T09:00:34Z",
@@ -627,13 +731,13 @@
         ],
         "orgYtId": "2IH-toUoq3w"
     },
-    "kvidxNzZDng": {
-        "label": "病名は愛だった　歌ってみた　【いゔどっと】",
-        "issued": "2018-08-08T12:00:05Z",
+    "kU0ciMq-FvY": {
+        "label": "虎視眈々　‐dance arrange ver‐【歌ってみた】　by 　ジェル",
+        "issued": "2018-10-26T09:00:05Z",
         "singers": [
-            "いゔどっと"
+            "ジェル"
         ],
-        "orgYtId": "2IH-toUoq3w"
+        "orgYtId": "2SBkkwZYc9g"
     },
     "S5BhHPX7Ynw": {
         "label": "虎視眈々／ばぁう 【歌ってみた】",
@@ -648,14 +752,6 @@
         "issued": "2021-07-07T10:00:05Z",
         "singers": [
             "幸祜"
-        ],
-        "orgYtId": "2SBkkwZYc9g"
-    },
-    "kU0ciMq-FvY": {
-        "label": "虎視眈々　‐dance arrange ver‐【歌ってみた】　by 　ジェル",
-        "issued": "2018-10-26T09:00:05Z",
-        "singers": [
-            "ジェル"
         ],
         "orgYtId": "2SBkkwZYc9g"
     },
@@ -675,6 +771,22 @@
         ],
         "orgYtId": "2sHKKjeKfVM"
     },
+    "8Jr4wWtdo9Q": {
+        "label": "夜撫でるメノウ／歌ってみた【ゆきむら。】",
+        "issued": "2021-12-30T09:00:14Z",
+        "singers": [
+            "ゆきむら。"
+        ],
+        "orgYtId": "2sHKKjeKfVM"
+    },
+    "7-fixlu8BVo": {
+        "label": "【CielA】 エイリアンエイリアン(에일리언 에일리언) cover ∥ ナユタン星人",
+        "issued": "2020-07-04T12:00:01Z",
+        "singers": [
+            "CielA"
+        ],
+        "orgYtId": "2t1NMRse6aI"
+    },
     "qcQ9k7A5TDM": {
         "label": "【歌ってみた】エイリアンエイリアン【出雲霞×星街すいせい×堰代ミコ】",
         "issued": "2020-01-26T11:00:10Z",
@@ -685,14 +797,6 @@
         ],
         "orgYtId": "2t1NMRse6aI"
     },
-    "7-fixlu8BVo": {
-        "label": "【CielA】 エイリアンエイリアン(에일리언 에일리언) cover ∥ ナユタン星人",
-        "issued": "2020-07-04T12:00:01Z",
-        "singers": [
-            "CielA"
-        ],
-        "orgYtId": "2t1NMRse6aI"
-    },
     "2lLHeOco39s": {
         "label": "エイリアンエイリアン／莉犬　【歌ってみた】",
         "issued": "2018-04-03T10:00:00Z",
@@ -700,14 +804,6 @@
             "莉犬"
         ],
         "orgYtId": "2t1NMRse6aI"
-    },
-    "R0hcuPToqew": {
-        "label": "毒占欲　歌ってみた Ver.るぅと",
-        "issued": "2018-01-07T12:09:57Z",
-        "singers": [
-            "るぅと"
-        ],
-        "orgYtId": "3bEikMqDd3M"
     },
     "w1k4LqMW45M": {
         "label": "【メンヘラな僕が】毒占欲 歌ってみた🔪【てるとくん】",
@@ -725,11 +821,27 @@
         ],
         "orgYtId": "3bEikMqDd3M"
     },
+    "R0hcuPToqew": {
+        "label": "毒占欲　歌ってみた Ver.るぅと",
+        "issued": "2018-01-07T12:09:57Z",
+        "singers": [
+            "るぅと"
+        ],
+        "orgYtId": "3bEikMqDd3M"
+    },
     "PMu1SWxwWRs": {
         "label": "猛独が襲う／歌ってみた【ゆきむら。】",
         "issued": "2018-07-29T08:19:22Z",
         "singers": [
             "ゆきむら。"
+        ],
+        "orgYtId": "3Mgfv-kYc10"
+    },
+    "jpwy7kP8Pps": {
+        "label": "【歌ってみた】猛独が襲う covered by 花譜",
+        "issued": "2018-10-31T12:34:33Z",
+        "singers": [
+            "花譜"
         ],
         "orgYtId": "3Mgfv-kYc10"
     },
@@ -797,6 +909,14 @@
         ],
         "orgYtId": "3sEptl-psU0"
     },
+    "GSR2v6XXJlU": {
+        "label": "ロウワー ／ 歌ってみた【ゆきむら。】",
+        "issued": "2022-03-01T10:00:13Z",
+        "singers": [
+            "ゆきむら。"
+        ],
+        "orgYtId": "3sEptl-psU0"
+    },
     "1KUZHKI-BDk": {
         "label": "ロウワー / 星街すいせい(cover)",
         "issued": "2022-02-01T09:00:12Z",
@@ -845,25 +965,6 @@
         ],
         "orgYtId": "3SkNrZnoK5w"
     },
-    "LDD0bNmkJ4c": {
-        "label": "シル・ヴ・プレジデント ♡ 歌ってみた【にじさんじ/織姫星】",
-        "issued": "2021-06-04T11:30:25Z",
-        "singers": [
-            "フミ",
-            "星川サラ",
-            "山神カルタ"
-        ],
-        "orgYtId": "3V9952osjnc"
-    },
-    "qY-qYg0S9MI": {
-        "label": "男2人でシル・ヴ・プレジデントを歌ってはいけないby詩人&坂田",
-        "issued": "2021-07-27T10:00:19Z",
-        "singers": [
-            "あほの坂田。",
-            "詩人"
-        ],
-        "orgYtId": "3V9952osjnc"
-    },
     "Wz-Lq9kjgHQ": {
         "label": "【帰国子女のIfが】シル・ヴ・プレジデント English cover/P丸様。【シルプレ英語で歌ってみた】【S'il Vous President】",
         "issued": "2021-07-27T13:30:11Z",
@@ -877,6 +978,15 @@
         "issued": "2021-06-17T09:00:18Z",
         "singers": [
             "If"
+        ],
+        "orgYtId": "3V9952osjnc"
+    },
+    "qY-qYg0S9MI": {
+        "label": "男2人でシル・ヴ・プレジデントを歌ってはいけないby詩人&坂田",
+        "issued": "2021-07-27T10:00:19Z",
+        "singers": [
+            "あほの坂田。",
+            "詩人"
         ],
         "orgYtId": "3V9952osjnc"
     },
@@ -912,6 +1022,16 @@
         ],
         "orgYtId": "3V9952osjnc"
     },
+    "LDD0bNmkJ4c": {
+        "label": "シル・ヴ・プレジデント ♡ 歌ってみた【にじさんじ/織姫星】",
+        "issued": "2021-06-04T11:30:25Z",
+        "singers": [
+            "フミ",
+            "星川サラ",
+            "山神カルタ"
+        ],
+        "orgYtId": "3V9952osjnc"
+    },
     "4BK0ko8nclk": {
         "label": "シル・ヴ・プレジデント／るぅと【歌ってみた】",
         "issued": "2021-07-25T04:30:12Z",
@@ -943,6 +1063,30 @@
             "莉犬"
         ],
         "orgYtId": "3V9952osjnc"
+    },
+    "iL3HIV8zK3w": {
+        "label": "実況者が『ロケットサイダー』を全力で歌ってみた【ころん】",
+        "issued": "2018-03-31T10:45:34Z",
+        "singers": [
+            "ころん"
+        ],
+        "orgYtId": "3x9_LpnRtAk"
+    },
+    "2zHwAe8iJhY": {
+        "label": "【2年ぶりに】カラオケ35点の音痴がロケットサイダーを爽やかにフルで歌ってみた。ver.まひとくん。",
+        "issued": "2020-01-09T11:02:11Z",
+        "singers": [
+            "まひとくん。"
+        ],
+        "orgYtId": "3x9_LpnRtAk"
+    },
+    "eZhuyS_luhw": {
+        "label": "カラオケ35点の音痴がロケットサイダー爽やかに歌ってみた。ver.まひとくん。",
+        "issued": "2018-03-23T10:29:38Z",
+        "singers": [
+            "まひとくん。"
+        ],
+        "orgYtId": "3x9_LpnRtAk"
     },
     "T8d9juxHRXg": {
         "label": "ラヴィット／P丸様。【歌ってみた】",
@@ -1152,15 +1296,6 @@
         ],
         "orgYtId": "6U-5xAh3cKg"
     },
-    "jEUj8tQAvrg": {
-        "label": "絶え間なく藍色/獅子志司 - 水槽とくじら (Cover)",
-        "issued": "2019-07-19T11:00:11Z",
-        "singers": [
-            "水槽",
-            "くじら"
-        ],
-        "orgYtId": "6ZUJj9ehvGQ"
-    },
     "JG1Lu9xTw4I": {
         "label": "【帰国子女のIfが】絶え間なく藍色 English cover【英語で歌ってみた】",
         "issued": "2020-07-05T10:00:08Z",
@@ -1217,6 +1352,15 @@
         ],
         "orgYtId": "6ZUJj9ehvGQ"
     },
+    "jEUj8tQAvrg": {
+        "label": "絶え間なく藍色/獅子志司 - 水槽とくじら (Cover)",
+        "issued": "2019-07-19T11:00:11Z",
+        "singers": [
+            "水槽",
+            "くじら"
+        ],
+        "orgYtId": "6ZUJj9ehvGQ"
+    },
     "cCQOStCtr-E": {
         "label": "絶え間なく藍色 / 獅子志司 (covered by 緑仙)",
         "issued": "2019-10-11T11:00:13Z",
@@ -1224,15 +1368,6 @@
             "緑仙"
         ],
         "orgYtId": "6ZUJj9ehvGQ"
-    },
-    "gZzhG9_OUwI": {
-        "label": "チチンプイプイ/真島ゆろ（covered by ねないこ）",
-        "issued": "2021-11-13T11:00:12Z",
-        "singers": [
-            "緑仙",
-            "鈴谷アキ"
-        ],
-        "orgYtId": "-75h7CRZYNs"
     },
     "-QYl4ovbswA": {
         "label": "【Button】 チチンプイプイ(치칭푸이푸이) cover",
@@ -1247,6 +1382,15 @@
         "issued": "2021-05-29T09:00:12Z",
         "singers": [
             "るぅと"
+        ],
+        "orgYtId": "-75h7CRZYNs"
+    },
+    "gZzhG9_OUwI": {
+        "label": "チチンプイプイ/真島ゆろ（covered by ねないこ）",
+        "issued": "2021-11-13T11:00:12Z",
+        "singers": [
+            "緑仙",
+            "鈴谷アキ"
         ],
         "orgYtId": "-75h7CRZYNs"
     },
@@ -1266,11 +1410,11 @@
         ],
         "orgYtId": "7B_PVsPvcg0"
     },
-    "Fvx9JBmlFUE": {
-        "label": "たばこ／莉犬【cover】",
-        "issued": "2019-03-16T09:00:00Z",
+    "e2gOhmFrhbY": {
+        "label": "たばこ/コレサワ【cover】- るぅと",
+        "issued": "2018-08-21T10:00:06Z",
         "singers": [
-            "莉犬"
+            "るぅと"
         ],
         "orgYtId": "7B_PVsPvcg0"
     },
@@ -1279,6 +1423,14 @@
         "issued": "2018-09-15T09:00:02Z",
         "singers": [
             "天月-あまつき-"
+        ],
+        "orgYtId": "7B_PVsPvcg0"
+    },
+    "Fvx9JBmlFUE": {
+        "label": "たばこ／莉犬【cover】",
+        "issued": "2019-03-16T09:00:00Z",
+        "singers": [
+            "莉犬"
         ],
         "orgYtId": "7B_PVsPvcg0"
     },
@@ -1329,6 +1481,38 @@
             "麻婆豆腐"
         ],
         "orgYtId": "7gwvBrlUiww"
+    },
+    "GNGfw3oEhtI": {
+        "label": "【CielA】 Back number - クリスマスソング(Christmas Song) cover",
+        "issued": "2019-12-21T03:00:05Z",
+        "singers": [
+            "CielA"
+        ],
+        "orgYtId": "7zBeQezaz4U"
+    },
+    "YqhCw-7xya0": {
+        "label": "クリスマスソング ／ Cover.dongdang",
+        "issued": "2021-12-25T11:00:28Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "7zBeQezaz4U"
+    },
+    "TzGtdNRXUGo": {
+        "label": "【MV】ありったけの気持ちを込めて『クリスマスソング』歌ってみたver.鬱 【Back number】",
+        "issued": "2020-12-24T10:00:09Z",
+        "singers": [
+            "鬱"
+        ],
+        "orgYtId": "7zBeQezaz4U"
+    },
+    "QN7vsGKEdtk": {
+        "label": "クリスマスソング／莉犬【cover】",
+        "issued": "2018-12-25T09:00:03Z",
+        "singers": [
+            "莉犬"
+        ],
+        "orgYtId": "7zBeQezaz4U"
     },
     "ucLNcTXB_bc": {
         "label": "【96猫】乙女解剖 / Cover",
@@ -1466,6 +1650,14 @@
         ],
         "orgYtId": "7zwCIz-Ohn4"
     },
+    "dJybz-_1e3I": {
+        "label": "【歌ってみた】乙女解剖 / covered by ヰ世界情緒",
+        "issued": "2022-03-08T10:00:29Z",
+        "singers": [
+            "ヰ世界情緒"
+        ],
+        "orgYtId": "7zwCIz-Ohn4"
+    },
     "hsh0Sk6CCzQ": {
         "label": "【志麻&あほの坂田】乙女解剖【歌ってみた】",
         "issued": "2019-11-21T09:00:15Z",
@@ -1479,6 +1671,14 @@
         "issued": "2019-03-31T11:28:49Z",
         "singers": [
             "紫咲シオン"
+        ],
+        "orgYtId": "7zwCIz-Ohn4"
+    },
+    "sNdzgqtq0h4": {
+        "label": "【歌ってみた】乙女解剖 - DECO*27 covered by 存流",
+        "issued": "2022-03-10T10:00:20Z",
+        "singers": [
+            "存流"
         ],
         "orgYtId": "7zwCIz-Ohn4"
     },
@@ -1514,6 +1714,14 @@
         ],
         "orgYtId": "7zwCIz-Ohn4"
     },
+    "Io9gOyAlq9g": {
+        "label": "【Ado】妄想感傷代償連盟 歌いました【ワンコーラス】",
+        "issued": "2018-08-26T12:00:02Z",
+        "singers": [
+            "Ado"
+        ],
+        "orgYtId": "8pGRdRhjX3o"
+    },
     "FySqp9kDCvk": {
         "label": "実況者が『妄想感傷代償連盟』を全力で歌ってみた【ころん】",
         "issued": "2018-01-07T05:00:01Z",
@@ -1535,14 +1743,6 @@
         "issued": "2019-05-27T10:28:16Z",
         "singers": [
             "緑仙"
-        ],
-        "orgYtId": "8pGRdRhjX3o"
-    },
-    "Io9gOyAlq9g": {
-        "label": "【Ado】妄想感傷代償連盟 歌いました【ワンコーラス】",
-        "issued": "2018-08-26T12:00:02Z",
-        "singers": [
-            "Ado"
         ],
         "orgYtId": "8pGRdRhjX3o"
     },
@@ -1599,6 +1799,14 @@
         "issued": "2021-11-28T01:30:16Z",
         "singers": [
             "ころん"
+        ],
+        "orgYtId": "91R2hdV_-aQ"
+    },
+    "jqsTnJgqz4Q": {
+        "label": "生きる - 水野あつ / 町田ちま(Cover)",
+        "issued": "2022-02-12T11:00:11Z",
+        "singers": [
+            "町田ちま"
         ],
         "orgYtId": "91R2hdV_-aQ"
     },
@@ -1986,6 +2194,14 @@
         ],
         "orgYtId": "ACCQTOVEKt0"
     },
+    "P0_C9zriBWA": {
+        "label": "シンデレラ COVER / un:c（あんく）",
+        "issued": "2021-08-24T09:00:05Z",
+        "singers": [
+            "un:c"
+        ],
+        "orgYtId": "adGhT_-JbZI"
+    },
     "iKc6d-g6-cM": {
         "label": "♧「シンデレラ」-DECO*27-(Cover)歌ってみたぬき。うらたぬき",
         "issued": "2021-08-12T09:00:13Z",
@@ -2106,14 +2322,6 @@
         ],
         "orgYtId": "adGhT_-JbZI"
     },
-    "P0_C9zriBWA": {
-        "label": "シンデレラ COVER / un:c（あんく）",
-        "issued": "2021-08-24T09:00:05Z",
-        "singers": [
-            "un:c"
-        ],
-        "orgYtId": "adGhT_-JbZI"
-    },
     "gblvc4oxSTc": {
         "label": "【帰国子女のIfが】パラサイト English cover / DECO*27様【英語で歌ってみた】【Parasite】",
         "issued": "2022-02-25T09:15:13Z",
@@ -2205,6 +2413,14 @@
         ],
         "orgYtId": "AKQWRnZ_Fc0"
     },
+    "BRYdF0ookXE": {
+        "label": "p.h. ／ Cover.dongdang",
+        "issued": "2021-02-02T11:00:15Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "AKQWRnZ_Fc0"
+    },
     "mGMY0Dw52oM": {
         "label": "p.h. - SEVENTHLINKS（Cover） / いゔどっと",
         "issued": "2021-08-22T11:00:28Z",
@@ -2254,19 +2470,19 @@
         ],
         "orgYtId": "AKQWRnZ_Fc0"
     },
-    "0nTX41VJvsY": {
-        "label": "他人事の音がする / あめのむらくもP  (covered by 緑仙)",
-        "issued": "2019-06-09T10:57:47Z",
-        "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "akVa4UDbJUc"
-    },
     "m3ED0xZS_jo": {
         "label": "【爽快に】他人事の音がする 歌ってみた ver.Sou",
         "issued": "2018-01-20T12:00:08Z",
         "singers": [
             "Sou"
+        ],
+        "orgYtId": "akVa4UDbJUc"
+    },
+    "0nTX41VJvsY": {
+        "label": "他人事の音がする / あめのむらくもP  (covered by 緑仙)",
+        "issued": "2019-06-09T10:57:47Z",
+        "singers": [
+            "緑仙"
         ],
         "orgYtId": "akVa4UDbJUc"
     },
@@ -2302,15 +2518,6 @@
         ],
         "orgYtId": "aPDaFGqMX4I"
     },
-    "bly42YTiclQ": {
-        "label": "メンヘラじゃないもん！／まふまふ×天月-あまつき-【アレンジして歌ってみた】",
-        "issued": "2021-02-27T10:01:23Z",
-        "singers": [
-            "まふまふ",
-            "天月-あまつき-"
-        ],
-        "orgYtId": "aT9C-znKxIw"
-    },
     "lOdcsRWMJiw": {
         "label": "メンヘラじゃないもん！／P丸様。【歌ってみた】",
         "issued": "2021-05-08T08:00:15Z",
@@ -2324,6 +2531,15 @@
         "issued": "2021-01-15T09:00:09Z",
         "singers": [
             "un:c"
+        ],
+        "orgYtId": "aT9C-znKxIw"
+    },
+    "bly42YTiclQ": {
+        "label": "メンヘラじゃないもん！／まふまふ×天月-あまつき-【アレンジして歌ってみた】",
+        "issued": "2021-02-27T10:01:23Z",
+        "singers": [
+            "まふまふ",
+            "天月-あまつき-"
         ],
         "orgYtId": "aT9C-znKxIw"
     },
@@ -2485,6 +2701,14 @@
         ],
         "orgYtId": "Baw-cAvS5xc"
     },
+    "kjD3RX7Zxqw": {
+        "label": "金木犀 ／ Cover.dongdang",
+        "issued": "2020-01-31T11:00:16Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "Baw-cAvS5xc"
+    },
     "kgITG6EH6eo": {
         "label": "金木犀 歌ってみたあほの坂田。",
         "issued": "2020-05-30T09:00:27Z",
@@ -2516,23 +2740,6 @@
             "麻婆豆腐"
         ],
         "orgYtId": "Baw-cAvS5xc"
-    },
-    "kjD3RX7Zxqw": {
-        "label": "金木犀 ／ Cover.dongdang",
-        "issued": "2020-01-31T11:00:16Z",
-        "singers": [
-            "dongdang "
-        ],
-        "orgYtId": "Baw-cAvS5xc"
-    },
-    "kQv6TjPypfI": {
-        "label": "メンタルチェンソー／星川サラ＆樋口楓【歌ってみた】",
-        "issued": "2021-07-03T09:00:13Z",
-        "singers": [
-            "星川サラ",
-            "樋口楓"
-        ],
-        "orgYtId": "bhjNyUPFCyk"
     },
     "ECw1H25glA8": {
         "label": "【帰国子女のIfが】メンタルチェンソー English cover / かいりきベア様【英語で歌ってみた】【Mental Chainsaw】",
@@ -2579,6 +2786,15 @@
         "issued": "2021-04-29T09:00:18Z",
         "singers": [
             "るぅと"
+        ],
+        "orgYtId": "bhjNyUPFCyk"
+    },
+    "kQv6TjPypfI": {
+        "label": "メンタルチェンソー／星川サラ＆樋口楓【歌ってみた】",
+        "issued": "2021-07-03T09:00:13Z",
+        "singers": [
+            "星川サラ",
+            "樋口楓"
         ],
         "orgYtId": "bhjNyUPFCyk"
     },
@@ -2646,6 +2862,14 @@
         ],
         "orgYtId": "bmPoZ1BPcNY"
     },
+    "xcw0wf_QbIs": {
+        "label": "【オリジナルPV】♧「惑星ループ」歌ってみた。　うらたぬき",
+        "issued": "2018-05-03T10:01:01Z",
+        "singers": [
+            "うらたぬき"
+        ],
+        "orgYtId": "Bmqg7naxfvo"
+    },
     "udS9hqClcZg": {
         "label": "惑星ループ　【すとぷり歌ってみたツアー】　【ジェル】",
         "issued": "2018-04-03T19:56:44Z",
@@ -2679,14 +2903,6 @@
         ],
         "orgYtId": "Bmqg7naxfvo"
     },
-    "xcw0wf_QbIs": {
-        "label": "【オリジナルPV】♧「惑星ループ」歌ってみた。　うらたぬき",
-        "issued": "2018-05-03T10:01:01Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "Bmqg7naxfvo"
-    },
     "QVGGyqn-Iyg": {
         "label": "♧「I LOVE...」-Official髭男dism-(Cover)歌ってみたぬき。うらたぬき",
         "issued": "2020-12-12T10:00:13Z",
@@ -2711,17 +2927,17 @@
         ],
         "orgYtId": "bt8wNQJaKAk"
     },
-    "PZoBvpIaRdw": {
-        "label": "[CielA] - 「flos」 歌ってみた/cover",
-        "issued": "2019-05-04T08:00:02Z",
+    "egMfxign72g": {
+        "label": "「flos」 cover∥R Sound Design(arrange by コウ) 【CielA】",
+        "issued": "2022-01-01T12:01:26Z",
         "singers": [
             "CielA"
         ],
         "orgYtId": "bUbOc97FpUA"
     },
-    "egMfxign72g": {
-        "label": "「flos」 cover∥R Sound Design(arrange by コウ) 【CielA】",
-        "issued": "2022-01-01T12:01:26Z",
+    "PZoBvpIaRdw": {
+        "label": "[CielA] - 「flos」 歌ってみた/cover",
+        "issued": "2019-05-04T08:00:02Z",
         "singers": [
             "CielA"
         ],
@@ -2743,6 +2959,14 @@
         ],
         "orgYtId": "bUbOc97FpUA"
     },
+    "fTH7P6GVHus": {
+        "label": "flos　歌ってみた　【いゔどっと】",
+        "issued": "2018-03-25T11:00:02Z",
+        "singers": [
+            "いゔどっと"
+        ],
+        "orgYtId": "bUbOc97FpUA"
+    },
     "UbBluJq7SlI": {
         "label": "flos／歌ってみた【そうま】",
         "issued": "2022-01-22T09:00:14Z",
@@ -2759,27 +2983,19 @@
         ],
         "orgYtId": "bUbOc97FpUA"
     },
-    "4muYzftomAE": {
-        "label": "flos / 猫又おかゆ (Cover)",
-        "issued": "2020-08-28T11:00:12Z",
-        "singers": [
-            "猫又おかゆ"
-        ],
-        "orgYtId": "bUbOc97FpUA"
-    },
-    "fTH7P6GVHus": {
-        "label": "flos　歌ってみた　【いゔどっと】",
-        "issued": "2018-03-25T11:00:02Z",
-        "singers": [
-            "いゔどっと"
-        ],
-        "orgYtId": "bUbOc97FpUA"
-    },
     "5qxAEKDb0zo": {
         "label": "【超学生】flos @歌ってみた",
         "issued": "2018-03-23T10:00:01Z",
         "singers": [
             "超学生"
+        ],
+        "orgYtId": "bUbOc97FpUA"
+    },
+    "4muYzftomAE": {
+        "label": "flos / 猫又おかゆ (Cover)",
+        "issued": "2020-08-28T11:00:12Z",
+        "singers": [
+            "猫又おかゆ"
         ],
         "orgYtId": "bUbOc97FpUA"
     },
@@ -2798,6 +3014,22 @@
             "春猿火"
         ],
         "orgYtId": "BUf2d8t30yE"
+    },
+    "oLLqpKL-epg": {
+        "label": "死ぬとき死ねばいい　歌ってみた / un:c（あんく）",
+        "issued": "2019-11-24T11:02:53Z",
+        "singers": [
+            "un:c"
+        ],
+        "orgYtId": "C0yZmdpMtVY"
+    },
+    "p39LRD-tsxA": {
+        "label": "☪ 死ぬとき死ねばいい ／歌ってみた。by天月",
+        "issued": "2020-02-03T09:01:28Z",
+        "singers": [
+            "天月-あまつき-"
+        ],
+        "orgYtId": "C0yZmdpMtVY"
     },
     "rZnUH97n9IU": {
         "label": "☪ ベテルギウス / 優里(Cover) by天月",
@@ -2823,6 +3055,22 @@
         ],
         "orgYtId": "clPjNKWe6N0"
     },
+    "QXfg__5QS_c": {
+        "label": "回る空うさぎ / まひとくん。【歌ってみた】",
+        "issued": "2021-04-25T08:01:03Z",
+        "singers": [
+            "まひとくん。"
+        ],
+        "orgYtId": "CLywtSOj4NA"
+    },
+    "i30TA3V527A": {
+        "label": "【歌ってみた】回る空うさぎ covered by 花譜",
+        "issued": "2018-11-26T09:43:42Z",
+        "singers": [
+            "花譜"
+        ],
+        "orgYtId": "CLywtSOj4NA"
+    },
     "xQg4VQPlTcY": {
         "label": "お兄ちゃんと：回る空うさぎ歌ってみた：ヒカル×麻婆豆腐",
         "issued": "2021-09-30T07:50:43Z",
@@ -2832,27 +3080,11 @@
         ],
         "orgYtId": "CLywtSOj4NA"
     },
-    "QXfg__5QS_c": {
-        "label": "回る空うさぎ / まひとくん。【歌ってみた】",
-        "issued": "2021-04-25T08:01:03Z",
-        "singers": [
-            "まひとくん。"
-        ],
-        "orgYtId": "CLywtSOj4NA"
-    },
     "wMey0p-3XW4": {
         "label": "低音すぎる俺が優しい声で『回る空うさぎ』歌ってみた【回る空うさぎ/Orangestar】【鬱くん】",
         "issued": "2021-05-15T09:00:16Z",
         "singers": [
             "鬱"
-        ],
-        "orgYtId": "CLywtSOj4NA"
-    },
-    "i30TA3V527A": {
-        "label": "【歌ってみた】回る空うさぎ covered by 花譜",
-        "issued": "2018-11-26T09:43:42Z",
-        "singers": [
-            "花譜"
         ],
         "orgYtId": "CLywtSOj4NA"
     },
@@ -3200,15 +3432,6 @@
         ],
         "orgYtId": "cQKGUgOfD8U"
     },
-    "0ftKxglMLD4": {
-        "label": "偽物人間40号 歌ってみた 【めいちゃん×花村想太】",
-        "issued": "2021-10-27T12:00:00Z",
-        "singers": [
-            "めいちゃん",
-            "花村想太"
-        ],
-        "orgYtId": "CSJTVDxHPGY"
-    },
     "y3YuIvHYBt8": {
         "label": "【96猫】偽物人間40号を歌ってみた",
         "issued": "2021-12-11T09:00:35Z",
@@ -3246,6 +3469,15 @@
         "issued": "2021-08-13T09:36:56Z",
         "singers": [
             "ばぁう"
+        ],
+        "orgYtId": "CSJTVDxHPGY"
+    },
+    "0ftKxglMLD4": {
+        "label": "偽物人間40号 歌ってみた 【めいちゃん×花村想太】",
+        "issued": "2021-10-27T12:00:00Z",
+        "singers": [
+            "めいちゃん",
+            "花村想太"
         ],
         "orgYtId": "CSJTVDxHPGY"
     },
@@ -3369,14 +3601,21 @@
         ],
         "orgYtId": "cyq5-StPISU"
     },
-    "I84LTrt5ek8": {
-        "label": "トンデモワンダーズ/sasakure.UK - 水槽と鯨木 (Cover)",
-        "issued": "2021-08-12T11:00:09Z",
+    "RHLoQqHm8do": {
+        "label": "[CielA] - 頓珍漢の宴(얼뜨기의 연회) cover/歌ってみた",
+        "issued": "2018-02-09T13:00:24Z",
         "singers": [
-            "水槽",
-            "鯨木"
+            "CielA"
         ],
-        "orgYtId": "dBQg24mx45Y"
+        "orgYtId": "D6dwEFGL_KI"
+    },
+    "H3BbhUTtWlQ": {
+        "label": "【超学生】頓珍漢の宴 @歌ってみた",
+        "issued": "2020-10-01T10:00:02Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "D6dwEFGL_KI"
     },
     "TsWHdBqT7bM": {
         "label": "♣「トンデモワンダーズ」-sasakure.‌UK-(Cover)歌ってみたぬき。うらたぬき",
@@ -3394,6 +3633,15 @@
         ],
         "orgYtId": "dBQg24mx45Y"
     },
+    "I84LTrt5ek8": {
+        "label": "トンデモワンダーズ/sasakure.UK - 水槽と鯨木 (Cover)",
+        "issued": "2021-08-12T11:00:09Z",
+        "singers": [
+            "水槽",
+            "鯨木"
+        ],
+        "orgYtId": "dBQg24mx45Y"
+    },
     "dnJn_eGI06Y": {
         "label": "トンデモワンダーズ／莉犬 【歌ってみた】",
         "issued": "2021-11-06T09:00:14Z",
@@ -3401,16 +3649,6 @@
             "莉犬"
         ],
         "orgYtId": "dBQg24mx45Y"
-    },
-    "M484CkcxXuY": {
-        "label": "春を告げる 歌ってみた【あらき×nqrse×めいちゃん】",
-        "issued": "2021-07-16T10:00:10Z",
-        "singers": [
-            "あらき",
-            "nqrse",
-            "めいちゃん"
-        ],
-        "orgYtId": "DC6JppqHkaM"
     },
     "cf_weXvZ8P8": {
         "label": "春を告げる (봄을 고하다) cover ∥ yama【CielA】",
@@ -3425,6 +3663,16 @@
         "issued": "2020-07-25T11:00:08Z",
         "singers": [
             "If"
+        ],
+        "orgYtId": "DC6JppqHkaM"
+    },
+    "M484CkcxXuY": {
+        "label": "春を告げる 歌ってみた【あらき×nqrse×めいちゃん】",
+        "issued": "2021-07-16T10:00:10Z",
+        "singers": [
+            "あらき",
+            "nqrse",
+            "めいちゃん"
         ],
         "orgYtId": "DC6JppqHkaM"
     },
@@ -3740,17 +3988,17 @@
         ],
         "orgYtId": "dHXC_ahjtEE"
     },
-    "wahFj0Robtw": {
-        "label": "5年間不登校でガチの引き篭りだった俺が『グッバイ宣言』歌ってみた【鬱くん】【歌ってみた】【グッバイ宣言／Chinozo】",
-        "issued": "2021-03-03T10:00:21Z",
+    "s0OR3Jb1dwI": {
+        "label": "低音天使と高音悪魔が『グッバイ宣言』歌ってみた【グッバイ宣言/Chinozo】【鬱くん】【まぜ太】【鬱まぜ】",
+        "issued": "2021-09-04T09:00:13Z",
         "singers": [
             "鬱"
         ],
         "orgYtId": "dHXC_ahjtEE"
     },
-    "s0OR3Jb1dwI": {
-        "label": "低音天使と高音悪魔が『グッバイ宣言』歌ってみた【グッバイ宣言/Chinozo】【鬱くん】【まぜ太】【鬱まぜ】",
-        "issued": "2021-09-04T09:00:13Z",
+    "wahFj0Robtw": {
+        "label": "5年間不登校でガチの引き篭りだった俺が『グッバイ宣言』歌ってみた【鬱くん】【歌ってみた】【グッバイ宣言／Chinozo】",
+        "issued": "2021-03-03T10:00:21Z",
         "singers": [
             "鬱"
         ],
@@ -3828,6 +4076,22 @@
         ],
         "orgYtId": "dMGFcDByan4"
     },
+    "yeKF2Eax4DY": {
+        "label": "【歌ってみた】potatoになっていく - Neru covered by 存流",
+        "issued": "2022-01-05T11:00:34Z",
+        "singers": [
+            "存流"
+        ],
+        "orgYtId": "Dun11cIEo9s"
+    },
+    "o8mAUtcaEu0": {
+        "label": "【超学生】potatoになっていく @歌ってみた",
+        "issued": "2021-07-01T10:00:34Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "Dun11cIEo9s"
+    },
     "El-Ur0OJ4Sc": {
         "label": "パメラ - バルーン（Cover） / いゔどっと",
         "issued": "2021-11-13T11:00:05Z",
@@ -3868,14 +4132,13 @@
         ],
         "orgYtId": "Dx_fKPBPYUI"
     },
-    "dNswz1kQUFo": {
-        "label": "怪物 / 不破湊×三枝明那 Cover",
-        "issued": "2021-04-04T14:00:16Z",
+    "aOIrxUTBRgs": {
+        "label": "【オリジナルMV】馬鹿 歌いました【Ado】",
+        "issued": "2020-06-22T11:00:00Z",
         "singers": [
-            "不破湊",
-            "三枝明那"
+            "Ado"
         ],
-        "orgYtId": "dy90tA3TT1c"
+        "orgYtId": "dXb7ItXXX5Q"
     },
     "9aHYaOJsRO8": {
         "label": "「怪物」 cover (BEASTARS 2 op)∥YOASOBI 【CielA】",
@@ -3898,6 +4161,15 @@
         "issued": "2021-05-25T09:00:21Z",
         "singers": [
             "まふまふ"
+        ],
+        "orgYtId": "dy90tA3TT1c"
+    },
+    "dNswz1kQUFo": {
+        "label": "怪物 / 不破湊×三枝明那 Cover",
+        "issued": "2021-04-04T14:00:16Z",
+        "singers": [
+            "不破湊",
+            "三枝明那"
         ],
         "orgYtId": "dy90tA3TT1c"
     },
@@ -4269,15 +4541,6 @@
         ],
         "orgYtId": "EEMwA8KZAqg"
     },
-    "One8HOBsC5k": {
-        "label": "神っぽいな／まふまふ×天月-あまつき-【歌ってみた】",
-        "issued": "2021-12-30T10:00:10Z",
-        "singers": [
-            "まふまふ",
-            "天月-あまつき-"
-        ],
-        "orgYtId": "EHBFKhLUVig"
-    },
     "Z_RLO1tXW3E": {
         "label": "【96猫】神っぽいな を歌ってみた",
         "issued": "2022-01-16T09:00:12Z",
@@ -4406,6 +4669,15 @@
         ],
         "orgYtId": "EHBFKhLUVig"
     },
+    "One8HOBsC5k": {
+        "label": "神っぽいな／まふまふ×天月-あまつき-【歌ってみた】",
+        "issued": "2021-12-30T10:00:10Z",
+        "singers": [
+            "まふまふ",
+            "天月-あまつき-"
+        ],
+        "orgYtId": "EHBFKhLUVig"
+    },
     "ahvwSaq6PI4": {
         "label": "神っぽいな ／ 歌ってみた【ゆきむら。】",
         "issued": "2021-10-14T10:00:12Z",
@@ -4494,15 +4766,6 @@
         ],
         "orgYtId": "EJMf1NdrYjo"
     },
-    "_ptGJpzO0sM": {
-        "label": "アイネクライネ - 米津玄師 / 町田ちま & 夢追翔(Cover)",
-        "issued": "2021-08-27T12:00:12Z",
-        "singers": [
-            "町田ちま",
-            "夢追翔"
-        ],
-        "orgYtId": "-EKxzId_Sj4"
-    },
     "PnVZtnlHeIQ": {
         "label": "アイネクライネ／さとみ【歌ってみた】【すとぷり】",
         "issued": "2021-08-31T13:20:06Z",
@@ -4511,14 +4774,14 @@
         ],
         "orgYtId": "-EKxzId_Sj4"
     },
-    "d1SPCBrEYSA": {
-        "label": "孤独の宗教 / 猫又おかゆ＆天音かなた (Cover)",
-        "issued": "2021-09-30T09:00:10Z",
+    "_ptGJpzO0sM": {
+        "label": "アイネクライネ - 米津玄師 / 町田ちま & 夢追翔(Cover)",
+        "issued": "2021-08-27T12:00:12Z",
         "singers": [
-            "猫又おかゆ",
-            "天音かなた"
+            "町田ちま",
+            "夢追翔"
         ],
-        "orgYtId": "EP_3-Qkrq60"
+        "orgYtId": "-EKxzId_Sj4"
     },
     "zU5mnEqnwmA": {
         "label": "孤独の宗教 ／ Cover.dongdang",
@@ -4549,6 +4812,15 @@
         "issued": "2020-10-08T10:00:10Z",
         "singers": [
             "超学生"
+        ],
+        "orgYtId": "EP_3-Qkrq60"
+    },
+    "d1SPCBrEYSA": {
+        "label": "孤独の宗教 / 猫又おかゆ＆天音かなた (Cover)",
+        "issued": "2021-09-30T09:00:10Z",
+        "singers": [
+            "猫又おかゆ",
+            "天音かなた"
         ],
         "orgYtId": "EP_3-Qkrq60"
     },
@@ -4648,6 +4920,31 @@
         ],
         "orgYtId": "EQ94zflNqn4"
     },
+    "MLUD3IGnpak": {
+        "label": "Gimme×Gimme ／ Cover.dongdang",
+        "issued": "2020-05-17T11:00:16Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "ERo-sPa1a5g"
+    },
+    "CQPdspzQXaI": {
+        "label": "Gimme×Gimme ／ nqrse×しゅーず【歌ってみた】",
+        "issued": "2019-12-23T10:51:40Z",
+        "singers": [
+            "nqrse",
+            "しゅーず"
+        ],
+        "orgYtId": "ERo-sPa1a5g"
+    },
+    "qJugJKt6m-s": {
+        "label": "【歌ってみた】Gimme×Gimme - 八王子P × Giga covered by 存流",
+        "issued": "2021-06-28T09:12:46Z",
+        "singers": [
+            "存流"
+        ],
+        "orgYtId": "ERo-sPa1a5g"
+    },
     "ELFc_cNXjgc": {
         "label": "東京テディベア / Neru  (covered by 緑仙)",
         "issued": "2019-06-02T10:58:16Z",
@@ -4655,6 +4952,22 @@
             "緑仙"
         ],
         "orgYtId": "eSI7RsjZy1E"
+    },
+    "FSJ2H52-1dQ": {
+        "label": "【歌ってみた】パケットヒーロー covered by 春猿火",
+        "issued": "2021-11-23T11:00:06Z",
+        "singers": [
+            "春猿火"
+        ],
+        "orgYtId": "eXKoaIaSqPQ"
+    },
+    "-EmzIPoFg68": {
+        "label": "【超学生】パケットヒーロー @歌ってみた",
+        "issued": "2020-08-27T10:00:00Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "eXKoaIaSqPQ"
     },
     "aRpLB8UE0qE": {
         "label": "【3兄弟で】脳漿炸裂ガール 歌ってみた【KnightA-騎士A-】",
@@ -4691,22 +5004,6 @@
         ],
         "orgYtId": "eZ0E3Rkv0NA"
     },
-    "0HnXhdcu40Q": {
-        "label": "【缶缶】SNOBBISM【歌ってみた】",
-        "issued": "2019-06-28T10:30:01Z",
-        "singers": [
-            "缶缶"
-        ],
-        "orgYtId": "f5jDVFmEIVQ"
-    },
-    "a31BflhAUkU": {
-        "label": "SNOBBISM / Neru & z’5 (covered by 緑仙)",
-        "issued": "2019-08-09T10:58:42Z",
-        "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "f5jDVFmEIVQ"
-    },
     "04_UMMy6t_c": {
         "label": "SNOBBISMを歌ってみた／あほの坂田。",
         "issued": "2018-04-14T11:28:30Z",
@@ -4720,6 +5017,22 @@
         "issued": "2018-03-28T09:00:03Z",
         "singers": [
             "まふまふ"
+        ],
+        "orgYtId": "f5jDVFmEIVQ"
+    },
+    "0HnXhdcu40Q": {
+        "label": "【缶缶】SNOBBISM【歌ってみた】",
+        "issued": "2019-06-28T10:30:01Z",
+        "singers": [
+            "缶缶"
+        ],
+        "orgYtId": "f5jDVFmEIVQ"
+    },
+    "a31BflhAUkU": {
+        "label": "SNOBBISM / Neru & z’5 (covered by 緑仙)",
+        "issued": "2019-08-09T10:58:42Z",
+        "singers": [
+            "緑仙"
         ],
         "orgYtId": "f5jDVFmEIVQ"
     },
@@ -4769,6 +5082,14 @@
         "issued": "2020-07-18T12:00:11Z",
         "singers": [
             "CielA"
+        ],
+        "orgYtId": "Fk4FLklyPWk"
+    },
+    "4tApyxGzQew": {
+        "label": "百鬼祭 ／ Cover.dongdang",
+        "issued": "2020-05-31T11:00:04Z",
+        "singers": [
+            "dongdang "
         ],
         "orgYtId": "Fk4FLklyPWk"
     },
@@ -4827,15 +5148,6 @@
             "幸祜"
         ],
         "orgYtId": "Fve_lHIPa-I"
-    },
-    "sxMUJSK5u4g": {
-        "label": "コールボーイ／猫又おかゆ＆天音かなた(Cover)",
-        "issued": "2021-06-28T12:00:12Z",
-        "singers": [
-            "猫又おかゆ",
-            "天音かなた"
-        ],
-        "orgYtId": "FXnzOGTEcuc"
     },
     "2uboz1FLMbo": {
         "label": "【帰国子女のIfが】コールボーイ English cover / syudou様【英語で歌ってみた】【Call boy】【いれいす】",
@@ -4933,6 +5245,15 @@
         ],
         "orgYtId": "FXnzOGTEcuc"
     },
+    "sxMUJSK5u4g": {
+        "label": "コールボーイ／猫又おかゆ＆天音かなた(Cover)",
+        "issued": "2021-06-28T12:00:12Z",
+        "singers": [
+            "猫又おかゆ",
+            "天音かなた"
+        ],
+        "orgYtId": "FXnzOGTEcuc"
+    },
     "EemGzICNTkw": {
         "label": "コールボーイ / 不破湊 Cover",
         "issued": "2020-06-28T11:00:13Z",
@@ -4988,6 +5309,22 @@
             "超学生"
         ],
         "orgYtId": "G9LXGvr7Nyc"
+    },
+    "VvW5hynen9c": {
+        "label": "地球をあげる ／ Cover.dongdang",
+        "issued": "2021-02-16T11:00:16Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "GDV32AUXgsw"
+    },
+    "kK0mIvVuwqU": {
+        "label": "そらる-地球をあげる【歌ってみた】",
+        "issued": "2018-03-19T09:00:03Z",
+        "singers": [
+            "そらる"
+        ],
+        "orgYtId": "GDV32AUXgsw"
     },
     "50kE6bevjgA": {
         "label": "竹取オーバーナイトセンセーション　歌ってみた【HoneyWorks】【莉犬】【ころん】",
@@ -5101,6 +5438,30 @@
         ],
         "orgYtId": "gLSX43bvj8M"
     },
+    "zOisbM72Jqs": {
+        "label": "【爽快に】アウトサイダー 歌ってみた ver.Sou",
+        "issued": "2018-04-10T12:00:05Z",
+        "singers": [
+            "Sou"
+        ],
+        "orgYtId": "GMPjNA_fCj4"
+    },
+    "96DwXpGItCg": {
+        "label": "アウトサイダーを歌ってみた／あほの坂田。",
+        "issued": "2018-04-27T09:59:12Z",
+        "singers": [
+            "あほの坂田。"
+        ],
+        "orgYtId": "GMPjNA_fCj4"
+    },
+    "723xabIR8pM": {
+        "label": "♣「アウトサイダー」／うらたぬき【歌ってみた】",
+        "issued": "2018-04-14T11:29:18Z",
+        "singers": [
+            "あらき"
+        ],
+        "orgYtId": "GMPjNA_fCj4"
+    },
     "LDEDfdd4tvw": {
         "label": "【ころん】実況者が【アウトサイダー】を全力で歌ってみた",
         "issued": "2018-04-10T10:00:08Z",
@@ -5122,6 +5483,14 @@
         "issued": "2018-04-10T13:22:38Z",
         "singers": [
             "ジェル"
+        ],
+        "orgYtId": "GMPjNA_fCj4"
+    },
+    "CYkE2gzBbok": {
+        "label": "そらる-アウトサイダー【歌ってみた】",
+        "issued": "2018-04-15T09:00:00Z",
+        "singers": [
+            "そらる"
         ],
         "orgYtId": "GMPjNA_fCj4"
     },
@@ -5157,38 +5526,6 @@
         ],
         "orgYtId": "GMPjNA_fCj4"
     },
-    "CYkE2gzBbok": {
-        "label": "そらる-アウトサイダー【歌ってみた】",
-        "issued": "2018-04-15T09:00:00Z",
-        "singers": [
-            "そらる"
-        ],
-        "orgYtId": "GMPjNA_fCj4"
-    },
-    "zOisbM72Jqs": {
-        "label": "【爽快に】アウトサイダー 歌ってみた ver.Sou",
-        "issued": "2018-04-10T12:00:05Z",
-        "singers": [
-            "Sou"
-        ],
-        "orgYtId": "GMPjNA_fCj4"
-    },
-    "96DwXpGItCg": {
-        "label": "アウトサイダーを歌ってみた／あほの坂田。",
-        "issued": "2018-04-27T09:59:12Z",
-        "singers": [
-            "あほの坂田。"
-        ],
-        "orgYtId": "GMPjNA_fCj4"
-    },
-    "723xabIR8pM": {
-        "label": "♣「アウトサイダー」／うらたぬき【歌ってみた】",
-        "issued": "2018-04-14T11:29:18Z",
-        "singers": [
-            "あらき"
-        ],
-        "orgYtId": "GMPjNA_fCj4"
-    },
     "wElVjqMvgho": {
         "label": "おねがいダーリン 歌ってみた【うらたぬき×nqrse】",
         "issued": "2019-08-31T10:03:33Z",
@@ -5198,19 +5535,19 @@
         ],
         "orgYtId": "GnYHq6hY3Cc"
     },
-    "mxP52yWOJLM": {
-        "label": "【可愛く】おねがいダーリン 歌ってみた【てるとくん】",
-        "issued": "2019-09-23T12:30:02Z",
-        "singers": [
-            "てるとくん"
-        ],
-        "orgYtId": "GnYHq6hY3Cc"
-    },
     "QDOEquQapUI": {
         "label": "【誕生日記念】男子目線でおねがいダーリン歌ってみた！【オリジナルMV】",
         "issued": "2020-09-02T09:00:12Z",
         "singers": [
             "ちぐさくん"
+        ],
+        "orgYtId": "GnYHq6hY3Cc"
+    },
+    "mxP52yWOJLM": {
+        "label": "【可愛く】おねがいダーリン 歌ってみた【てるとくん】",
+        "issued": "2019-09-23T12:30:02Z",
+        "singers": [
+            "てるとくん"
         ],
         "orgYtId": "GnYHq6hY3Cc"
     },
@@ -5350,15 +5687,6 @@
         ],
         "orgYtId": "HswIHVN5D4o"
     },
-    "9yBLZKFKXyg": {
-        "label": "アニマル / miComet(cover)",
-        "issued": "2022-01-27T11:00:11Z",
-        "singers": [
-            "さくらみこ",
-            "星街すいせい"
-        ],
-        "orgYtId": "HtBqK6xsQ9k"
-    },
     "p7f-EmUtpRI": {
         "label": "【帰国子女のIfが】アニマル English cover / DECO*27様【英語で歌ってみた】【Animal】【いれいす】",
         "issued": "2022-01-02T07:00:13Z",
@@ -5436,6 +5764,15 @@
         "issued": "2022-01-26T13:00:12Z",
         "singers": [
             "紫咲シオン"
+        ],
+        "orgYtId": "HtBqK6xsQ9k"
+    },
+    "9yBLZKFKXyg": {
+        "label": "アニマル / miComet(cover)",
+        "issued": "2022-01-27T11:00:11Z",
+        "singers": [
+            "さくらみこ",
+            "星街すいせい"
         ],
         "orgYtId": "HtBqK6xsQ9k"
     },
@@ -5576,15 +5913,6 @@
         ],
         "orgYtId": "Hx9iZZCrQeE"
     },
-    "U66Vb4huX6w": {
-        "label": "ヒバナ / DECO*27 (covered by ねないこ)",
-        "issued": "2020-10-03T10:00:11Z",
-        "singers": [
-            "緑仙",
-            "鈴谷アキ"
-        ],
-        "orgYtId": "hxSg2Ioz3LM"
-    },
     "qEcOJtQ_jmA": {
         "label": "「ヒバナ」live ver./あらき【XYZ TOUR 2018 -SUMMER-】",
         "issued": "2020-07-09T10:00:13Z",
@@ -5617,6 +5945,15 @@
         ],
         "orgYtId": "hxSg2Ioz3LM"
     },
+    "U66Vb4huX6w": {
+        "label": "ヒバナ / DECO*27 (covered by ねないこ)",
+        "issued": "2020-10-03T10:00:11Z",
+        "singers": [
+            "緑仙",
+            "鈴谷アキ"
+        ],
+        "orgYtId": "hxSg2Ioz3LM"
+    },
     "OIRF4rgFtX8": {
         "label": "主人公ボイスの俺が『ヒバナ』歌ってみた【ヒバナ/DECO*27】【鬱くん】",
         "issued": "2021-06-30T09:00:13Z",
@@ -5634,6 +5971,14 @@
         ],
         "orgYtId": "hZFBTnzKa54"
     },
+    "3DEeppS8MvU": {
+        "label": "♧「だれかの心臓になれたなら」歌ってみたぬき。by うらたぬき",
+        "issued": "2018-09-01T12:03:05Z",
+        "singers": [
+            "うらたぬき"
+        ],
+        "orgYtId": "hZFBTnzKa54"
+    },
     "8g4IbKCzemk": {
         "label": "だれかの心臓になれたなら＠歌ってみた【まふまふ】",
         "issued": "2020-01-14T09:00:01Z",
@@ -5647,14 +5992,6 @@
         "issued": "2020-11-11T11:00:32Z",
         "singers": [
             "志麻"
-        ],
-        "orgYtId": "hZFBTnzKa54"
-    },
-    "3DEeppS8MvU": {
-        "label": "♧「だれかの心臓になれたなら」歌ってみたぬき。by うらたぬき",
-        "issued": "2018-09-01T12:03:05Z",
-        "singers": [
-            "うらたぬき"
         ],
         "orgYtId": "hZFBTnzKa54"
     },
@@ -5842,77 +6179,13 @@
         ],
         "orgYtId": "ihgrM14jrFY"
     },
-    "hg4Ij1-mbb4": {
-        "label": "アイラ　歌ってみた／宮下遊",
-        "issued": "2019-03-27T09:05:47Z",
+    "AEpmNOw6BrA": {
+        "label": "一角獣 ／ Cover.dongdang",
+        "issued": "2020-05-24T11:30:16Z",
         "singers": [
-            "宮下遊"
+            "dongdang "
         ],
-        "orgYtId": "ihgrM14jrFY"
-    },
-    "AviLZlvO6HM": {
-        "label": "ポーカーダンス／ななもり。【歌ってみた】すとぷり",
-        "issued": "2021-12-25T07:30:14Z",
-        "singers": [
-            "ななもり。"
-        ],
-        "orgYtId": "IjqR0Jg_BXw"
-    },
-    "eZhuyS_luhw": {
-        "label": "カラオケ35点の音痴がロケットサイダー爽やかに歌ってみた。ver.まひとくん。",
-        "issued": "2018-03-23T10:29:38Z",
-        "singers": [
-            "まひとくん。"
-        ],
-        "orgYtId": "iL3HIV8zK3w"
-    },
-    "iL3HIV8zK3w": {
-        "label": "実況者が『ロケットサイダー』を全力で歌ってみた【ころん】",
-        "issued": "2018-03-31T10:45:34Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "iL3HIV8zK3w"
-    },
-    "2zHwAe8iJhY": {
-        "label": "【2年ぶりに】カラオケ35点の音痴がロケットサイダーを爽やかにフルで歌ってみた。ver.まひとくん。",
-        "issued": "2020-01-09T11:02:11Z",
-        "singers": [
-            "まひとくん。"
-        ],
-        "orgYtId": "iL3HIV8zK3w"
-    },
-    "rPIevCWNIQ4": {
-        "label": "痛いよ - 清竜人 / Covered by 理芽 / RIM 【歌ってみた】",
-        "issued": "2021-03-11T10:00:14Z",
-        "singers": [
-            "理芽"
-        ],
-        "orgYtId": "iSEU7jqBmOw"
-    },
-    "4wzv9Bt8WA8": {
-        "label": "痛いよ　歌ってみた",
-        "issued": "2021-01-18T15:28:51Z",
-        "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "iSEU7jqBmOw"
-    },
-    "3H9Bbg0vSwo": {
-        "label": "DOGMA／歌ってみた【ゆきむら。】",
-        "issued": "2021-05-09T09:00:17Z",
-        "singers": [
-            "ゆきむら。"
-        ],
-        "orgYtId": "JAdcCzeD0qk"
-    },
-    "nbjwhyDXJ6Y": {
-        "label": "ヒロインたるもの！／莉犬【歌ってみた】",
-        "issued": "2020-08-21T10:30:45Z",
-        "singers": [
-            "莉犬"
-        ],
-        "orgYtId": "jb6AHqi0MbE"
+        "orgYtId": "jBXbmql5JCU"
     },
     "UrCgayBBFB0": {
         "label": "【帰国子女のIfが】一角獣【アレンジいれて低音イケボで歌ってみた】",
@@ -5930,14 +6203,6 @@
         ],
         "orgYtId": "jBXbmql5JCU"
     },
-    "H_2ntjZG99E": {
-        "label": "【歌ってみた】恋は戦争 / covered by 幸祜",
-        "issued": "2021-03-03T11:00:05Z",
-        "singers": [
-            "幸祜"
-        ],
-        "orgYtId": "jDop41Bxq2A"
-    },
     "1OI4Bp8fGYw": {
         "label": "【Ado】恋は戦争 歌いました",
         "issued": "2021-05-08T11:00:01Z",
@@ -5946,51 +6211,19 @@
         ],
         "orgYtId": "jDop41Bxq2A"
     },
-    "vjOMZsMPDoA": {
-        "label": "レディメイド歌ってみた：麻婆豆腐 : 実写MV",
-        "issued": "2021-01-24T06:40:18Z",
+    "H_2ntjZG99E": {
+        "label": "【歌ってみた】恋は戦争 / covered by 幸祜",
+        "issued": "2021-03-03T11:00:05Z",
         "singers": [
-            "麻婆豆腐"
+            "幸祜"
         ],
-        "orgYtId": "jg09lNupc1s"
+        "orgYtId": "jDop41Bxq2A"
     },
-    "6ADJU08zmGM": {
-        "label": "レディメイド(Ado)ver.luz/Ready-made【COVER】",
-        "issued": "2021-01-23T11:00:03Z",
+    "9odpvnesAiE": {
+        "label": "[CielA] - ドラマツルギー(드라마트루기) cover/歌ってみた 【3000!!】",
+        "issued": "2018-09-01T13:30:00Z",
         "singers": [
-            "Luz"
-        ],
-        "orgYtId": "jg09lNupc1s"
-    },
-    "TwzStvLE344": {
-        "label": "【帰国子女のIfが】レディメイド / Ado English ＆Rap Arrange【ラップして英語で歌ってみた】【Readymade】",
-        "issued": "2021-01-16T11:00:10Z",
-        "singers": [
-            "If"
-        ],
-        "orgYtId": "jg09lNupc1s"
-    },
-    "MBJ9BopNCIY": {
-        "label": "レディメイド /  un:c（あんく）【歌ってみた】",
-        "issued": "2021-02-06T09:04:30Z",
-        "singers": [
-            "un:c"
-        ],
-        "orgYtId": "jg09lNupc1s"
-    },
-    "EiemO7r_UMo": {
-        "label": "☪ レディメイド ／ 歌ってみた。by天月",
-        "issued": "2021-02-13T10:00:03Z",
-        "singers": [
-            "天月-あまつき-"
-        ],
-        "orgYtId": "jg09lNupc1s"
-    },
-    "Kt7lLgW9yDI": {
-        "label": "ドラマツルギー / Eve (covered by 緑仙)",
-        "issued": "2018-09-11T13:01:02Z",
-        "singers": [
-            "緑仙"
+            "CielA"
         ],
         "orgYtId": "jJzw1h5CR-I"
     },
@@ -6010,59 +6243,19 @@
         ],
         "orgYtId": "jJzw1h5CR-I"
     },
-    "9odpvnesAiE": {
-        "label": "[CielA] - ドラマツルギー(드라마트루기) cover/歌ってみた 【3000!!】",
-        "issued": "2018-09-01T13:30:00Z",
+    "Kt7lLgW9yDI": {
+        "label": "ドラマツルギー / Eve (covered by 緑仙)",
+        "issued": "2018-09-11T13:01:02Z",
         "singers": [
-            "CielA"
+            "緑仙"
         ],
         "orgYtId": "jJzw1h5CR-I"
-    },
-    "Qc-j7L7tXYg": {
-        "label": "マーシャル・マキシマイザー (cover) - 三枝明那",
-        "issued": "2021-10-01T12:00:11Z",
-        "singers": [
-            "三枝明那"
-        ],
-        "orgYtId": "jMKPYg0uhCI"
-    },
-    "23dYi5cIitI": {
-        "label": "マーシャル・マキシマイザー　歌った 【あらき】/Marshall Maximizer Covered by ARAKI",
-        "issued": "2021-10-15T11:00:03Z",
-        "singers": [
-            "あらき"
-        ],
-        "orgYtId": "jMKPYg0uhCI"
-    },
-    "gAdrjLH7FTI": {
-        "label": "【起きてまた寝て人でなし？】マーシャル・マキシマイザー / 柊マグネタイト - ちぐさ",
-        "issued": "2022-01-03T11:00:29Z",
-        "singers": [
-            "ちぐさくん"
-        ],
-        "orgYtId": "jMKPYg0uhCI"
     },
     "BX6qSxh6w-U": {
         "label": "マーシャル・マキシマイザー / 柊マグネタイト（Cover） ver.Sou",
         "issued": "2021-09-21T11:00:11Z",
         "singers": [
             "Sou"
-        ],
-        "orgYtId": "jMKPYg0uhCI"
-    },
-    "vdpmf3uV6tQ": {
-        "label": "マーシャル・マキシマイザー - 柊マグネタイト（Cover） / いゔどっと",
-        "issued": "2021-09-04T11:00:15Z",
-        "singers": [
-            "いゔどっと"
-        ],
-        "orgYtId": "jMKPYg0uhCI"
-    },
-    "Z2dQur2RVhE": {
-        "label": "マーシャル・マキシマイザー／歌ってみた【ゆきむら。】",
-        "issued": "2021-11-20T13:30:12Z",
-        "singers": [
-            "ゆきむら。"
         ],
         "orgYtId": "jMKPYg0uhCI"
     },
@@ -6074,21 +6267,53 @@
         ],
         "orgYtId": "jMKPYg0uhCI"
     },
-    "ykun7FO-p5c": {
-        "label": "小さな恋のうた ／ MONGOL800(cover) by天月 【１億回再生記念動画】",
-        "issued": "2021-04-18T10:00:17Z",
+    "23dYi5cIitI": {
+        "label": "マーシャル・マキシマイザー　歌った 【あらき】/Marshall Maximizer Covered by ARAKI",
+        "issued": "2021-10-15T11:00:03Z",
         "singers": [
-            "天月-あまつき-"
+            "あらき"
         ],
-        "orgYtId": "JoJ6lnF07U4"
+        "orgYtId": "jMKPYg0uhCI"
     },
-    "lncNKGNb7pA": {
-        "label": "小さな恋のうた／莉犬【cover】",
-        "issued": "2018-04-29T10:00:53Z",
+    "vdpmf3uV6tQ": {
+        "label": "マーシャル・マキシマイザー - 柊マグネタイト（Cover） / いゔどっと",
+        "issued": "2021-09-04T11:00:15Z",
         "singers": [
-            "莉犬"
+            "いゔどっと"
         ],
-        "orgYtId": "JoJ6lnF07U4"
+        "orgYtId": "jMKPYg0uhCI"
+    },
+    "bacMycqKNt8": {
+        "label": "マーシャル・マキシマイザー／ ころん 『実況者が全力で歌ってみた』すとぷり",
+        "issued": "2021-12-19T07:00:10Z",
+        "singers": [
+            "ころん"
+        ],
+        "orgYtId": "jMKPYg0uhCI"
+    },
+    "gAdrjLH7FTI": {
+        "label": "【起きてまた寝て人でなし？】マーシャル・マキシマイザー / 柊マグネタイト - ちぐさ",
+        "issued": "2022-01-03T11:00:29Z",
+        "singers": [
+            "ちぐさくん"
+        ],
+        "orgYtId": "jMKPYg0uhCI"
+    },
+    "Z2dQur2RVhE": {
+        "label": "マーシャル・マキシマイザー／歌ってみた【ゆきむら。】",
+        "issued": "2021-11-20T13:30:12Z",
+        "singers": [
+            "ゆきむら。"
+        ],
+        "orgYtId": "jMKPYg0uhCI"
+    },
+    "Qc-j7L7tXYg": {
+        "label": "マーシャル・マキシマイザー (cover) - 三枝明那",
+        "issued": "2021-10-01T12:00:11Z",
+        "singers": [
+            "三枝明那"
+        ],
+        "orgYtId": "jMKPYg0uhCI"
     },
     "8jjZIZDud8w": {
         "label": "マンマルダンス／歌ってみた【そうま】",
@@ -6098,27 +6323,35 @@
         ],
         "orgYtId": "JPtrs8OleVA"
     },
-    "eIYdsLWkc-o": {
-        "label": "【歌ってみた】-ERROR【町田ちま/にじさんじ】",
-        "issued": "2020-04-26T09:00:27Z",
+    "8wyCYXIppf4": {
+        "label": "マンマルダンス／るぅと【歌ってみた】",
+        "issued": "2022-01-04T08:00:14Z",
         "singers": [
-            "町田ちま"
+            "るぅと"
         ],
-        "orgYtId": "jvoW9lJdirk"
+        "orgYtId": "JPtrs8OleVA"
     },
-    "OrLTl6y4e3E": {
-        "label": "【96猫】-ERRORを歌ってみた",
-        "issued": "2019-06-16T10:00:03Z",
+    "x-ORxMyxZG0": {
+        "label": "少女レイ　歌ってみた　【いゔどっと】",
+        "issued": "2018-08-02T12:00:07Z",
         "singers": [
-            "96猫"
+            "いゔどっと"
         ],
-        "orgYtId": "jvoW9lJdirk"
+        "orgYtId": "JW3N-HvU0MA"
     },
-    "UqmEmohjbOE": {
-        "label": "【歌ってみた】少女レイ covered by 花譜",
-        "issued": "2019-04-25T10:23:57Z",
+    "V5rV42S72aY": {
+        "label": "実況者が『少女レイ』を全力で歌ってみた【ころん】",
+        "issued": "2019-07-28T04:30:34Z",
         "singers": [
-            "花譜"
+            "ころん"
+        ],
+        "orgYtId": "JW3N-HvU0MA"
+    },
+    "2s-Sda59l_k": {
+        "label": "【誕生日に】少女レイ／さとみ【歌ってみた】",
+        "issued": "2020-02-24T09:56:47Z",
+        "singers": [
+            "さとみ"
         ],
         "orgYtId": "JW3N-HvU0MA"
     },
@@ -6127,6 +6360,22 @@
         "issued": "2021-08-13T09:00:10Z",
         "singers": [
             "ちぐさくん"
+        ],
+        "orgYtId": "JW3N-HvU0MA"
+    },
+    "b3sfpAdOGQo": {
+        "label": "少女レイ/みきとP(cover) by まひとくん【KnightA歌ってみたツアー】",
+        "issued": "2020-08-23T11:09:03Z",
+        "singers": [
+            "まひとくん。"
+        ],
+        "orgYtId": "JW3N-HvU0MA"
+    },
+    "UqmEmohjbOE": {
+        "label": "【歌ってみた】少女レイ covered by 花譜",
+        "issued": "2019-04-25T10:23:57Z",
+        "singers": [
+            "花譜"
         ],
         "orgYtId": "JW3N-HvU0MA"
     },
@@ -6146,30 +6395,6 @@
         ],
         "orgYtId": "JW3N-HvU0MA"
     },
-    "2s-Sda59l_k": {
-        "label": "【誕生日に】少女レイ／さとみ【歌ってみた】",
-        "issued": "2020-02-24T09:56:47Z",
-        "singers": [
-            "さとみ"
-        ],
-        "orgYtId": "JW3N-HvU0MA"
-    },
-    "V5rV42S72aY": {
-        "label": "実況者が『少女レイ』を全力で歌ってみた【ころん】",
-        "issued": "2019-07-28T04:30:34Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "JW3N-HvU0MA"
-    },
-    "b3sfpAdOGQo": {
-        "label": "少女レイ/みきとP(cover) by まひとくん【KnightA歌ってみたツアー】",
-        "issued": "2020-08-23T11:09:03Z",
-        "singers": [
-            "まひとくん。"
-        ],
-        "orgYtId": "JW3N-HvU0MA"
-    },
     "ctbTG2SjFtw": {
         "label": "【2周年記念】Paintër  covered by #織姫星【歌ってみた】",
         "issued": "2021-10-25T14:00:11Z",
@@ -6180,60 +6405,27 @@
         ],
         "orgYtId": "JxKVlmLvXBM"
     },
-    "lzDRbf2iN1Y": {
-        "label": "目抜き通り / 椎名林檎とトータス松本 (covered by 緑仙×超学生)",
-        "issued": "2021-10-07T10:00:12Z",
+    "LWGkWxmy3uA": {
+        "label": "とても素敵な六月でした ver luz",
+        "issued": "2018-09-16T10:00:05Z",
         "singers": [
-            "超学生"
+            "Luz"
         ],
-        "orgYtId": "K6ptsqlfJZ8"
+        "orgYtId": "kAAt-qVxCjc"
     },
-    "OCd2Fmnp7eI": {
-        "label": "怪物さん feat.あいみょん ／平井 堅(cover)【96猫＆天月】",
-        "issued": "2020-05-06T10:00:10Z",
-        "singers": [
-            "96猫",
-            "天月-あまつき-"
-        ],
-        "orgYtId": "k9VOuzOXAVo"
-    },
-    "ggR_IbBEjd8": {
-        "label": "怪物さん feat.あいみょん / 平井 堅 (covered by 緑仙)",
-        "issued": "2020-05-04T13:00:12Z",
-        "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "k9VOuzOXAVo"
-    },
-    "adh_w5coKD0": {
-        "label": "メリーバッドエンド　歌ってみた【うらたぬき×志麻】",
-        "issued": "2018-06-16T12:16:33Z",
-        "singers": [
-            "志麻"
-        ],
-        "orgYtId": "kffrKgAN7tI"
-    },
-    "krRlkw8Qsyw": {
-        "label": "メリーバッドエンド　歌ってみた／しゆん",
-        "issued": "2018-06-13T11:59:24Z",
+    "r3hc6dkT-B0": {
+        "label": "【実写】とても素敵な六月でした　歌ってみた／しゆん",
+        "issued": "2019-06-29T09:10:37Z",
         "singers": [
             "しゆん"
         ],
-        "orgYtId": "kffrKgAN7tI"
+        "orgYtId": "kAAt-qVxCjc"
     },
     "TnKcNsknTa8": {
         "label": "メリーバッドエンドver.luz/Merry bad end",
         "issued": "2018-02-08T10:00:01Z",
         "singers": [
             "Luz"
-        ],
-        "orgYtId": "kffrKgAN7tI"
-    },
-    "MoUlMlCjibw": {
-        "label": "☪ メリーバッドエンド ／ まふまふ (cover) by天月-あまつき-",
-        "issued": "2018-02-07T10:36:10Z",
-        "singers": [
-            "天月-あまつき-"
         ],
         "orgYtId": "kffrKgAN7tI"
     },
@@ -6245,11 +6437,35 @@
         ],
         "orgYtId": "kffrKgAN7tI"
     },
+    "krRlkw8Qsyw": {
+        "label": "メリーバッドエンド　歌ってみた／しゆん",
+        "issued": "2018-06-13T11:59:24Z",
+        "singers": [
+            "しゆん"
+        ],
+        "orgYtId": "kffrKgAN7tI"
+    },
     "2mcnNjuTjK4": {
         "label": "そらる-メリーバッドエンド【歌ってみた】",
         "issued": "2018-02-07T09:00:00Z",
         "singers": [
             "そらる"
+        ],
+        "orgYtId": "kffrKgAN7tI"
+    },
+    "adh_w5coKD0": {
+        "label": "メリーバッドエンド　歌ってみた【うらたぬき×志麻】",
+        "issued": "2018-06-16T12:16:33Z",
+        "singers": [
+            "志麻"
+        ],
+        "orgYtId": "kffrKgAN7tI"
+    },
+    "MoUlMlCjibw": {
+        "label": "☪ メリーバッドエンド ／ まふまふ (cover) by天月-あまつき-",
+        "issued": "2018-02-07T10:36:10Z",
+        "singers": [
+            "天月-あまつき-"
         ],
         "orgYtId": "kffrKgAN7tI"
     },
@@ -6269,35 +6485,11 @@
         ],
         "orgYtId": "KkmFgOvttrk"
     },
-    "1BFBHblJ0A0": {
-        "label": "【歌ってみた】爆弾 covered by 花譜",
-        "issued": "2020-07-18T09:00:18Z",
-        "singers": [
-            "花譜"
-        ],
-        "orgYtId": "KQPpw3dzEks"
-    },
     "zTPOGPrl0NE": {
         "label": "爆笑　COVER / un:c（あんく）",
         "issued": "2021-06-09T09:00:20Z",
         "singers": [
             "un:c"
-        ],
-        "orgYtId": "KQPpw3dzEks"
-    },
-    "bhmYU1IhFo4": {
-        "label": "この名前くらいは覚えて帰れ『爆笑』／しゆん【歌ってみた】",
-        "issued": "2021-06-04T10:01:29Z",
-        "singers": [
-            "しゆん"
-        ],
-        "orgYtId": "KQPpw3dzEks"
-    },
-    "KtOgbvPiGO0": {
-        "label": "実況者が『爆笑』を全力で歌ってみた【ころん】すとぷり",
-        "issued": "2021-06-26T23:25:13Z",
-        "singers": [
-            "ころん"
         ],
         "orgYtId": "KQPpw3dzEks"
     },
@@ -6309,6 +6501,30 @@
         ],
         "orgYtId": "KQPpw3dzEks"
     },
+    "XMq-mgawYws": {
+        "label": "♣「爆笑」-syudou-(Cover)歌ってみたぬき。うらたぬき",
+        "issued": "2021-06-02T10:00:30Z",
+        "singers": [
+            "うらたぬき"
+        ],
+        "orgYtId": "KQPpw3dzEks"
+    },
+    "KtOgbvPiGO0": {
+        "label": "実況者が『爆笑』を全力で歌ってみた【ころん】すとぷり",
+        "issued": "2021-06-26T23:25:13Z",
+        "singers": [
+            "ころん"
+        ],
+        "orgYtId": "KQPpw3dzEks"
+    },
+    "bhmYU1IhFo4": {
+        "label": "この名前くらいは覚えて帰れ『爆笑』／しゆん【歌ってみた】",
+        "issued": "2021-06-04T10:01:29Z",
+        "singers": [
+            "しゆん"
+        ],
+        "orgYtId": "KQPpw3dzEks"
+    },
     "mNiV85MdPmc": {
         "label": "爆笑 - Cover / センラ",
         "issued": "2021-06-07T10:00:30Z",
@@ -6317,11 +6533,11 @@
         ],
         "orgYtId": "KQPpw3dzEks"
     },
-    "XMq-mgawYws": {
-        "label": "♣「爆笑」-syudou-(Cover)歌ってみたぬき。うらたぬき",
-        "issued": "2021-06-02T10:00:30Z",
+    "1BFBHblJ0A0": {
+        "label": "【歌ってみた】爆弾 covered by 花譜",
+        "issued": "2020-07-18T09:00:18Z",
         "singers": [
-            "うらたぬき"
+            "花譜"
         ],
         "orgYtId": "KQPpw3dzEks"
     },
@@ -6332,6 +6548,14 @@
             "超学生"
         ],
         "orgYtId": "KQPpw3dzEks"
+    },
+    "1Z0h0sIUdp0": {
+        "label": "Penguin's Detour / ハヤシダ（Cover） ver.Sou",
+        "issued": "2020-04-12T12:00:12Z",
+        "singers": [
+            "Sou"
+        ],
+        "orgYtId": "KrMDEWDF-CE"
     },
     "0-4R2BEGeTo": {
         "label": "Penguin's Detour　歌ってみた／宮下遊",
@@ -6357,28 +6581,29 @@
         ],
         "orgYtId": "KrMDEWDF-CE"
     },
-    "1Z0h0sIUdp0": {
-        "label": "Penguin's Detour / ハヤシダ（Cover） ver.Sou",
-        "issued": "2020-04-12T12:00:12Z",
+    "5bLzgxCR-wI": {
+        "label": "【青組二人で】GETCHA! / Giga & KIRA【歌ってみた】",
+        "issued": "2021-04-30T11:00:02Z",
+        "singers": [
+            "If",
+            "-hotoke-"
+        ],
+        "orgYtId": "KRVFPPYcJUc"
+    },
+    "EjlMPu5sEgw": {
+        "label": "GETCHA! / calliope × suisei(cover)",
+        "issued": "2021-06-15T09:00:14Z",
+        "singers": [
+            "戌亥とこ",
+            "星街すいせい"
+        ],
+        "orgYtId": "KRVFPPYcJUc"
+    },
+    "gWbuQ4ERCm4": {
+        "label": "猫猫的宇宙論 / ナユタン星人（Cover） ver.Sou",
+        "issued": "2020-02-27T12:00:07Z",
         "singers": [
             "Sou"
-        ],
-        "orgYtId": "KrMDEWDF-CE"
-    },
-    "Dbf4_o-trNc": {
-        "label": "猫猫的宇宙論/ナユタン星人（covered by ねないこ）",
-        "issued": "2020-11-21T11:00:27Z",
-        "singers": [
-            "緑仙",
-            "鈴谷アキ"
-        ],
-        "orgYtId": "kS2yWmLCtnc"
-    },
-    "vojciXoPWuI": {
-        "label": "猫猫的宇宙論 ／ るぅと 【cover】",
-        "issued": "2020-02-23T09:15:00Z",
-        "singers": [
-            "るぅと"
         ],
         "orgYtId": "kS2yWmLCtnc"
     },
@@ -6390,19 +6615,28 @@
         ],
         "orgYtId": "kS2yWmLCtnc"
     },
-    "gWbuQ4ERCm4": {
-        "label": "猫猫的宇宙論 / ナユタン星人（Cover） ver.Sou",
-        "issued": "2020-02-27T12:00:07Z",
-        "singers": [
-            "Sou"
-        ],
-        "orgYtId": "kS2yWmLCtnc"
-    },
     "4pvwuuw8p-w": {
         "label": "猫猫的宇宙論＠歌ってみた【まふまふ】",
         "issued": "2020-02-27T09:02:23Z",
         "singers": [
             "まふまふ"
+        ],
+        "orgYtId": "kS2yWmLCtnc"
+    },
+    "vojciXoPWuI": {
+        "label": "猫猫的宇宙論 ／ るぅと 【cover】",
+        "issued": "2020-02-23T09:15:00Z",
+        "singers": [
+            "るぅと"
+        ],
+        "orgYtId": "kS2yWmLCtnc"
+    },
+    "Dbf4_o-trNc": {
+        "label": "猫猫的宇宙論/ナユタン星人（covered by ねないこ）",
+        "issued": "2020-11-21T11:00:27Z",
+        "singers": [
+            "緑仙",
+            "鈴谷アキ"
         ],
         "orgYtId": "kS2yWmLCtnc"
     },
@@ -6430,19 +6664,43 @@
         ],
         "orgYtId": "KTZ-y85Erus"
     },
-    "QTVBHm32-NI": {
-        "label": "ドライフラワー／さとみ【歌ってみた】",
-        "issued": "2021-06-27T00:00:38Z",
+    "sUocq29zZww": {
+        "label": "カタオモイ（Aimer）弾き語りCover / un:c (ANKU)",
+        "issued": "2020-04-21T09:01:34Z",
         "singers": [
-            "さとみ"
+            "un:c"
         ],
-        "orgYtId": "kzZ6KXDM1RI"
+        "orgYtId": "kxs9Su_mbpU"
+    },
+    "J_qYwXk43I0": {
+        "label": "カタオモイ ／ Aimer(cover) by 天月",
+        "issued": "2018-02-13T09:00:01Z",
+        "singers": [
+            "天月-あまつき-"
+        ],
+        "orgYtId": "kxs9Su_mbpU"
+    },
+    "wl95zSvqWqU": {
+        "label": "カタオモイ／Aimer covered by 戌亥とこ",
+        "issued": "2021-03-23T12:00:17Z",
+        "singers": [
+            "戌亥とこ"
+        ],
+        "orgYtId": "kxs9Su_mbpU"
     },
     "2gNh16oYvgA": {
         "label": "実況者が『ドライフラワー』を全力で歌ってみた【ころん】すとぷり",
         "issued": "2021-03-03T07:35:52Z",
         "singers": [
             "ころん"
+        ],
+        "orgYtId": "kzZ6KXDM1RI"
+    },
+    "QTVBHm32-NI": {
+        "label": "ドライフラワー／さとみ【歌ってみた】",
+        "issued": "2021-06-27T00:00:38Z",
+        "singers": [
+            "さとみ"
         ],
         "orgYtId": "kzZ6KXDM1RI"
     },
@@ -6462,21 +6720,13 @@
         ],
         "orgYtId": "kzZ6KXDM1RI"
     },
-    "akNoQH9MCGc": {
-        "label": "いかないで／ななもり。【歌ってみた】",
-        "issued": "2021-09-05T09:15:10Z",
+    "O2yl5kKzosU": {
+        "label": "【帰国子女のIfが】Henceforth/Orangestar【低音イケボで歌ってみた】",
+        "issued": "2020-05-23T10:00:22Z",
         "singers": [
-            "ななもり。"
+            "If"
         ],
-        "orgYtId": "L0tcMxp8Iy8"
-    },
-    "rTWQzLQE3yw": {
-        "label": "いかないで ／ Cover.dongdang",
-        "issued": "2019-02-12T09:00:05Z",
-        "singers": [
-            "dongdang "
-        ],
-        "orgYtId": "L0tcMxp8Iy8"
+        "orgYtId": "L13gCEZJVRU"
     },
     "CjJnB3-kfOE": {
         "label": "Henceforth ／ ころん 『実況者が全力で歌ってみた』すとぷり",
@@ -6491,14 +6741,6 @@
         "issued": "2021-08-15T08:23:35Z",
         "singers": [
             "まひとくん。"
-        ],
-        "orgYtId": "L13gCEZJVRU"
-    },
-    "O2yl5kKzosU": {
-        "label": "【帰国子女のIfが】Henceforth/Orangestar【低音イケボで歌ってみた】",
-        "issued": "2020-05-23T10:00:22Z",
-        "singers": [
-            "If"
         ],
         "orgYtId": "L13gCEZJVRU"
     },
@@ -6534,6 +6776,23 @@
         ],
         "orgYtId": "LbO4pg_LHUI"
     },
+    "mPXrqn5V97U": {
+        "label": "【超学生】CH4NGE @歌ってみた",
+        "issued": "2022-01-13T10:00:34Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "LbO4pg_LHUI"
+    },
+    "RXMvCxFpgPo": {
+        "label": "【まひとくん×てるとくん】チューリングラブ【KnightA-騎士A- 歌ってみたツアー】",
+        "issued": "2020-08-08T11:52:57Z",
+        "singers": [
+            "まひとくん",
+            "てるとくん"
+        ],
+        "orgYtId": "L-MVk5I6wjo"
+    },
     "-omKAd_sbFo": {
         "label": "【歌ってみた】チューリングラブ feat.Sou / ナナヲアカリ【星街すいせい&響木アオ】",
         "issued": "2020-12-27T13:00:02Z",
@@ -6543,12 +6802,12 @@
         ],
         "orgYtId": "L-MVk5I6wjo"
     },
-    "RXMvCxFpgPo": {
-        "label": "【まひとくん×てるとくん】チューリングラブ【KnightA-騎士A- 歌ってみたツアー】",
-        "issued": "2020-08-08T11:52:57Z",
+    "VFic9D2cEgI": {
+        "label": "【歌ってみた】 チューリングラブ ／ ナナヲアカリ 【叶＆星川サラ/にじさんじ】",
+        "issued": "2020-08-19T10:00:13Z",
         "singers": [
-            "まひとくん",
-            "てるとくん"
+            "叶",
+            "星川サラ"
         ],
         "orgYtId": "L-MVk5I6wjo"
     },
@@ -6569,28 +6828,43 @@
         ],
         "orgYtId": "L-MVk5I6wjo"
     },
-    "VFic9D2cEgI": {
-        "label": "【歌ってみた】 チューリングラブ ／ ナナヲアカリ 【叶＆星川サラ/にじさんじ】",
-        "issued": "2020-08-19T10:00:13Z",
+    "pGL3MdjchgU": {
+        "label": "変わらないもの ／ばぁう 【歌ってみた】",
+        "issued": "2020-11-13T15:02:52Z",
         "singers": [
-            "叶",
-            "星川サラ"
+            "ばぁう"
         ],
-        "orgYtId": "L-MVk5I6wjo"
+        "orgYtId": "Lq2-HHP04jM"
     },
-    "2LLljsU0FhA": {
-        "label": "ポストトゥルースの甘いディープキス『ノンブレス・オブリージュ』／しゆん【歌ってみた】",
-        "issued": "2021-08-03T01:33:03Z",
+    "Cch-8tl4z2g": {
+        "label": "【歌ってみた】変わらないもの／奥華子【町田ちま】",
+        "issued": "2018-10-14T14:45:00Z",
         "singers": [
-            "しゆん"
+            "町田ちま"
         ],
-        "orgYtId": "lw7pcm1W5tw"
+        "orgYtId": "Lq2-HHP04jM"
     },
-    "X01HPKGUF8M": {
-        "label": "ノンブレス・オブリージュ／歌ってみた【そうま】",
-        "issued": "2021-12-01T09:00:12Z",
+    "NfGq2-xeDpg": {
+        "label": "desire ／ Cover.dongdang",
+        "issued": "2020-06-28T08:54:55Z",
         "singers": [
-            "そうま"
+            "dongdang "
+        ],
+        "orgYtId": "LUCL0DLvzYI"
+    },
+    "6wKTFXPo3N0": {
+        "label": "desire　歌ってみた／宮下遊",
+        "issued": "2020-05-03T10:00:02Z",
+        "singers": [
+            "宮下遊"
+        ],
+        "orgYtId": "LUCL0DLvzYI"
+    },
+    "x89eiEiwpN4": {
+        "label": "ノンブレス・オブリージュ／P丸様。【歌ってみた】",
+        "issued": "2021-07-24T08:15:10Z",
+        "singers": [
+            "P丸様。"
         ],
         "orgYtId": "lw7pcm1W5tw"
     },
@@ -6610,27 +6884,27 @@
         ],
         "orgYtId": "lw7pcm1W5tw"
     },
+    "2LLljsU0FhA": {
+        "label": "ポストトゥルースの甘いディープキス『ノンブレス・オブリージュ』／しゆん【歌ってみた】",
+        "issued": "2021-08-03T01:33:03Z",
+        "singers": [
+            "しゆん"
+        ],
+        "orgYtId": "lw7pcm1W5tw"
+    },
+    "X01HPKGUF8M": {
+        "label": "ノンブレス・オブリージュ／歌ってみた【そうま】",
+        "issued": "2021-12-01T09:00:12Z",
+        "singers": [
+            "そうま"
+        ],
+        "orgYtId": "lw7pcm1W5tw"
+    },
     "aD32VkX8eQc": {
         "label": "そらる-ノンブレス・オブリージュ 【歌ってみた】",
         "issued": "2022-02-06T09:00:01Z",
         "singers": [
             "そらる"
-        ],
-        "orgYtId": "lw7pcm1W5tw"
-    },
-    "x89eiEiwpN4": {
-        "label": "ノンブレス・オブリージュ／P丸様。【歌ってみた】",
-        "issued": "2021-07-24T08:15:10Z",
-        "singers": [
-            "P丸様。"
-        ],
-        "orgYtId": "lw7pcm1W5tw"
-    },
-    "jIvH_KWYHgA": {
-        "label": "【超学生】ノンブレス・オブリージュ @歌ってみた",
-        "issued": "2021-06-10T10:00:18Z",
-        "singers": [
-            "超学生"
         ],
         "orgYtId": "lw7pcm1W5tw"
     },
@@ -6658,27 +6932,19 @@
         ],
         "orgYtId": "lw7pcm1W5tw"
     },
+    "jIvH_KWYHgA": {
+        "label": "【超学生】ノンブレス・オブリージュ @歌ってみた",
+        "issued": "2021-06-10T10:00:18Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "lw7pcm1W5tw"
+    },
     "ANPZ3aGPrM8": {
         "label": "幽霊東京 ／ Cover.dongdang",
         "issued": "2019-12-28T11:00:02Z",
         "singers": [
             "dongdang "
-        ],
-        "orgYtId": "lWl5viCqGSc"
-    },
-    "91rCW7jQv4Q": {
-        "label": "【ゲーム実況者が】幽霊東京 歌ってみた【てるとくん】【5万人記念】",
-        "issued": "2020-05-12T10:00:12Z",
-        "singers": [
-            "てるとくん"
-        ],
-        "orgYtId": "lWl5viCqGSc"
-    },
-    "Nh3rU_BFIfQ": {
-        "label": "そらる-幽霊東京【歌ってみた】",
-        "issued": "2020-03-07T09:00:05Z",
-        "singers": [
-            "そうま"
         ],
         "orgYtId": "lWl5viCqGSc"
     },
@@ -6698,21 +6964,77 @@
         ],
         "orgYtId": "lWl5viCqGSc"
     },
-    "paFa_Hur_w0": {
-        "label": "狂う獣 - Misumi（Cover） / いゔどっと",
-        "issued": "2019-05-01T11:31:25Z",
+    "Nh3rU_BFIfQ": {
+        "label": "そらる-幽霊東京【歌ってみた】",
+        "issued": "2020-03-07T09:00:05Z",
         "singers": [
-            "いゔどっと"
+            "そうま"
         ],
-        "orgYtId": "LyULoBCEYJY"
+        "orgYtId": "lWl5viCqGSc"
     },
-    "K6o0lwNvFKE": {
-        "label": "【歌ってみた】狂う獣 covered by 春猿火",
-        "issued": "2020-07-14T10:00:05Z",
+    "91rCW7jQv4Q": {
+        "label": "【ゲーム実況者が】幽霊東京 歌ってみた【てるとくん】【5万人記念】",
+        "issued": "2020-05-12T10:00:12Z",
         "singers": [
-            "春猿火"
+            "てるとくん"
         ],
-        "orgYtId": "LyULoBCEYJY"
+        "orgYtId": "lWl5viCqGSc"
+    },
+    "7gQJYZIII6w": {
+        "label": "『ファンサ』cover／un:c（あんく）",
+        "issued": "2019-07-20T12:53:07Z",
+        "singers": [
+            "un:c"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
+    },
+    "XZ7pS-jZDpc": {
+        "label": "実況者が『ファンサ』を全力で歌ってみた【ころん】",
+        "issued": "2019-11-23T08:18:21Z",
+        "singers": [
+            "ころん"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
+    },
+    "5qgpb-sd-Y8": {
+        "label": "ファンサ／さとみ【歌ってみた】【すとぷり】",
+        "issued": "2019-12-30T10:35:41Z",
+        "singers": [
+            "さとみ"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
+    },
+    "qJVa1X1tKos": {
+        "label": "優しい声で『ファンサ』歌ってみた【てるとくん】",
+        "issued": "2019-07-09T09:00:07Z",
+        "singers": [
+            "てるとくん"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
+    },
+    "UneAQKMTeMg": {
+        "label": "ありがとうの気持ちをこめてファンサ歌ってみた【ばぁう】",
+        "issued": "2019-08-25T09:16:02Z",
+        "singers": [
+            "ばぁう"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
+    },
+    "qzhL_jh-Tp4": {
+        "label": "ファンサ ／ るぅと 【cover】",
+        "issued": "2019-08-08T09:00:09Z",
+        "singers": [
+            "るぅと"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
+    },
+    "RVcMDspjiug": {
+        "label": "ファンサ ♡ 星川サラ/HoneyWorks【歌って踊ってみた】",
+        "issued": "2021-08-08T11:00:13Z",
+        "singers": [
+            "星川サラ"
+        ],
+        "orgYtId": "lzyDD8bMDKs"
     },
     "XPTuff6Lsqo": {
         "label": "ファンサ ／ HoneyWorks(cover) 【天月×うらたぬき】",
@@ -6731,51 +7053,11 @@
         ],
         "orgYtId": "lzyDD8bMDKs"
     },
-    "XZ7pS-jZDpc": {
-        "label": "実況者が『ファンサ』を全力で歌ってみた【ころん】",
-        "issued": "2019-11-23T08:18:21Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "lzyDD8bMDKs"
-    },
-    "7gQJYZIII6w": {
-        "label": "『ファンサ』cover／un:c（あんく）",
-        "issued": "2019-07-20T12:53:07Z",
-        "singers": [
-            "un:c"
-        ],
-        "orgYtId": "lzyDD8bMDKs"
-    },
-    "UneAQKMTeMg": {
-        "label": "ありがとうの気持ちをこめてファンサ歌ってみた【ばぁう】",
-        "issued": "2019-08-25T09:16:02Z",
-        "singers": [
-            "ばぁう"
-        ],
-        "orgYtId": "lzyDD8bMDKs"
-    },
-    "qJVa1X1tKos": {
-        "label": "優しい声で『ファンサ』歌ってみた【てるとくん】",
-        "issued": "2019-07-09T09:00:07Z",
-        "singers": [
-            "てるとくん"
-        ],
-        "orgYtId": "lzyDD8bMDKs"
-    },
     "5SqS1LKdsv4": {
         "label": "【ファンサの神が】『ファンサ』歌ってみたver.鬱【チャンネル登録者数1万人記念】",
         "issued": "2020-04-27T07:57:39Z",
         "singers": [
             "鬱"
-        ],
-        "orgYtId": "lzyDD8bMDKs"
-    },
-    "qzhL_jh-Tp4": {
-        "label": "ファンサ ／ るぅと 【cover】",
-        "issued": "2019-08-08T09:00:09Z",
-        "singers": [
-            "るぅと"
         ],
         "orgYtId": "lzyDD8bMDKs"
     },
@@ -6787,35 +7069,19 @@
         ],
         "orgYtId": "lzyDD8bMDKs"
     },
-    "5qgpb-sd-Y8": {
-        "label": "ファンサ／さとみ【歌ってみた】【すとぷり】",
-        "issued": "2019-12-30T10:35:41Z",
+    "dLHJgjLVRzI": {
+        "label": "不埒な喝采　歌った 【あらき】",
+        "issued": "2021-03-30T10:00:11Z",
         "singers": [
-            "さとみ"
+            "あらき"
         ],
-        "orgYtId": "lzyDD8bMDKs"
-    },
-    "RVcMDspjiug": {
-        "label": "ファンサ ♡ 星川サラ/HoneyWorks【歌って踊ってみた】",
-        "issued": "2021-08-08T11:00:13Z",
-        "singers": [
-            "星川サラ"
-        ],
-        "orgYtId": "lzyDD8bMDKs"
+        "orgYtId": "m10mNB8L9Kw"
     },
     "pJTAF1jNV1g": {
         "label": "【歌ってみた】不埒な喝采 covered by 春猿火",
         "issued": "2021-09-21T11:00:32Z",
         "singers": [
             "春猿火"
-        ],
-        "orgYtId": "m10mNB8L9Kw"
-    },
-    "dLHJgjLVRzI": {
-        "label": "不埒な喝采　歌った 【あらき】",
-        "issued": "2021-03-30T10:00:11Z",
-        "singers": [
-            "あらき"
         ],
         "orgYtId": "m10mNB8L9Kw"
     },
@@ -6835,46 +7101,13 @@
         ],
         "orgYtId": "m34DPnRUfMU"
     },
-    "6nR8BrKy2Hc": {
-        "label": "アイデンティティ / Kanaria（Cover）- Sou×いゔどっと",
-        "issued": "2022-02-05T11:00:07Z",
+    "l9LkgO3jiNY": {
+        "label": "アルティメットセンパイ　Covered by あらき",
+        "issued": "2020-01-29T09:00:14Z",
         "singers": [
-            "Sou",
-            "いゔどっと"
+            "あらき"
         ],
-        "orgYtId": "M9moY0hEJRE"
-    },
-    "cKAoJG3d3Vo": {
-        "label": "あの夏が飽和する。／まふまふ【歌ってみた】",
-        "issued": "2018-09-20T09:00:03Z",
-        "singers": [
-            "まふまふ"
-        ],
-        "orgYtId": "mKaRxty1j7g"
-    },
-    "Ql7JNl1yEuU": {
-        "label": "【歌ってみた】あの夏が飽和する。  covered by 花譜",
-        "issued": "2020-10-01T09:01:45Z",
-        "singers": [
-            "花譜"
-        ],
-        "orgYtId": "mKaRxty1j7g"
-    },
-    "VTLbEtUgDxg": {
-        "label": "あの夏が飽和する。 ／ 歌ってみた【ゆきむら。】",
-        "issued": "2021-09-26T10:00:10Z",
-        "singers": [
-            "ゆきむら。"
-        ],
-        "orgYtId": "mKaRxty1j7g"
-    },
-    "qoBYQBvA4Xo": {
-        "label": "【30万人記念】実況者が『あの夏が飽和する。』を全力で歌ってみた【ころん】",
-        "issued": "2019-03-29T11:00:13Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "mKaRxty1j7g"
+        "orgYtId": "MnJq5kSn-GY"
     },
     "Pu0dQG_Dq0c": {
         "label": "♧「アルティメット」-*Luna-(Cover)歌ってみたぬき。うらたぬき",
@@ -6884,13 +7117,13 @@
         ],
         "orgYtId": "MnJq5kSn-GY"
     },
-    "l9LkgO3jiNY": {
-        "label": "アルティメットセンパイ　Covered by あらき",
-        "issued": "2020-01-29T09:00:14Z",
+    "7bwoTQkbx6U": {
+        "label": "ヲズワルド ／ Cover.dongdang",
+        "issued": "2019-10-04T10:00:11Z",
         "singers": [
-            "あらき"
+            "dongdang "
         ],
-        "orgYtId": "MnJq5kSn-GY"
+        "orgYtId": "mVjyVppveGY"
     },
     "EripKDJV_hY": {
         "label": "ヲズワルド - 煮ル果実 （Cover） / いゔどっと",
@@ -6905,14 +7138,6 @@
         "issued": "2019-04-19T09:51:24Z",
         "singers": [
             "しゆん"
-        ],
-        "orgYtId": "mVjyVppveGY"
-    },
-    "mnPuRj8895U": {
-        "label": "ヲズワルド ／ 天月-あまつき- 【歌ってみた】",
-        "issued": "2019-04-12T10:00:05Z",
-        "singers": [
-            "天月-あまつき-"
         ],
         "orgYtId": "mVjyVppveGY"
     },
@@ -6932,11 +7157,11 @@
         ],
         "orgYtId": "mVjyVppveGY"
     },
-    "7bwoTQkbx6U": {
-        "label": "ヲズワルド ／ Cover.dongdang",
-        "issued": "2019-10-04T10:00:11Z",
+    "mnPuRj8895U": {
+        "label": "ヲズワルド ／ 天月-あまつき- 【歌ってみた】",
+        "issued": "2019-04-12T10:00:05Z",
         "singers": [
-            "dongdang "
+            "天月-あまつき-"
         ],
         "orgYtId": "mVjyVppveGY"
     },
@@ -6947,22 +7172,6 @@
             "不破湊"
         ],
         "orgYtId": "mVjyVppveGY"
-    },
-    "BEb4XGXg78U": {
-        "label": "【超学生】ビーバー @歌ってみた",
-        "issued": "2020-11-12T10:00:02Z",
-        "singers": [
-            "超学生"
-        ],
-        "orgYtId": "NArXe-Wg2D0"
-    },
-    "gLHv4jKT4BQ": {
-        "label": "ビーバー - すりぃ（Cover） / いゔどっと",
-        "issued": "2020-06-05T11:30:06Z",
-        "singers": [
-            "いゔどっと"
-        ],
-        "orgYtId": "NArXe-Wg2D0"
     },
     "0rAWijboutE": {
         "label": "【帰国子女のIfが】ビーバー【低音イケボで歌ってみた】",
@@ -6980,59 +7189,51 @@
         ],
         "orgYtId": "NArXe-Wg2D0"
     },
-    "x6zyyTn4c9A": {
-        "label": "そらる-スクランブル交際【歌ってみた】",
-        "issued": "2019-04-04T09:00:07Z",
+    "gLHv4jKT4BQ": {
+        "label": "ビーバー - すりぃ（Cover） / いゔどっと",
+        "issued": "2020-06-05T11:30:06Z",
         "singers": [
-            "そらる"
+            "いゔどっと"
         ],
-        "orgYtId": "nj82E1_70sQ"
+        "orgYtId": "NArXe-Wg2D0"
     },
-    "X7BLTj8KhEs": {
-        "label": "スクランブル交際 ／ 天月-あまつき- 【歌ってみた】",
-        "issued": "2019-03-31T09:00:03Z",
+    "BEb4XGXg78U": {
+        "label": "【超学生】ビーバー @歌ってみた",
+        "issued": "2020-11-12T10:00:02Z",
         "singers": [
-            "天月-あまつき-"
+            "超学生"
         ],
-        "orgYtId": "nj82E1_70sQ"
+        "orgYtId": "NArXe-Wg2D0"
     },
-    "EZA_HEOrnW8": {
-        "label": "夏夜のマジック/indigo la End - 水槽 (Acoustic cover)",
-        "issued": "2020-08-07T11:00:12Z",
+    "NESUEGAidrE": {
+        "label": "Casino ver.luz【COVER】",
+        "issued": "2021-09-24T11:00:19Z",
         "singers": [
-            "水槽"
+            "Luz"
         ],
-        "orgYtId": "NLABa95XAig"
+        "orgYtId": "NESUEGAidrE"
     },
-    "NLABa95XAig": {
-        "label": "【歌ってみた】夏夜のマジック  covered by 花譜",
-        "issued": "2020-12-02T09:00:03Z",
+    "0w-pwmEgB44": {
+        "label": "Casino／ななもり。【歌ってみた】すとぷり",
+        "issued": "2021-12-18T08:15:11Z",
         "singers": [
-            "花譜"
+            "ななもり。"
         ],
-        "orgYtId": "NLABa95XAig"
-    },
-    "Ec4aP5qJdDw": {
-        "label": "明星ギャラクティカ / ナユタン星人(Cover) めいちゃん",
-        "issued": "2018-02-23T05:32:16Z",
-        "singers": [
-            "めいちゃん"
-        ],
-        "orgYtId": "nsx7NbfsPqM"
-    },
-    "NkG-YjkCFMY": {
-        "label": "愛して愛して愛して / きくお (covered by 緑仙)",
-        "issued": "2019-10-18T16:15:12Z",
-        "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "NTrm_idbhUk"
+        "orgYtId": "NESUEGAidrE"
     },
     "Yzys0QshqZ0": {
         "label": "【歌ってみた】愛して愛して愛して/Kikuo【町田ちま/にじさんじ】",
         "issued": "2019-09-28T11:00:12Z",
         "singers": [
             "町田ちま"
+        ],
+        "orgYtId": "NTrm_idbhUk"
+    },
+    "NkG-YjkCFMY": {
+        "label": "愛して愛して愛して / きくお (covered by 緑仙)",
+        "issued": "2019-10-18T16:15:12Z",
+        "singers": [
+            "緑仙"
         ],
         "orgYtId": "NTrm_idbhUk"
     },
@@ -7052,55 +7253,93 @@
         ],
         "orgYtId": "nXqN519Z4Io"
     },
-    "qDcYDQNnuY0": {
-        "label": "陽キャJKに憧れる陰キャJKの歌：麻婆豆腐：歌ってみた",
-        "issued": "2022-02-26T09:00:18Z",
+    "FZzWh0U5z8U": {
+        "label": "君の脈で踊りたかった ／ Cover.dongdang",
+        "issued": "2020-04-19T12:00:10Z",
         "singers": [
-            "麻婆豆腐"
+            "dongdang "
         ],
-        "orgYtId": "nYhzWs48bE4"
+        "orgYtId": "O0IKk2C4kzg"
     },
-    "k-4ae-mNWCE": {
-        "label": "陽キャJKに憧れる陰キャJKの歌／feat. 星川サラ",
-        "issued": "2022-01-17T11:00:49Z",
+    "uM8YDs7FHRY": {
+        "label": "【歌ってみた】君の脈で踊りたかった / covered by 幸祜",
+        "issued": "2020-10-28T11:00:06Z",
         "singers": [
-            "星川サラ"
+            "幸祜"
         ],
-        "orgYtId": "nYhzWs48bE4"
+        "orgYtId": "O0IKk2C4kzg"
     },
-    "DyKhzT3vxKQ": {
-        "label": "レプリカ/sasakure.UK - 水槽 × VY1 (Cover)",
-        "issued": "2019-09-21T11:01:58Z",
+    "7wbd6ffvXm8": {
+        "label": "Cry Baby / 星街すいせい(Cover)",
+        "issued": "2021-08-13T09:00:09Z",
         "singers": [
-            "水槽"
+            "星街すいせい"
         ],
-        "orgYtId": "NZecO3stfmI"
+        "orgYtId": "O1bhZgkC4Gw"
     },
-    "-YMutD4cY7M": {
-        "label": "【歌ってみた】レプリカ covered by ヰ世界情緒",
-        "issued": "2020-01-28T10:00:00Z",
+    "_75LOdOoRQQ": {
+        "label": "Cry Baby / Official髭男dism (covered by 緑仙)",
+        "issued": "2021-10-29T10:00:11Z",
         "singers": [
-            "ヰ世界情緒"
+            "緑仙"
         ],
-        "orgYtId": "NZecO3stfmI"
+        "orgYtId": "O1bhZgkC4Gw"
     },
-    "GYO5Nftaqh4": {
-        "label": "劣等上等 ／ 天月＆96猫 【歌ってみた】",
-        "issued": "2019-12-02T09:00:03Z",
+    "4gqWULy3mtU": {
+        "label": "キュートなカノジョ  歌ってみた／あほの坂田。",
+        "issued": "2021-04-09T09:00:01Z",
         "singers": [
-            "天月-あまつき-",
-            "96猫"
+            "あほの坂田。"
         ],
-        "orgYtId": "oEkGC2HV7rc"
+        "orgYtId": "oFmup8lxUHw"
     },
-    "XANRMtKWwvI": {
-        "label": "【ばぁう×ゆきむら。】劣等上等【KnightA-騎士A- 歌ってみたツアー】",
-        "issued": "2020-08-07T11:31:06Z",
+    "NrqKj2pCfRA": {
+        "label": "実況者が『キュートなカノジョ』を全力で歌ってみた【ころん】すとぷり",
+        "issued": "2021-05-05T01:23:20Z",
         "singers": [
-            "ばぁう",
-            "ゆきむら。"
+            "ころん"
         ],
-        "orgYtId": "oEkGC2HV7rc"
+        "orgYtId": "oFmup8lxUHw"
+    },
+    "kzoKBNxQy5k": {
+        "label": "【オリジナルMV】キュートなカノジョ/syudou - ちぐさ (Cover)",
+        "issued": "2021-06-12T10:00:12Z",
+        "singers": [
+            "ちぐさくん"
+        ],
+        "orgYtId": "oFmup8lxUHw"
+    },
+    "LT2JV9ZhmSM": {
+        "label": "キュートなカノジョ／てるとくん【歌ってみた】",
+        "issued": "2021-06-12T08:00:12Z",
+        "singers": [
+            "てるとくん"
+        ],
+        "orgYtId": "oFmup8lxUHw"
+    },
+    "UuGqk5WnLOo": {
+        "label": "キュートなカノジョ／ばぁう 【歌ってみた】",
+        "issued": "2021-06-26T09:00:12Z",
+        "singers": [
+            "ばぁう"
+        ],
+        "orgYtId": "oFmup8lxUHw"
+    },
+    "5g-B6JMSw_g": {
+        "label": "【超学生】キュートなカノジョ @歌ってみた",
+        "issued": "2021-03-11T10:00:02Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "oFmup8lxUHw"
+    },
+    "fR2texlVKJo": {
+        "label": "キュートなカノジョ / 猫又おかゆ( cover )",
+        "issued": "2021-06-12T13:00:13Z",
+        "singers": [
+            "猫又おかゆ"
+        ],
+        "orgYtId": "oFmup8lxUHw"
     },
     "sMuKQ3pKd4E": {
         "label": "キュートなカノジョ／covered by 戌亥とこ",
@@ -7118,61 +7357,13 @@
         ],
         "orgYtId": "oFmup8lxUHw"
     },
-    "kzoKBNxQy5k": {
-        "label": "【オリジナルMV】キュートなカノジョ/syudou - ちぐさ (Cover)",
-        "issued": "2021-06-12T10:00:12Z",
+    "BiJ9zmtiJjY": {
+        "label": "そらる-チルドレンレコード(Re:boot)【歌ってみた】",
+        "issued": "2021-04-20T11:00:03Z",
         "singers": [
-            "ちぐさくん"
+            "そうま"
         ],
-        "orgYtId": "oFmup8lxUHw"
-    },
-    "NrqKj2pCfRA": {
-        "label": "実況者が『キュートなカノジョ』を全力で歌ってみた【ころん】すとぷり",
-        "issued": "2021-05-05T01:23:20Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "oFmup8lxUHw"
-    },
-    "UuGqk5WnLOo": {
-        "label": "キュートなカノジョ／ばぁう 【歌ってみた】",
-        "issued": "2021-06-26T09:00:12Z",
-        "singers": [
-            "ばぁう"
-        ],
-        "orgYtId": "oFmup8lxUHw"
-    },
-    "4gqWULy3mtU": {
-        "label": "キュートなカノジョ  歌ってみた／あほの坂田。",
-        "issued": "2021-04-09T09:00:01Z",
-        "singers": [
-            "あほの坂田。"
-        ],
-        "orgYtId": "oFmup8lxUHw"
-    },
-    "fR2texlVKJo": {
-        "label": "キュートなカノジョ / 猫又おかゆ( cover )",
-        "issued": "2021-06-12T13:00:13Z",
-        "singers": [
-            "猫又おかゆ"
-        ],
-        "orgYtId": "oFmup8lxUHw"
-    },
-    "LT2JV9ZhmSM": {
-        "label": "キュートなカノジョ／てるとくん【歌ってみた】",
-        "issued": "2021-06-12T08:00:12Z",
-        "singers": [
-            "てるとくん"
-        ],
-        "orgYtId": "oFmup8lxUHw"
-    },
-    "5g-B6JMSw_g": {
-        "label": "【超学生】キュートなカノジョ @歌ってみた",
-        "issued": "2021-03-11T10:00:02Z",
-        "singers": [
-            "超学生"
-        ],
-        "orgYtId": "oFmup8lxUHw"
+        "orgYtId": "oh9UGmqtdMg"
     },
     "0ffGZ-sx_Zo": {
         "label": "チルドレンレコード(Re:boot)／天月×まふまふ【歌ってみた】",
@@ -7192,88 +7383,141 @@
         ],
         "orgYtId": "oh9UGmqtdMg"
     },
-    "BiJ9zmtiJjY": {
-        "label": "そらる-チルドレンレコード(Re:boot)【歌ってみた】",
-        "issued": "2021-04-20T11:00:03Z",
+    "4XJjqLi6SjQ": {
+        "label": "ベノム / かいりきベア（Cover）ver.Sou",
+        "issued": "2018-10-08T12:00:00Z",
         "singers": [
-            "そうま"
+            "Sou"
         ],
-        "orgYtId": "oh9UGmqtdMg"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "EvV04DGl4fg": {
-        "label": "u / shr (covered by 緑仙)",
-        "issued": "2019-01-13T10:58:45Z",
+    "XS0TuMKAftg": {
+        "label": "『ベノム』 / un:c ✕ kradness 【歌ってみた】",
+        "issued": "2019-10-21T09:07:05Z",
         "singers": [
-            "緑仙"
+            "un:c"
         ],
-        "orgYtId": "OKMfgqpLBis"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "3uJ38WbVmT4": {
-        "label": "【CielA】- 名も無き囚人(이름 없는 죄수) cover",
-        "issued": "2020-01-11T11:00:00Z",
-        "singers": [
-            "CielA "
-        ],
-        "orgYtId": "On3uELcFYRE"
-    },
-    "xGjlPJlxYuM": {
-        "label": "名も無き囚人　Covered by あらき",
-        "issued": "2020-03-14T09:00:21Z",
+    "D4Rc1lqcQao": {
+        "label": "ベノム  Covered by あらき",
+        "issued": "2019-12-06T11:45:00Z",
         "singers": [
             "あらき"
         ],
-        "orgYtId": "On3uELcFYRE"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "GxXpt6rGFuM": {
-        "label": "白日 / King Gnu (Cover) めいちゃん feat.Gero",
-        "issued": "2019-05-15T09:00:01Z",
+    "BjwTiWJ8qHY": {
+        "label": "【浦島坂田船歌ってみたツアー】「ベノム」-かいりきベア-(Cover)歌ってみたぬき。うらたぬき",
+        "issued": "2020-12-24T10:45:00Z",
         "singers": [
-            "めいちゃん",
-            "Gero"
+            "うらたぬき"
         ],
-        "orgYtId": "ony539T074w"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "NO66dNMwmbU": {
-        "label": "白日 / King Gnu (covered by 紫咲シオン)【歌ってみた/4K】",
-        "issued": "2020-03-29T12:00:12Z",
+    "vF40o6ScqAc": {
+        "label": "【浦島坂田船】ベノム【歌ってみた】",
+        "issued": "2020-01-11T10:00:08Z",
         "singers": [
-            "紫咲シオン"
+            "うらたぬき"
         ],
-        "orgYtId": "ony539T074w"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "B3LdMKVGXBY": {
-        "label": "白日 / King Gnu (covered by 緑仙)",
-        "issued": "2019-05-18T10:28:42Z",
+    "O_ohWZg2fdY": {
+        "label": "実況者が『ベノム』を全力で歌ってみた【ころん】",
+        "issued": "2019-10-13T09:08:55Z",
         "singers": [
-            "緑仙"
+            "ころん"
         ],
-        "orgYtId": "ony539T074w"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "rk9t4p0jIkc": {
-        "label": "おおかみは赤ずきんに恋をした / 緑仙×シスター・クレア (Cover)",
-        "issued": "2019-05-15T10:57:49Z",
+    "P9SmGtWb-xg": {
+        "label": "【オリジナルMV】バレンタインに ベノム 歌ってみた【しゆん】",
+        "issued": "2019-02-14T10:18:52Z",
         "singers": [
-            "緑仙",
-            "シスター・クレア"
+            "しゆん"
         ],
-        "orgYtId": "ooy2FUZ4oI8"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "NOr0l9n5dSE": {
-        "label": "【オリジナルPV】おおかみは赤ずきんに恋をした ／ 96猫&天月 【歌ってみた】",
-        "issued": "2019-02-14T09:00:04Z",
+    "p-zHkutaQ5E": {
+        "label": "そらる-ベノム【歌ってみた】",
+        "issued": "2020-09-06T09:00:10Z",
         "singers": [
-            "96猫",
-            "天月-あまつき-"
+            "そうま"
         ],
-        "orgYtId": "ooy2FUZ4oI8"
+        "orgYtId": "oRJBwaZ59fQ"
     },
-    "sxqoTTX9cAM": {
-        "label": "【オリジナルMV】一人二役で歌ってみた/おおかみは赤ずきんに恋をした【ばぁう】",
-        "issued": "2019-07-02T10:00:08Z",
+    "An9INGXNxsA": {
+        "label": "【2周年記念】ベノム／ちぐさ【歌ってみた】",
+        "issued": "2020-10-02T09:00:02Z",
+        "singers": [
+            "ちぐさくん"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "aSf8hG_2ie4": {
+        "label": "【ショタボが】ベノム 歌ってみた【てるとくん】",
+        "issued": "2018-11-30T10:00:02Z",
+        "singers": [
+            "てるとくん"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "ImAWVQYlXTg": {
+        "label": "一人二役で歌ってみたベノム【ばぁう】",
+        "issued": "2019-09-15T09:58:11Z",
         "singers": [
             "ばぁう"
         ],
-        "orgYtId": "ooy2FUZ4oI8"
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "EK9fMug5CcQ": {
+        "label": "ベノム／まふまふ feat. かいりきベア【歌ってみた】",
+        "issued": "2020-10-09T09:02:12Z",
+        "singers": [
+            "まふまふ"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "DYyd0hSQ33k": {
+        "label": "ベノム ／歌ってみた【ゆきむら。】",
+        "issued": "2019-01-04T10:59:40Z",
+        "singers": [
+            "ゆきむら。"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "NISaLkMtvMI": {
+        "label": "【缶缶】ベノム【歌ってみた】",
+        "issued": "2019-04-19T10:15:00Z",
+        "singers": [
+            "缶缶"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "7fWXQV_I_Po": {
+        "label": "ベノム　歌ってみた／宮下遊",
+        "issued": "2018-08-17T11:10:10Z",
+        "singers": [
+            "宮下遊"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "4UX0chI4Ijc": {
+        "label": "ベノム/かいりきベア - 水槽 (Cover)",
+        "issued": "2018-12-25T12:00:32Z",
+        "singers": [
+            "水槽"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
+    },
+    "wNCfi3xH6p8": {
+        "label": "【超学生】ベノム @歌ってみた",
+        "issued": "2020-03-12T10:00:09Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "oRJBwaZ59fQ"
     },
     "zy7iRHdrPso": {
         "label": "ゲーマーが本気でベノム歌ってみた / 麻婆豆腐",
@@ -7291,59 +7535,11 @@
         ],
         "orgYtId": "oRJBwaZ59fQ"
     },
-    "ImAWVQYlXTg": {
-        "label": "一人二役で歌ってみたベノム【ばぁう】",
-        "issued": "2019-09-15T09:58:11Z",
+    "RE1uQTKGeTk": {
+        "label": "ベノム / 鈴木勝（cover）",
+        "issued": "2021-11-14T09:00:12Z",
         "singers": [
-            "ばぁう"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "NISaLkMtvMI": {
-        "label": "【缶缶】ベノム【歌ってみた】",
-        "issued": "2019-04-19T10:15:00Z",
-        "singers": [
-            "缶缶"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "4XJjqLi6SjQ": {
-        "label": "ベノム / かいりきベア（Cover）ver.Sou",
-        "issued": "2018-10-08T12:00:00Z",
-        "singers": [
-            "Sou"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "O_ohWZg2fdY": {
-        "label": "実況者が『ベノム』を全力で歌ってみた【ころん】",
-        "issued": "2019-10-13T09:08:55Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "An9INGXNxsA": {
-        "label": "【2周年記念】ベノム／ちぐさ【歌ってみた】",
-        "issued": "2020-10-02T09:00:02Z",
-        "singers": [
-            "ちぐさくん"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "XS0TuMKAftg": {
-        "label": "『ベノム』 / un:c ✕ kradness 【歌ってみた】",
-        "issued": "2019-10-21T09:07:05Z",
-        "singers": [
-            "un:c"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "P9SmGtWb-xg": {
-        "label": "【オリジナルMV】バレンタインに ベノム 歌ってみた【しゆん】",
-        "issued": "2019-02-14T10:18:52Z",
-        "singers": [
-            "しゆん"
+            "鈴木勝"
         ],
         "orgYtId": "oRJBwaZ59fQ"
     },
@@ -7355,91 +7551,11 @@
         ],
         "orgYtId": "oRJBwaZ59fQ"
     },
-    "7fWXQV_I_Po": {
-        "label": "ベノム　歌ってみた／宮下遊",
-        "issued": "2018-08-17T11:10:10Z",
-        "singers": [
-            "宮下遊"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "EK9fMug5CcQ": {
-        "label": "ベノム／まふまふ feat. かいりきベア【歌ってみた】",
-        "issued": "2020-10-09T09:02:12Z",
-        "singers": [
-            "まふまふ"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "BjwTiWJ8qHY": {
-        "label": "【浦島坂田船歌ってみたツアー】「ベノム」-かいりきベア-(Cover)歌ってみたぬき。うらたぬき",
-        "issued": "2020-12-24T10:45:00Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "wNCfi3xH6p8": {
-        "label": "【超学生】ベノム @歌ってみた",
-        "issued": "2020-03-12T10:00:09Z",
-        "singers": [
-            "超学生"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "D4Rc1lqcQao": {
-        "label": "ベノム  Covered by あらき",
-        "issued": "2019-12-06T11:45:00Z",
-        "singers": [
-            "あらき"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "RE1uQTKGeTk": {
-        "label": "ベノム / 鈴木勝（cover）",
-        "issued": "2021-11-14T09:00:12Z",
-        "singers": [
-            "鈴木勝"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "4UX0chI4Ijc": {
-        "label": "ベノム/かいりきベア - 水槽 (Cover)",
-        "issued": "2018-12-25T12:00:32Z",
-        "singers": [
-            "水槽"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "vF40o6ScqAc": {
-        "label": "【浦島坂田船】ベノム【歌ってみた】",
-        "issued": "2020-01-11T10:00:08Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
     "40zy8cGofzg": {
         "label": "ベノム／莉犬【歌ってみた】",
         "issued": "2019-11-29T09:00:00Z",
         "singers": [
             "莉犬"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "p-zHkutaQ5E": {
-        "label": "そらる-ベノム【歌ってみた】",
-        "issued": "2020-09-06T09:00:10Z",
-        "singers": [
-            "そうま"
-        ],
-        "orgYtId": "oRJBwaZ59fQ"
-    },
-    "DYyd0hSQ33k": {
-        "label": "ベノム ／歌ってみた【ゆきむら。】",
-        "issued": "2019-01-04T10:59:40Z",
-        "singers": [
-            "ゆきむら。"
         ],
         "orgYtId": "oRJBwaZ59fQ"
     },
@@ -7458,6 +7574,30 @@
             "志麻"
         ],
         "orgYtId": "OskXF3s0UT8"
+    },
+    "fDjF-WetaCg": {
+        "label": "トラフィック・ジャム ／ Cover.dongdang",
+        "issued": "2019-09-27T12:00:11Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "oUevY6uH4Qg"
+    },
+    "qcSVSj53sc4": {
+        "label": "トラフィック・ジャム / 煮ル果実（Cover） ver.Sou",
+        "issued": "2019-09-10T12:00:12Z",
+        "singers": [
+            "Sou"
+        ],
+        "orgYtId": "oUevY6uH4Qg"
+    },
+    "HeUTHGBcFYE": {
+        "label": "トラフィック・ジャム - 煮ル果実（Cover） / いゔどっと",
+        "issued": "2019-09-04T11:30:00Z",
+        "singers": [
+            "あほの坂田。"
+        ],
+        "orgYtId": "oUevY6uH4Qg"
     },
     "sxoKWlHnZPI": {
         "label": "【煮ル果実】トラフィック・ジャム／しゆん【歌ってみた】",
@@ -7483,55 +7623,6 @@
         ],
         "orgYtId": "oUevY6uH4Qg"
     },
-    "HeUTHGBcFYE": {
-        "label": "トラフィック・ジャム - 煮ル果実（Cover） / いゔどっと",
-        "issued": "2019-09-04T11:30:00Z",
-        "singers": [
-            "あほの坂田。"
-        ],
-        "orgYtId": "oUevY6uH4Qg"
-    },
-    "qcSVSj53sc4": {
-        "label": "トラフィック・ジャム / 煮ル果実（Cover） ver.Sou",
-        "issued": "2019-09-10T12:00:12Z",
-        "singers": [
-            "Sou"
-        ],
-        "orgYtId": "oUevY6uH4Qg"
-    },
-    "ite8ARDsn9g": {
-        "label": "【歌うまの悠佑と帰国子女のIfが】インターネッツ・ディスコ【圧倒的歌唱力とイケボでラップして英語で歌ってみた】",
-        "issued": "2020-09-05T11:00:10Z",
-        "singers": [
-            "悠祐",
-            "If"
-        ],
-        "orgYtId": "oYDzXhhtLp0"
-    },
-    "3mULuTlo8D0": {
-        "label": "【歌ってみた】インターネッツ・ディスコ / covered by 幸祜",
-        "issued": "2021-09-10T10:00:05Z",
-        "singers": [
-            "幸祜"
-        ],
-        "orgYtId": "oYDzXhhtLp0"
-    },
-    "_isOoU5GPvw": {
-        "label": "ヴィラン / てにをは（Cover） ver.Sou",
-        "issued": "2020-03-06T12:00:15Z",
-        "singers": [
-            "Sou"
-        ],
-        "orgYtId": "p9FJXfGHtDA"
-    },
-    "86obEYuJnq0": {
-        "label": "♣「ヴィラン」-てにをは-(Cover)歌ってみたぬき。",
-        "issued": "2020-03-15T10:18:47Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "p9FJXfGHtDA"
-    },
     "hI0IRxTxXCo": {
         "label": "【CielA】 ヴィラン(빌런) cover ∥てにをは",
         "issued": "2020-04-11T12:00:45Z",
@@ -7540,11 +7631,11 @@
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
-    "SqbMcPnula4": {
-        "label": "ヴィラン 歌ってみたあほの坂田。",
-        "issued": "2020-04-27T04:20:46Z",
+    "0iIjl-ECjn8": {
+        "label": "ヴィラン ／ Cover.dongdang",
+        "issued": "2020-03-08T11:00:12Z",
         "singers": [
-            "あほの坂田。"
+            "dongdang "
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
@@ -7556,11 +7647,35 @@
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
-    "zX2SI3ntR2A": {
-        "label": "【歌ってみた】ヴィラン covered by 花譜",
-        "issued": "2021-02-20T09:00:02Z",
+    "fuzfZ7bV9Dw": {
+        "label": "【帰国子女のIfが】ヴィラン【渾身の低音イケボで歌ってみた】",
+        "issued": "2020-05-04T11:11:50Z",
         "singers": [
-            "花譜"
+            "If"
+        ],
+        "orgYtId": "p9FJXfGHtDA"
+    },
+    "_isOoU5GPvw": {
+        "label": "ヴィラン / てにをは（Cover） ver.Sou",
+        "issued": "2020-03-06T12:00:15Z",
+        "singers": [
+            "Sou"
+        ],
+        "orgYtId": "p9FJXfGHtDA"
+    },
+    "SqbMcPnula4": {
+        "label": "ヴィラン 歌ってみたあほの坂田。",
+        "issued": "2020-04-27T04:20:46Z",
+        "singers": [
+            "あほの坂田。"
+        ],
+        "orgYtId": "p9FJXfGHtDA"
+    },
+    "oRqbZ4nHBs4": {
+        "label": "ヴィラン　歌った 【あらき】/  villain　Covered by ARAKI",
+        "issued": "2020-09-11T10:00:13Z",
+        "singers": [
+            "あらき"
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
@@ -7572,6 +7687,14 @@
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
+    "86obEYuJnq0": {
+        "label": "♣「ヴィラン」-てにをは-(Cover)歌ってみたぬき。",
+        "issued": "2020-03-15T10:18:47Z",
+        "singers": [
+            "うらたぬき"
+        ],
+        "orgYtId": "p9FJXfGHtDA"
+    },
     "1FwxWlsiu_U": {
         "label": "ヴィラン／しゆん　【歌ってみた】",
         "issued": "2020-03-13T09:00:11Z",
@@ -7580,27 +7703,11 @@
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
-    "Yh6hMer3h-k": {
-        "label": "ヴィラン / てにをは (covered by 緑仙)",
-        "issued": "2020-06-22T12:45:11Z",
+    "TRCMrj5UOzM": {
+        "label": "そらる-ヴィラン【歌ってみた】",
+        "issued": "2020-10-11T09:00:05Z",
         "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "p9FJXfGHtDA"
-    },
-    "liAryLiZeqI": {
-        "label": "☪ ヴィラン ／歌ってみた。by天月",
-        "issued": "2020-03-27T10:00:16Z",
-        "singers": [
-            "天月-あまつき-"
-        ],
-        "orgYtId": "p9FJXfGHtDA"
-    },
-    "oRqbZ4nHBs4": {
-        "label": "ヴィラン　歌った 【あらき】/  villain　Covered by ARAKI",
-        "issued": "2020-09-11T10:00:13Z",
-        "singers": [
-            "あらき"
+            "そらる"
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
@@ -7620,19 +7727,19 @@
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
-    "fuzfZ7bV9Dw": {
-        "label": "【帰国子女のIfが】ヴィラン【渾身の低音イケボで歌ってみた】",
-        "issued": "2020-05-04T11:11:50Z",
+    "zX2SI3ntR2A": {
+        "label": "【歌ってみた】ヴィラン covered by 花譜",
+        "issued": "2021-02-20T09:00:02Z",
         "singers": [
-            "If"
+            "花譜"
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
-    "TRCMrj5UOzM": {
-        "label": "そらる-ヴィラン【歌ってみた】",
-        "issued": "2020-10-11T09:00:05Z",
+    "liAryLiZeqI": {
+        "label": "☪ ヴィラン ／歌ってみた。by天月",
+        "issued": "2020-03-27T10:00:16Z",
         "singers": [
-            "そらる"
+            "天月-あまつき-"
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
@@ -7644,13 +7751,37 @@
         ],
         "orgYtId": "p9FJXfGHtDA"
     },
-    "0iIjl-ECjn8": {
-        "label": "ヴィラン ／ Cover.dongdang",
-        "issued": "2020-03-08T11:00:12Z",
+    "Yh6hMer3h-k": {
+        "label": "ヴィラン / てにをは (covered by 緑仙)",
+        "issued": "2020-06-22T12:45:11Z",
         "singers": [
-            "dongdang "
+            "緑仙"
         ],
         "orgYtId": "p9FJXfGHtDA"
+    },
+    "Rbeg7BJCQJs": {
+        "label": "【帰国子女のIfが】ときめきブローカー English cover / P丸様。様【英語で歌ってみた】【Tokimeki Broker】",
+        "issued": "2021-08-15T03:39:16Z",
+        "singers": [
+            "If"
+        ],
+        "orgYtId": "paoXdQREpYM"
+    },
+    "vM_6G_QIM78": {
+        "label": "俺が「ときめきブローカー」を普通に歌う訳がない／しゆん【歌ってみた】",
+        "issued": "2021-09-01T11:00:08Z",
+        "singers": [
+            "しゆん"
+        ],
+        "orgYtId": "paoXdQREpYM"
+    },
+    "R4FwWavONdU": {
+        "label": "ときめきブローカー／歌ってみた【そうま】",
+        "issued": "2022-01-23T09:00:13Z",
+        "singers": [
+            "そうま"
+        ],
+        "orgYtId": "paoXdQREpYM"
     },
     "75fLQuYnVvE": {
         "label": "ときめきブローカー／ななもり。【歌ってみた】",
@@ -7668,30 +7799,6 @@
         ],
         "orgYtId": "paoXdQREpYM"
     },
-    "Rbeg7BJCQJs": {
-        "label": "【帰国子女のIfが】ときめきブローカー English cover / P丸様。様【英語で歌ってみた】【Tokimeki Broker】",
-        "issued": "2021-08-15T03:39:16Z",
-        "singers": [
-            "If"
-        ],
-        "orgYtId": "paoXdQREpYM"
-    },
-    "R4FwWavONdU": {
-        "label": "ときめきブローカー／歌ってみた【そうま】",
-        "issued": "2022-01-23T09:00:13Z",
-        "singers": [
-            "そうま"
-        ],
-        "orgYtId": "paoXdQREpYM"
-    },
-    "vM_6G_QIM78": {
-        "label": "俺が「ときめきブローカー」を普通に歌う訳がない／しゆん【歌ってみた】",
-        "issued": "2021-09-01T11:00:08Z",
-        "singers": [
-            "しゆん"
-        ],
-        "orgYtId": "paoXdQREpYM"
-    },
     "2PpbMDNNWf8": {
         "label": "ときめきブローカー／莉犬【歌ってみた】",
         "issued": "2021-08-23T08:00:11Z",
@@ -7700,140 +7807,59 @@
         ],
         "orgYtId": "paoXdQREpYM"
     },
-    "XkufeOko3Jw": {
-        "label": "アンヘルを歌ってみた ver志麻",
-        "issued": "2019-11-04T13:46:39Z",
+    "qDud9cOQDFU": {
+        "label": "シャンティ ／ Cover.dongdang",
+        "issued": "2021-10-16T12:00:14Z",
         "singers": [
-            "志麻"
+            "dongdang "
         ],
-        "orgYtId": "PbfGCrSqIYY"
+        "orgYtId": "POy0RvJeaqM"
     },
-    "NHZAxCoy_t8": {
-        "label": "アンヘル　歌ってみた／宮下遊",
-        "issued": "2019-04-19T13:00:04Z",
+    "u7QLbmASi3Q": {
+        "label": "【帰国子女のIfが】シャンティ English cover / wotaku様【英語で歌ってみた】【SHANTI】【いれいす】",
+        "issued": "2022-01-08T09:30:13Z",
         "singers": [
-            "宮下遊"
+            "If"
         ],
-        "orgYtId": "PbfGCrSqIYY"
+        "orgYtId": "POy0RvJeaqM"
     },
-    "PbfGCrSqIYY": {
-        "label": "アンヘル＠歌ってみた【まふまふ】",
-        "issued": "2019-11-09T09:00:04Z",
+    "azHamU2wR_Y": {
+        "label": "シャンティ / wotaku（Cover） ver.Sou",
+        "issued": "2021-10-15T12:00:02Z",
         "singers": [
-            "まふまふ"
+            "Sou"
         ],
-        "orgYtId": "PbfGCrSqIYY"
+        "orgYtId": "POy0RvJeaqM"
     },
-    "vcl_UQSQ9BI": {
-        "label": "『アンヘル』　歌ってみた  /  un:c（あんく）",
-        "issued": "2019-11-10T10:37:40Z",
+    "yCpqrw7ktGA": {
+        "label": "シャンティ COVER / un:c（あんく）",
+        "issued": "2021-10-15T10:00:37Z",
         "singers": [
             "un:c"
         ],
-        "orgYtId": "PbfGCrSqIYY"
+        "orgYtId": "POy0RvJeaqM"
     },
-    "8qpv55F4u6k": {
-        "label": "【実写】アンヘル　歌ってみた／しゆん【ではない】",
-        "issued": "2019-04-03T08:59:37Z",
-        "singers": [
-            "しゆん"
-        ],
-        "orgYtId": "PbfGCrSqIYY"
-    },
-    "GdK7JNxdSzI": {
-        "label": "♧「アンヘル」-かいりきベア-(Cover)歌ってみたぬき。",
-        "issued": "2020-04-19T09:00:04Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "PbfGCrSqIYY"
-    },
-    "Cx96fx8ev7Y": {
-        "label": "【浦島坂田船歌ってみたツアー】アンヘル 歌ってみた／あほの坂田。",
-        "issued": "2020-12-24T10:15:01Z",
-        "singers": [
-            "あほの坂田。"
-        ],
-        "orgYtId": "PbfGCrSqIYY"
-    },
-    "_pClY8o-3DA": {
-        "label": "アンヘル  Covered by あらき×Gero",
-        "issued": "2020-02-01T10:00:11Z",
-        "singers": [
-            "あらき"
-        ],
-        "orgYtId": "PbfGCrSqIYY"
-    },
-    "EawzRyBjyYg": {
-        "label": "缶缶/アンヘル -かいりきベア【歌ってみた】",
-        "issued": "2019-05-03T10:30:01Z",
-        "singers": [
-            "缶缶"
-        ],
-        "orgYtId": "PbfGCrSqIYY"
-    },
-    "nXJ8zfgQyBU": {
-        "label": "Booo! - TOKOTOKO（西沢さんP）（Cover） / いゔどっと",
-        "issued": "2019-06-14T11:30:01Z",
+    "ugc-5p_Cmww": {
+        "label": "シャンティ - wotaku（Cover） / いゔどっと",
+        "issued": "2021-10-03T11:00:27Z",
         "singers": [
             "いゔどっと"
         ],
-        "orgYtId": "PcoWIZVaBNc"
-    },
-    "T5yt9yEGSLw": {
-        "label": "Booo!　/　歌ってみた　un:c（あんく）",
-        "issued": "2019-09-17T12:26:24Z",
-        "singers": [
-            "un:c"
-        ],
-        "orgYtId": "PcoWIZVaBNc"
-    },
-    "pr682QiueXE": {
-        "label": "♣「Booo!」-西沢さんP-(Cover)歌ってみたぬき。",
-        "issued": "2020-05-02T09:00:20Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "PcoWIZVaBNc"
-    },
-    "4UxTZLS2tmY": {
-        "label": "【楽しく】Booo! 歌ってみた【てるとくん】",
-        "issued": "2019-09-15T12:00:17Z",
-        "singers": [
-            "てるとくん"
-        ],
-        "orgYtId": "PcoWIZVaBNc"
-    },
-    "xMpTFCca9qo": {
-        "label": "Booo! ／ 星川サラ cover【TOKOTOKO/西沢さんP】",
-        "issued": "2019-12-22T12:30:12Z",
-        "singers": [
-            "星川サラ"
-        ],
-        "orgYtId": "PcoWIZVaBNc"
-    },
-    "wwgjYz-EfWI": {
-        "label": "キャットアイメイク - 奏音69（Cover） / いゔどっと＆あげいん",
-        "issued": "2019-06-21T11:30:02Z",
-        "singers": [
-            "いゔどっと",
-            "あげいん"
-        ],
-        "orgYtId": "PmJJxtNCT9k"
-    },
-    "gFVC0p4lknw": {
-        "label": "キャットアイメイク / 猫又おかゆ (Cover)",
-        "issued": "2021-04-17T13:45:16Z",
-        "singers": [
-            "猫又おかゆ"
-        ],
-        "orgYtId": "PmJJxtNCT9k"
+        "orgYtId": "POy0RvJeaqM"
     },
     "C3OaDjaMruU": {
         "label": "血売るってお前納得？『シャンティ』／しゆん【歌ってみた】",
         "issued": "2021-10-28T09:00:11Z",
         "singers": [
             "しゆん"
+        ],
+        "orgYtId": "POy0RvJeaqM"
+    },
+    "y7L7dX9j1QQ": {
+        "label": "シャンティ／歌ってみた【そうま】",
+        "issued": "2021-11-22T12:46:05Z",
+        "singers": [
+            "そうま"
         ],
         "orgYtId": "POy0RvJeaqM"
     },
@@ -7845,11 +7871,11 @@
         ],
         "orgYtId": "POy0RvJeaqM"
     },
-    "qDud9cOQDFU": {
-        "label": "シャンティ ／ Cover.dongdang",
-        "issued": "2021-10-16T12:00:14Z",
+    "DPsIfjIwhYw": {
+        "label": "シャンティ／ばぁう 【歌ってみた】",
+        "issued": "2021-10-25T09:33:05Z",
         "singers": [
-            "dongdang "
+            "ばぁう"
         ],
         "orgYtId": "POy0RvJeaqM"
     },
@@ -7869,51 +7895,11 @@
         ],
         "orgYtId": "POy0RvJeaqM"
     },
-    "y7L7dX9j1QQ": {
-        "label": "シャンティ／歌ってみた【そうま】",
-        "issued": "2021-11-22T12:46:05Z",
-        "singers": [
-            "そうま"
-        ],
-        "orgYtId": "POy0RvJeaqM"
-    },
     "pH0gAKOY9GU": {
         "label": "☪ シャンティ Cover / 天月-あまつき-",
         "issued": "2021-10-22T10:30:06Z",
         "singers": [
             "天月-あまつき-"
-        ],
-        "orgYtId": "POy0RvJeaqM"
-    },
-    "yCpqrw7ktGA": {
-        "label": "シャンティ COVER / un:c（あんく）",
-        "issued": "2021-10-15T10:00:37Z",
-        "singers": [
-            "un:c"
-        ],
-        "orgYtId": "POy0RvJeaqM"
-    },
-    "DPsIfjIwhYw": {
-        "label": "シャンティ／ばぁう 【歌ってみた】",
-        "issued": "2021-10-25T09:33:05Z",
-        "singers": [
-            "ばぁう"
-        ],
-        "orgYtId": "POy0RvJeaqM"
-    },
-    "u7QLbmASi3Q": {
-        "label": "【帰国子女のIfが】シャンティ English cover / wotaku様【英語で歌ってみた】【SHANTI】【いれいす】",
-        "issued": "2022-01-08T09:30:13Z",
-        "singers": [
-            "If"
-        ],
-        "orgYtId": "POy0RvJeaqM"
-    },
-    "ugc-5p_Cmww": {
-        "label": "シャンティ - wotaku（Cover） / いゔどっと",
-        "issued": "2021-10-03T11:00:27Z",
-        "singers": [
-            "いゔどっと"
         ],
         "orgYtId": "POy0RvJeaqM"
     },
@@ -7925,13 +7911,21 @@
         ],
         "orgYtId": "POy0RvJeaqM"
     },
-    "azHamU2wR_Y": {
-        "label": "シャンティ / wotaku（Cover） ver.Sou",
-        "issued": "2021-10-15T12:00:02Z",
+    "X_h8vGDIjRE": {
+        "label": "馬と鹿 ／ Cover.dongdang",
+        "issued": "2019-11-17T10:00:04Z",
         "singers": [
-            "Sou"
+            "dongdang "
         ],
-        "orgYtId": "POy0RvJeaqM"
+        "orgYtId": "ptnYBctoexk"
+    },
+    "t-e61XbjpsA": {
+        "label": "馬と鹿（米津玄師）-Arrange ver.-／まふまふ(cover)",
+        "issued": "2020-04-10T09:00:22Z",
+        "singers": [
+            "まふまふ"
+        ],
+        "orgYtId": "ptnYBctoexk"
     },
     "2XbZ09b-J4Q": {
         "label": "春嵐 - john （Cover） / いゔどっと",
@@ -7957,14 +7951,6 @@
         ],
         "orgYtId": "q2QfH1JqtkY"
     },
-    "pg9oL3EK6Gc": {
-        "label": "アディショナルメモリー／莉犬【cover】",
-        "issued": "2018-10-10T11:00:10Z",
-        "singers": [
-            "莉犬"
-        ],
-        "orgYtId": "q2QfH1JqtkY"
-    },
     "H6o-izFcSXc": {
         "label": "アディショナルメモリー 歌ってみた／あほの坂田。",
         "issued": "2018-10-15T10:20:16Z",
@@ -7973,53 +7959,13 @@
         ],
         "orgYtId": "q2QfH1JqtkY"
     },
-    "BwSzD4vUXAA": {
-        "label": "かいしんのいちげき！／しゆん  -acoustic .cover-",
-        "issued": "2018-09-06T09:39:34Z",
-        "singers": [
-            "しゆん"
-        ],
-        "orgYtId": "Q7AVA1e0qN4"
-    },
-    "t50dedNXwRk": {
-        "label": "「かいしんのいちげき！」歌ってみた【あほの坂田×うらたぬき】",
-        "issued": "2018-09-23T08:58:33Z",
-        "singers": [
-            "あほの坂田。"
-        ],
-        "orgYtId": "Q7AVA1e0qN4"
-    },
-    "uE1A3BdkGug": {
-        "label": "かいしんのいちげき！【cover】-  るぅと",
-        "issued": "2018-08-04T11:00:09Z",
-        "singers": [
-            "るぅと"
-        ],
-        "orgYtId": "Q7AVA1e0qN4"
-    },
-    "_k4EWeb7SV8": {
-        "label": "かいしんのいちげき！／莉犬【cover】",
-        "issued": "2018-07-25T11:00:31Z",
+    "pg9oL3EK6Gc": {
+        "label": "アディショナルメモリー／莉犬【cover】",
+        "issued": "2018-10-10T11:00:10Z",
         "singers": [
             "莉犬"
         ],
-        "orgYtId": "Q7AVA1e0qN4"
-    },
-    "Mtwp6XIdPss": {
-        "label": "【96猫】かいしんのいちげき！/Cover",
-        "issued": "2019-03-09T11:00:02Z",
-        "singers": [
-            "96猫"
-        ],
-        "orgYtId": "Q7AVA1e0qN4"
-    },
-    "sKy8w7swhN0": {
-        "label": "【CielA】サマータイムレコード (서머 타임 레코드) Cover ∥ じん",
-        "issued": "2020-06-27T08:00:06Z",
-        "singers": [
-            "CielA"
-        ],
-        "orgYtId": "qB4xRKllyeI"
+        "orgYtId": "q2QfH1JqtkY"
     },
     "FqE23l7JlTw": {
         "label": "悪い人　歌ってみた／しゆん",
@@ -8037,29 +7983,21 @@
         ],
         "orgYtId": "qCLFfQZA0Gs"
     },
-    "W2Jq9Z2DMZA": {
-        "label": "MIRA cover∥ Kanaria 【CielA】",
-        "issued": "2021-04-03T12:00:09Z",
+    "_6Bv8RApMew": {
+        "label": "キャラバン 歌ってみた／あほの坂田。",
+        "issued": "2020-03-14T09:47:53Z",
         "singers": [
-            "CielA"
+            "あほの坂田。"
         ],
-        "orgYtId": "QF-PvlyheVc"
+        "orgYtId": "QiR07U_xpYo"
     },
-    "z_BnEwQkCtA": {
-        "label": "実況者が『MIRA』を全力で歌ってみた【すとぷり】ころん",
-        "issued": "2021-03-13T07:14:34Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "QF-PvlyheVc"
-    },
-    "r5KSR-5qmSU": {
-        "label": "ドーナツホール / ハチ  (covered by 緑仙)",
-        "issued": "2018-11-04T11:00:11Z",
+    "nDcrqSeSAzw": {
+        "label": "キャラバン / syudou (covered by 緑仙)",
+        "issued": "2018-12-09T10:58:37Z",
         "singers": [
             "緑仙"
         ],
-        "orgYtId": "qnX2CdOBcDI"
+        "orgYtId": "QiR07U_xpYo"
     },
     "DwBqNJ3ZcpI": {
         "label": "【超学生と】ドーナツホール -English ver.- @歌って踊ってみた【BLACK Panda】",
@@ -8069,77 +8007,13 @@
         ],
         "orgYtId": "qnX2CdOBcDI"
     },
-    "s5HeTTvfqDc": {
-        "label": "誇り高きアイドル／莉犬【歌ってみた】",
-        "issued": "2021-04-02T09:00:16Z",
+    "r5KSR-5qmSU": {
+        "label": "ドーナツホール / ハチ  (covered by 緑仙)",
+        "issued": "2018-11-04T11:00:11Z",
         "singers": [
-            "莉犬"
+            "緑仙"
         ],
-        "orgYtId": "Qou76O_Rys0"
-    },
-    "0KD9P-MkoOo": {
-        "label": "誇り高きアイドル -boy's side-／HoneyWorks feat.うらたぬき",
-        "issued": "2021-07-30T10:00:00Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "Qou76O_Rys0"
-    },
-    "2pYaIr-4pfA": {
-        "label": "【アイドルが】誇り高きアイドル／湊あくあ【歌ってみた】",
-        "issued": "2021-12-21T11:00:14Z",
-        "singers": [
-            "星街すいせい"
-        ],
-        "orgYtId": "Qou76O_Rys0"
-    },
-    "E-1vGO1AIG8": {
-        "label": "うっせぇわ／るぅと【歌ってみた】",
-        "issued": "2020-12-29T11:00:12Z",
-        "singers": [
-            "るぅと"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "eAMfBxeENgo": {
-        "label": "うっせぇわ／しゆん【原キーで歌ってみた】",
-        "issued": "2020-12-25T10:30:39Z",
-        "singers": [
-            "しゆん"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "tK_UZ7oyfg0": {
-        "label": "うっせぇわ／歌ってみた【ゆきむら。】",
-        "issued": "2020-12-10T11:00:14Z",
-        "singers": [
-            "ゆきむら。"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "p4kbvYIPAhY": {
-        "label": "うっせぇわ／ななもり。【歌ってみた】",
-        "issued": "2020-12-21T10:00:15Z",
-        "singers": [
-            "ななもり。"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "SJ9vWvIjVyw": {
-        "label": "実況者が『うっせぇわ』を全力で歌ってみた【ころん】すとぷり",
-        "issued": "2020-12-26T09:15:14Z",
-        "singers": [
-            "ころん"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "9Lb4LttQA70": {
-        "label": "うっせぇわ／さとみ【歌ってみた】",
-        "issued": "2020-12-26T23:30:12Z",
-        "singers": [
-            "さとみ"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
+        "orgYtId": "qnX2CdOBcDI"
     },
     "_qLHADjO7z8": {
         "label": "【96猫】うっせぇわ を歌ってみた",
@@ -8149,83 +8023,11 @@
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
-    "l3bw90UQe5k": {
-        "label": "学生時代いじめられていた俺が『うっせぇわ』歌ってみた　【鬱くん】【歌ってみた】【うっせぇわ／Ado】",
-        "issued": "2021-03-13T09:00:16Z",
-        "singers": [
-            "鬱"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "pFKDIHrIDZI": {
-        "label": "そらる-うっせぇわ【歌ってみた】",
-        "issued": "2021-01-23T09:00:13Z",
-        "singers": [
-            "そうま"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
     "8tefdLyI6Hw": {
         "label": "【帰国子女のIfが】うっせぇわ English cover / Ado様【英語で歌ってみた】【Usseewa】",
         "issued": "2021-08-14T03:30:05Z",
         "singers": [
             "If"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "z9i4Y3RT5D0": {
-        "label": "うっせぇわ ／ばぁう 【歌ってみた】",
-        "issued": "2020-11-27T10:39:30Z",
-        "singers": [
-            "ばぁう"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "vSzVyUrrnyQ": {
-        "label": "♣「うっせぇわ」-Ado-(Cover)歌ってみたぬき。うらたぬき",
-        "issued": "2021-01-23T10:00:17Z",
-        "singers": [
-            "うらたぬき"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "Ay7blsgoQys": {
-        "label": "うっせぇわ／てるとくん【歌ってみた】",
-        "issued": "2021-01-05T10:00:14Z",
-        "singers": [
-            "てるとくん"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "Wajx-_bbTII": {
-        "label": "☪ うっせぇわ ／ 歌ってみた。by天月",
-        "issued": "2020-11-28T10:00:12Z",
-        "singers": [
-            "天月-あまつき-"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "e4vLU37je2M": {
-        "label": "うっせぇわ／莉犬【歌ってみた】",
-        "issued": "2020-12-16T11:30:13Z",
-        "singers": [
-            "莉犬"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "dtObKUXUJts": {
-        "label": "【歌ってみた】うっせぇわ covered by 春猿火",
-        "issued": "2021-03-24T10:00:18Z",
-        "singers": [
-            "春猿火"
-        ],
-        "orgYtId": "Qp3b-RXtz4w"
-    },
-    "5fifnky9v_I": {
-        "label": "うっせぇわ／Covered by紫咲シオン【歌ってみた】",
-        "issued": "2021-03-12T12:00:17Z",
-        "singers": [
-            "紫咲シオン"
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
@@ -8245,35 +8047,67 @@
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
-    "27cpH0OyXoA": {
-        "label": "うっせぇわ / Ado (covered by 緑仙)",
-        "issued": "2020-12-31T10:00:12Z",
+    "vSzVyUrrnyQ": {
+        "label": "♣「うっせぇわ」-Ado-(Cover)歌ってみたぬき。うらたぬき",
+        "issued": "2021-01-23T10:00:17Z",
         "singers": [
-            "緑仙"
+            "うらたぬき"
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
-    "iQM-bIZm6tA": {
-        "label": "うっせぇわ：歌ってみた：麻婆豆腐",
-        "issued": "2020-12-06T02:00:04Z",
+    "SJ9vWvIjVyw": {
+        "label": "実況者が『うっせぇわ』を全力で歌ってみた【ころん】すとぷり",
+        "issued": "2020-12-26T09:15:14Z",
         "singers": [
-            "麻婆豆腐"
+            "ころん"
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
-    "tseDUaBMrjM": {
-        "label": "【声真似1人50役】うっせぇわ （Ado）／志麻【歌ってみた】",
-        "issued": "2021-03-07T10:00:30Z",
+    "9Lb4LttQA70": {
+        "label": "うっせぇわ／さとみ【歌ってみた】",
+        "issued": "2020-12-26T23:30:12Z",
         "singers": [
-            "志麻"
+            "さとみ"
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
-    "wMW80NPzX5E": {
-        "label": "うっせぇわ／まふまふ【歌ってみた】",
-        "issued": "2020-12-06T09:00:14Z",
+    "eAMfBxeENgo": {
+        "label": "うっせぇわ／しゆん【原キーで歌ってみた】",
+        "issued": "2020-12-25T10:30:39Z",
         "singers": [
-            "まふまふ"
+            "しゆん"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "pFKDIHrIDZI": {
+        "label": "そらる-うっせぇわ【歌ってみた】",
+        "issued": "2021-01-23T09:00:13Z",
+        "singers": [
+            "そうま"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "Ay7blsgoQys": {
+        "label": "うっせぇわ／てるとくん【歌ってみた】",
+        "issued": "2021-01-05T10:00:14Z",
+        "singers": [
+            "てるとくん"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "p4kbvYIPAhY": {
+        "label": "うっせぇわ／ななもり。【歌ってみた】",
+        "issued": "2020-12-21T10:00:15Z",
+        "singers": [
+            "ななもり。"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "z9i4Y3RT5D0": {
+        "label": "うっせぇわ ／ばぁう 【歌ってみた】",
+        "issued": "2020-11-27T10:39:30Z",
+        "singers": [
+            "ばぁう"
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
@@ -8285,32 +8119,110 @@
         ],
         "orgYtId": "Qp3b-RXtz4w"
     },
-    "SoSuMVviNaU": {
-        "label": "おこちゃま戦争／Covered by紫咲シオン＆湊あくあ【歌ってみた/4K】",
-        "issued": "2020-12-08T13:01:12Z",
+    "wMW80NPzX5E": {
+        "label": "うっせぇわ／まふまふ【歌ってみた】",
+        "issued": "2020-12-06T09:00:14Z",
         "singers": [
-            "紫咲シオン",
-            "湊あくあ"
+            "まふまふ"
         ],
-        "orgYtId": "qYAmduGAwBQ"
+        "orgYtId": "Qp3b-RXtz4w"
     },
-    "AXj_QhXyVHY": {
-        "label": "【てると×ゆきむら。】 おこちゃま戦争 歌ってみた【KnightA-騎士A】",
-        "issued": "2020-09-20T11:20:57Z",
+    "tK_UZ7oyfg0": {
+        "label": "うっせぇわ／歌ってみた【ゆきむら。】",
+        "issued": "2020-12-10T11:00:14Z",
         "singers": [
-            "てるとくん",
             "ゆきむら。"
         ],
-        "orgYtId": "qYAmduGAwBQ"
+        "orgYtId": "Qp3b-RXtz4w"
     },
-    "_bRiUb84lBk": {
-        "label": "U/millennium parade × Belle【covered by else & inui toko】",
-        "issued": "2021-09-30T13:00:13Z",
+    "E-1vGO1AIG8": {
+        "label": "うっせぇわ／るぅと【歌ってみた】",
+        "issued": "2020-12-29T11:00:12Z",
         "singers": [
-            "戌亥とこ",
-            "エルセ"
+            "るぅと"
         ],
-        "orgYtId": "R3V4sAXUJ-g"
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "tseDUaBMrjM": {
+        "label": "【声真似1人50役】うっせぇわ （Ado）／志麻【歌ってみた】",
+        "issued": "2021-03-07T10:00:30Z",
+        "singers": [
+            "志麻"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "5fifnky9v_I": {
+        "label": "うっせぇわ／Covered by紫咲シオン【歌ってみた】",
+        "issued": "2021-03-12T12:00:17Z",
+        "singers": [
+            "紫咲シオン"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "dtObKUXUJts": {
+        "label": "【歌ってみた】うっせぇわ covered by 春猿火",
+        "issued": "2021-03-24T10:00:18Z",
+        "singers": [
+            "春猿火"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "Wajx-_bbTII": {
+        "label": "☪ うっせぇわ ／ 歌ってみた。by天月",
+        "issued": "2020-11-28T10:00:12Z",
+        "singers": [
+            "天月-あまつき-"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "iQM-bIZm6tA": {
+        "label": "うっせぇわ：歌ってみた：麻婆豆腐",
+        "issued": "2020-12-06T02:00:04Z",
+        "singers": [
+            "麻婆豆腐"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "27cpH0OyXoA": {
+        "label": "うっせぇわ / Ado (covered by 緑仙)",
+        "issued": "2020-12-31T10:00:12Z",
+        "singers": [
+            "緑仙"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "l3bw90UQe5k": {
+        "label": "学生時代いじめられていた俺が『うっせぇわ』歌ってみた　【鬱くん】【歌ってみた】【うっせぇわ／Ado】",
+        "issued": "2021-03-13T09:00:16Z",
+        "singers": [
+            "鬱"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "e4vLU37je2M": {
+        "label": "うっせぇわ／莉犬【歌ってみた】",
+        "issued": "2020-12-16T11:30:13Z",
+        "singers": [
+            "莉犬"
+        ],
+        "orgYtId": "Qp3b-RXtz4w"
+    },
+    "iF4n-Mx8SIo": {
+        "label": "ドクトリーヌ - 煮ル果実（Cover） / 鯨木×いゔどっと",
+        "issued": "2021-03-21T11:00:22Z",
+        "singers": [
+            "鯨木",
+            "いゔどっと"
+        ],
+        "orgYtId": "RawnaIb9Pvc"
+    },
+    "PWg940kPnDU": {
+        "label": "ドクトリーヌ Cover / めいちゃん",
+        "issued": "2021-09-08T11:00:10Z",
+        "singers": [
+            "めいちゃん"
+        ],
+        "orgYtId": "RawnaIb9Pvc"
     },
     "YinTWcGpfJ8": {
         "label": "プロトディスコ　歌ってみた　by ジェル",
@@ -8320,21 +8232,21 @@
         ],
         "orgYtId": "rkkZYzXsxPA"
     },
-    "qfboW35fdg0": {
-        "label": "プロトディスコ / ぬゆり (covered by 緑仙)",
-        "issued": "2018-12-02T10:58:35Z",
+    "DePP-BkLZpI": {
+        "label": "【歌ってみた】スカシユリ / biz【町田ちま】",
+        "issued": "2020-04-25T12:45:32Z",
         "singers": [
-            "緑仙"
+            "町田ちま"
         ],
-        "orgYtId": "rkkZYzXsxPA"
+        "orgYtId": "RknnE2QAoww"
     },
-    "ON-uAsf4uak": {
-        "label": "そらる×天月-ダーリンダンス【歌ってみた】",
-        "issued": "2020-09-27T09:00:06Z",
+    "gK-YtyMphfQ": {
+        "label": "【超学生】スカシユリ @歌ってみた",
+        "issued": "2020-07-30T10:00:12Z",
         "singers": [
-            "そうま"
+            "超学生"
         ],
-        "orgYtId": "Rkrm5foi188"
+        "orgYtId": "RknnE2QAoww"
     },
     "wwOFRX-7EWY": {
         "label": "ダーリンダンス 歌ってみた 【あらき×nqrse×めいちゃん】",
@@ -8373,6 +8285,14 @@
         "issued": "2020-12-24T10:00:01Z",
         "singers": [
             "センラ"
+        ],
+        "orgYtId": "Rkrm5foi188"
+    },
+    "ON-uAsf4uak": {
+        "label": "そらる×天月-ダーリンダンス【歌ってみた】",
+        "issued": "2020-09-27T09:00:06Z",
+        "singers": [
+            "そうま"
         ],
         "orgYtId": "Rkrm5foi188"
     },
@@ -8472,6 +8392,14 @@
         ],
         "orgYtId": "rpIsjz-oLOQ"
     },
+    "N0t-8KdlYFA": {
+        "label": "寄り酔い (tipsy) cover∥和ぬか【CielA】",
+        "issued": "2021-02-27T12:30:19Z",
+        "singers": [
+            "CielA"
+        ],
+        "orgYtId": "Rq0NjgXSj0s"
+    },
     "5Cd9-yIiX7Q": {
         "label": "寄り酔い ／ Cover.dongdang × DALNODO",
         "issued": "2021-08-23T11:00:02Z",
@@ -8502,14 +8430,6 @@
         "issued": "2021-08-15T00:00:06Z",
         "singers": [
             "ななもり。"
-        ],
-        "orgYtId": "Rq0NjgXSj0s"
-    },
-    "N0t-8KdlYFA": {
-        "label": "寄り酔い (tipsy) cover∥和ぬか【CielA】",
-        "issued": "2021-02-27T12:30:19Z",
-        "singers": [
-            "CielA"
         ],
         "orgYtId": "Rq0NjgXSj0s"
     },
@@ -8626,11 +8546,99 @@
         ],
         "orgYtId": "sFhKP57Nk1U"
     },
+    "bIlBcyQx0HQ": {
+        "label": "腐れ外道とチョコレゐト - Trick or Treat (Cover)",
+        "issued": "2019-10-25T11:00:08Z",
+        "singers": [
+            "いゔどっと"
+        ],
+        "orgYtId": "sHnvEsNU1X0"
+    },
+    "GcRykRawFYU": {
+        "label": "[CielA] - 阿吽のビーツ(아훔의 비트) cover/歌ってみた",
+        "issued": "2018-03-04T13:03:33Z",
+        "singers": [
+            "CielA"
+        ],
+        "orgYtId": "SiqjnFhLq2U"
+    },
+    "fJ9kKcwBG_U": {
+        "label": "阿吽のビーツ ／ Cover.dongdang",
+        "issued": "2020-03-15T11:00:10Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "SiqjnFhLq2U"
+    },
+    "zPDJeLxhRYk": {
+        "label": "阿吽のビーツ / 羽生まゐご (covered by 緑仙)",
+        "issued": "2019-09-01T11:00:11Z",
+        "singers": [
+            "緑仙"
+        ],
+        "orgYtId": "SiqjnFhLq2U"
+    },
+    "N0rpJ7umuXM": {
+        "label": "アイムハイ　歌ってみた－遊",
+        "issued": "2018-01-19T11:00:02Z",
+        "singers": [
+            "宮下遊"
+        ],
+        "orgYtId": "siyb_Xo-p54"
+    },
+    "244BTnR-Gmg": {
+        "label": "【超学生】アイムハイ @歌ってみた",
+        "issued": "2020-10-15T10:00:01Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "siyb_Xo-p54"
+    },
+    "tYMSo9gW8Ks": {
+        "label": "【Ado】脳内革命ガール 歌いました",
+        "issued": "2019-04-15T11:00:06Z",
+        "singers": [
+            "Ado"
+        ],
+        "orgYtId": "sjr-tPFADpM"
+    },
+    "qL3chh5M5d0": {
+        "label": "【Ado】脳内革命ガール 歌いました【ワンコーラス】",
+        "issued": "2018-08-26T12:00:07Z",
+        "singers": [
+            "Ado"
+        ],
+        "orgYtId": "sjr-tPFADpM"
+    },
     "i_KcoSDcnsc": {
         "label": "【帰国子女のIfが】小悪魔だってかまわない！ English＆Rap cover/HoneyWorks【ラップして英語で歌ってみた】【Koakumadattekamawanai!】",
         "issued": "2021-06-05T11:00:30Z",
         "singers": [
             "If"
+        ],
+        "orgYtId": "SMEyLYGGLKc"
+    },
+    "MycVuhz7Iak": {
+        "label": "小悪魔だってかまわない！ COVER / un:c（あんく）",
+        "issued": "2021-07-14T11:00:09Z",
+        "singers": [
+            "un:c"
+        ],
+        "orgYtId": "SMEyLYGGLKc"
+    },
+    "nlARd9aDMzU": {
+        "label": "チルドレンレコード(Re:boot) / 歌ってみた【un:c（あんく）】",
+        "issued": "2021-04-03T10:00:32Z",
+        "singers": [
+            "un:c"
+        ],
+        "orgYtId": "SMEyLYGGLKc"
+    },
+    "3_pkY3aMFTo": {
+        "label": "小悪魔だってかまわない！歌ってみた／あほの坂田。",
+        "issued": "2021-12-04T15:00:02Z",
+        "singers": [
+            "あほの坂田。"
         ],
         "orgYtId": "SMEyLYGGLKc"
     },
@@ -8706,14 +8714,6 @@
         ],
         "orgYtId": "srH34Tjjo9U"
     },
-    "XSGvP4N4Mhc": {
-        "label": "フィクサー / ぬゆり (covered by 緑仙)",
-        "issued": "2018-09-01T00:14:29Z",
-        "singers": [
-            "緑仙"
-        ],
-        "orgYtId": "srH34Tjjo9U"
-    },
     "nJhag4bObjc": {
         "label": "フィクサー /そらる×nqrse【歌ってみた】",
         "issued": "2018-11-10T09:00:11Z",
@@ -8722,14 +8722,13 @@
         ],
         "orgYtId": "srH34Tjjo9U"
     },
-    "DXhP49zlazU": {
-        "label": "EYE／After the Rain（そらる×まふまふ）【アレンジして歌ってみた】",
-        "issued": "2021-09-26T09:00:25Z",
+    "XSGvP4N4Mhc": {
+        "label": "フィクサー / ぬゆり (covered by 緑仙)",
+        "issued": "2018-09-01T00:14:29Z",
         "singers": [
-            "そらる",
-            "まふまふ"
+            "緑仙"
         ],
-        "orgYtId": "sSHkXxADtaE"
+        "orgYtId": "srH34Tjjo9U"
     },
     "eWE0v4jwNoA": {
         "label": "EYE cover ∥ Kanaria 【CielA】",
@@ -8784,6 +8783,15 @@
         "issued": "2021-08-02T09:15:12Z",
         "singers": [
             "ななもり。"
+        ],
+        "orgYtId": "sSHkXxADtaE"
+    },
+    "DXhP49zlazU": {
+        "label": "EYE／After the Rain（そらる×まふまふ）【アレンジして歌ってみた】",
+        "issued": "2021-09-26T09:00:25Z",
+        "singers": [
+            "そらる",
+            "まふまふ"
         ],
         "orgYtId": "sSHkXxADtaE"
     },
@@ -8851,14 +8859,6 @@
         ],
         "orgYtId": "SX_ViT4Ra7k"
     },
-    "kbaGvMuDc-I": {
-        "label": "Lemon／莉犬【cover】",
-        "issued": "2018-08-09T07:00:05Z",
-        "singers": [
-            "莉犬"
-        ],
-        "orgYtId": "SX_ViT4Ra7k"
-    },
     "JkiOdSm1A4I": {
         "label": "Lemon  ／ 米津玄師(cover) by天月",
         "issued": "2018-04-28T09:00:03Z",
@@ -8867,11 +8867,27 @@
         ],
         "orgYtId": "SX_ViT4Ra7k"
     },
+    "kbaGvMuDc-I": {
+        "label": "Lemon／莉犬【cover】",
+        "issued": "2018-08-09T07:00:05Z",
+        "singers": [
+            "莉犬"
+        ],
+        "orgYtId": "SX_ViT4Ra7k"
+    },
     "Bk6mgTyPtOk": {
         "label": "ガランド(Airhead) cover∥ピコン【CielA】",
         "issued": "2021-01-16T13:00:15Z",
         "singers": [
             "CielA"
+        ],
+        "orgYtId": "SXC2wO1XdMI"
+    },
+    "WcmJs6OCStw": {
+        "label": "ガランド　歌ってみた　【いゔどっと】",
+        "issued": "2018-05-17T12:00:03Z",
+        "singers": [
+            "いゔどっと"
         ],
         "orgYtId": "SXC2wO1XdMI"
     },
@@ -8899,13 +8915,13 @@
         ],
         "orgYtId": "SXC2wO1XdMI"
     },
-    "WcmJs6OCStw": {
-        "label": "ガランド　歌ってみた　【いゔどっと】",
-        "issued": "2018-05-17T12:00:03Z",
+    "ZPJc9BpeEjQ": {
+        "label": "１０年付き添った彼女と東京サマーセッション歌ってみた【ばぁう】",
+        "issued": "2019-08-21T09:24:28Z",
         "singers": [
-            "いゔどっと"
+            "ばぁう"
         ],
-        "orgYtId": "SXC2wO1XdMI"
+        "orgYtId": "sXLzVwgmv_w"
     },
     "Z4c1c8OZkG8": {
         "label": "東京サマーセッション (covered by いのるぱんだ)",
@@ -8916,13 +8932,29 @@
         ],
         "orgYtId": "sXLzVwgmv_w"
     },
-    "ZPJc9BpeEjQ": {
-        "label": "１０年付き添った彼女と東京サマーセッション歌ってみた【ばぁう】",
-        "issued": "2019-08-21T09:24:28Z",
+    "9reIf15TIlI": {
+        "label": "Corruption ／ Cover.dongdang",
+        "issued": "2020-01-22T11:00:04Z",
         "singers": [
-            "ばぁう"
+            "dongdang "
         ],
-        "orgYtId": "sXLzVwgmv_w"
+        "orgYtId": "t0B6QJFJ0LM"
+    },
+    "VjfndImCbqU": {
+        "label": "【歌ってみた】Corruption  covered by 春猿火",
+        "issued": "2021-05-31T10:00:23Z",
+        "singers": [
+            "春猿火"
+        ],
+        "orgYtId": "t0B6QJFJ0LM"
+    },
+    "OBqb3BmXI7Y": {
+        "label": "(nqrse) Nectar うたいました",
+        "issued": "2019-04-13T09:00:23Z",
+        "singers": [
+            "nqrse"
+        ],
+        "orgYtId": "T3mgg7KcFxE"
     },
     "R5W25fAwuIY": {
         "label": "【歌ってみた】Nectar / covered by 幸祜 × 春猿火",
@@ -8933,13 +8965,13 @@
         ],
         "orgYtId": "T3mgg7KcFxE"
     },
-    "OBqb3BmXI7Y": {
-        "label": "(nqrse) Nectar うたいました",
-        "issued": "2019-04-13T09:00:23Z",
+    "QPCG7H3Hvas": {
+        "label": "シャルル ／ Cover.dongdang",
+        "issued": "2018-12-25T09:00:03Z",
         "singers": [
-            "nqrse"
+            "dongdang "
         ],
-        "orgYtId": "T3mgg7KcFxE"
+        "orgYtId": "TA5OFS_xX0c"
     },
     "8q4JgLda9S0": {
         "label": "シャルル - バルーン （Cover） / いゔどっと",
@@ -8981,31 +9013,6 @@
         ],
         "orgYtId": "TA5OFS_xX0c"
     },
-    "QPCG7H3Hvas": {
-        "label": "シャルル ／ Cover.dongdang",
-        "issued": "2018-12-25T09:00:03Z",
-        "singers": [
-            "dongdang "
-        ],
-        "orgYtId": "TA5OFS_xX0c"
-    },
-    "V1AmDLsSYyA": {
-        "label": "ジグソーパズル／志麻×センラ【歌ってみた】",
-        "issued": "2019-03-07T11:00:06Z",
-        "singers": [
-            "志麻",
-            "センラ"
-        ],
-        "orgYtId": "ta9zslmSRqg"
-    },
-    "o-5j2-PC9qo": {
-        "label": "感情的に歌ってみた／ジグソーパズル【ばぁう】",
-        "issued": "2018-11-28T09:18:00Z",
-        "singers": [
-            "ばぁう"
-        ],
-        "orgYtId": "ta9zslmSRqg"
-    },
     "DlPZxVwH_Ak": {
         "label": "ジグソーパズル  Covered by あらき",
         "issued": "2018-12-15T11:00:02Z",
@@ -9022,20 +9029,37 @@
         ],
         "orgYtId": "ta9zslmSRqg"
     },
-    "LyXYrurbHDs": {
-        "label": "ヒビカセ / ギガP (covered by 緑仙、鈴木勝)",
-        "issued": "2018-07-30T08:00:01Z",
+    "o-5j2-PC9qo": {
+        "label": "感情的に歌ってみた／ジグソーパズル【ばぁう】",
+        "issued": "2018-11-28T09:18:00Z",
         "singers": [
-            "緑仙",
-            "鈴木勝"
+            "ばぁう"
         ],
-        "orgYtId": "TkroHwQYpFE"
+        "orgYtId": "ta9zslmSRqg"
+    },
+    "V1AmDLsSYyA": {
+        "label": "ジグソーパズル／志麻×センラ【歌ってみた】",
+        "issued": "2019-03-07T11:00:06Z",
+        "singers": [
+            "志麻",
+            "センラ"
+        ],
+        "orgYtId": "ta9zslmSRqg"
     },
     "gtvuE6A7qsg": {
         "label": "ヒビカセ / ギガP (covered by 緑仙)",
         "issued": "2018-07-16T13:58:46Z",
         "singers": [
             "緑仙"
+        ],
+        "orgYtId": "TkroHwQYpFE"
+    },
+    "LyXYrurbHDs": {
+        "label": "ヒビカセ / ギガP (covered by 緑仙、鈴木勝)",
+        "issued": "2018-07-30T08:00:01Z",
+        "singers": [
+            "緑仙",
+            "鈴木勝"
         ],
         "orgYtId": "TkroHwQYpFE"
     },
@@ -9046,6 +9070,22 @@
             "鈴木勝"
         ],
         "orgYtId": "TkroHwQYpFE"
+    },
+    "R0BHfKV9ioI": {
+        "label": "【歌ってみた】打上花火 covered by 花譜",
+        "issued": "2018-12-21T09:03:04Z",
+        "singers": [
+            "花譜"
+        ],
+        "orgYtId": "-tKVN2mAKRI"
+    },
+    "5hhpkY0Ht6w": {
+        "label": "【歌ってみた】打上花火【町田ちまとゴンザレス】",
+        "issued": "2018-12-12T14:58:48Z",
+        "singers": [
+            "町田ちま"
+        ],
+        "orgYtId": "-tKVN2mAKRI"
     },
     "ws7f55ABWjE": {
         "label": "【おなえどし】『打上花火』歌ってみた【出雲霞/卯月コウ/鈴木勝/にじさんじ】",
@@ -9113,6 +9153,14 @@
         ],
         "orgYtId": "tQWMArNo9F0"
     },
+    "xpuyx_Y_Hw0": {
+        "label": "紗痲　歌ってみた／宮下遊",
+        "issued": "2018-12-14T11:04:29Z",
+        "singers": [
+            "宮下遊"
+        ],
+        "orgYtId": "tQWMArNo9F0"
+    },
     "cGeeMhEE7q4": {
         "label": "【歌ってみた】紗痲 covered by 春猿火",
         "issued": "2021-02-11T10:00:11Z",
@@ -9129,6 +9177,14 @@
         ],
         "orgYtId": "tQWMArNo9F0"
     },
+    "cfVYSHvAhaQ": {
+        "label": "【Ado】うみなおし 歌いました",
+        "issued": "2018-08-26T12:45:00Z",
+        "singers": [
+            "Ado"
+        ],
+        "orgYtId": "Tu2xgl1303M"
+    },
     "hJj-hfNvPLM": {
         "label": "【超学生】うみなおし @歌ってみた",
         "issued": "2020-06-25T10:00:17Z",
@@ -9137,13 +9193,21 @@
         ],
         "orgYtId": "Tu2xgl1303M"
     },
-    "cfVYSHvAhaQ": {
-        "label": "【Ado】うみなおし 歌いました",
-        "issued": "2018-08-26T12:45:00Z",
+    "KoTX5cYIftg": {
+        "label": "レントリリ ／ Cover.dongdang",
+        "issued": "2019-05-01T10:00:05Z",
         "singers": [
-            "Ado"
+            "dongdang "
         ],
-        "orgYtId": "Tu2xgl1303M"
+        "orgYtId": "TuKfadan6Ys"
+    },
+    "AV0YgJFVtRU": {
+        "label": "レントリリー/ジグ - 水槽 (Cover)",
+        "issued": "2019-09-04T11:01:22Z",
+        "singers": [
+            "水槽"
+        ],
+        "orgYtId": "TuKfadan6Ys"
     },
     "kv-772oW68Y": {
         "label": "ファーストレディー ver luz/ First lady -luz",
@@ -9185,6 +9249,23 @@
         ],
         "orgYtId": "u6lHwB3e-z8"
     },
+    "24R9YvFKXHo": {
+        "label": "夢ファンファーレ／あほの坂田×うらたぬき",
+        "issued": "2018-10-12T14:02:53Z",
+        "singers": [
+            "あほの坂田。",
+            "うらたぬき"
+        ],
+        "orgYtId": "U6wSbS5ZCBw"
+    },
+    "rv5kam6BsDs": {
+        "label": "一人二役で歌ってみた/夢ファンファーレ 【ばぁう】",
+        "issued": "2018-10-27T11:00:07Z",
+        "singers": [
+            "ばぁう"
+        ],
+        "orgYtId": "U6wSbS5ZCBw"
+    },
     "T4xPYhtvjYQ": {
         "label": "カラオケ35点の音痴とアイドル歌い手が夢ファンファーレ歌ってみた。ver まひと&てると",
         "issued": "2018-11-16T07:05:16Z",
@@ -9203,22 +9284,14 @@
         ],
         "orgYtId": "U6wSbS5ZCBw"
     },
-    "rv5kam6BsDs": {
-        "label": "一人二役で歌ってみた/夢ファンファーレ 【ばぁう】",
-        "issued": "2018-10-27T11:00:07Z",
+    "nag8r4LxuVw": {
+        "label": "【踊ってみた】「女の子になりたい/まふまふ」 feat.緑仙/弦月藤士郎 #こじハラ 歌ってみた【相羽ういは/にじさんじ】",
+        "issued": "2021-06-04T11:00:15Z",
         "singers": [
-            "ばぁう"
+            "緑仙",
+            "弦月藤士郎"
         ],
-        "orgYtId": "U6wSbS5ZCBw"
-    },
-    "MvIu5sUQgQg": {
-        "label": "夢ファンファーレ ／ まふまふ×天月 【歌ってみた】",
-        "issued": "2018-10-12T09:00:03Z",
-        "singers": [
-            "まふまふ",
-            "天月-あまつき-"
-        ],
-        "orgYtId": "U6wSbS5ZCBw"
+        "orgYtId": "ucbx9we6EHk"
     },
     "h-FDC3X9Wdk": {
         "label": "【歌ってみた】第六感 / covered by 幸祜",
@@ -9300,6 +9373,38 @@
         ],
         "orgYtId": "Uh6dkL1M9DM"
     },
+    "eiIV8KpVtDU": {
+        "label": "【缶缶】Flamingo /米津玄師【多重録音で歌ってみた】",
+        "issued": "2018-10-27T10:00:39Z",
+        "singers": [
+            "缶缶"
+        ],
+        "orgYtId": "Uh6dkL1M9DM"
+    },
+    "_dskIORoM5Y": {
+        "label": "【歌ってみた】徒花の涙 / covered by 幸祜",
+        "issued": "2021-07-31T11:01:53Z",
+        "singers": [
+            "幸祜"
+        ],
+        "orgYtId": "UI2Ybr9e7KY"
+    },
+    "UPSMbjonopQ": {
+        "label": "【歌ってみた】徒花の涙 - ウォルピスカーター covered by 明透",
+        "issued": "2021-09-25T08:42:45Z",
+        "singers": [
+            "明透"
+        ],
+        "orgYtId": "UI2Ybr9e7KY"
+    },
+    "DC3MzSyuwEM": {
+        "label": "【爽快に】独りんぼエンヴィー 歌ってみた ver.Sou",
+        "issued": "2018-01-07T11:00:01Z",
+        "singers": [
+            "Sou"
+        ],
+        "orgYtId": "UKVioegPPds"
+    },
     "lAo2WGB68Jo": {
         "label": "独りんぼエンヴィー / 電ポルP (covered by 緑仙)",
         "issued": "2019-04-28T10:57:41Z",
@@ -9307,6 +9412,46 @@
             "緑仙"
         ],
         "orgYtId": "UKVioegPPds"
+    },
+    "0NJvmCyz638": {
+        "label": "【96猫】贖罪を歌ってみた",
+        "issued": "2020-05-01T09:00:00Z",
+        "singers": [
+            "96猫"
+        ],
+        "orgYtId": "uoL_7cX0pCQ"
+    },
+    "q8OjiWFoYMA": {
+        "label": "贖罪",
+        "issued": "2020-10-09T13:00:12Z",
+        "singers": [
+            "麻婆豆腐"
+        ],
+        "orgYtId": "uoL_7cX0pCQ"
+    },
+    "AhI86-qEgZw": {
+        "label": "【帰国子女のIfが】アングレイデイズ【低音イケボで歌ってみた】",
+        "issued": "2020-05-18T11:00:06Z",
+        "singers": [
+            "If"
+        ],
+        "orgYtId": "UvF3Mwj5d4E"
+    },
+    "Sss_65GuV0E": {
+        "label": "アングレイデイズ ／ un:c（あんく）【cover】",
+        "issued": "2020-05-24T08:52:15Z",
+        "singers": [
+            "un:c"
+        ],
+        "orgYtId": "UvF3Mwj5d4E"
+    },
+    "l3wRi0BWQME": {
+        "label": "【超学生】アングレイデイズ @歌ってみた",
+        "issued": "2020-05-28T10:00:24Z",
+        "singers": [
+            "超学生"
+        ],
+        "orgYtId": "UvF3Mwj5d4E"
     },
     "WY_dF35_qw8": {
         "label": "【歌ってみた】ハイネとクライネ covered by 花譜",
@@ -9380,26 +9525,41 @@
         ],
         "orgYtId": "v7_Jo4SfICk"
     },
-    "t0KpwPTcKUY": {
-        "label": "なにやってもうまくいかない - meiyo / Covered by 朝日南アカネ&町田ちま",
-        "issued": "2021-12-30T10:30:13Z",
+    "QZRkzzjHbuk": {
+        "label": "ヒロイン ／ Cover.dongdang",
+        "issued": "2020-12-25T12:00:13Z",
         "singers": [
-            "町田ちま",
-            "朝日南アカネ"
+            "dongdang "
         ],
-        "orgYtId": "vxoKuhPca-A"
+        "orgYtId": "VPZK72W4Xxw"
     },
-    "41Dx0_x89GU": {
-        "label": "【帰国子女のIfが】なにやってもうまくいかない English cover / meiyo様【英語で歌ってみた】【Naniyattemoumakuikanai】",
-        "issued": "2021-10-05T09:00:02Z",
+    "C0qVgla9vz4": {
+        "label": "大失恋した俺が号泣しながら『ヒロイン』歌ってみた【ヒロイン/back number】【鬱くん】",
+        "issued": "2021-12-25T09:00:05Z",
         "singers": [
-            "If"
+            "鬱"
+        ],
+        "orgYtId": "VPZK72W4Xxw"
+    },
+    "yULe4sYRtzc": {
+        "label": "なにやってもうまくいかない ／ Cover.dongdang",
+        "issued": "2021-09-10T11:49:40Z",
+        "singers": [
+            "dongdang "
         ],
         "orgYtId": "vxoKuhPca-A"
     },
     "HNKeUmr9TQA": {
         "label": "【帰国子女のIfが】なにやってもうまくいかない Full English cover / meiyo様【英語で歌ってみた】【Naniyattemoumakuikanai】",
         "issued": "2021-10-14T09:00:06Z",
+        "singers": [
+            "If"
+        ],
+        "orgYtId": "vxoKuhPca-A"
+    },
+    "41Dx0_x89GU": {
+        "label": "【帰国子女のIfが】なにやってもうまくいかない English cover / meiyo様【英語で歌ってみた】【Naniyattemoumakuikanai】",
+        "issued": "2021-10-05T09:00:02Z",
         "singers": [
             "If"
         ],
@@ -9445,6 +9605,15 @@
         ],
         "orgYtId": "vxoKuhPca-A"
     },
+    "t0KpwPTcKUY": {
+        "label": "なにやってもうまくいかない - meiyo / Covered by 朝日南アカネ&町田ちま",
+        "issued": "2021-12-30T10:30:13Z",
+        "singers": [
+            "町田ちま",
+            "朝日南アカネ"
+        ],
+        "orgYtId": "vxoKuhPca-A"
+    },
     "D55crgG9dXE": {
         "label": "☪ なにやってもうまくいかない Cover / 天月-あまつき-",
         "issued": "2021-10-15T09:00:11Z",
@@ -9469,14 +9638,6 @@
         ],
         "orgYtId": "vxoKuhPca-A"
     },
-    "yULe4sYRtzc": {
-        "label": "なにやってもうまくいかない ／ Cover.dongdang",
-        "issued": "2021-09-10T11:49:40Z",
-        "singers": [
-            "dongdang "
-        ],
-        "orgYtId": "vxoKuhPca-A"
-    },
     "_NwuOgGMr8E": {
         "label": "ねぇねぇねぇ。 - ピノキオピー（Cover） / 鯨木×いゔどっと",
         "issued": "2021-09-11T11:00:28Z",
@@ -9494,6 +9655,46 @@
             "うらたぬき"
         ],
         "orgYtId": "w8yweCungCE"
+    },
+    "YAzUaVhun4A": {
+        "label": "【るぅと】彗星ハネムーン【すとぷり歌ってみたツアー】",
+        "issued": "2018-04-03T09:02:27Z",
+        "singers": [
+            "るぅと"
+        ],
+        "orgYtId": "wCj04kwAFX8"
+    },
+    "DVxeyEWFoK8": {
+        "label": "彗星ハネムーン ／ ナユタン星人(cover)  by 天月-あまつき-",
+        "issued": "2018-08-19T09:00:02Z",
+        "singers": [
+            "天月-あまつき-"
+        ],
+        "orgYtId": "wCj04kwAFX8"
+    },
+    "MfJ6yW1bq_g": {
+        "label": "懺悔参り ／ Cover.dongdang",
+        "issued": "2020-08-20T10:11:35Z",
+        "singers": [
+            "dongdang "
+        ],
+        "orgYtId": "wM4phGebR4o"
+    },
+    "SM_EW4LFT-I": {
+        "label": "懺悔参り　歌ってみた　【いゔどっと】",
+        "issued": "2018-02-25T11:14:50Z",
+        "singers": [
+            "いゔどっと"
+        ],
+        "orgYtId": "wM4phGebR4o"
+    },
+    "3AdgbGmDXIc": {
+        "label": "懺悔参り／まふまふ【歌ってみた】",
+        "issued": "2018-07-03T09:00:01Z",
+        "singers": [
+            "まふまふ"
+        ],
+        "orgYtId": "wM4phGebR4o"
     },
     "ize9GIw7x5g": {
         "label": "【96猫】ボッカデラベリタ を歌ってみた",
@@ -9671,16 +9872,6 @@
         ],
         "orgYtId": "wp9Z2wZ-2bs"
     },
-    "yGQiJJyMi14": {
-        "label": "【半年記念】愛言葉Ⅲ／ #織姫星 cover【DECO*27】",
-        "issued": "2020-07-26T09:00:13Z",
-        "singers": [
-            "フミ",
-            "星川サラ",
-            "山神カルタ"
-        ],
-        "orgYtId": "WptXk39wiIQ"
-    },
     "cmcRFohwhps": {
         "label": "【96猫】愛言葉Ⅲを歌ってみた",
         "issued": "2019-01-01T09:00:03Z",
@@ -9710,6 +9901,16 @@
         "issued": "2018-10-20T10:00:03Z",
         "singers": [
             "てるとくん"
+        ],
+        "orgYtId": "WptXk39wiIQ"
+    },
+    "yGQiJJyMi14": {
+        "label": "【半年記念】愛言葉Ⅲ／ #織姫星 cover【DECO*27】",
+        "issued": "2020-07-26T09:00:13Z",
+        "singers": [
+            "フミ",
+            "星川サラ",
+            "山神カルタ"
         ],
         "orgYtId": "WptXk39wiIQ"
     },
@@ -9785,6 +9986,14 @@
         ],
         "orgYtId": "wv2P0PLz9fw"
     },
+    "pKKyWd-vsF0": {
+        "label": "優しい声で『おじゃま虫』歌ってみた【てるとくん】",
+        "issued": "2018-03-04T10:00:03Z",
+        "singers": [
+            "てるとくん"
+        ],
+        "orgYtId": "wv2P0PLz9fw"
+    },
     "4CGP0ShiQ-0": {
         "label": "【MV】おじゃま虫／るぅと【歌ってみた】",
         "issued": "2020-10-24T15:00:00Z",
@@ -9801,11 +10010,12 @@
         ],
         "orgYtId": "wv2P0PLz9fw"
     },
-    "pKKyWd-vsF0": {
-        "label": "優しい声で『おじゃま虫』歌ってみた【てるとくん】",
-        "issued": "2018-03-04T10:00:03Z",
+    "smrljtBQVKs": {
+        "label": "【仲が悪い二人で】おじゃま虫／ジェル×莉犬　【歌ってみた】",
+        "issued": "2018-03-13T11:00:03Z",
         "singers": [
-            "てるとくん"
+            "ジェル",
+            "莉犬"
         ],
         "orgYtId": "wv2P0PLz9fw"
     },
@@ -10067,6 +10277,31 @@
         ],
         "orgYtId": "XCyKJD6uQyg"
     },
+    "-SDwP1olCWw": {
+        "label": "ロキ 歌った 【あらき×nqrse】",
+        "issued": "2018-04-02T10:00:00Z",
+        "singers": [
+            "あらき",
+            "nqrse"
+        ],
+        "orgYtId": "xEWwy9ymN8o"
+    },
+    "S2eHkWq5-9s": {
+        "label": "ワンダラー／P丸様。【歌ってみた】",
+        "issued": "2021-12-19T08:15:11Z",
+        "singers": [
+            "P丸様。"
+        ],
+        "orgYtId": "xEWwy9ymN8o"
+    },
+    "CNutmL1lSlI": {
+        "label": "ワンダラー／歌ってみた【そうま】",
+        "issued": "2021-12-03T09:00:13Z",
+        "singers": [
+            "そうま"
+        ],
+        "orgYtId": "xEWwy9ymN8o"
+    },
     "zNOCnCqjZ9w": {
         "label": "実況者が『あなたの夜が明けるまで』を全力で歌ってみた【ころん】すとぷり",
         "issued": "2021-07-24T00:00:16Z",
@@ -10187,14 +10422,6 @@
         ],
         "orgYtId": "xGNQOqtGU_E"
     },
-    "2yUpSVmeU7A": {
-        "label": "威風堂々／歌ってみた【ゆきむら。】",
-        "issued": "2020-07-01T11:00:01Z",
-        "singers": [
-            "ゆきむら。"
-        ],
-        "orgYtId": "xGNQOqtGU_E"
-    },
     "sriPtxmze1c": {
         "label": "威風堂々　ヤラしく歌ってみた　【ジェル】",
         "issued": "2018-02-04T13:19:19Z",
@@ -10203,21 +10430,29 @@
         ],
         "orgYtId": "xGNQOqtGU_E"
     },
-    "hwLoYvtXuPM": {
-        "label": "ロキ／るぅと feat.莉犬【歌ってみた】",
-        "issued": "2020-08-09T09:30:04Z",
+    "2yUpSVmeU7A": {
+        "label": "威風堂々／歌ってみた【ゆきむら。】",
+        "issued": "2020-07-01T11:00:01Z",
         "singers": [
-            "るぅと",
-            "莉犬"
+            "ゆきむら。"
+        ],
+        "orgYtId": "xGNQOqtGU_E"
+    },
+    "FDf5eaDKmbM": {
+        "label": "[CielA] - ロキ (로키) cover/歌ってみた",
+        "issued": "2018-03-30T12:59:56Z",
+        "singers": [
+            "CielA"
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
-    "kpX7w_C4lRo": {
-        "label": "ロキ / 不破湊×ましろ Cover",
-        "issued": "2021-03-15T11:00:16Z",
+    "TDDEmsKOfQM": {
+        "label": "【あらき+nqrse+ピコ】ダンシング☆サムライをRearrangeして歌ってみた.flv",
+        "issued": "2018-04-22T10:00:12Z",
         "singers": [
-            "不破湊",
-            "ましろ"
+            "あらき",
+            "nqrse",
+            "ピコ"
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
@@ -10227,6 +10462,15 @@
         "singers": [
             "志麻",
             "あほの坂田"
+        ],
+        "orgYtId": "Xg-qfsKN2_E"
+    },
+    "QDeJlv5m-Yk": {
+        "label": "ロキ　歌ってみた 【橘優×いゔどっと】",
+        "issued": "2018-11-13T12:00:04Z",
+        "singers": [
+            "橘優",
+            "いゔどっと"
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
@@ -10263,6 +10507,15 @@
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
+    "hugCt8kSLJ8": {
+        "label": "そらる feat. まふまふ- ロキ【歌ってみた】",
+        "issued": "2018-04-10T09:00:03Z",
+        "singers": [
+            "そらむ",
+            "まふまふ"
+        ],
+        "orgYtId": "Xg-qfsKN2_E"
+    },
     "4za0IZFL1DM": {
         "label": "【フルパワーで】ロキ 歌ってみた【ななもり。】",
         "issued": "2018-03-26T08:30:02Z",
@@ -10279,11 +10532,12 @@
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
-    "IVPVE5yMzP4": {
-        "label": "ロキ／莉犬 feat.るぅと【歌ってみた】",
-        "issued": "2020-08-09T09:30:03Z",
+    "1REzG6oK7p4": {
+        "label": "ロキ／まふまふ feat.そらる【歌ってみた】",
+        "issued": "2018-03-15T09:00:01Z",
         "singers": [
-            "莉犬"
+            "まふまふ",
+            "そらる"
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
@@ -10295,11 +10549,45 @@
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
+    "hwLoYvtXuPM": {
+        "label": "ロキ／るぅと feat.莉犬【歌ってみた】",
+        "issued": "2020-08-09T09:30:04Z",
+        "singers": [
+            "るぅと",
+            "莉犬"
+        ],
+        "orgYtId": "Xg-qfsKN2_E"
+    },
+    "2IdVQNZwEbM": {
+        "label": "ロキ　歌ってみた／宮下遊",
+        "issued": "2018-03-09T12:30:01Z",
+        "singers": [
+            "宮下遊"
+        ],
+        "orgYtId": "Xg-qfsKN2_E"
+    },
+    "kpX7w_C4lRo": {
+        "label": "ロキ / 不破湊×ましろ Cover",
+        "issued": "2021-03-15T11:00:16Z",
+        "singers": [
+            "不破湊",
+            "ましろ"
+        ],
+        "orgYtId": "Xg-qfsKN2_E"
+    },
     "1Ejf88Ovb5s": {
         "label": "ロキ / みきとP (covered by 緑仙)",
         "issued": "2018-06-23T04:53:30Z",
         "singers": [
             "緑仙"
+        ],
+        "orgYtId": "Xg-qfsKN2_E"
+    },
+    "IVPVE5yMzP4": {
+        "label": "ロキ／莉犬 feat.るぅと【歌ってみた】",
+        "issued": "2020-08-09T09:30:03Z",
+        "singers": [
+            "莉犬"
         ],
         "orgYtId": "Xg-qfsKN2_E"
     },
@@ -10345,19 +10633,27 @@
         ],
         "orgYtId": "XZnmfDByGWU"
     },
+    "ySASyOpUQrc": {
+        "label": "【歌ってみた】鳳仙花 covered by ヰ世界情緒",
+        "issued": "2020-04-07T10:30:05Z",
+        "singers": [
+            "ヰ世界情緒"
+        ],
+        "orgYtId": "y_tFe_wugAY"
+    },
+    "GsLWuUB4z_Y": {
+        "label": "鳳仙花 / 黒澤まどか (covered by 緑仙)",
+        "issued": "2018-07-08T10:26:28Z",
+        "singers": [
+            "緑仙"
+        ],
+        "orgYtId": "y_tFe_wugAY"
+    },
     "HxdZ28lmsu8": {
         "label": "【96猫】ジャガーノート/Cover",
         "issued": "2019-03-31T09:00:04Z",
         "singers": [
             "96猫"
-        ],
-        "orgYtId": "y04VHlaZeJo"
-    },
-    "jIK3Ax-NA2o": {
-        "label": "ジャガーノート ／ 天月-あまつき- 【歌ってみた】",
-        "issued": "2019-03-10T09:00:03Z",
-        "singers": [
-            "天月-あまつき-"
         ],
         "orgYtId": "y04VHlaZeJo"
     },
@@ -10374,6 +10670,14 @@
         "issued": "2018-09-27T08:12:42Z",
         "singers": [
             "志麻"
+        ],
+        "orgYtId": "y04VHlaZeJo"
+    },
+    "jIK3Ax-NA2o": {
+        "label": "ジャガーノート ／ 天月-あまつき- 【歌ってみた】",
+        "issued": "2019-03-10T09:00:03Z",
+        "singers": [
+            "天月-あまつき-"
         ],
         "orgYtId": "y04VHlaZeJo"
     },
@@ -10401,6 +10705,14 @@
         ],
         "orgYtId": "YDnZFwlZa1g"
     },
+    "efw3tcNmzJw": {
+        "label": "そらる-命ばっかり【歌ってみた】",
+        "issued": "2018-01-15T09:00:04Z",
+        "singers": [
+            "そらる"
+        ],
+        "orgYtId": "YDnZFwlZa1g"
+    },
     "xlanpPS2VXw": {
         "label": "【初投稿】命ばっかり　歌ってみた【てるとくん】",
         "issued": "2018-02-02T10:31:47Z",
@@ -10409,11 +10721,11 @@
         ],
         "orgYtId": "YDnZFwlZa1g"
     },
-    "Tnw8cRgre7I": {
-        "label": "ハローディストピア／自分で歌ってみた【まふまふ】",
-        "issued": "2018-06-09T09:00:02Z",
+    "HIXjHJDJSzM": {
+        "label": "【爽快に】ハローディストピア 歌ってみた ver.Sou",
+        "issued": "2018-06-02T12:00:00Z",
         "singers": [
-            "まふまふ"
+            "Sou"
         ],
         "orgYtId": "ye2J__KE9Yg"
     },
@@ -10423,24 +10735,6 @@
         "singers": [
             "あらき",
             "nqrse"
-        ],
-        "orgYtId": "ye2J__KE9Yg"
-    },
-    "msW49KIzhyM": {
-        "label": "ハローディストピア　歌ってみた／しゆん×相宮零",
-        "issued": "2018-05-31T10:59:05Z",
-        "singers": [
-            "しゆん",
-            "相宮零"
-        ],
-        "orgYtId": "ye2J__KE9Yg"
-    },
-    "kMO8nZzO4ZQ": {
-        "label": "ハローディストピア　歌ってみた【うらたぬき×志麻】",
-        "issued": "2019-03-22T10:21:45Z",
-        "singers": [
-            "うらたぬき",
-            "志麻"
         ],
         "orgYtId": "ye2J__KE9Yg"
     },
@@ -10460,6 +10754,15 @@
         ],
         "orgYtId": "ye2J__KE9Yg"
     },
+    "msW49KIzhyM": {
+        "label": "ハローディストピア　歌ってみた／しゆん×相宮零",
+        "issued": "2018-05-31T10:59:05Z",
+        "singers": [
+            "しゆん",
+            "相宮零"
+        ],
+        "orgYtId": "ye2J__KE9Yg"
+    },
     "WYHeV4ufrBc": {
         "label": "全力で歌ってみた／ハローディストピア【ばぁう】",
         "issued": "2018-06-11T09:00:06Z",
@@ -10468,13 +10771,30 @@
         ],
         "orgYtId": "ye2J__KE9Yg"
     },
-    "HIXjHJDJSzM": {
-        "label": "【爽快に】ハローディストピア 歌ってみた ver.Sou",
-        "issued": "2018-06-02T12:00:00Z",
+    "Tnw8cRgre7I": {
+        "label": "ハローディストピア／自分で歌ってみた【まふまふ】",
+        "issued": "2018-06-09T09:00:02Z",
         "singers": [
-            "Sou"
+            "まふまふ"
         ],
         "orgYtId": "ye2J__KE9Yg"
+    },
+    "kMO8nZzO4ZQ": {
+        "label": "ハローディストピア　歌ってみた【うらたぬき×志麻】",
+        "issued": "2019-03-22T10:21:45Z",
+        "singers": [
+            "うらたぬき",
+            "志麻"
+        ],
+        "orgYtId": "ye2J__KE9Yg"
+    },
+    "VSpsb_OB8_4": {
+        "label": "シャリューゲ / *Luna(Cover) めいちゃん",
+        "issued": "2018-09-09T12:00:34Z",
+        "singers": [
+            "めいちゃん"
+        ],
+        "orgYtId": "Yjjl1_8A4HU"
     },
     "cCA3kgjVj64": {
         "label": "【缶缶】シャリューゲ (Chatlüge)【歌ってみた】",
@@ -10492,13 +10812,21 @@
         ],
         "orgYtId": "Yjjl1_8A4HU"
     },
-    "VSpsb_OB8_4": {
-        "label": "シャリューゲ / *Luna(Cover) めいちゃん",
-        "issued": "2018-09-09T12:00:34Z",
+    "dT2D-KQbNic": {
+        "label": "シカバネーゼ ／ Cover.dongdang",
+        "issued": "2020-07-19T10:00:32Z",
         "singers": [
-            "めいちゃん"
+            "dongdang "
         ],
-        "orgYtId": "Yjjl1_8A4HU"
+        "orgYtId": "yl6v5ezpuo"
+    },
+    "l2AmTz9-q6o": {
+        "label": "シカバネーゼ/jon-YAKITORY(cover) by まひとくん【歌ってみた】",
+        "issued": "2020-09-13T08:02:16Z",
+        "singers": [
+            "まひとくん。"
+        ],
+        "orgYtId": "yl6v5ezpuo"
     },
     "B455K9opQXI": {
         "label": "踊 ／ Cover.dongdang",
@@ -10724,14 +11052,6 @@
         ],
         "orgYtId": "ZDfedFXfb3w"
     },
-    "sm4KMKurd8E": {
-        "label": "【歌ってみた】メルティランドナイトメア【#07】",
-        "issued": "2018-04-30T08:00:01Z",
-        "singers": [
-            "星街すいせい"
-        ],
-        "orgYtId": "ZEy36W1xX8c"
-    },
     "OZYqBsmtwuA": {
         "label": "【Ado】メルティランドナイトメア 歌いました",
         "issued": "2018-10-05T12:00:06Z",
@@ -10745,6 +11065,14 @@
         "issued": "2018-07-18T12:00:04Z",
         "singers": [
             "Sou"
+        ],
+        "orgYtId": "ZEy36W1xX8c"
+    },
+    "sm4KMKurd8E": {
+        "label": "【歌ってみた】メルティランドナイトメア【#07】",
+        "issued": "2018-04-30T08:00:01Z",
+        "singers": [
+            "星街すいせい"
         ],
         "orgYtId": "ZEy36W1xX8c"
     },
@@ -10764,11 +11092,27 @@
         ],
         "orgYtId": "zh-4M5blbiI"
     },
+    "V37DacsS_Wg": {
+        "label": "【Ado】エゴロック 歌いました",
+        "issued": "2018-12-15T10:00:03Z",
+        "singers": [
+            "Ado"
+        ],
+        "orgYtId": "zi7-jk4LdX0"
+    },
     "SH-kw-pPdis": {
         "label": "エゴロックlong ver   cover となりの坂田。",
         "issued": "2021-10-13T11:14:45Z",
         "singers": [
             "あほの坂田。"
+        ],
+        "orgYtId": "zi7-jk4LdX0"
+    },
+    "NXI7ZzIBGnw": {
+        "label": "エゴロック　歌ってみた　【いゔどっと】",
+        "issued": "2018-09-21T12:00:03Z",
+        "singers": [
+            "いゔどっと"
         ],
         "orgYtId": "zi7-jk4LdX0"
     },
@@ -10820,22 +11164,6 @@
         ],
         "orgYtId": "zi7-jk4LdX0"
     },
-    "V37DacsS_Wg": {
-        "label": "【Ado】エゴロック 歌いました",
-        "issued": "2018-12-15T10:00:03Z",
-        "singers": [
-            "Ado"
-        ],
-        "orgYtId": "zi7-jk4LdX0"
-    },
-    "NXI7ZzIBGnw": {
-        "label": "エゴロック　歌ってみた　【いゔどっと】",
-        "issued": "2018-09-21T12:00:03Z",
-        "singers": [
-            "いゔどっと"
-        ],
-        "orgYtId": "zi7-jk4LdX0"
-    },
     "PpoM9C-H0qA": {
         "label": "【歌ってみた】永遠の不在証明  / covered by 幸祜",
         "issued": "2021-07-25T10:00:08Z",
@@ -10860,6 +11188,23 @@
         ],
         "orgYtId": "zKZyXgcCrXQ"
     },
+    "9YomBmk-JUo": {
+        "label": "スロウダウナー　Covered by あらき",
+        "issued": "2019-01-19T13:27:29Z",
+        "singers": [
+            "あらき"
+        ],
+        "orgYtId": "ZMj07n9PDxk"
+    },
+    "Dy6sqfzBDj0": {
+        "label": "スロウダウナー 歌ってみた 【橘優×いゔどっと】",
+        "issued": "2018-08-20T12:00:02Z",
+        "singers": [
+            "橘優",
+            "いゔどっと"
+        ],
+        "orgYtId": "ZMj07n9PDxk"
+    },
     "m0u-IDOeoV4": {
         "label": "ニュートンダンス歌ってみた【うらたぬき×志麻】",
         "issued": "2021-12-03T11:00:34Z",
@@ -10874,6 +11219,14 @@
         "issued": "2020-07-25T12:00:24Z",
         "singers": [
             "CielA"
+        ],
+        "orgYtId": "zQ58S43lkP0"
+    },
+    "6tsOzPO6Lro": {
+        "label": "自堕楽 ／ Cover.dongdang",
+        "issued": "2020-07-05T10:11:44Z",
+        "singers": [
+            "dongdang "
         ],
         "orgYtId": "zQ58S43lkP0"
     },
