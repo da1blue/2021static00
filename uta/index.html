@@ -92,9 +92,16 @@
                 <ul class="list-unstyled">
                   <li class="d-inline-block" style="margin-right: 0.5rem;">
                     <i class="bi bi-pencil-fill text-secondary"></i>
-                    <span class="visually-hidden">楽曲提供</span>
-                    <span v-for="songWriter in exInfo.songWriters" class="p-1 mr-2 mb-1">
-                      {{songWriter}}
+                    <span class="visually-hidden">作詞</span>
+                    <span v-for="lyricist" in exInfo.lyricists" class="p-1 mr-2 mb-1">
+                      {{lyricist}}
+                    </span>
+                  </li>
+                  <li class="d-inline-block" style="margin-right: 0.5rem;">
+                    <i class="bi bi-music-note text-secondary"></i>
+                    <span class="visually-hidden">作曲</span>
+                    <span v-for="composer in exInfo.composers" class="p-1 mr-2 mb-1">
+                      {{composer}}
                     </span>
                   </li>
                   <li class="d-inline-block" style="margin-right: 0.5rem;">
@@ -440,7 +447,8 @@ SELECT * WHERE{
         _exInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + orgYtId + "/hqdefault.jpg";
         _exInfo["iframeUrl"] = "https://www.youtube.com/embed/" + orgYtId + "?controls=0";
         _exInfo["singers"] = orgSongDict[orgYtId]["performers"];
-        _exInfo["songWriters"] = orgSongDict[orgYtId]["songWriters"];
+        _exInfo["lyricists"] = orgSongDict[orgYtId]["lyricists"];
+        _exInfo["composers"] = orgSongDict[orgYtId]["composers"];
         _exInfo["orgTitle"] = orgSongDict[orgYtId]["title"];
         _exInfo["relSongIds"] = Object.keys(cosSimDict[orgYtId]);
         _exInfo["relSongs"] = [];
