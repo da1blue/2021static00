@@ -85,14 +85,16 @@
           </div>
           <div class="col-12 col-sm-6 col-md-8 align-top">
             <div class="row">
-              <h3 class="fs-5 col-12 h5">
-                <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none link-success">{{exInfo.orgTitle}}</a>
-              </h3>
-              <div v-if="exInfo.utaten" class="d-inline-block">
-                <a v-bind:href="'https://utaten.com/lyric/'+exInfo.utaten" class="link-success text-decoration-none p-2">
-                  <i class="bi bi-file-text"></i>
-                  <span class="visually-hidden">歌詞</span>
-                </a>
+              <div class="fs-5 col-12 h5"> 
+                <h3 class="d-inline-block">
+                  <a v-bind:href="exInfo.orgYtUrl" class="text-decoration-none link-success">{{exInfo.orgTitle}}</a>
+                </h3>
+                <div v-if="exInfo.utaten" class="d-inline-block">
+                  <a v-bind:href="'https://utaten.com/lyric/'+exInfo.utaten" class="link-success text-decoration-none p-2">
+                    <i class="bi bi-file-text"></i>
+                    <span class="visually-hidden">歌詞</span>
+                  </a>
+                </div>
               </div>
               <div class="col-12">
                 <ul class="list-unstyled">
