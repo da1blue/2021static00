@@ -456,9 +456,9 @@ SELECT * WHERE{
         _exInfo["lyricists"] = orgSongDict[orgYtId]["lyricists"];
         _exInfo["composers"] = orgSongDict[orgYtId]["composers"];
         _exInfo["orgTitle"] = orgSongDict[orgYtId]["title"];
+        _exInfo["utaten"] = orgSongDict[orgYtId]["utaten"];
         _exInfo["relSongIds"] = Object.keys(cosSimDict[orgYtId]);
         _exInfo["relSongs"] = [];
-        _exInfo["utaten"] = utaten;
         for (id of _exInfo["relSongIds"]) {
           _song = {
             id: id,
