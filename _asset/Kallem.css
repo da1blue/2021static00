@@ -1,0 +1,10 @@
+/* Webfont: Kallem */@font-face {
+    font-family: 'Kallem';
+    src: url('Kallem.woff') format('woff'), /* Modern Browsers */
+         url('Kallem.woff2') format('woff2'), /* Modern Browsers */
+         url('Kallem.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+
