@@ -539,6 +539,18 @@
         }
       }());
 
+      //あらすじ要素にイベントリスナ設定
+      const introDiv = document.querySelector("div.introduction")
+      for (const _div of introDiv) {
+        _div.addEventListener("click", function () {
+          if (_div.classList.contains("expand")) {
+            _div.classList.remove("expand")
+          } else {
+            _div.classList.add("expand")
+          }
+        });
+      }
+
       //レビュー取得(Rakuten)
       (async function () {
         let i = 0;
@@ -579,7 +591,6 @@
     // おまかせ検索実施
     setRandomKeyword();
 
-
   </script>
 
   <link rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"
@@ -605,12 +616,12 @@
       font-family: 'Noto Sans Mono CJK JP', Consolas, 'Roboto Mono', 'Courier New', monospace;
     }
 
-    div.introduction {
+    div.introduction:not(.expand) {
       max-height: 6rem;
     }
 
     @media (min-width: 576px) {
-      div.introduction {
+      div.introduction:not(.expand) {
         max-height: 4.5rem;
       }
     }
