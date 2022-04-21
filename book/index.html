@@ -540,7 +540,7 @@
       }());
 
       //あらすじ要素にイベントリスナ設定
-      const introDiv = document.querySelector("div.introduction")
+      const introDiv = document.querySelectorAll("div.introduction")
       for (const _div of introDiv) {
         _div.addEventListener("click", function () {
           if (_div.classList.contains("expand")) {

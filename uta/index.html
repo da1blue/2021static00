@@ -124,7 +124,15 @@
             </div>
           </div>
           <div class="col-12">
-            <h3 class="h5">おすすめ楽曲</h3>
+            <h3 class="h5" style="display:inline-block">おすすめ楽曲</h3>
+            <button class="btn btn-outline-secondary btn-sm btn-oval"
+              onclick="document.querySelector('.relSongUl').scrollLeft -= (document.querySelector('.relSongUl').clientWidth * 0.25)">
+              <i class="bi bi-chevron-left" style="margin: 0;"></i>
+            </button>
+            <button class="btn btn-outline-secondary btn-sm btn-oval"
+              onclick="document.querySelector('.relSongUl').scrollLeft += (document.querySelector('.relSongUl').clientWidth * 0.25)">
+              <i class="bi bi-chevron-right" style="margin: 0;"></i>
+            </button>
             <ul class="list-unstyled relSongUl">
               <li v-for="relSong in exInfo.relSongs" class="d-inline-block">
                 <button class="btn btn-secondary p-1 mr-2 mb-1" v-on:click="doSearchWithOrgYtId(relSong.id)">
@@ -615,6 +623,10 @@ SELECT * WHERE{
       margin: 0;
       background: none;
       border: 0;
+    }
+
+    button.btn-oval{
+      border-radius: 50%;
     }
 
     ul.relSongUl {
