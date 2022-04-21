@@ -537,19 +537,18 @@
           i += 1;
           await new Promise(resolve => setTimeout(resolve, 100));
         }
+        //あらすじ要素にイベントリスナ設定
+        const introDiv = document.querySelectorAll("div.introduction")
+        for (const _div of introDiv) {
+          _div.addEventListener("click", function () {
+            if (_div.classList.contains("expand")) {
+              _div.classList.remove("expand")
+            } else {
+              _div.classList.add("expand")
+            }
+          });
+        }
       }());
-
-      //あらすじ要素にイベントリスナ設定
-      const introDiv = document.querySelectorAll("div.introduction")
-      for (const _div of introDiv) {
-        _div.addEventListener("click", function () {
-          if (_div.classList.contains("expand")) {
-            _div.classList.remove("expand")
-          } else {
-            _div.classList.add("expand")
-          }
-        });
-      }
 
       //レビュー取得(Rakuten)
       (async function () {

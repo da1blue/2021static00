@@ -162,6 +162,7 @@
     },
     "加賀美ハヤト": {
         "ytChannel": "UCmovZ2th3Sqpd00F5RdeigQ",
+        "wikidata": "Q111010596",
         "twitter": "H_KAGAMI2434",
         "unitId": "ROF-MAO|にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLR2sCJHgWqJohMQ574fjVmuSkoQGhkLNV-KvnrP=s800-c-k-c0x00ffffff-no-rj",
@@ -169,6 +170,7 @@
     },
     "剣持刀也": {
         "ytChannel": "UCv1fFr156jc65EMiLbaLImw",
+        "wikidata": "Q102810370",
         "twitter": "rei_Toya_rei",
         "unitId": "ROF-MAO|にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/x1tY-OBu8vyQlfqX8wFQoxRRjV_73T72p3i14nq0BDiiC2jvJY7r6UiixVc5fPDB9Ur4L9aTRA=s800-c-k-c0x00ffffff-no-rj",
@@ -178,12 +180,14 @@
         "ytChannel": "UC6wvdADTJ88OfIbJYIpAaDA",
         "wikidata": "Q110065608",
         "twitter": "Fuwa_Minato",
-        "unitId": "にじさんじ",
+        "spotify": "1PblbBCKiNJQ2O2TmXHReC",
+        "unitId": "ROF-MAO|にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLSJp6QW_B1DxnHz2odpGQqrR5AqVWTSOFq3T5yIaQ=s800-c-k-c0x00ffffff-no-rj",
-        "ytChannelsubscriber": "536000"
+        "ytChannelsubscriber": "537000"
     },
     "甲斐田晴": {
         "ytChannel": "UCo2N7C-Z91waaR6lF3LL_jw",
+        "wikidata": "Q111011060",
         "twitter": "Kaida_Haru",
         "unitId": "ROF-MAO|にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/PDk6FBRHOX2VIntWthp1XRRbKjjhQUVt6A1MDa8lsm-B4V6igcnsXHtGGFb-sQV7LnkqJNxnHQ=s800-c-k-c0x00ffffff-no-rj",
@@ -194,9 +198,43 @@
         "wikidata": "Q95483927",
         "twitter": "midori_2434",
         "spotify": "0XGVrQtpAZA0GP9jjI8GQf",
-        "unitId": "にじさんじ",
+        "unitId": "Rain Drops|にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/oeFiPfvbizpVTzE5FVOF1fNPFwUvu4CukNEk0PVmyLoIBbNAbtCyuYt1Z1P9cE7XoBBslJlp=s800-c-k-c0x00ffffff-no-rj",
         "ytChannelsubscriber": "538000"
+    },
+    "鈴木勝": {
+        "ytChannel": "UCryOPk2GZ1meIDt53tL30Tw",
+        "wikidata": "Q84408056",
+        "twitter": "Darkness_Eater",
+        "unitId": "Rain Drops|にじさんじ",
+        "ytChannelThumbnail": "https://yt3.ggpht.com/VOjZReuLyJl7lSVk_dH7g-cDeQPZT9lCtRFY8nn4GfgGV9t5qozIdFpzKRst6n-OkQFW2sAev24=s800-c-k-c0x00ffffff-no-rj",
+        "ytChannelsubscriber": "228000"
+    },
+    "三枝明那": {
+        "ytChannel": "UCNW1Ex0r6HsWRD4LCtPwvoQ",
+        "wikidata": "Q110065617",
+        "twitter": "333akina",
+        "unitId": "Rain Drops|にじさんじ",
+        "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLRPx1tjN1hlw9cNU2fPZTSJEpQrtSBnuc6DLhJ2=s800-c-k-c0x00ffffff-no-rj",
+        "ytChannelsubscriber": "466000"
+    },
+    "葛葉": {
+        "ytChannel": "UCSFCh5NL4qXrAy9u-u2lX3g",
+        "wikidata": "Q108069183",
+        "twitter": "Vamp_Kuzu",
+        "spotify": "2U6KmGMil4ClWZB9vHEwSb",
+        "unitId": "ChroNoiR|にじさんじ",
+        "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLQdFreaB1wZA_USkiSYIxE31NKxJ5LMQVjDCc_RSA=s800-c-k-c0x00ffffff-no-rj",
+        "ytChannelsubscriber": "1260000"
+    },
+    "叶": {
+        "ytChannel": "UCspv01oxUFf_MTSipURRhkA",
+        "wikidata": "Q107906931",
+        "twitter": "Kanae_2434",
+        "spotify": "14iTK9oNk2bqL8k5rUQLll",
+        "unitId": "ChroNoiR|にじさんじ",
+        "ytChannelThumbnail": "https://yt3.ggpht.com/dfCsIDvqaK7K1yIzVFGEq5-1cBAdERky6P4qwqcyXFNLVW1cV-rx7J-Gaj6dUSl2ZaRNPdl0gg=s800-c-k-c0x00ffffff-no-rj",
+        "ytChannelsubscriber": "983000"
     },
     "アンジュ・カトリーナ": {
         "ytChannel": "UCHVXbQzkl3rDfsXWo8xi2qw",
@@ -207,23 +245,6 @@
         "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLR_pGHtlClnlVa26cboi8oZ34RWyGtml3vLxGTp=s800-c-k-c0x00ffffff-no-rj",
         "ytChannelsubscriber": "645000"
     },
-    "葛葉": {
-        "ytChannel": "UCSFCh5NL4qXrAy9u-u2lX3g",
-        "wikidata": "Q108069183",
-        "twitter": "Vamp_Kuzu",
-        "spotify": "2U6KmGMil4ClWZB9vHEwSb",
-        "unitId": "にじさんじ",
-        "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLQdFreaB1wZA_USkiSYIxE31NKxJ5LMQVjDCc_RSA=s800-c-k-c0x00ffffff-no-rj",
-        "ytChannelsubscriber": "1260000"
-    },
-    "三枝明那": {
-        "ytChannel": "UCNW1Ex0r6HsWRD4LCtPwvoQ",
-        "wikidata": "Q110065617",
-        "twitter": "333akina",
-        "unitId": "にじさんじ",
-        "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLRPx1tjN1hlw9cNU2fPZTSJEpQrtSBnuc6DLhJ2=s800-c-k-c0x00ffffff-no-rj",
-        "ytChannelsubscriber": "466000"
-    },
     "町田ちま": {
         "ytChannel": "UCo7TRj3cS-f_1D9ZDmuTsjw",
         "wikidata": "Q110065620",
@@ -232,14 +253,6 @@
         "unitId": "にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/ytc/AKedOLTpaFhkNBf2kkuap4nxvCUFDUJJAX2LwyGNjgc59w=s800-c-k-c0x00ffffff-no-rj",
         "ytChannelsubscriber": "489000"
-    },
-    "鈴木勝": {
-        "ytChannel": "UCryOPk2GZ1meIDt53tL30Tw",
-        "wikidata": "Q84408056",
-        "twitter": "Darkness_Eater",
-        "unitId": "にじさんじ",
-        "ytChannelThumbnail": "https://yt3.ggpht.com/VOjZReuLyJl7lSVk_dH7g-cDeQPZT9lCtRFY8nn4GfgGV9t5qozIdFpzKRst6n-OkQFW2sAev24=s800-c-k-c0x00ffffff-no-rj",
-        "ytChannelsubscriber": "228000"
     },
     "星川サラ": {
         "ytChannel": "UC9V3Y3_uzU5e-usObb6IE1w",
@@ -272,7 +285,7 @@
         "twitter": "Lauren_iroas",
         "unitId": "にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/_lIzJVcUyL0toipUhCD3tKArOsRr35fkWdAUTfukE9avQg9CMjuRgxRW3XratI4rkhgF4I31Vg=s800-c-k-c0x00ffffff-no-rj",
-        "ytChannelsubscriber": "286000"
+        "ytChannelsubscriber": "287000"
     },
     "鈴鹿詩子": {
         "ytChannel": "UCwokZsOK_uEre70XayaFnzA",
@@ -296,7 +309,7 @@
         "twitter": "mashiro2434",
         "unitId": "にじさんじ",
         "ytChannelThumbnail": "https://yt3.ggpht.com/oRc_JMUmiXOMM5fRUuNCVSoQCj0qtufaYQoVMI1nHDDyV1GlOBo_lrnD3ORMqybuz45JPmJWaXU=s800-c-k-c0x00ffffff-no-rj",
-        "ytChannelsubscriber": "341000"
+        "ytChannelsubscriber": "342000"
     },
     "シスター・クレア": {
         "ytChannel": "UC1zFJrfEKvCixhsjNSb1toQ",
