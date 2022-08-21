@@ -572,9 +572,15 @@
 
       //NDLA連携
       (async function () {
-        ndlshUrl = './ndlsh.json'
-        ndlshJson = await getJson(ndlshUrl);
-        console.log(ndlshJson.ndlsh)
+        let ndlshUrl = './ndlsh.json'
+        let ndlshJson = await getJson(ndlshUrl);
+        let keyword = document.forms.searchConditions.keyword.value;
+        let matchedNdlsh = null
+        for (let id in ndlshJson.ndlsh){
+          if(ndlshJson.ndlsh[id].label== keyword ){
+            matchedNdlsh = id
+            console.log(matchedNdlsh)
+        }}
       }());
     }
 
