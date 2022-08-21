@@ -576,11 +576,27 @@
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
         let matchedNdlsh = null
-        for (let id in ndlshJson.ndlsh){
-          if(ndlshJson.ndlsh[id].label== keyword ){
+        for (let id in ndlshJson.ndlsh) {
+          if (ndlshJson.ndlsh[id].label == keyword) {
             matchedNdlsh = id
             console.log(matchedNdlsh)
-        }}
+            console.log(ndlshJson.ndlsh[matchedNdlsh])
+          }
+        }
+        if (matchedNdlsh) {
+          let query = `SELECT * WHERE{
+          ?qid wdt:P349 "${matchedNdlsh}" ;
+               rdfs:label ?label.
+          FILTER (LANG(?label) = "ja")
+          OPTIONAL {
+            ?jaWkp schema:about ?qid ;
+                 schema:inLanguage "ja" ;
+                 schema:name ?jaWkpName .
+            }
+          }`
+          let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
+          console.log(wkdUrl);
+        }
       }());
     }
 
