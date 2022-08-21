@@ -610,6 +610,8 @@
                 const wkdLabel = data.results.bindings[0].label.value;
                 const jaWkp = data.results.bindings[0].jaWkp.value;
                 const jaWkpName = data.results.bindings[0].jaWkpName.value;
+                inputForm.jaWkp = jaWkp;
+                inputForm.jaWkpName = jaWkpName;
             })
         }
       }());
@@ -637,7 +639,7 @@
   </script>
 
   <link rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <link rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"
     href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css" />
   <link rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"
