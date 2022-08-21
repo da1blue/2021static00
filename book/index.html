@@ -569,6 +569,13 @@
           i += 1;
         }
       }());
+
+      //NDLA連携
+      (async function () {
+        ndlshUrl = './ndlsh.json'
+        ndlshJson = await getJson(ndlshUrl);
+        console.log(ndlshJson.ndlsh)
+      }());
     }
 
 
