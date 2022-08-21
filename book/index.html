@@ -622,6 +622,7 @@
                   .then(response => response.json())
                   .then(data => {
                     if (data.results.bindings[0].abstract) {
+                      console.log(data.results.bindings[0]);
                       const abstract = data.results.bindings[0].abstract.value;
                       inputForm.abstract = abstract;
                     }
