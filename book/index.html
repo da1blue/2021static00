@@ -606,12 +606,12 @@
           fetch(wkdUrl)
             .then(response => response.json())
             .then(data => {
-              if (data.results.bindings[0].qid) {
+              if (data.results.bindings[0]) {
                 console.log(data.results.bindings[0]);
                 const wkd = data.results.bindings[0].qid.value;
                 const wkdLabel = data.results.bindings[0].label.value;
               }
-              if (data.results.bindings[0].jaWkp) {
+              if (data.results.bindings[0]) {
                 const jaWkp = data.results.bindings[0].jaWkp.value;
                 const jaWkpName = data.results.bindings[0].jaWkpName.value;
                 inputForm.wkpUrl = jaWkp;
