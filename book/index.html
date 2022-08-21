@@ -616,7 +616,7 @@
                 const jaWkpName = data.results.bindings[0].jaWkpName.value;
                 inputForm.wkpUrl = jaWkp;
                 inputForm.wkpName = jaWkpName;
-                let query = `select distinct * where { wikipedia-ja:${matchedNdlsh} foaf:primaryTopic/dbo:abstract ?abstract. }`
+                let query = `select distinct * where { wikipedia-ja:${jaWkpName} foaf:primaryTopic/dbo:abstract ?abstract. }`
                 let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
                 fetch(dbpUrl)
                   .then(response => response.json())
