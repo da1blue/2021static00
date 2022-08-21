@@ -81,6 +81,10 @@
           <i class="bi bi-search"></i>検索
         </button>
       </div>
+      <aside v-if="wkpUrl">
+        <i class="bi bi-body-text"></i>
+        <a v-bind:href="wkpUrl">{{wkpName}}</a>
+      </aside>
     </form>
     <!-- 検索結果 -->
     <section id="resList" class="row g-2">
@@ -231,7 +235,9 @@
         return {
           keyword: "",
           from: null,
-          to: null
+          to: null,
+          wkpName: null,
+          wkpUrl: null
         }
       }
     })
@@ -591,11 +597,20 @@
           OPTIONAL {
             ?jaWkp schema:about ?qid ;
                  schema:inLanguage "ja" ;
+                 schema:isPartOf <https://ja.wikipedia.org/> ;
                  schema:name ?jaWkpName .
             }
           }`
           let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
           console.log(wkdUrl);
+          fetch(wkdUrl)
+            .then(response => response.json())
+            .then(data => {
+                const wkd = data.results.bindings[0].qid.value;
+                const wkdLabel = data.results.bindings[0].label.value;
+                const jaWkp = data.results.bindings[0].jaWkp.value;
+                const jaWkpName = data.results.bindings[0].jaWkpName.value;
+            })
         }
       }());
     }
