@@ -614,11 +614,11 @@
               if (data.results.bindings[0].jaWkp) {
                 const jaWkp = data.results.bindings[0].jaWkp.value;
                 const jaWkpName = data.results.bindings[0].jaWkpName.value;
-                inputForm.jaWkp = jaWkp;
-                inputForm.jaWkpName = jaWkpName;
+                inputForm.wkpUrl = jaWkp;
+                inputForm.wkpName = jaWkpName;
                 let query = `select distinct * where { wikipedia-ja:${matchedNdlsh} foaf:primaryTopic/dbo:abstract ?abstract. }`
                 let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
-                fetch(wkdUrl)
+                fetch(dbpUrl)
                   .then(response => response.json())
                   .then(data => {
                     if (data.results.bindings[0].abstract) {
