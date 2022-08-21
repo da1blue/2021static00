@@ -81,10 +81,11 @@
           <i class="bi bi-search"></i>検索
         </button>
       </div>
-      <aside v-if="wkpUrl">
-        <i class="bi bi-body-text"></i>
-        <a v-bind:href="wkpUrl">{{wkpName}}</a>
-      </aside>
+      <aside v-if="wkpUrl"><small>
+          <i class="bi bi-body-text"></i>
+          <a v-bind:href="wkpUrl">{{wkpName}}</a>
+          <span class="text-muted">{{abstract}}</span>
+        </small></aside>
     </form>
     <!-- 検索結果 -->
     <section id="resList" class="row g-2">
