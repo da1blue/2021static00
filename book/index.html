@@ -81,10 +81,10 @@
           <i class="bi bi-search"></i>検索
         </button>
       </div>
-      <aside v-if="wkpUrl"><small>
+      <aside v-if="wkpUrl" class="text-muted"><small>
           <i class="bi bi-body-text"></i>
-          <a v-bind:href="wkpUrl">{{wkpName}}</a>
-          <span class="text-muted">{{abstract}}</span>
+          <a v-bind:href="wkpUrl">{{wkpName}}</a>(ウィキペディア日本語版)
+          <span style=" overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 100%; white-space: nowrap;">{{abstract}}</span>
         </small></aside>
     </form>
     <!-- 検索結果 -->
@@ -615,8 +615,6 @@
               if (data.results.bindings[0]) {
                 const jaWkp = data.results.bindings[0].jaWkp.value;
                 const jaWkpName = data.results.bindings[0].jaWkpName.value;
-                inputForm.wkpUrl = jaWkp;
-                inputForm.wkpName = jaWkpName;
                 let query = `select distinct * where { wikipedia-ja:${jaWkpName} foaf:primaryTopic/dbo:abstract ?abstract. }`
                 let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
                 fetch(dbpUrl)
@@ -625,6 +623,8 @@
                     if (data.results.bindings[0].abstract) {
                       console.log(data.results.bindings[0]);
                       const abstract = data.results.bindings[0].abstract.value;
+                      inputForm.wkpUrl = jaWkp;
+                      inputForm.wkpName = jaWkpName;
                       inputForm.abstract = abstract;
                     }
                   })
