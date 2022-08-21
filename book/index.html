@@ -580,6 +580,9 @@
 
       //NDLA連携
       (async function () {
+        inputForm.wkpUrl = null;
+        inputForm.wkpName = null;
+        inputForm.abstract = null;
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
