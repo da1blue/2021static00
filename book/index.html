@@ -237,7 +237,8 @@
           from: null,
           to: null,
           wkpName: null,
-          wkpUrl: null
+          wkpUrl: null,
+          abstract: null
         }
       }
     })
@@ -620,7 +621,10 @@
                 fetch(wkdUrl)
                   .then(response => response.json())
                   .then(data => {
-
+                    if (data.results.bindings[0].abstract) {
+                      const abstract = data.results.bindings[0].abstract.value;
+                      inputForm.abstract = abstract;
+                    }
                   })
               }
             })
