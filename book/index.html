@@ -348,7 +348,7 @@
           if (txtArray[i].TextType == "03") {
             _intro.push(txtArray[i].Text)
           } else if (txtArray[i].TextType == "04") {
-            _intro.push(txtArray[i].replace(/\n+/g,'<br>').Text)
+            _intro.push(txtArray[i].Text.replace(/\n+/g,'<br>'))
           }
         }
         return _intro.join('<br>');
