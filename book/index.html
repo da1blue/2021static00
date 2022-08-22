@@ -82,6 +82,16 @@
       </div>
       <aside class="text-muted">
         <small>
+          <span v-if="broaderArray">
+            <i class="bi bi-box-arrow-up"></i>
+            <button v-for="broader in broaderArray" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
+          </span>
+          <span v-if="narrowerArray">
+            <i class="bi bi-box-arrow-down"></i>
+            <button v-for="narrower in narrowerArray" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
+          </span>
           <span v-if="relatedArray">
             <i class="bi bi-arrow-left-right"></i>
             <button v-for="related in relatedArray" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
@@ -616,7 +626,6 @@
         inputForm.wkpUrl = null;
         inputForm.wkpName = null;
         inputForm.abstract = null;
-        inputForm.relatedArray = null;
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
@@ -628,6 +637,17 @@
             console.log(ndlshJson.ndlsh[matchedNdlsh])
           }
         }
+        inputForm.broaderArray = null;
+        if(ndlshJson.ndlsh[matchedNdlsh]["broader"]){
+          inputForm.broaderArray = []
+          ndlshJson.ndlsh[matchedNdlsh]["broader"].forEach(id => {inputForm.broaderArray.push(ndlshJson.ndlsh[id]["label"])})
+        }
+        inputForm.narrowerArray = null;
+        if(ndlshJson.ndlsh[matchedNdlsh]["narrower"]){
+          inputForm.narrowerArray = []
+          ndlshJson.ndlsh[matchedNdlsh]["narrower"].forEach(id => {inputForm.narrowerArray.push(ndlshJson.ndlsh[id]["label"])})
+        }
+        inputForm.relatedArray = null;
         if(ndlshJson.ndlsh[matchedNdlsh]["related"]){
           inputForm.relatedArray = []
           ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => {inputForm.relatedArray.push(ndlshJson.ndlsh[id]["label"])})
