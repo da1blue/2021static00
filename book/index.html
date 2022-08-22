@@ -80,9 +80,14 @@
           <i class="bi bi-search"></i>検索
         </button>
       </div>
-      <aside v-if="wkpUrl" class="text-muted">
+      <aside class="text-muted">
         <small>
-          <details class="wkp">
+          <span v-if="relatedArray">
+            <i class="bi bi-arrow-left-right"></i>
+            <button v-for="related in relatedArray" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;">
+              v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
+          </span>
+          <details v-if="wkpUrl" class="wkp">
             {{abstract}}
             <summary>
               <i class="bi bi-body-text"></i>
@@ -245,7 +250,8 @@
           to: null,
           wkpName: null,
           wkpUrl: null,
-          abstract: null
+          abstract: null,
+          relatedArray: null
         }
       }
     })
@@ -351,7 +357,7 @@
             _intro.push(txtArray[i].Text.replace(/\n+/g,'\n'))
           }
         }
-        return _intro.join('\n\n');
+        return _intro.join('\n\n\n');
       }
     }
 
