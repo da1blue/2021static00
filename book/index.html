@@ -346,9 +346,9 @@
         let txtArray = openBDJson[0].onix.CollateralDetail.TextContent
         for (let i in txtArray) {
           if (txtArray[i].TextType == "03") {
-            _intro.push(txtArray[i].Text)
+            _intro.push(txtArray[i].Text.replace(/\n+/g,'\n'))
           } else if (txtArray[i].TextType == "04") {
-            _intro.push(txtArray[i].Text)
+            _intro.push(txtArray[i].Text.replace(/\n+/g,'\n')
           }
         }
         return _intro.join('\n\n');
@@ -715,13 +715,19 @@
       font-family: 'Noto Sans Mono CJK JP', Consolas, 'Roboto Mono', 'Courier New', monospace;
     }
 
+    div.introduction{
+      white-space: pre-line;
+    }
+    
     div.introduction:not(.expand) {
       max-height: 6rem;
+      white-space: normal;
     }
     
     @media (min-width: 576px) {
       div.introduction:not(.expand) {
         max-height: 4.5rem;
+        white-space: normal;
       }
     }
     
