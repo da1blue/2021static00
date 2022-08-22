@@ -89,12 +89,6 @@
               <i class="bi bi-body-text"></i><a v-bind:href="wkpUrl">{{wkpName}}</a>(ウィキペディア日本語版)
               <span class="if-open-invisible">{{abstract}}</span>
             </summary>
-            <style>
-              details.wkp summary{
-                list-style: none; overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 100%; white-space: nowrap;
-              }
-              details.wkp[open]>summary span.if-open-invisible{display: none}
-            </style>
           </details>
         </small>
       </aside>
@@ -696,12 +690,21 @@
     div.introduction:not(.expand) {
       max-height: 6rem;
     }
-
+    
     @media (min-width: 576px) {
       div.introduction:not(.expand) {
         max-height: 4.5rem;
       }
     }
+    
+    details.wkp summary{
+      list-style: none; overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 100%; white-space: nowrap;
+    }
+    
+    details.wkp[open]>summary span.if-open-invisible{
+      display: none
+    }
+    
   </style>
   <!-- About Modal -->
   <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="About" aria-hidden="true">
