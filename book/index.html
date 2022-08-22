@@ -81,13 +81,23 @@
           <i class="bi bi-search"></i>検索
         </button>
       </div>
-      <aside v-if="wkpUrl" class="text-muted"><small>
-          <span style=" overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 100%; white-space: nowrap;">
-          <i class="bi bi-body-text"></i>
-          <a v-bind:href="wkpUrl">{{wkpName}}</a>(ウィキペディア日本語版) 
-          {{abstract}}
-          </span>
-        </small></aside>
+      <aside v-if="wkpUrl" class="text-muted">
+        <small>
+          <details class="wkp">
+            {{abstract}}
+            <summary>
+              <i class="bi bi-body-text"></i><a v-bind:href="wkpUrl">{{wkpName}}</a>(ウィキペディア日本語版)
+              <span class="if-open-invisible">{{abstract}}</span>
+            </summary>
+            <style>
+              details.wkp summary{
+                list-style: none; overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 100%; white-space: nowrap;
+              }
+              details.wkp[open]>summary span.if-open-invisible{display: none}
+            </style>
+          </details>
+        </small>
+      </aside>
     </form>
     <!-- 検索結果 -->
     <section id="resList" class="row g-2">
