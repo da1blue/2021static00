@@ -84,7 +84,7 @@
         <small>
           <span v-if="relatedArray">
             <i class="bi bi-arrow-left-right"></i>
-            <button v-for="related in relatedArray" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;">
+            <button v-for="related in relatedArray" class="btn-sm btn-link" style="border:0; margin-right:0.25rem;"
               v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
           </span>
           <details v-if="wkpUrl" class="wkp">
@@ -616,6 +616,7 @@
         inputForm.wkpUrl = null;
         inputForm.wkpName = null;
         inputForm.abstract = null;
+        inputForm.relatedArray = null;
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
@@ -626,6 +627,10 @@
             console.log(matchedNdlsh)
             console.log(ndlshJson.ndlsh[matchedNdlsh])
           }
+        }
+        if(ndlshJson.ndlsh[matchedNdlsh]["related"]){
+          inputForm.relatedArray = []
+          ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => {inputForm.relatedArray.push(id["label"])})
         }
         if (matchedNdlsh) {
           let query = `SELECT * WHERE{
