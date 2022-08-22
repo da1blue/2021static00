@@ -348,10 +348,10 @@
           if (txtArray[i].TextType == "03") {
             _intro.push(txtArray[i].Text)
           } else if (txtArray[i].TextType == "04") {
-            _intro.push(txtArray[i].Text.replace(/\n+/g,'<br>'))
+            _intro.push(txtArray[i].Text)
           }
         }
-        return _intro.join('<br>');
+        return _intro.join('\n\n');
       }
     }
 
