@@ -630,7 +630,7 @@
         }
         if(ndlshJson.ndlsh[matchedNdlsh]["related"]){
           inputForm.relatedArray = []
-          ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => {inputForm.relatedArray.push(id["label"])})
+          ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => {inputForm.relatedArray.push(ndlshJson.ndlsh[id]["label"])})
         }
         if (matchedNdlsh) {
           let query = `SELECT * WHERE{
