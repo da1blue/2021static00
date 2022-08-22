@@ -342,14 +342,16 @@
       let openBDUrl = "https://api.openbd.jp/v1/get?isbn=" + isbn
       let openBDJson = await getJson(openBDUrl)
       if (openBDJson[0]) {
+        let _intro = []
         let txtArray = openBDJson[0].onix.CollateralDetail.TextContent
         for (let i in txtArray) {
           if (txtArray[i].TextType == "03") {
-            return txtArray[i].Text
-          } else {
-            return
+            _intro.push(txtArray[i].Text)
+          } else if (txtArray[i].TextType == "04") {
+            _intro.push(txtArray[i].Text)
           }
         }
+        return _intro.join('/n');
       }
     }
 
