@@ -389,6 +389,21 @@
         doSearch(keyword);
       }
     };
+    
+    //ハッシュから検索条件
+    function setSearchConditionsFromHash(){
+      let hash = decodeURI(location.hash);
+      if(hash.split(';').length >= 1){
+       inputForm.keyword = hash.substring(1).match(/[^;]+/)[0];
+        if(hash.split(';').length >= 2){
+        inputForm.from = hash.split(';')[1];
+          if(hash.split(';').length >= 3){
+            inputForm.to = hash.split(';')[2];
+          }
+        }
+        doSearch(inputForm.keyword, inputForm.from, inputForm.to);
+      }
+    }
 
     // 検索機能本体
     async function doSearch(keyword = null, from = null, to = null, p = 1) {
@@ -415,6 +430,10 @@
         keyword = document.forms.searchConditions.keyword.value;
       }
       url = ciniiReqUrlBuilder(keyword, from, to, p);
+      // URLハッシュ追加
+      let newHash = [inputForm.keyword, inputForm.from, inputForm.to].join(';')
+      document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
+      history.pushState({}, '', '#'+newHash);
       // 検索実行
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
@@ -650,6 +669,9 @@
     document.querySelector("#keyword").addEventListener("keydown", logKey);
     document.querySelector("#from").addEventListener("keydown", logKey);
     document.querySelector("#to").addEventListener("keydown", logKey);
+    
+    //hashchangeにイベントリスナ追加
+    window.addEventListener('hashchange', setSearchConditionsFromHash)
 
     function logKey(e) {
       if (e.keyCode == 13) {
@@ -661,8 +683,12 @@
     inputForm.from = (new Date()).getFullYear() - 4;
     inputForm.to = (new Date()).getFullYear();
 
-    // おまかせ検索実施
-    setRandomKeyword();
+    // おまかせ検索またはハッシュからの検索実施
+    if(location.hash){
+      setSearchConditionsFromHash();
+    } else {
+      setRandomKeyword();
+    }
 
   </script>
 
