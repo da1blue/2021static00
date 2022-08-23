@@ -81,30 +81,33 @@
         </button>
       </div>
       <aside>
-        <small class="text-secondary">
+        <div style="overflow-x: hidden; display: block; white-space: nowrap;">
+          <span v-if="seeAlsoNdlshLabel">
+           <i class="bi bi-arrow-right-square-fill"></i>
+           <button class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{seeAlsoNdlshLabel}}</button>
+          </span>
           <span v-if="broaderArray">
-            <i class="bi bi-box-arrow-up"></i>
-            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 mr-1" style="border:0; margin-right:0.25rem;"
-              v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
+           <i class="bi bi-box-arrow-up"></i>
+            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
           </span>
           <span v-if="narrowerArray">
             <i class="bi bi-box-arrow-down"></i>
-            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 mr-1" style="border:0; margin-right:0.25rem;"
-              v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
+            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
           </span>
           <span v-if="relatedArray">
-            <i class="bi bi-arrow-left-right"></i>
-            <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 mr-1" style="border:0; margin-right:0.25rem;"
-              v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
+           <i class="bi bi-arrow-left-right"></i>
+           <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
           </span>
-          <details v-if="wkpUrl" class="wkp" class="text-muted">
-            {{abstract}}
-            <summary>
-              <i class="bi bi-body-text"></i>
-              <span class="if-open-invisible">{{abstract}}</span>
-              ウィキペディア日本語版: <a v-bind:href="wkpUrl">{{wkpName}}</a>
-            </summary>
-          </details>
+          </div>
+          <small class="text-secondary">
+            <details v-if="wkpUrl" class="wkp" class="text-muted">
+              {{abstract}}
+              <summary>
+               <i class="bi bi-body-text"></i>
+               <span class="if-open-invisible">{{abstract}}</span>
+               ウィキペディア日本語版: <a v-bind:href="wkpUrl">{{wkpName}}</a>
+              </summary>
+            </details>
         </small>
       </aside>
     </form>
@@ -631,28 +634,40 @@
         inputForm.wkpUrl = null;
         inputForm.wkpName = null;
         inputForm.abstract = null;
+        inputForm.seeAlsoNdlshLabel = null;
+        inputForm.broaderArray = null;
+        inputForm.narrowerArray = null;
+        inputForm.relatedArray = null;
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
         let matchedNdlsh = null
-        for (let id in ndlshJson.ndlsh) {
-          if (ndlshJson.ndlsh[id].label == keyword) {
-            matchedNdlsh = id
-            console.log(matchedNdlsh)
-            console.log(ndlshJson.ndlsh[matchedNdlsh])
+        if(matchedNdlsh){
+          console.log(matchedNdlsh)
+          console.log(ndlshJson.ndlsh[matchedNdlsh])
+        }else{
+          for (let id in ndlshJson.ndlsh) {
+            if(ndlshJson.ndlsh[id]["alternative"]){
+              ndlshJson.ndlsh[id]["alternative"].forEach(alternative => {
+                if (alternative == keyword) {
+                  seeAlsoNdlsh = id
+                }
+              })
+            }
+          }
+          if(seeAlsoNdlsh){
+            console.log(seeAlsoNdlsh)
+            console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
           }
         }
-        inputForm.broaderArray = null;
         if(ndlshJson.ndlsh[matchedNdlsh]["broader"]){
           inputForm.broaderArray = []
           ndlshJson.ndlsh[matchedNdlsh]["broader"].forEach(id => {inputForm.broaderArray.push(ndlshJson.ndlsh[id]["label"])})
         }
-        inputForm.narrowerArray = null;
         if(ndlshJson.ndlsh[matchedNdlsh]["narrower"]){
           inputForm.narrowerArray = []
           ndlshJson.ndlsh[matchedNdlsh]["narrower"].forEach(id => {inputForm.narrowerArray.push(ndlshJson.ndlsh[id]["label"])})
         }
-        inputForm.relatedArray = null;
         if(ndlshJson.ndlsh[matchedNdlsh]["related"]){
           inputForm.relatedArray = []
           ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => {inputForm.relatedArray.push(ndlshJson.ndlsh[id]["label"])})
