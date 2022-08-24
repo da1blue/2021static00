@@ -641,7 +641,8 @@
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
-        let matchedNdlsh = null
+        let matchedNdlsh = null;
+        let seeAlsoNdlsh = null;
         for (let id in ndlshJson.ndlsh) {
           if (ndlshJson.ndlsh[id].label == keyword) {
             matchedNdlsh = id
