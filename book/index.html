@@ -642,6 +642,11 @@
         let ndlshJson = await getJson(ndlshUrl);
         let keyword = document.forms.searchConditions.keyword.value;
         let matchedNdlsh = null
+        for (let id in ndlshJson.ndlsh) {
+          if (ndlshJson.ndlsh[id].label == keyword) {
+            matchedNdlsh = id
+          }
+        }
         if(matchedNdlsh){
           console.log(matchedNdlsh)
           console.log(ndlshJson.ndlsh[matchedNdlsh])
