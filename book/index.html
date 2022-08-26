@@ -76,7 +76,7 @@
       </div>
       </div>
       <div class="col-12 col-md-2 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
-        <button type="button" class="btn btn-primary py-2" onclick="doSearch()">
+        <button type="button" class="btn btn-primary py-2" onclick="doSearch(inputForm.keyword, inputForm.from, inputForm.to)">
           <i class="bi bi-search"></i>検索
         </button>
       </div>
@@ -84,23 +84,23 @@
         <div style="overflow-x: hidden; display: block; white-space: nowrap;">
           <span v-if="seeAlsoNdlshLabel">
             <i class="bi bi-arrow-right-square-fill"></i>
-            <button class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+            <button class="btn-sm btn-link mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{seeAlsoNdlshLabel}}</button>
+          </span>
+          <span v-if="relatedArray">
+            <i class="bi bi-arrow-left-right"></i>
+            <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 me-1" style="border:0;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
           </span>
           <span v-if="broaderArray">
             <i class="bi bi-box-arrow-up"></i>
-            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
           </span>
           <span v-if="narrowerArray">
             <i class="bi bi-box-arrow-down"></i>
-            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
-          </span>
-          <span v-if="relatedArray">
-            <i class="bi bi-arrow-left-right"></i>
-            <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;"
-              v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
           </span>
         </div>
         <small class="text-secondary">
@@ -206,8 +206,8 @@
                 </ul>
               </div>
               <div class="col-12 " v-if="item.topics">
-                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 mr-1"
-                  style="border:0; margin-right:0.25rem;"
+                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 me-1"
+                  style="border:0;"
                   v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
             </div>
