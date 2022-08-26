@@ -444,9 +444,9 @@
       resList.items = null;
       resList.totalResults = null;
       // URLハッシュ追加
-      let newHash = [inputForm.keyword, from, to]
+      let newHash = inputForm.keyword
       if(from && to){
-        newHash = newHash = [inputForm.keyword, from, to].join(';')
+        newHash = [inputForm.keyword, from, to].join(';')
       } else if(from){
         newHash = [inputForm.keyword, from, null].join(';')
       } else if(to){
