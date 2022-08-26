@@ -83,31 +83,35 @@
       <aside>
         <div style="overflow-x: hidden; display: block; white-space: nowrap;">
           <span v-if="seeAlsoNdlshLabel">
-           <i class="bi bi-arrow-right-square-fill"></i>
-           <button class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{seeAlsoNdlshLabel}}</button>
+            <i class="bi bi-arrow-right-square-fill"></i>
+            <button class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{seeAlsoNdlshLabel}}</button>
           </span>
           <span v-if="broaderArray">
-           <i class="bi bi-box-arrow-up"></i>
-            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
+            <i class="bi bi-box-arrow-up"></i>
+            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
           </span>
           <span v-if="narrowerArray">
             <i class="bi bi-box-arrow-down"></i>
-            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
+            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
           </span>
           <span v-if="relatedArray">
-           <i class="bi bi-arrow-left-right"></i>
-           <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;" v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
+            <i class="bi bi-arrow-left-right"></i>
+            <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 mr-1" style="border:0;"
+              v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
           </span>
-          </div>
-          <small class="text-secondary">
-            <details v-if="wkpUrl" class="wkp" class="text-muted">
-              {{abstract}}
-              <summary>
-               <i class="bi bi-body-text"></i>
-               <span class="if-open-invisible">{{abstract}}</span>
-               ウィキペディア日本語版: <a v-bind:href="wkpUrl">{{wkpName}}</a>
-              </summary>
-            </details>
+        </div>
+        <small class="text-secondary">
+          <details v-if="wkpUrl" class="wkp" class="text-muted">
+            {{abstract}}
+            <summary>
+              <i class="bi bi-body-text"></i>
+              <span class="if-open-invisible">{{abstract}}</span>
+              ウィキペディア日本語版: <a v-bind:href="wkpUrl">{{wkpName}}</a>
+            </summary>
+          </details>
         </small>
       </aside>
     </form>
@@ -202,7 +206,8 @@
                 </ul>
               </div>
               <div class="col-12 " v-if="item.topics">
-                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 mr-1" style="border:0; margin-right:0.25rem;"
+                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 mr-1"
+                  style="border:0; margin-right:0.25rem;"
                   v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
             </div>
@@ -365,9 +370,9 @@
         let txtArray = openBDJson[0].onix.CollateralDetail.TextContent
         for (let i in txtArray) {
           if (txtArray[i].TextType == "03") {
-            _intro.push(txtArray[i].Text.replace(/\n+/g,'\n'))
+            _intro.push(txtArray[i].Text.replace(/\n+/g, '\n'))
           } else if (txtArray[i].TextType == "04") {
-            _intro.push(txtArray[i].Text.replace(/\n+/g,'\n'))
+            _intro.push(txtArray[i].Text.replace(/\n+/g, '\n'))
           }
         }
         return _intro.join('\n\n\n');
@@ -408,15 +413,15 @@
         doSearch(keyword);
       }
     };
-    
+
     //ハッシュから検索条件
-    function setSearchConditionsFromHash(){
+    function setSearchConditionsFromHash() {
       let hash = decodeURI(location.hash);
-      if(hash.split(';').length >= 1){
-       inputForm.keyword = hash.substring(1).match(/[^;]+/)[0];
-        if(hash.split(';').length >= 2){
-        inputForm.from = hash.split(';')[1];
-          if(hash.split(';').length >= 3){
+      if (hash.split(';').length >= 1) {
+        inputForm.keyword = hash.substring(1).match(/[^;]+/)[0];
+        if (hash.split(';').length >= 2) {
+          inputForm.from = hash.split(';')[1];
+          if (hash.split(';').length >= 3) {
             inputForm.to = hash.split(';')[2];
           }
         }
@@ -452,7 +457,7 @@
       // URLハッシュ追加
       let newHash = [inputForm.keyword, inputForm.from, inputForm.to].join(';')
       document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
-      history.pushState({}, '', '#'+newHash);
+      history.pushState({}, '', '#' + newHash);
       // 検索実行
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
@@ -540,14 +545,14 @@
                 let topicSp = topicObj["dc:title"].split("--")
                 for (topic of topicSp) {
                   topic = topic.trim()
-                  if (topic.match(/([^,]+,.+)\((\d{1,4})-(\d{1,4})\)/)){
+                  if (topic.match(/([^,]+,.+)\((\d{1,4})-(\d{1,4})\)/)) {
                     let _matched = topic.match(/(.+)\((\d{1,4})-(\d{1,4})\)/)
                     topic = `${_matched[1]}, ${_matched[2]}-${_matched[3]}`
                   } else if (topic.match(/([^,]+,.+)\((\d{1,4})-\)/)) {
                     let _matched = topic.match(/(.+)\((\d{1,4})-\)/)
                     topic = `${_matched[1]}, ${_matched[2]}-`
                   }
-                  if (topic.match(/(.+)\((\d{1,4})～(\d{1,4})\)/)){
+                  if (topic.match(/(.+)\((\d{1,4})～(\d{1,4})\)/)) {
                     let _matched = topic.match(/(.+)\((\d{1,4})-(\d{1,4})\)/)
                     topic = `${_matched[1]} (${_matched[2]}-${_matched[3]})`
                   }
@@ -648,12 +653,24 @@
             matchedNdlsh = id
           }
         }
-        if(matchedNdlsh){
+        if (matchedNdlsh) {
           console.log(matchedNdlsh)
           console.log(ndlshJson.ndlsh[matchedNdlsh])
-        }else{
+          if (ndlshJson.ndlsh[matchedNdlsh]["broader"]) {
+            inputForm.broaderArray = []
+            ndlshJson.ndlsh[matchedNdlsh]["broader"].forEach(id => { inputForm.broaderArray.push(ndlshJson.ndlsh[id]["label"]) })
+          }
+          if (ndlshJson.ndlsh[matchedNdlsh]["narrower"]) {
+            inputForm.narrowerArray = []
+            ndlshJson.ndlsh[matchedNdlsh]["narrower"].forEach(id => { inputForm.narrowerArray.push(ndlshJson.ndlsh[id]["label"]) })
+          }
+          if (ndlshJson.ndlsh[matchedNdlsh]["related"]) {
+            inputForm.relatedArray = []
+            ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => { inputForm.relatedArray.push(ndlshJson.ndlsh[id]["label"]) })
+          }
+        } else {
           for (let id in ndlshJson.ndlsh) {
-            if(ndlshJson.ndlsh[id]["alternative"]){
+            if (ndlshJson.ndlsh[id]["alternative"]) {
               ndlshJson.ndlsh[id]["alternative"].forEach(alternative => {
                 if (alternative == keyword) {
                   seeAlsoNdlsh = id
@@ -661,23 +678,11 @@
               })
             }
           }
-          if(seeAlsoNdlsh){
+          if (seeAlsoNdlsh) {
             console.log(seeAlsoNdlsh)
             console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
             inputForm.seeAlsoNdlshLabel = seeAlsoNdlsh;
           }
-        }
-        if(ndlshJson.ndlsh[matchedNdlsh]["broader"]){
-          inputForm.broaderArray = []
-          ndlshJson.ndlsh[matchedNdlsh]["broader"].forEach(id => {inputForm.broaderArray.push(ndlshJson.ndlsh[id]["label"])})
-        }
-        if(ndlshJson.ndlsh[matchedNdlsh]["narrower"]){
-          inputForm.narrowerArray = []
-          ndlshJson.ndlsh[matchedNdlsh]["narrower"].forEach(id => {inputForm.narrowerArray.push(ndlshJson.ndlsh[id]["label"])})
-        }
-        if(ndlshJson.ndlsh[matchedNdlsh]["related"]){
-          inputForm.relatedArray = []
-          ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => {inputForm.relatedArray.push(ndlshJson.ndlsh[id]["label"])})
         }
         if (matchedNdlsh) {
           let query = `SELECT * WHERE{
@@ -727,7 +732,7 @@
     document.querySelector("#keyword").addEventListener("keydown", logKey);
     document.querySelector("#from").addEventListener("keydown", logKey);
     document.querySelector("#to").addEventListener("keydown", logKey);
-    
+
     //hashchangeにイベントリスナ追加
     window.addEventListener('hashchange', setSearchConditionsFromHash)
 
@@ -742,7 +747,7 @@
     inputForm.to = (new Date()).getFullYear();
 
     // おまかせ検索またはハッシュからの検索実施
-    if(location.hash){
+    if (location.hash) {
       setSearchConditionsFromHash();
     } else {
       setRandomKeyword();
@@ -773,30 +778,34 @@
       font-family: 'Noto Sans Mono CJK JP', Consolas, 'Roboto Mono', 'Courier New', monospace;
     }
 
-    div.introduction{
+    div.introduction {
       white-space: pre-line;
     }
-    
+
     div.introduction:not(.expand) {
       max-height: 6rem;
       white-space: normal;
     }
-    
+
     @media (min-width: 576px) {
       div.introduction:not(.expand) {
         max-height: 4.5rem;
         white-space: normal;
       }
     }
-    
-    details.wkp summary{
-      list-style: none; overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 100%; white-space: nowrap;
+
+    details.wkp summary {
+      list-style: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      width: 100%;
+      white-space: nowrap;
     }
-    
-    details.wkp[open]>summary span.if-open-invisible{
+
+    details.wkp[open]>summary span.if-open-invisible {
       display: none
     }
-    
   </style>
   <!-- About Modal -->
   <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="About" aria-hidden="true">
@@ -823,7 +832,7 @@
           <ul>
             <li><a href="https://id.ndl.go.jp/information/download/">NDLSH</a>(TAB区切りテキスト形式データ) (CC BY)</li>
             <li><a href="https://www.wikidata.org/">Wikidata</a> (CC0)</li>
-              <li><a href="https://ja.dbpedia.org/">DBPedia Japanese</a> (CC BY-SA)</li>
+            <li><a href="https://ja.dbpedia.org/">DBPedia Japanese</a> (CC BY-SA)</li>
           </ul>
           <h3 class="fs-6">Contact:</h3>
           <p>つくったひと： Daichi M. (@da1blue)</p>
