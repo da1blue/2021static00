@@ -458,7 +458,14 @@
       }
       url = ciniiReqUrlBuilder(keyword, from, to, p);
       // URLハッシュ追加
-      let newHash = [inputForm.keyword, inputForm.from, inputForm.to].join(';')
+      let newHash = newHash = [inputForm.keyword, from, to]
+      if(from && to){
+        newHash = newHash = [inputForm.keyword, from, to].join(';')
+      } else if(from){
+        newHash = [inputForm.keyword, from, null].join(';')
+      } else if(to){
+        newHash = [inputForm.keyword, null, to].join(';')
+      }
       document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
       history.pushState({}, '', '#' + newHash);
       // 検索実行
