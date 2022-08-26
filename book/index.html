@@ -446,11 +446,20 @@
       //キーワード指定
       if (keyword != null) {
         inputForm.keyword = keyword;
-      } else if (inputForm.keyword) {
+      } else if (document.forms.searchConditions.keyword.value) {
         keyword = document.forms.searchConditions.keyword.value;
       } else {
         setRandomKeyword();
       }
+      //出版年指定
+      if (from == null) {
+        from = document.forms.searchConditions.from.value;
+      }
+      if (to == null) {
+        to = document.forms.searchConditions.to.value;
+      }
+      inputForm.from = from
+      inputForm.to = to
       // URLハッシュ追加
       let newHash = inputForm.keyword
       if(from && to){
@@ -464,12 +473,6 @@
       history.pushState({}, '', '#' + newHash);
       // 検索式(URL)生成
       let url = null;
-      if (from == null) {
-        from = document.forms.searchConditions.from.value;
-      }
-      if (to == null) {
-        to = document.forms.searchConditions.to.value;
-      }
       url = ciniiReqUrlBuilder(keyword, from, to, p);
       // 検索実行
       let ciniiList = await getJson(url);
