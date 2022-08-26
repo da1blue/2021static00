@@ -651,9 +651,11 @@
         let keyword = document.forms.searchConditions.keyword.value;
         let matchedNdlsh = null;
         let seeAlsoNdlsh = null;
+        let p349 = null;
         for (let id in ndlshJson.ndlsh) {
           if (ndlshJson.ndlsh[id].label == keyword) {
             matchedNdlsh = id
+            p349 = id;
           }
         }
         if (matchedNdlsh) {
@@ -676,7 +678,8 @@
             if (ndlshJson.ndlsh[id]["alternative"]) {
               ndlshJson.ndlsh[id]["alternative"].forEach(alternative => {
                 if (alternative == keyword) {
-                  seeAlsoNdlsh = id
+                  seeAlsoNdlsh = id;
+                  p349 = id;
                 }
               })
             }
@@ -684,12 +687,12 @@
           if (seeAlsoNdlsh) {
             console.log(seeAlsoNdlsh)
             console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
-            inputForm.seeAlsoNdlshLabel = seeAlsoNdlsh;
+            inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
           }
         }
-        if (matchedNdlsh) {
+        if (p349) {
           let query = `SELECT * WHERE{
-          ?qid wdt:P349 "${matchedNdlsh}" ;
+          ?qid wdt:P349 "${p349}" ;
                rdfs:label ?label.
           FILTER (LANG(?label) = "ja")
           OPTIONAL {
