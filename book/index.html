@@ -443,6 +443,17 @@
       }
       resList.items = null;
       resList.totalResults = null;
+      // URLハッシュ追加
+      let newHash = [inputForm.keyword, from, to]
+      if(from && to){
+        newHash = newHash = [inputForm.keyword, from, to].join(';')
+      } else if(from){
+        newHash = [inputForm.keyword, from, null].join(';')
+      } else if(to){
+        newHash = [inputForm.keyword, null, to].join(';')
+      }
+      document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
+      history.pushState({}, '', '#' + newHash);
       // 検索式(URL)生成
       let url = null;
       if (from == null) {
@@ -457,17 +468,6 @@
         keyword = document.forms.searchConditions.keyword.value;
       }
       url = ciniiReqUrlBuilder(keyword, from, to, p);
-      // URLハッシュ追加
-      let newHash = [inputForm.keyword, from, to]
-      if(from && to){
-        newHash = newHash = [inputForm.keyword, from, to].join(';')
-      } else if(from){
-        newHash = [inputForm.keyword, from, null].join(';')
-      } else if(to){
-        newHash = [inputForm.keyword, null, to].join(';')
-      }
-      document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
-      history.pushState({}, '', '#' + newHash);
       // 検索実行
       let ciniiList = await getJson(url);
       const resItems = ciniiList["@graph"][0].items;
