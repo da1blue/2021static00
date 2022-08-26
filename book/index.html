@@ -443,6 +443,14 @@
       }
       resList.items = null;
       resList.totalResults = null;
+      //キーワード指定
+      if (keyword != null) {
+        inputForm.keyword = keyword;
+      } else if (inputForm.keyword) {
+        keyword = document.forms.searchConditions.keyword.value;
+      } else {
+        setRandomKeyword();
+      }
       // URLハッシュ追加
       let newHash = inputForm.keyword
       if(from && to){
@@ -461,11 +469,6 @@
       }
       if (to == null) {
         to = document.forms.searchConditions.to.value;
-      }
-      if (keyword != null) {
-        inputForm.keyword = keyword;
-      } else {
-        keyword = document.forms.searchConditions.keyword.value;
       }
       url = ciniiReqUrlBuilder(keyword, from, to, p);
       // 検索実行
