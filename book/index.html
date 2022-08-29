@@ -579,11 +579,14 @@
             let makers = []
             if (makerObjArray){
               for (makerObj of makerObjArray) {
-                let _makerEntity = makerObj["@id"]
-                let _makerId = _makerEntity.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+)#entity/,'$1')
-                let maker = {id: _makerId, name: makerObj["foaf:name"][0]["@value"]}
-                makers.push(maker)
+                if(makerObj["@id"]){
+                  let _makerEntity = makerObj["@id"]
+                  let _makerId = _makerEntity.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+)#entity/,'$1')
+                  let maker = {id: _makerId, name: makerObj["foaf:name"][0]["@value"]}
+                  makers.push(maker)
+                }
               }
+              resList.items[i].topics = Array.from(new Set(makers));
             }
             // ISBN複数処理
             if (item.isbn) {
