@@ -586,7 +586,7 @@
               for (makerObj of makerObjArray) {
                 if(makerObj["@id"]){
                   let _makerEntity = makerObj["@id"]
-                  let _makerId = _makerEntity.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+)#entity/,'$1')
+                  let _makerId = _makerEntity.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
                   let maker = {id: _makerId, name: makerObj["foaf:name"][0]["@value"]}
                   makers.push(maker)
                 }
@@ -677,10 +677,12 @@
         inputForm.relatedArray = null;
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
-        let keyword = document.forms.searchConditions.keyword.value;
-        let matchedNdlsh = null;
+        if(keyword.match(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/)){
+              p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
+            }        let matchedNdlsh = null;
         let seeAlsoNdlsh = null;
         let p349 = null;
+        let p271 = null;
         for (let id in ndlshJson.ndlsh) {
           if (ndlshJson.ndlsh[id].label == keyword) {
             matchedNdlsh = id
@@ -717,6 +719,10 @@
             console.log(seeAlsoNdlsh)
             console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
             inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+          } else {
+            if(keyword.match(/DA\d+[\dX]/)){
+              p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
+            }
           }
         }
         if (p349) {
@@ -731,6 +737,20 @@
                  schema:name ?jaWkpName .
             }
           }`
+        } else if (p271) {
+          let query = `SELECT * WHERE{
+          ?qid wdt:P271 "${p271}" ;
+               rdfs:label ?label.
+          FILTER (LANG(?label) = "ja")
+          OPTIONAL {
+            ?jaWkp schema:about ?qid ;
+                 schema:inLanguage "ja" ;
+                 schema:isPartOf <https://ja.wikipedia.org/> ;
+                 schema:name ?jaWkpName .
+            }
+          }`          
+        }
+        if (p349 || p271){
           let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
           fetch(wkdUrl)
             .then(response => response.json())
