@@ -210,6 +210,11 @@
                   style="border:0;"
                   v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
+              <div class="col-12 " v-if="item.makers">
+                <button v-for="maker in item.makers" class="btn-sm btn-link mb-1 me-1"
+                  style="border:0;"
+                  v-bind:onclick="'doSearch(' + maker.id + ');'">{{maker.name}}</button>
+              </div>
             </div>
             <div class="col-12 text-muted overflow-hidden introduction" v-if="item.introduction">
               <small>{{item.introduction}}</small>
