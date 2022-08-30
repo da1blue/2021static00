@@ -667,7 +667,7 @@
       }());
 
       //NDLA連携
-      (async function () {
+      (async loadNdla() {
         inputForm.wkpUrl = null;
         inputForm.wkpName = null;
         inputForm.abstract = null;
@@ -723,6 +723,15 @@
             let query = `SELECT * WHERE { ?id rdfs:label "${keyword}" . }`
             let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query='+ encodeURIComponent(query);
             console.log(ndlaUrl)
+            fetch(ndlaUrl)
+              .then(response => response.json())
+              .then(data => {
+                if (data.results.bindings[0]) {
+                  matchedNdlsh = data.results.bindings[0].id.value.replace('http://id.ndl.go.jp/auth/ndlna/','')
+                  console.log(matchedNdlsh)
+                  p349 = matchedNdlsh
+                }
+              })
           }
         }
         let query = null;
@@ -749,7 +758,7 @@
                  schema:isPartOf <https://ja.wikipedia.org/> ;
                  schema:name ?jaWkpName .
             }
-          }`          
+          }`
         }
         
         if (query){
@@ -778,8 +787,10 @@
                       inputForm.abstract = abstract;
                     }
                   })
-              }
-            })
+                }
+              })
+            }
+          })
         }
       }());
     }
