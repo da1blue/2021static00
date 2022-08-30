@@ -206,13 +206,11 @@
                 </ul>
               </div>
               <div class="col-12 " v-if="item.topics">
-                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 me-1"
-                  style="border:0;"
+                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 me-1" style="border:0;"
                   v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
               <div class="col-12 " v-if="item.makers">
-                <button v-for="maker in item.makers" class="btn-sm btn-link mb-1 me-1"
-                  style="border:0;"
+                <button v-for="maker in item.makers" class="btn-sm btn-link mb-1 me-1" style="border:0;"
                   v-bind:onclick="`doSearch('${maker.id}');`">{{maker.name}}</button>
               </div>
             </div>
@@ -468,11 +466,11 @@
       inputForm.to = to
       // URLハッシュ追加
       let newHash = inputForm.keyword
-      if(from && to){
+      if (from && to) {
         newHash = [inputForm.keyword, from, to].join(';')
-      } else if(from){
+      } else if (from) {
         newHash = [inputForm.keyword, from, null].join(';')
-      } else if(to){
+      } else if (to) {
         newHash = [inputForm.keyword, null, to].join(';')
       }
       document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
@@ -582,12 +580,12 @@
             // CiNii著者ID
             const makerObjArray = detailJson["@graph"][0]["foaf:maker"]
             let makers = []
-            if (makerObjArray){
+            if (makerObjArray) {
               for (makerObj of makerObjArray) {
-                if(makerObj["@id"]){
+                if (makerObj["@id"]) {
                   let _makerEntity = makerObj["@id"]
-                  let _makerId = _makerEntity.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
-                  let maker = {id: _makerId, name: makerObj["foaf:name"][0]["@value"]}
+                  let _makerId = _makerEntity.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/, '$1')
+                  let maker = { id: _makerId, name: makerObj["foaf:name"][0]["@value"] }
                   makers.push(maker)
                 }
               }
@@ -667,7 +665,7 @@
       }());
 
       //NDLA連携
-      (async loadNdla() {
+      (async function () {
         inputForm.wkpUrl = null;
         inputForm.wkpName = null;
         inputForm.abstract = null;
@@ -717,17 +715,17 @@
             console.log(seeAlsoNdlsh)
             console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
             inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
-          } else if(keyword.match(/DA\d+[\dX]/)) {
-            p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
+          } else if (keyword.match(/DA\d+[\dX]/)) {
+            p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/, '$1')
           } else {
             let query = `SELECT * WHERE { ?id rdfs:label "${keyword}" . }`
-            let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query='+ encodeURIComponent(query);
+            let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query=' + encodeURIComponent(query);
             console.log(ndlaUrl)
             fetch(ndlaUrl)
               .then(response => response.json())
               .then(data => {
                 if (data.results.bindings[0]) {
-                  matchedNdlsh = data.results.bindings[0].id.value.replace('http://id.ndl.go.jp/auth/ndlna/','')
+                  matchedNdlsh = data.results.bindings[0].id.value.replace('http://id.ndl.go.jp/auth/ndlna/', '')
                   console.log(matchedNdlsh)
                   p349 = matchedNdlsh
                 }
@@ -760,8 +758,8 @@
             }
           }`
         }
-        
-        if (query){
+
+        if (query) {
           let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
           fetch(wkdUrl)
             .then(response => response.json())
@@ -787,15 +785,11 @@
                       inputForm.abstract = abstract;
                     }
                   })
-                }
-              })
-            }
-          })
+              }
+            })
         }
-      }());
+      })
     }
-
-
     // キーワードでEnter押下時に検索実行
     document.querySelector("#keyword").addEventListener("keydown", logKey);
     document.querySelector("#from").addEventListener("keydown", logKey);
