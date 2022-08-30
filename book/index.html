@@ -677,12 +677,10 @@
         inputForm.relatedArray = null;
         let ndlshUrl = './ndlsh.json'
         let ndlshJson = await getJson(ndlshUrl);
-        if(keyword.match(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/)){
-              p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
-            }        let matchedNdlsh = null;
+        let matchedNdlsh = null;
         let seeAlsoNdlsh = null;
-        let p349 = null;
-        let p271 = null;
+        let p349 = null; // NDLA
+        let p271 = null; // CiNii
         for (let id in ndlshJson.ndlsh) {
           if (ndlshJson.ndlsh[id].label == keyword) {
             matchedNdlsh = id
@@ -719,14 +717,17 @@
             console.log(seeAlsoNdlsh)
             console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
             inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+          } else if(keyword.match(/DA\d+[\dX]/)) {
+            p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
           } else {
-            if(keyword.match(/DA\d+[\dX]/)){
-              p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/,'$1')
-            }
+            let query = `SELECT * WHERE { ?id rdfs:label "${keyword}" . }`
+            let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query='+ encodeURIComponent(query);
+            console.log(ndlaUrl)
           }
         }
+        let query = null;
         if (p349) {
-          let query = `SELECT * WHERE{
+          query = `SELECT * WHERE{
           ?qid wdt:P349 "${p349}" ;
                rdfs:label ?label.
           FILTER (LANG(?label) = "ja")
@@ -738,7 +739,7 @@
             }
           }`
         } else if (p271) {
-          let query = `SELECT * WHERE{
+          query = `SELECT * WHERE{
           ?qid wdt:P271 "${p271}" ;
                rdfs:label ?label.
           FILTER (LANG(?label) = "ja")
@@ -750,7 +751,8 @@
             }
           }`          
         }
-        if (p349 || p271){
+        
+        if (query){
           let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
           fetch(wkdUrl)
             .then(response => response.json())
