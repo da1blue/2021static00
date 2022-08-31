@@ -73,7 +73,6 @@ async function getWkpFromP349(p349) {
     .then(response => response.json())
     .then(data => {
       if (data.results.bindings[0]) {
-        console.log(data.results.bindings[0]);
         const wkd = data.results.bindings[0].qid.value;
         const wkdLabel = data.results.bindings[0].label.value;
         const jaWkp = data.results.bindings[0].jaWkp.value;
@@ -84,7 +83,6 @@ async function getWkpFromP349(p349) {
           .then(response => response.json())
           .then(data => {
             if (data.results.bindings[0].abstract) {
-              console.log(data.results.bindings[0]);
               const abstract = data.results.bindings[0].abstract.value;
               return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: abstract};
             } else {
