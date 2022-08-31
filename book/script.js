@@ -57,7 +57,7 @@ async function getReview(isbn) {
 }
 
 async function getWkpFromP349(p349) {
-  query = `SELECT * WHERE{
+  let query = `SELECT * WHERE{
       ?qid wdt:P349 "${p349}" ;
            rdfs:label ?label.
       FILTER (LANG(?label) = "ja")
