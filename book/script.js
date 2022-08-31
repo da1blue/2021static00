@@ -70,7 +70,7 @@ function getWkdReqUrlFromP349(p349) {
     }`
   }
 
-  function getWkdReqUrlFromP349(p271) {
+  function getWkdReqUrlFromP271(p271) {
     return `SELECT * WHERE{
       ?qid wdt:P349 "${p271}" ;
            rdfs:label ?label.
