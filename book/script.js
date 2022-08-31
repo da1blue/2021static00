@@ -56,7 +56,7 @@ async function getReview(isbn) {
   }
 }
 
-async function getWkdReqUrlFromP349(p349) {
+function getWkdReqUrlFromP349(p349) {
   return `SELECT * WHERE{
     ?qid wdt:P349 "${p349}" ;
          rdfs:label ?label.
@@ -70,7 +70,7 @@ async function getWkdReqUrlFromP349(p349) {
     }`
   }
 
-  async function getWkdReqUrlFromP349(p271) {
+  function getWkdReqUrlFromP349(p271) {
     return `SELECT * WHERE{
       ?qid wdt:P349 "${p271}" ;
            rdfs:label ?label.
