@@ -87,9 +87,6 @@ async function getWkpFromP349(p349) {
               console.log(data.results.bindings[0]);
               const abstract = data.results.bindings[0].abstract.value;
               return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: abstract}
-              inputForm.wkpUrl = jaWkp;
-              inputForm.wkpName = jaWkpName;
-              inputForm.abstract = abstract;
             } else {
               return null;
             }
