@@ -86,11 +86,13 @@ async function getWkpFromP349(p349) {
             if (data.results.bindings[0].abstract) {
               console.log(data.results.bindings[0]);
               const abstract = data.results.bindings[0].abstract.value;
-              return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: abstract}
+              return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: abstract};
             } else {
-              return null;
+              return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: null};
             }
           })
+      } else {
+        return null;
       }
     })
 }
