@@ -676,40 +676,65 @@
                 }
               })
           }
+          let query = null;
           if (p349) {
-            let wkp = await getWkpFromP349(p349)
-            console.log(wkp)
-            inputForm.wkpUrl = wkp.jaWkp;
-            inputForm.wkpName = wkp.jaWkpName;
-            inputForm.abstract = wkp.abstract;
+            query = getWkdReqUrlFromP349(p349)
+          } else if (p271) {
+            query = getWkdReqUrlFromP271(p271)
+          }
+          if (query) {
+            let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
+            fetch(wkdUrl)
+              .then(response => response.json())
+              .then(data => {
+                if (data.results.bindings[0]) {
+                  console.log(data.results.bindings[0]);
+                  const wkd = data.results.bindings[0].qid.value;
+                  const wkdLabel = data.results.bindings[0].label.value;
+                  const jaWkp = data.results.bindings[0].jaWkp.value;
+                  const jaWkpName = data.results.bindings[0].jaWkpName.value;
+                  let query = `select distinct * where { wikipedia-ja:${jaWkpName} foaf:primaryTopic/dbo:abstract ?abstract. }`
+                  let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
+                  fetch(dbpUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                      if (data.results.bindings[0].abstract) {
+                        console.log(data.results.bindings[0]);
+                        const abstract = data.results.bindings[0].abstract.value;
+                        inputForm.wkpUrl = jaWkp;
+                        inputForm.wkpName = jaWkpName;
+                        inputForm.abstract = abstract;
+                      }
+                    })
+                }
+              })
           }
         }
-      }());
-
-    }
+      }())
+      }
     // キーワードでEnter押下時に検索実行
     document.querySelector("#keyword").addEventListener("keydown", logKey);
-    document.querySelector("#from").addEventListener("keydown", logKey);
-    document.querySelector("#to").addEventListener("keydown", logKey);
+      document.querySelector("#from").addEventListener("keydown", logKey);
+      document.querySelector("#to").addEventListener("keydown", logKey);
 
-    //hashchangeにイベントリスナ追加
-    window.addEventListener('hashchange', setSearchConditionsFromHash)
-    function logKey(e) {
-      if (e.keyCode == 13) {
-        doSearch();
+      //hashchangeにイベントリスナ追加
+      window.addEventListener('hashchange', setSearchConditionsFromHash)
+      function logKey(e) {
+        if (e.keyCode == 13) {
+          doSearch();
+        }
       }
-    }
 
-    //from,to
-    inputForm.from = (new Date()).getFullYear() - 4;
-    inputForm.to = (new Date()).getFullYear();
+      //from,to
+      inputForm.from = (new Date()).getFullYear() - 4;
+      inputForm.to = (new Date()).getFullYear();
 
-    // おまかせ検索またはハッシュからの検索実施
-    if (location.hash) {
-      setSearchConditionsFromHash();
-    } else {
-      setRandomKeyword();
-    }
+      // おまかせ検索またはハッシュからの検索実施
+      if (location.hash) {
+        setSearchConditionsFromHash();
+      } else {
+        setRandomKeyword();
+      }
 
   </script>
 

@@ -56,9 +56,23 @@ async function getReview(isbn) {
   }
 }
 
-async function getWkpFromP349(p349) {
-  let query = `SELECT * WHERE{
-      ?qid wdt:P349 "${p349}" ;
+async function getWkdReqUrlFromP349(p349) {
+  return `SELECT * WHERE{
+    ?qid wdt:P349 "${p349}" ;
+         rdfs:label ?label.
+    FILTER (LANG(?label) = "ja")
+    OPTIONAL {
+      ?jaWkp schema:about ?qid ;
+           schema:inLanguage "ja" ;
+           schema:isPartOf <https://ja.wikipedia.org/> ;
+           schema:name ?jaWkpName .
+      }
+    }`
+  }
+
+  async function getWkdReqUrlFromP349(p271) {
+    return `SELECT * WHERE{
+      ?qid wdt:P349 "${p271}" ;
            rdfs:label ?label.
       FILTER (LANG(?label) = "ja")
       OPTIONAL {
@@ -68,29 +82,5 @@ async function getWkpFromP349(p349) {
              schema:name ?jaWkpName .
         }
       }`
-  let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
-  fetch(wkdUrl)
-    .then(response => response.json())
-    .then(data => {
-      if (data.results.bindings[0]) {
-        const wkd = data.results.bindings[0].qid.value;
-        const wkdLabel = data.results.bindings[0].label.value;
-        const jaWkp = data.results.bindings[0].jaWkp.value;
-        const jaWkpName = data.results.bindings[0].jaWkpName.value;
-        let query = `select distinct * where { wikipedia-ja:${jaWkpName} foaf:primaryTopic/dbo:abstract ?abstract. }`
-        let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
-        fetch(dbpUrl)
-          .then(response => response.json())
-          .then(data => {
-            if (data.results.bindings[0].abstract) {
-              const abstract = data.results.bindings[0].abstract.value;
-              return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: abstract};
-            } else {
-              return {jaWkp: jaWkp, jaWkpName: jaWkpName, abstract: null};
-            }
-          })
-      } else {
-        return null;
-      }
-    })
-}
+    }
+  
