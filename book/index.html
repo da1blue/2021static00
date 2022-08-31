@@ -684,6 +684,7 @@
           }
           if (query) {
             let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
+            console.log(wkdUrl)
             fetch(wkdUrl)
               .then(response => response.json())
               .then(data => {
