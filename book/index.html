@@ -660,6 +660,25 @@
             console.log(seeAlsoNdlsh)
             console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
             inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+          } else if (keyword.match(/DA\d+[\dX]/)) {
+            p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/, '$1')
+          } else {
+            let query = `SELECT * WHERE { ?id rdfs:label "${keyword}" . }`
+            let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query=' + encodeURIComponent(query);
+            console.log(ndlaUrl)
+            fetch(ndlaUrl)
+              .then(response => response.json())
+              .then(data => {
+                if (data.results.bindings[0]) {
+                  matchedNdlsh = data.results.bindings[0].id.value.replace('http://id.ndl.go.jp/auth/ndlna/', '')
+                  console.log(matchedNdlsh)
+                  p349 = matchedNdlsh
+                }
+              })
+          }
+          if (p349) {
+            let wkp = getWkpFromP349(p349)
+            console.log(wkp)
           }
         }
       }());
