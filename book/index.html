@@ -641,121 +641,119 @@
             inputForm.relatedArray = []
             ndlshJson.ndlsh[matchedNdlsh]["related"].forEach(id => { inputForm.relatedArray.push(ndlshJson.ndlsh[id]["label"]) })
           }
-        }
-      }());
-               /*
-              else {
-                for (let id in ndlshJson.ndlsh) {
-                  if (ndlshJson.ndlsh[id]["alternative"]) {
-                    ndlshJson.ndlsh[id]["alternative"].forEach(alternative => {
-                      if (alternative == keyword) {
-                        seeAlsoNdlsh = id;
-                        p349 = id;
-                      }
-                    })
-                  }
+        } else {
+          for (let id in ndlshJson.ndlsh) {
+            if (ndlshJson.ndlsh[id]["alternative"]) {
+              ndlshJson.ndlsh[id]["alternative"].forEach(alternative => {
+                if (alternative == keyword) {
+                  seeAlsoNdlsh = id;
+                  p349 = id;
                 }
-                if (seeAlsoNdlsh) {
-                  console.log(seeAlsoNdlsh)
-                  console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
-                  inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
-                } else if (keyword.match(/DA\d+[\dX]/)) {
-                  p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/, '$1')
-                } else {
-                  let query = `SELECT * WHERE { ?id rdfs:label "${keyword}" . }`
-                  let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query=' + encodeURIComponent(query);
-                  console.log(ndlaUrl)
-                  fetch(ndlaUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                      if (data.results.bindings[0]) {
-                        matchedNdlsh = data.results.bindings[0].id.value.replace('http://id.ndl.go.jp/auth/ndlna/', '')
-                        console.log(matchedNdlsh)
-                        p349 = matchedNdlsh
-                      }
-                    })
+              })
+            }
+          }
+          if (seeAlsoNdlsh) {
+            console.log(seeAlsoNdlsh)
+            console.log(ndlshJson.ndlsh[seeAlsoNdlsh])
+            inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+          } else if (keyword.match(/DA\d+[\dX]/)) {
+            p271 = keyword.replace(/https:\/\/ci.nii.ac.jp\/author\/(..\d+X?)#entity/, '$1')
+          } else {
+            let query = `SELECT * WHERE { ?id rdfs:label "${keyword}" . }`
+            let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query=' + encodeURIComponent(query);
+            console.log(ndlaUrl)
+            fetch(ndlaUrl)
+              .then(response => response.json())
+              .then(data => {
+                if (data.results.bindings[0]) {
+                  matchedNdlsh = data.results.bindings[0].id.value.replace('http://id.ndl.go.jp/auth/ndlna/', '')
+                  console.log(matchedNdlsh)
+                  p349 = matchedNdlsh
                 }
-              }
-              let query = null;
-              if (p349) {
-                query = `SELECT * WHERE{
-                ?qid wdt:P349 "${p349}" ;
-                     rdfs:label ?label.
-                FILTER (LANG(?label) = "ja")
-                OPTIONAL {
-                  ?jaWkp schema:about ?qid ;
-                       schema:inLanguage "ja" ;
-                       schema:isPartOf <https://ja.wikipedia.org/> ;
-                       schema:name ?jaWkpName .
-                  }
-                }`
-              } else if (p271) {
-                query = `SELECT * WHERE{
-                ?qid wdt:P271 "${p271}" ;
-                     rdfs:label ?label.
-                FILTER (LANG(?label) = "ja")
-                OPTIONAL {
-                  ?jaWkp schema:about ?qid ;
-                       schema:inLanguage "ja" ;
-                       schema:isPartOf <https://ja.wikipedia.org/> ;
-                       schema:name ?jaWkpName .
-                  }
-                }`
-              }
-      
-            if (query) {
-              let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
-              fetch(wkdUrl)
-                .then(response => response.json())
-                .then(data => {
-                  if (data.results.bindings[0]) {
-                    console.log(data.results.bindings[0]);
-                    const wkd = data.results.bindings[0].qid.value;
-                    const wkdLabel = data.results.bindings[0].label.value;
-                  }
-                  if (data.results.bindings[0]) {
-                    const jaWkp = data.results.bindings[0].jaWkp.value;
-                    const jaWkpName = data.results.bindings[0].jaWkpName.value;
-                    let query = `select distinct * where { wikipedia-ja:${jaWkpName} foaf:primaryTopic/dbo:abstract ?abstract. }`
-                    let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
-                    fetch(dbpUrl)
-                      .then(response => response.json())
-                      .then(data => {
-                        if (data.results.bindings[0].abstract) {
-                          console.log(data.results.bindings[0]);
-                          const abstract = data.results.bindings[0].abstract.value;
-                          inputForm.wkpUrl = jaWkp;
-                          inputForm.wkpName = jaWkpName;
-                          inputForm.abstract = abstract;
-                        }
-                      })
-                  }
-                })
-              }
-              */
-      // キーワードでEnter押下時に検索実行
-      document.querySelector("#keyword").addEventListener("keydown", logKey);
-      document.querySelector("#from").addEventListener("keydown", logKey);
-      document.querySelector("#to").addEventListener("keydown", logKey);
-
-      //hashchangeにイベントリスナ追加
-      window.addEventListener('hashchange', setSearchConditionsFromHash)
-      function logKey(e) {
-        if (e.keyCode == 13) {
-          doSearch();
+              })
+          }
         }
-      }
+        let query = null;
+        if (p349) {
+          query = `SELECT * WHERE{
+          ?qid wdt:P349 "${p349}" ;
+               rdfs:label ?label.
+          FILTER (LANG(?label) = "ja")
+          OPTIONAL {
+            ?jaWkp schema:about ?qid ;
+                 schema:inLanguage "ja" ;
+                 schema:isPartOf <https://ja.wikipedia.org/> ;
+                 schema:name ?jaWkpName .
+            }
+          }`
+        } else if (p271) {
+          query = `SELECT * WHERE{
+          ?qid wdt:P271 "${p271}" ;
+               rdfs:label ?label.
+          FILTER (LANG(?label) = "ja")
+          OPTIONAL {
+            ?jaWkp schema:about ?qid ;
+                 schema:inLanguage "ja" ;
+                 schema:isPartOf <https://ja.wikipedia.org/> ;
+                 schema:name ?jaWkpName .
+            }
+          }`
+        }
 
-      //from,to
-      inputForm.from = (new Date()).getFullYear() - 4;
-      inputForm.to = (new Date()).getFullYear();
+        if (query) {
+          let wkdUrl = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(query);
+          fetch(wkdUrl)
+            .then(response => response.json())
+            .then(data => {
+              if (data.results.bindings[0]) {
+                console.log(data.results.bindings[0]);
+                const wkd = data.results.bindings[0].qid.value;
+                const wkdLabel = data.results.bindings[0].label.value;
+              }
+              if (data.results.bindings[0]) {
+                const jaWkp = data.results.bindings[0].jaWkp.value;
+                const jaWkpName = data.results.bindings[0].jaWkpName.value;
+                let query = `select distinct * where { wikipedia-ja:${jaWkpName} foaf:primaryTopic/dbo:abstract ?abstract. }`
+                let dbpUrl = "https://ja.dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fja.dbpedia.org&format=application%2Fsparql-results%2Bjson&query=" + encodeURIComponent(query);
+                fetch(dbpUrl)
+                  .then(response => response.json())
+                  .then(data => {
+                    if (data.results.bindings[0].abstract) {
+                      console.log(data.results.bindings[0]);
+                      const abstract = data.results.bindings[0].abstract.value;
+                      inputForm.wkpUrl = jaWkp;
+                      inputForm.wkpName = jaWkpName;
+                      inputForm.abstract = abstract;
+                    }
+                  })
+              }
+            })
+        }
+      })
+    }
+    // キーワードでEnter押下時に検索実行
+    document.querySelector("#keyword").addEventListener("keydown", logKey);
+    document.querySelector("#from").addEventListener("keydown", logKey);
+    document.querySelector("#to").addEventListener("keydown", logKey);
 
-      // おまかせ検索またはハッシュからの検索実施
-      if (location.hash) {
-        setSearchConditionsFromHash();
-      } else {
-        setRandomKeyword();
+    //hashchangeにイベントリスナ追加
+    window.addEventListener('hashchange', setSearchConditionsFromHash)
+    function logKey(e) {
+      if (e.keyCode == 13) {
+        doSearch();
       }
+    }
+
+    //from,to
+    inputForm.from = (new Date()).getFullYear() - 4;
+    inputForm.to = (new Date()).getFullYear();
+
+    // おまかせ検索またはハッシュからの検索実施
+    if (location.hash) {
+      setSearchConditionsFromHash();
+    } else {
+      setRandomKeyword();
+    }
 
   </script>
 
