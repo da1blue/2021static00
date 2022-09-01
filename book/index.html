@@ -695,7 +695,18 @@
                 const wkdLabel = data.results.bindings[0].label.value;
                 if (data.results.bindings[0].p349) {
                   seeAlsoNdlsh = data.results.bindings[0].p349.value;
-                  inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+                  let query = `SELECT * WHERE { ${p349} rdfs:label ?label . }`
+                  let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query=' + encodeURIComponent(query);
+                  console.log(ndlaUrl)
+                  fetch(ndlaUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                      if (data.results.bindings[0]) {
+                        seeAlsoNdlshLabel = data.results.bindings[0].label.value
+                        console.log(seeAlsoNdlshLabel)
+                      inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+                    }
+                  })
                 }
                 if (data.results.bindings[0].jaWkp) {
                   const jaWkp = data.results.bindings[0].jaWkp.value;
