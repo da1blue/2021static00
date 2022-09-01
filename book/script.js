@@ -63,7 +63,6 @@ function getWkdReqUrlFromP349(p349) {
     FILTER (LANG(?label) = "ja")
     OPTIONAL {
       ?jaWkp schema:about ?qid ;
-           schema:inLanguage "ja" ;
            schema:isPartOf <https://ja.wikipedia.org/> ;
            schema:name ?jaWkpName .
       }
@@ -72,14 +71,16 @@ function getWkdReqUrlFromP349(p349) {
 
   function getWkdReqUrlFromP271(p271) {
     return `SELECT * WHERE{
-      ?qid wdt:P271 "${p271}" ;
+      ?qid wdt:P271 "DA14809269" ;
            rdfs:label ?label.
-      FILTER (LANG(?label) = "ja")
-      OPTIONAL {
-        ?jaWkp schema:about ?qid ;
-             schema:inLanguage "ja" ;
-             schema:isPartOf <https://ja.wikipedia.org/> ;
-             schema:name ?jaWkpName .
+        FILTER (LANG(?label) = "ja")
+        OPTIONAL {
+          ?jaWkp schema:about ?qid ;
+                 schema:isPartOf <https://ja.wikipedia.org/> ;
+                 schema:name ?jaWkpName .
+            }
+        OPTIONAL {
+          ?qid wdt:P349 ?p349 ;
         }
       }`
     }
