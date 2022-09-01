@@ -803,6 +803,10 @@
     details:not([open]).introduction summary {
       max-height: 6.5rem;
     }
+    
+    details:[open].introduction {
+      white-space: pre-wrap;
+    }
 
     @media (min-width: 576px) {
       details:not([open]).introduction summary {
