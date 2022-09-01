@@ -695,7 +695,7 @@
                 const wkdLabel = data.results.bindings[0].label.value;
                 if (data.results.bindings[0].p349) {
                   seeAlsoNdlsh = data.results.bindings[0].p349.value;
-                  let query = `SELECT * WHERE { <http://id.ndl.go.jp/auth/ndlna/${p349}> rdfs:label ?label . }`
+                  let query = `SELECT * WHERE { <http://id.ndl.go.jp/auth/ndlna/${seeAlsoNdlsh}> rdfs:label ?label . }`
                   let ndlaUrl = 'https://id.ndl.go.jp/auth/ndla/sparql?&format=JSON&query=' + encodeURIComponent(query);
                   console.log(ndlaUrl)
                   fetch(ndlaUrl)
