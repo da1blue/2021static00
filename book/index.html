@@ -704,7 +704,8 @@
                       if (data.results.bindings[0]) {
                         seeAlsoNdlshLabel = data.results.bindings[0].label.value
                         console.log(seeAlsoNdlshLabel)
-                      inputForm.seeAlsoNdlshLabel = ndlshJson.ndlsh[seeAlsoNdlsh].label;
+                        inputForm.seeAlsoNdlsh = seeAlsoNdlsh;
+                        inputForm.seeAlsoNdlshLabel = seeAlsoNdlshLabel;
                     }
                   })
                 }
