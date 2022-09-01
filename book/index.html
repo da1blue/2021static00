@@ -214,16 +214,16 @@
                 <button v-for="maker in item.makers" class="btn-sm btn-link mb-1 me-1" style="border:0;"
                   v-bind:onclick="`doSearch('${maker.id}');`">{{maker.name}}</button>
               </div>
-            </div>
-            <div class="col-12 text-muted overflow-hidden" v-if="item.introduction">
-              <small class="introduction text-secondary">
-                <details v-if="wkpUrl" class="introduction" class="text-muted">
-                {{item.introduction}}
-                  <summary>
-                    <i class="bi bi-bookmark"></i><span class="if-open-invisible">{{item.introduction}}　―　</span>内容紹介・目次（OpenBD）
-                  </summary>
-                </details>
-              </small>
+              <div class="col-12 text-muted overflow-hidden" v-if="item.introduction">
+                <small class="introduction text-secondary">
+                  <details v-if="wkpUrl" class="introduction" class="text-muted">
+                  {{item.introduction}}
+                    <summary>
+                      <i class="bi bi-bookmark"></i><span class="if-open-invisible">{{item.introduction}}　―　</span>内容紹介・目次（OpenBD）
+                    </summary>
+                  </details>
+                </small>
+              </div>
             </div>
           </div>
         </div>
