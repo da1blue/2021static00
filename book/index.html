@@ -218,7 +218,7 @@
                 <small class="introduction text-secondary">
                   <details class="introduction" class="text-muted">
                   {{item.introduction}}
-                    <summary onclick="if('open' in this.parentNode.attributes){this.parentNode.classList.remove('btn','btn-sm','btn-light')}else{this.parentNode.classList.add('btn','btn-sm','btn-light')}">
+                    <summary onclick="if('open' in this.parentNode.attributes){this.classList.remove('btn','btn-sm','btn-light')}else{this.classList.add('btn','btn-sm','btn-light')}">
                       <i class="bi bi-bookmark"></i><span class="if-open-invisible">{{item.introduction}}　―　</span>内容紹介・目次（OpenBD）
                     </summary>
                   </details>
@@ -794,9 +794,10 @@
     }
 
     details summary {
+      display: inline-block;
       list-style: none;
       overflow: hidden;
-      display: inline-block;
+      text-align: left;
       width: 100%;
     }
 
