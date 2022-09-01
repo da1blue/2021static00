@@ -71,7 +71,7 @@ function getWkdReqUrlFromP349(p349) {
 
   function getWkdReqUrlFromP271(p271) {
     return `SELECT * WHERE{
-      ?qid wdt:P271 "DA14809269" ;
+      ?qid wdt:P271 "${p271}" ;
            rdfs:label ?label.
         FILTER (LANG(?label) = "ja")
         OPTIONAL {
