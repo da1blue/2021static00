@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://api.open.jp" />
   <link rel="preconnect" href="https://app.rakuten.co.jp" />
   <!-- Metadata -->
-  <title>Simple Book Search</title>
+  <title>Book Search Portal : Zen</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KDGBDHBS1"></script>
   <script>
@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row g-2 mb-2 pt-2">
         <h1 class="fs-3 col-9 col-md-10 col-lg-10">
-          <a class="text-reset text-decoration-none" href="./">Simple Book Search</a>
+          <a class="text-reset text-decoration-none" href="./">Book Search Portal : Zen</a>
         </h1>
         <div class="col-3 col-md-2 col-lg-2 d-grid my-2">
           <button type="button" class="btn btn-light py-1" data-bs-toggle="modal" data-bs-target="#aboutModal">
@@ -83,22 +83,22 @@
         <div style="overflow-x: hidden; display: block; white-space: nowrap;">
           <span v-if="seeAlsoNdlshLabel">
             <i class="bi bi-arrow-right-square-fill"></i>
-            <button class="btn-sm btn-link mb-1 me-1" style="border:0;"
+            <button class="btn-sm mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{seeAlsoNdlshLabel}}</button>
           </span>
           <span v-if="relatedArray">
             <i class="bi bi-arrow-left-right"></i>
-            <button v-for="related in relatedArray" class="btn-sm btn-link mb-1 me-1" style="border:0;"
+            <button v-for="related in relatedArray" class="btn-sm mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{related}}</button>
           </span>
           <span v-if="broaderArray">
             <i class="bi bi-box-arrow-up"></i>
-            <button v-for="broader in broaderArray" class="btn-sm btn-link mb-1 me-1" style="border:0;"
+            <button v-for="broader in broaderArray" class="btn-sm mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{broader}}</button>
           </span>
           <span v-if="narrowerArray">
             <i class="bi bi-box-arrow-down"></i>
-            <button v-for="narrower in narrowerArray" class="btn-sm btn-link mb-1 me-1" style="border:0;"
+            <button v-for="narrower in narrowerArray" class="btn-sm mb-1 me-1" style="border:0;"
               v-bind:onclick="'doSearch(this.innerText);'">{{narrower}}</button>
           </span>
         </div>
@@ -151,7 +151,7 @@
         <div v-for="item in items" class="mb-4 row">
           <div class="col-3 col-sm-2" style="position: relative; min-height: 3em;">
             <div v-if="item.isbn" alt="" class="thumbnail" onerror="this.classList.add('invisible')"
-                 v-bind:style="[{backgroundImage: `url('${item.thumbnailUrl}'`}]" /></div>
+                 v-bind:style="[{backgroundImage: `url('${item.thumbnailUrl}'`, backgroundColor: 'white'}]" /></div>
             <i class="bi bi-book text-secondary"
               style="font-size:2em; position: absolute; top: 0; right: 0; margin-right: 1rem; z-index: -1;">
             </i>
@@ -171,13 +171,13 @@
               <div class="col-12 col-md-5 col-lg-4">
                 <ul class="list-unstyled" style="margin-bottom:0">
                   <li v-if="!item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
-                    v-bind:onclick="'selectIsbn(' + item.isbn + ')'">
+                    v-bind:onclick="'selectIsbn(' + item.isbn + ')'" tabIndex="0">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span><span class="code">{{item.isbn}}</span>
                     <i v-if="item.isbn" class="bi bi-arrow-up-right-square-fill text-info"></i>
                   </li>
                   <li v-for="isbnObj in item.isbnObjArray" data-bs-toggle="modal" data-bs-target="#isbnModal"
-                    v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'">
+                    v-bind:onclick="'selectIsbn(' + isbnObj.code + ')'" tabIndex="0">
                     <i class="bi bi-upc text-secondary"></i>
                     <span class="visually-hidden">ISBN: </span><span class="code">{{isbnObj.code}}</span> <small
                       v-if="isbnObj.title">({{isbnObj.title}})</small>
