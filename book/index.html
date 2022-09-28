@@ -206,12 +206,12 @@
               </div>
               <div class="col-12 " v-if="item.topics">
                 <i class="bi bi-tags"></i>
-                <button v-for="topic in item.topics" class="btn-sm btn-link mb-1 me-1" style="border:0;"
+                <button v-for="topic in item.topics" class="btn-sm mb-1 me-1" style="border:0;"
                   v-bind:onclick="'doSearch(this.innerText);'">{{topic}}</button>
               </div>
               <div class="col-12 " v-if="item.makers">
                 <i class="bi bi-person"></i>
-                <button v-for="maker in item.makers" class="btn-sm btn-link mb-1 me-1" style="border:0;"
+                <button v-for="maker in item.makers" class="btn-sm mb-1 me-1" style="border:0;"
                   v-bind:onclick="`doSearch('${maker.id}');`">{{maker.name}}</button>
               </div>
               <div class="col-12 text-muted overflow-hidden" v-if="item.introduction">
@@ -770,6 +770,7 @@
   <link rel="preload" as="style" onload="this.rel='stylesheet'; this.onload=null;"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <style>
+
     .bi {
       margin-right: 0.2rem;
     }
@@ -817,6 +818,7 @@
 
     details[open].introduction summary {
       max-height: auto;
+      text-align: left;
     }
 
     details.wkp summary {
@@ -826,6 +828,16 @@
 
     details[open]>summary span.if-open-invisible {
       display: none
+    }
+
+    .btn-primary,
+    .page-item.active>a.page-link{
+        background-color: #343a40;
+        border-color: #343a40;
+    }
+    
+    a, a.page-link {
+        color: #343a40;
     }
   </style>
   <!-- About Modal -->
