@@ -1,0 +1,70 @@
+
+    .bi {
+        margin-right: 0.2rem;
+      }
+  
+      #resList {
+        text-align: justify;
+      }
+  
+      body {
+        font-family: YakuHanJP, "Noto Sans JP", "Yu Gothic", "游ゴシック", sans-serif;
+      }
+  
+      span.code {
+        font-family: 'Noto Sans Mono CJK JP', Consolas, 'Roboto Mono', 'Courier New', monospace;
+        text-decoration: underline;
+      }
+  
+      div.thumbnail{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 12rem;
+      }
+  
+      details summary {
+        display: inline-block;
+        list-style: none;
+        overflow: hidden;
+        text-align: left;
+        width: 100%;
+      }
+  
+      details:not([open]).introduction summary {
+        max-height: 6.5rem;
+      }
+      
+      details[open].introduction {
+        white-space: pre-wrap;
+      }
+  
+      @media (min-width: 576px) {
+        details:not([open]).introduction summary {
+          max-height: 4rem;
+        }
+      }
+  
+      details[open].introduction summary {
+        max-height: auto;
+        text-align: left;
+      }
+  
+      details.wkp summary {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+  
+      details[open]>summary span.if-open-invisible {
+        display: none
+      }
+  
+      .btn-primary,
+      .page-item.active>a.page-link{
+          background-color: #343a40;
+          border-color: #343a40;
+      }
+      
+      a, a.page-link {
+          color: #343a40;
+      }
