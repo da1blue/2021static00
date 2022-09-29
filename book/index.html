@@ -583,7 +583,7 @@
           if (item.isbn) {
             let intro = await getIntro(item.isbn)
             resList.items[i].introduction = intro
-            resList.items[i].introduction4s = intro.replace(/((.)$1{2,})/g,"$1")
+            resList.items[i].introduction4s = intro.replace(/(.)\1{2,}/g,"$1")
           }
           i += 1;
           await new Promise(resolve => setTimeout(resolve, 100));
