@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://api.open.jp" />
   <link rel="preconnect" href="https://app.rakuten.co.jp" />
   <!-- Metadata -->
-  <title>Book Search Portal : Zen</title>
+  <title>ZEN : Book Search</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KDGBDHBS1"></script>
   <script>
@@ -34,7 +34,7 @@
     <div class="container">
       <div class="row g-2 mb-2 pt-2">
         <h1 class="fs-3 col-9 col-md-10 col-lg-10">
-          <a class="text-reset text-decoration-none" href="./">Book Search Portal : Zen</a>
+          <a class="text-reset text-decoration-none" href="./">ZEN : Book Search</a>
         </h1>
         <div class="col-3 col-md-2 col-lg-2 d-grid my-2">
           <button type="button" class="btn btn-light py-1" data-bs-toggle="modal" data-bs-target="#aboutModal">
@@ -428,7 +428,7 @@
       } else if (to) {
         newHash = [inputForm.keyword, null, to].join(';')
       }
-      document.title = `Simple Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
+      document.title = `ZEN : Book Search : ${inputForm.keyword} ${inputForm.from} - ${inputForm.to}`
       history.pushState({}, '', '#' + newHash);
       // 検索式(URL)生成
       let url = null;
