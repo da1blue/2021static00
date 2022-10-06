@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row g-2 mb-2 pt-2">
                 <h1 class="pt-1 fs-2 col-9 col-md-10 col-lg-10">
-                    <span style="font-family: Kallem; font-weight: 200;">緑のうたのLinked Data（仮）</span>
+                    <span style="font-family: Kallem; font-weight: 200;">緑のうたのLinked Open Data（仮）</span>
                 </h1>
                 <div class="col-3 col-md-2 col-lg-2 d-grid my-2">
                     <button type="button" class="btn btn-light py-1" data-bs-toggle="modal"
@@ -39,7 +39,17 @@
         </div>
     </header>
     <article class="container">
-        
+        <h2>クエリ例</h2>
+        <textarea>PREFIX entity: <https://midori.lv01.biz/entity/>
+PREFIX midori: <https://midori.lv01.biz/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?o COUNT(?s) AS ?number WHERE {
+  ?s schema:additionalType midori:CoverExpression ;
+    schema:byArtist ?o .
+FILTER (?o != entity:緑仙)
+} ORDER BY DESC(?number) ?o</textarea>
+    
     </article>
 
 </body>
