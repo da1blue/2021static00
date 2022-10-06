@@ -49,7 +49,7 @@ SELECT ?o COUNT(?s) AS ?number WHERE {
     schema:byArtist ?o .
 FILTER (?o != entity:緑仙)
 } ORDER BY DESC(?number) ?o</textarea>
-<button class="btn" onclick="let query=this.previousElementSibling.innerText; location.href=('./sparql?qtxt='+encodeURI(query))">
+<button class="btn" onclick="location.href=('./sparql?qtxt='+encodeURI(this.previousElementSibling.value))">
     Open    
 </button>
 
