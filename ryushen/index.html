@@ -39,20 +39,13 @@
         </div>
     </header>
     <article class="container">
-        <h2>クエリ例</h2>
-        <textarea class="col-12">PREFIX entity: <https://midori.lv01.biz/entity/>
-PREFIX midori: <https://midori.lv01.biz/>
-PREFIX schema: <http://schema.org/>
-
-SELECT ?o COUNT(?s) AS ?number WHERE {
-  ?s schema:additionalType midori:CoverExpression ;
-    schema:byArtist ?o .
-FILTER (?o != entity:緑仙)
-} ORDER BY DESC(?number) ?o</textarea>
-<button class="btn" onclick="location.href=('./sparql?qtxt='+encodeURI(this.previousElementSibling.value))">
-    Open    
-</button>
-
+        <h2 class="col-12">クエリ例</h2>
+        <div class="col-12">
+            <h3>緑仙の歌ってみたコラボ相手をコラボ回数順に表示</h3>
+            <iframe src="https://space.pikopikopla.net/embed/dc320efb7e" class="space-pikopikoplanet-embed"
+                style="border: 0; overflow: hidden; width: 100%; height: 457px;"></iframe>
+            <script defer src="https://space.pikopikopla.net/embed.js"></script>
+        </div>
     </article>
 
 </body>
