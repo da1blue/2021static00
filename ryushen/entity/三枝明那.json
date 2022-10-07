@@ -1,0 +1,20 @@
+[
+    {
+        "@id": "https://midori.lv01.biz/entity/三枝明那",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+            {
+                "@id": "http://www.wikidata.org/entity/Q110065617"
+            }
+        ],
+        "https://vlueprint.org/schema/twitterAccount": [
+            {
+                "@value": "333akina"
+            }
+        ],
+        "https://vlueprint.org/schema/youtubeChannelId": [
+            {
+                "@value": "UCNW1Ex0r6HsWRD4LCtPwvoQ"
+            }
+        ]
+    }
+]

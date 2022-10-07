@@ -1,0 +1,20 @@
+[
+    {
+        "@id": "https://midori.lv01.biz/entity/轟京子",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+            {
+                "@id": "http://www.wikidata.org/entity/Q104970437"
+            }
+        ],
+        "https://vlueprint.org/schema/twitterAccount": [
+            {
+                "@value": "KT_seeds"
+            }
+        ],
+        "https://vlueprint.org/schema/youtubeChannelId": [
+            {
+                "@value": "UCRV9d6YCYIMUszK-83TwxVA"
+            }
+        ]
+    }
+]

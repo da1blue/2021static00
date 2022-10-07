@@ -1,0 +1,20 @@
+[
+    {
+        "@id": "https://midori.lv01.biz/entity/卯月コウ",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+            {
+                "@id": "http://www.wikidata.org/entity/Q65250149"
+            }
+        ],
+        "https://vlueprint.org/schema/twitterAccount": [
+            {
+                "@value": "udukikohh"
+            }
+        ],
+        "https://vlueprint.org/schema/youtubeChannelId": [
+            {
+                "@value": "UC3lNFeJiTq6L3UWoz4g1e-A"
+            }
+        ]
+    }
+]

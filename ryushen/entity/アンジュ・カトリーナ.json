@@ -1,0 +1,20 @@
+[
+    {
+        "@id": "https://midori.lv01.biz/entity/アンジュ・カトリーナ",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+            {
+                "@id": "http://www.wikidata.org/entity/Q85870114"
+            }
+        ],
+        "https://vlueprint.org/schema/twitterAccount": [
+            {
+                "@value": "ange_katrina_"
+            }
+        ],
+        "https://vlueprint.org/schema/youtubeChannelId": [
+            {
+                "@value": "UCHVXbQzkl3rDfsXWo8xi2qw"
+            }
+        ]
+    }
+]

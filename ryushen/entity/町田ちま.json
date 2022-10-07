@@ -1,0 +1,20 @@
+[
+    {
+        "@id": "https://midori.lv01.biz/entity/町田ちま",
+        "http://www.w3.org/2002/07/owl#sameAs": [
+            {
+                "@id": "http://www.wikidata.org/entity/Q110065620"
+            }
+        ],
+        "https://vlueprint.org/schema/twitterAccount": [
+            {
+                "@value": "chima_machita23"
+            }
+        ],
+        "https://vlueprint.org/schema/youtubeChannelId": [
+            {
+                "@value": "UCo7TRj3cS-f_1D9ZDmuTsjw"
+            }
+        ]
+    }
+]
