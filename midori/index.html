@@ -43,28 +43,47 @@
     <article class="container bg-light">
         <div class="col-12">
             <p>にじさんじ所属のバーチャルライバー緑仙（りゅーしぇん）の歌ってみたの情報をLinked Open Dataとして公開しています。</p>
-            <p>現在のところ、2022年9月30日までの緑仙の歌ってみた動画の情報をSPARQLで公開しています。</p>
+            <p>緑仙の歌ってみた動画の情報をSPARQL Endpointで公開しています。（現在のところ、歌枠には非対応です）</p>
             <p class="text-center"><a href="/sparql" class="btn btn-success">SPARQL Endpoint</a></p>
         </div>
         <h2 class="col-12 fs-3">クエリ例</h2>
         <div class="col-12">
             <details>
                 <summary>
-                    <h3 class="fs-5" style="background-color: #5dccab;">緑仙の歌ってみた動画を原曲のSpotifyの人気順に並べて表示</h3>
+                    <h3 class="fs-5 p-2" style="background-color: #5dccab;">緑仙の歌ってみた動画を原曲のSpotifyの人気順に並べて表示</h3>
                 </summary>
                 <iframe src="https://space.pikopikopla.net/embed/87e36639f3" class="space-pikopikoplanet-embed"
                     style="border: 0; overflow: hidden; width: 100%; height: 457px;"></iframe>
             </details>
             <details>
                 <summary>
-                    <h3 class="fs-5" style="background-color: #5dccab;">緑仙の歌ってみたコラボ相手をコラボ回数順に表示</h3>
+                    <h3 class="fs-5 p-2" style="background-color: #5dccab;">緑仙の歌ってみたコラボ相手をコラボ回数順に表示</h3>
                 </summary>
                 <iframe src="https://space.pikopikopla.net/embed/dc320efb7e" class="space-pikopikoplanet-embed"
                     style="border: 0; overflow: hidden; width: 100%; height: 457px;"></iframe>
             </details>
 
-
         </div>
+
+        <script>
+            let query = `PREFIX schema: <http://schema.org/>
+                SELECT ?video ?pubDate WHERE {
+              ?cover schema:additionalType midori:CoverExpression;
+                schema:video ?video.
+                ?video schema:datePublished ?pubDate.
+            } ORDER BY DESC(?pubDate) LIMIT 1`
+            let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
+            fetch(reqUrl)
+                .then(response => response.json())
+                .then(data => {
+                if (data.results.bindings[0]) {
+                    pubDate = data.results.bindings[0].pubDate.value
+                    console.log(pubDate)
+                }
+        })
+
+        </script>
+
     </article>
     <script defer src="https://space.pikopikopla.net/embed.js"></script>
 </body>
