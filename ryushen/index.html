@@ -41,21 +41,22 @@
         </div>
     </header>
     <h2 class="visually-hidden">検索フォーム</h2>
-    <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
-      <div class="col-12 col-lg-9">
-        <div class="form-floating input-group">
-          <input type="text" class="form-control col-8 col-sm-9 col-md-10 col-lg-9" id="keyword"
-            v-bind:value="keyword"></input>
-          <label for="keyword" class="form-label">キーワード</label>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
-        <button type="button" class="btn btn-primary py-2" onclick="doSearch()">
-          <i class="bi bi-search"></i>検索
-        </button>
-      </div>
-    </form>
     <article class="container bg-light">
+        <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
+            <div class="col-12 col-lg-9">
+                <div class="form-floating input-group">
+                    <input type="text" class="form-control col-8 col-sm-9 col-md-10 col-lg-9" id="keyword"
+                        v-bind:value="keyword"></input>
+                    <label for="keyword" class="form-label">キーワード</label>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
+                <button type="button" class="btn btn-primary py-2" onclick="doSearch()">
+                    <i class="bi bi-search"></i>検索
+                </button>
+            </div>
+        </form>
+
         <div class="col-12">
             <p>にじさんじ所属のバーチャルライバー緑仙（りゅーしぇん）の歌ってみたの情報をLinked Open Dataとして公開しています。</p>
             <p>緑仙の歌ってみた動画の情報をSPARQL Endpointで公開しています。（現在のところ、歌枠には非対応です）</p>
@@ -77,11 +78,11 @@
             fetch(reqUrl)
                 .then(response => response.json())
                 .then(data => {
-                if (data.results.bindings[0]) {
-                    pubDate = data.results.bindings[0].pubDate.value
-                    console.log(pubDate)
-                }
-        })
+                    if (data.results.bindings[0]) {
+                        pubDate = data.results.bindings[0].pubDate.value
+                        console.log(pubDate)
+                    }
+                })
 
         </script>
 
