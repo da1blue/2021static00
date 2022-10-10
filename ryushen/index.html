@@ -51,32 +51,36 @@
                 </div>
             </div>
             <div class="col-12 col-lg-3 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
-                <button type="button" class="btn btn-primary py-2" onclick="search()">
+                <button type="button" class="btn btn-primary py-2" onclick="searchWithKeyword()">
                     <i class="bi bi-search"></i>検索
                 </button>
             </div>
         </form>
 
-        <div class="col-12">
-            <p>にじさんじ所属のバーチャルライバー緑仙（りゅーしぇん）の歌ってみたの情報をLinked Open Dataとして公開しています。</p>
-            <p>緑仙の歌ってみた動画の情報をSPARQL Endpointで公開しています。（現在のところ、歌枠には非対応です）</p>
-            <p class="text-center"><a href="/sparql" class="btn btn-success">SPARQL Endpoint</a></p>
-        </div>
-        <h2 class="col-12 fs-3">クエリ例</h2>
-
-
+        <!-- Loading -->
+        <div id="loading" class="invisible col-12 d-flex justify-content-center my-10">
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
 
-        <script>
-            let keyword = "ヴァンパイア";
+
+        </div>
+
+
+    </article>
+    <script>
+        async function searchWithKeyword(keyword = null, p = 1) {
+            //初期化
+            document.querySelector("#loading").classList.remove("visually-hidden")
             let query = `PREFIX midori: <https://midori.lv01.biz/>
 PREFIX schema: <http://schema.org/>
 
 SELECT DISTINCT ?cover ?work ?canon ?coverTitle ?video ?date WHERE {
 
 ?cover schema:additionalType midori:CoverExpression;
-       schema:recordingOf ?work ;
-       midori:canonicalExpression ?canon.
+schema:recordingOf ?work ;
+midori:canonicalExpression ?canon.
 ?cover rdfs:label ?coverTitle.
 ?cover schema:video ?video.
 ?video schema:datePublished ?date.
@@ -104,10 +108,8 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     }
                 })
 
-        </script>
+    </script>
 
-    </article>
-    <script defer src="https://space.pikopikopla.net/embed.js"></script>
 </body>
 
 </html>
