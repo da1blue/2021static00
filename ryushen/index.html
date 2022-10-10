@@ -182,8 +182,9 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     } else {
                         list = null
                     }
-                    console.log(list)
-
+                    for(let item of list){
+                        console.log(item)
+                    }
                 })
         }
 
