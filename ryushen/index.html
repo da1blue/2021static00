@@ -177,9 +177,12 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                 .then(response => response.json())
                 .then(data => {
                     if (data.results.bindings[0]) {
-                        cover = data.results.bindings[0].cover.value
-                        console.log(cover)
+                        list = data.results.bindings
+                    } else {
+                        list = null
                     }
+                    console.log(list)
+                    
                 })
         }
 
