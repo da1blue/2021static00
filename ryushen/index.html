@@ -99,7 +99,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                 .then(response => response.json())
                 .then(data => {
                     if (data.results.bindings[0]) {
-                        pubDate = data.results.bindings[0].pubDate.value
+                        cover = data.results.bindings[0].cover.value
                         console.log(cover)
                     }
                 })
