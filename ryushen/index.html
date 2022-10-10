@@ -70,9 +70,27 @@
 
     </article>
     <script>
+        // 検索結果（Vue）
+        const resListApp = Vue.createApp({
+            data() {
+                return {
+                    items: null,
+                    totalResults: null,
+                    pages: null,
+                    pageMax: null,
+                    p: null,
+                }
+            }
+        })
+        const inputForm = inputFormApp.mount('#inputForm')
+
+        //メイン検索機能定義
         async function searchWithKeyword(keyword = null, p = 1) {
             //初期化
             document.querySelector("#loading").classList.remove("visually-hidden")
+            if (!keyword) {
+                keyword = document.querySelector("#keyword").value;
+            }
             let query = `PREFIX midori: <https://midori.lv01.biz/>
 PREFIX schema: <http://schema.org/>
 
@@ -99,6 +117,8 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
 
 } ORDER BY ?cover`
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
+            console.log(reqUrl)
+            
             fetch(reqUrl)
                 .then(response => response.json())
                 .then(data => {
@@ -107,7 +127,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         console.log(cover)
                     }
                 })
-            }
+        }
 
     </script>
 
