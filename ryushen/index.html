@@ -94,13 +94,13 @@
             let query = `PREFIX midori: <https://midori.lv01.biz/>
 PREFIX schema: <http://schema.org/>
 
-SELECT DISTINCT ?cover ?work ?canon ?coverTitle ?video ?date WHERE {
+SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?date WHERE {
 
 ?cover schema:additionalType midori:CoverExpression;
 schema:recordingOf ?work ;
 midori:canonicalExpression ?canon.
-?cover rdfs:label ?coverTitle.
 ?cover schema:video ?video.
+?cover rdfs:label ?videoTitle.
 ?video schema:datePublished ?date.
 
 {{?cover schema:byArtist ?who.} UNION {?canon schema:byArtist ?who.} UNION {?work schema:composer ?who.} UNION {?work schema:lyricist ?who.}
@@ -115,10 +115,9 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
 FILTER(bif:contains(?keyword, '"${keyword}"'))
 }
 
-} ORDER BY ?cover`
+} ORDER BY DESC(?date)`
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
             console.log(reqUrl)
-            
             fetch(reqUrl)
                 .then(response => response.json())
                 .then(data => {
