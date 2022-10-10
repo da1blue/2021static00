@@ -144,7 +144,10 @@
             if (!keyword) {
                 keyword = document.querySelector("#keyword").value;
             }
-            let query = `PREFIX midori: <https://midori.lv01.biz/>
+            if (!keyword) {
+                keyword = "緑仙";
+            }
+let query = `PREFIX midori: <https://midori.lv01.biz/>
 PREFIX schema: <http://schema.org/>
 
 SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?date WHERE {
