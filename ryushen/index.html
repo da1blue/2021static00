@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-3 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
-                <button type="button" class="btn btn-primary py-2" onclick="doSearch()">
+                <button type="button" class="btn btn-primary py-2" onclick="search()">
                     <i class="bi bi-search"></i>検索
                 </button>
             </div>
@@ -68,19 +68,39 @@
         </div>
 
         <script>
-            let query = `PREFIX schema: <http://schema.org/>
-                SELECT ?video ?pubDate WHERE {
-              ?cover schema:additionalType midori:CoverExpression;
-                schema:video ?video.
-                ?video schema:datePublished ?pubDate.
-            } ORDER BY DESC(?pubDate) LIMIT 1`
+            let keyword = "ヴァンパイア";
+            let query = `PREFIX midori: <https://midori.lv01.biz/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?cover ?work ?canon ?coverTitle ?video ?date WHERE {
+
+?cover schema:additionalType midori:CoverExpression;
+       schema:recordingOf ?work ;
+       midori:canonicalExpression ?canon.
+?cover rdfs:label ?coverTitle.
+?cover schema:video ?video.
+?video schema:datePublished ?date.
+
+{{?cover schema:byArtist ?who.} UNION {?canon schema:byArtist ?who.} UNION {?work schema:composer ?who.} UNION {?work schema:lyricist ?who.}
+?who schema:name ?name.
+FILTER(bif:contains(?name, '"${keyword}"'))
+}UNION{
+?cover rdfs:label ?keyword.
+FILTER(bif:contains(?keyword, '"${keyword}"'))
+}UNION{
+?cover schema:video ?video.
+?video rdfs:label ?keyword.
+FILTER(bif:contains(?keyword, '"${keyword}"'))
+}
+
+} ORDER BY ?cover`
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
             fetch(reqUrl)
                 .then(response => response.json())
                 .then(data => {
                     if (data.results.bindings[0]) {
                         pubDate = data.results.bindings[0].pubDate.value
-                        console.log(pubDate)
+                        console.log(cover)
                     }
                 })
 
