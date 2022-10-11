@@ -174,7 +174,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     }
                     let list = []
                     for(let item of _list){
-                        console.log(item)
                         let itemDict = {}
                         itemDict.cover = item.cover.value
                         itemDict.date = item.date.value
@@ -184,6 +183,8 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         list.push(itemDict)
                     }
                     console.log(list)
+                    resList.items = list
+                    resList.totalResults = list.length;
                 })
         }
 
