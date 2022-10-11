@@ -70,14 +70,14 @@
                         loading="lazy"></iframe>
                     <button class="thBtn w-100 ratio ratio-21x9"
                         onclick="this.classList.add('visually-hidden'); this.previousElementSibling.classList.remove('visually-hidden');">
-                        <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnailUrl" class="w-100"
+                        <img v-if="item.thumbnailUrl" v-bind:src="item.thumbnail" class="w-100"
                             style="object-fit:cover" alt="" />
                     </button>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 align-top">
                     <div class="row">
                         <h3 class="fs-5 col-12 h5">
-                            <a v-bind:href="item.ytUrl" class="text-decoration-none">{{item.label}}</a>
+                            <a v-bind:href="item.videoUrl" class="text-decoration-none">{{item.videoTitle}}</a>
                         </h3>
                         <div class="col-12 col-md-6 col-lg-8">
                             <ul class="list-unstyled" style="margin-bottom:0">
@@ -87,16 +87,6 @@
                                         style="margin-right: 0.5em;">
                                         {{singer}}
                                     </button>
-                                </li>
-                                <li><i class="bi bi-soundwave"></i>
-                                    <button class="btn btn-light p-1 mr-2 mb-1"
-                                        v-on:click="doSearchWithOrgYtId(item.orgYtId)">
-                                        {{item.orgTitle}}
-                                    </button>
-                                    <a v-bind:href="item.orgYtUrl" class="link-danger text-decoration-none p-2">
-                                        <i class="bi bi-youtube"></i>
-                                    </a>
-
                                 </li>
                             </ul>
                         </div>
@@ -109,7 +99,7 @@
                                     </span>
                                 </li>
                                 <li><i class="bi bi-calendar text-secondary"></i>
-                                    <span v-if="item.issued" class="p-1 mr-2 mb-1">
+                                    <span v-if="item.date" class="p-1 mr-2 mb-1">
                                         {{item.issued.substr(0,10)}}
                                     </span>
                                 </li>
@@ -135,7 +125,7 @@
                 }
             }
         })
-        const inputForm = inputFormApp.mount('#inputForm')
+        const resList = resListApp.mount('#resList')
 
         //メイン検索機能定義
         async function searchWithKeyword(keyword = null, p = 1) {
@@ -156,7 +146,7 @@ SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?date WHERE {
 schema:recordingOf ?work ;
 midori:canonicalExpression ?canon.
 ?cover schema:video ?video.
-?cover rdfs:label ?videoTitle.
+?video rdfs:label ?videoTitle.
 ?video schema:datePublished ?date.
 
 {{?cover schema:byArtist ?who.} UNION {?canon schema:byArtist ?who.} UNION {?work schema:composer ?who.} UNION {?work schema:lyricist ?who.}
@@ -178,13 +168,22 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                 .then(response => response.json())
                 .then(data => {
                     if (data.results.bindings[0]) {
-                        list = data.results.bindings
+                        _list = data.results.bindings
                     } else {
-                        list = null
+                        _list = null
                     }
-                    for(let item of list){
+                    let list = []
+                    for(let item of _list){
                         console.log(item)
+                        let itemDict = {}
+                        itemDict.cover = item.cover.value
+                        itemDict.date = item.date.value
+                        itemDict.videoTitle = item.videoTitle.value
+                        itemDict.videoUrl = item.video.value
+                        itemDict.thumbnail = "https://i.ytimg.com/vi/" + (item.video.value).substring((item.video.value).length - 11) + "/hqdefault.jpg"
+                        list.push(itemDict)
                     }
+                    console.log(list)
                 })
         }
 
