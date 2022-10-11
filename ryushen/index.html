@@ -178,6 +178,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         let itemDict = {}
                         itemDict.cover = item.cover.value
                         itemDict.date = item.date.value
+                        itemDict.iframe = "https://www.youtube.com/embed/" + (item.video.value).substring((item.video.value).length - 11)
                         itemDict.videoTitle = item.videoTitle.value
                         itemDict.videoUrl = item.video.value
                         itemDict.thumbnail = "https://i.ytimg.com/vi/" + (item.video.value).substring((item.video.value).length - 11) + "/hqdefault.jpg"
