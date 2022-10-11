@@ -185,7 +185,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         itemDict.thumbnail = "https://i.ytimg.com/vi/" + (item.video.value).substring((item.video.value).length - 11) + "/hqdefault.jpg"
                         list.push(itemDict)
                     }
-                    console.log(list)
                     resList.items = list
                     resList.totalResults = list.length;
                     let i = 0;
@@ -204,6 +203,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                             })
                         
                     }
+                    console.log(list)
                     resList.items = list;
                 })
         }
