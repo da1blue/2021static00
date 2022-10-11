@@ -136,6 +136,7 @@
                 keyword = document.querySelector("#keyword").value;
             }
             if (!keyword) {
+                document.querySelector("#keyword").value = "緑仙";
                 keyword = "緑仙";
             }
 let query = `PREFIX midori: <https://midori.lv01.biz/>
@@ -187,9 +188,24 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     console.log(list)
                     resList.items = list
                     resList.totalResults = list.length;
+                    let i = 0;
+                    for(let item of list){
+                        let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
+                        let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
+                        let artists = []
+                        fetch(reqUrl)
+                            .then(response => response.json())
+                            .then(data => {      
+                                for(let i of data.results.bindings){
+                                    artists.push(i.artist.value)
+                                }
+                                list[i]["artists"] = artists
+                                resList.items[i]["artists"] = artists
+                                i++
+                        })
+                    }
                 })
         }
-
     </script>
 
 </body>
