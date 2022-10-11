@@ -162,7 +162,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
 FILTER(bif:contains(?keyword, '"${keyword}"'))
 }
 
-} ORDER BY DESC(?date)`
+} ORDER BY DESC(?date) LIMIT 50`
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
             console.log(reqUrl)
             fetch(reqUrl)
