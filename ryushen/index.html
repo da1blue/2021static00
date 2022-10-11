@@ -199,9 +199,9 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                                     artists.push(i.artist.value)
                                 }
                                 list[i]["artists"] = artists
-                                resList.items[i]["artists"] = artists
                                 i++
                         })
+                        resList.items = list; 
                     }
                 })
         }
