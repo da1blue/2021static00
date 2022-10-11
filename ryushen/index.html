@@ -198,7 +198,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                                 for(let i of data.results.bindings){
                                     artists.push(i.artist.value)
                                 }
-                                console.log(artists)
                                 list[i]["artists"] = artists
                                 resList.items[i]["artists"] = artists
                                 i++
