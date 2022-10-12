@@ -93,12 +93,6 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <ul class="list-unstyled" style="margin-bottom:0">
-                                    <li class="visually-hidden">
-                                        <i class="bi bi-upc text-secondary"></i>
-                                        <span v-if="item.id" class="p-1 mr-2 mb-1">
-                                            {{item.id}}
-                                        </span>
-                                    </li>
                                     <li><i class="bi bi-calendar text-secondary"></i>
                                         <span v-if="item.date" class="p-1 mr-2 mb-1">
                                             {{item.date.substr(0,10)}}
@@ -185,7 +179,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         itemDict.thumbnail = "https://i.ytimg.com/vi/" + (item.video.value).substring((item.video.value).length - 11) + "/hqdefault.jpg"
                         list.push(itemDict)
                     }
-                    resList.items = list
+                    //resList.items = list
                     resList.totalResults = list.length;
                     let i = 0;
                     for (let item of list) {
