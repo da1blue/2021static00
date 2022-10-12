@@ -123,6 +123,26 @@
         const resList = resListApp.mount('#resList')
 
         //メイン検索機能定義
+        async function searchWithList(list = []) {
+            let i = 0;
+            await new Promise(resolve => setTimeout(resolve, (i * 200)));
+            for (let item of list) {
+                let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
+                let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
+                let artists = []
+                fetch(reqUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        for (let i of data.results.bindings) {
+                            artists.push(i.artist.value)
+                        }
+                        list[i]["artists"] = artists
+                        i++
+                    })
+            }
+            return list
+        }
+
         async function searchWithKeyword(keyword = null, p = 1) {
             //初期化
             document.querySelector("#loading").classList.remove("visually-hidden")
@@ -179,27 +199,10 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         itemDict.thumbnail = "https://i.ytimg.com/vi/" + (item.video.value).substring((item.video.value).length - 11) + "/hqdefault.jpg"
                         list.push(itemDict)
                     }
-                    //resList.items = list
                     resList.totalResults = list.length;
-                    let i = 0;
-                    for (let item of list) {
-                        let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
-                        let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
-                        let artists = []
-                        fetch(reqUrl)
-                            .then(response => response.json())
-                            .then(data => {
-                                for (let i of data.results.bindings) {
-                                    artists.push(i.artist.value)
-                                }
-                                list[i]["artists"] = artists
-                                i++
-                            })
-                        
-                    }
-                    console.log(list)
                     resList.items = list;
                 })
+                list = searchWithList(list);
         }
     </script>
 
