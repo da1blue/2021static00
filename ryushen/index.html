@@ -200,7 +200,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         list.push(itemDict)
                     }
                     resList.totalResults = list.length;
-                    list = searchWithList(list)
+                    list = searchWithList(list) ;
                     for (let _item of list){
                         console.log(_item.artists)
                     }
