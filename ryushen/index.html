@@ -201,7 +201,9 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     }
                     resList.totalResults = list.length;
                     resList.items = list;
-                    Vue.set()
+                    for (let _item of _list){
+                        console.log(_item.artists)
+                    }
                 })
                 
         }
