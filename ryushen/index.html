@@ -122,7 +122,7 @@
         })
         const resList = resListApp.mount('#resList')
 
-        //メイン検索機能定義
+
         async function searchWithList(list = []) {
             let i = 0;
             await new Promise(resolve => setTimeout(resolve, (i * 200)));
@@ -143,7 +143,7 @@
             }
             return newList
         }
-
+        //メイン検索機能定義
         async function searchWithKeyword(keyword = null, p = 1) {
             //初期化
             document.querySelector("#loading").classList.remove("visually-hidden")
@@ -201,7 +201,9 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         list.push(itemDict)
                     }
                     resList.totalResults = list.length;
+                    console.log(list)
                     list = searchWithList(list) ;
+                    console.log(list)
                     for (let _item of list){
                         console.log(_item.artists)
                     }
