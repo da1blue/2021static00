@@ -83,10 +83,18 @@
                             </h3>
                             <div class="col-12 col-md-6 col-lg-8">
                                 <ul class="list-unstyled" style="margin-bottom:0">
-                                    <i class="bi bi-mic-fill text-secondary"></i>
-                                    <li v-for="artist in item.artists" style="display: inline-block;">
+                                    <li v-if="item.cVideo" style="display: inline-block;">
                                         <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="search(artist)">
-                                            {{artist}}
+                                            <a v-bind:href="item.cVideo">
+                                                <i class="bi bi-spotify"></i>
+                                            </a>
+                                        </button>
+                                    </li>
+                                    <li v-if="item.cAudio" style="display: inline-block;">
+                                        <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="search(artist)">
+                                            <a v-bind:href="item.cAudio">
+                                                <i class="bi bi-youtube"></i>
+                                            </a>
                                         </button>
                                     </li>
                                 </ul>
@@ -138,7 +146,7 @@
             let query = `PREFIX midori: <https://midori.lv01.biz/>
 PREFIX schema: <http://schema.org/>
 
-SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?date WHERE {
+SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?cVideo ?cAudio ?date WHERE {
 
 ?cover schema:additionalType midori:CoverExpression;
 schema:recordingOf ?work ;
@@ -146,6 +154,9 @@ midori:canonicalExpression ?canon.
 ?cover schema:video ?video.
 ?video rdfs:label ?videoTitle.
 ?video schema:datePublished ?date.
+
+OPTIONAL {?canon schema:video ?cVideo}
+OPTIONAL {?canon schema:audio ?cAudio}
 
 {{?cover schema:byArtist ?who.} UNION {?canon schema:byArtist ?who.} UNION {?work schema:composer ?who.} UNION {?work schema:lyricist ?who.}
 ?who schema:name ?name.
@@ -173,7 +184,9 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     let list = []
                     for (let item of _list) {
                         let itemDict = {}
+                        itemDict.cAudio = item.cAudio.value
                         itemDict.cover = item.cover.value
+                        itemDict.cVideo = item.cover.value
                         itemDict.date = item.date.value
                         itemDict.iframe = "https://www.youtube.com/embed/" + (item.video.value).substring((item.video.value).length - 11)
                         itemDict.videoTitle = item.videoTitle.value
@@ -185,26 +198,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     console.log(list)
                     resList.items = list;
 
-                    (async function () {
-                        let i = 0;
-                        let newList = list
-                        for (let item of newList) {
-                            let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
-                            let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
-                            let artists = []
-                            fetch(reqUrl)
-                                .then(response => response.json())
-                                .then(data => {
-                                    for (let i of data.results.bindings) {
-                                        artists.push(i.artist.value)
-                                    }
-                                    newList[i]["artists"] = artists
-                                    console.log(artists)
-                                    i++
-                                })
-                        }
-                        console.log(newList)
-                    })
 
                 })
 
