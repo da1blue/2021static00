@@ -125,9 +125,9 @@
 
         async function searchWithList(list = []) {
             let i = 0;
+            let newList = list
             await new Promise(resolve => setTimeout(resolve, (i * 200)));
             for (let item of list) {
-                let newList = list
                 let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
                 let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
                 let artists = []
