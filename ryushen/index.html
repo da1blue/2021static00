@@ -123,26 +123,7 @@
         const resList = resListApp.mount('#resList')
 
 
-        async function searchWithList(list = []) {
-            let i = 0;
-            let newList = list
-            await new Promise(resolve => setTimeout(resolve, (i * 200)));
-            for (let item of list) {
-                let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
-                let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
-                let artists = []
-                fetch(reqUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        for (let i of data.results.bindings) {
-                            artists.push(i.artist.value)
-                        }
-                        newList[i]["artists"] = artists
-                        i++
-                    })
-            }
-            return newList
-        }
+
         //メイン検索機能定義
         async function searchWithKeyword(keyword = null, p = 1) {
             //初期化
@@ -202,14 +183,31 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     }
                     resList.totalResults = list.length;
                     console.log(list)
-                    list = searchWithList(list) ;
-                    console.log(list)
-                    for (let _item of list){
-                        console.log(_item.artists)
-                    }
                     resList.items = list;
+
+                    (async function () {
+                        let i = 0;
+                        let newList = list
+                        await new Promise(resolve => setTimeout(resolve, (i * 200)));
+                        for (let item of newList) {
+                            let query = `SELECT DISTINCT ?artist WHERE {<${item["cover"]}> schema:byArtist/schema:name ?artist}`
+                            let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
+                            let artists = []
+                            fetch(reqUrl)
+                                .then(response => response.json())
+                                .then(data => {
+                                    for (let i of data.results.bindings) {
+                                        artists.push(i.artist.value)
+                                    }
+                                    newList[i]["artists"] = artists
+                                    i++
+                                })
+                        }
+                        console.log(newList)
+                    })
+
                 })
-                
+
         }
     </script>
 
