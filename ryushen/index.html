@@ -181,7 +181,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
 }
 
 }`
-            sortListValue = document.querySelector("#sortList").value
+            sortListValue = document.querySelector("#sortSelect").value
             if(sortListValue == 1){
                 query = query + "ORDER BY ASC(?date) LIMIT 50"
             } else if (sortListValue == 2){
