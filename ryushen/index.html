@@ -155,7 +155,7 @@
             let query = `PREFIX midori: <https://midori.lv01.biz/>
 PREFIX schema: <http://schema.org/>
 
-SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?cVideo ?cAudio ?date WHERE {
+SELECT DISTINCT ?cover ?work ?canon ?video ?videoTitle ?cVideo ?cAudio ?date ?spotifyPopularity WHERE {
 
 ?cover schema:additionalType midori:CoverExpression;
 schema:recordingOf ?work ;
@@ -166,6 +166,7 @@ midori:canonicalExpression ?canon.
 
 OPTIONAL {?canon schema:video ?cVideo}
 OPTIONAL {?canon schema:audio ?cAudio}
+OPTIONAL{ ?canon midori:popularity ?spotifyPopularity. }
 
 {{?cover schema:byArtist ?who.} UNION {?canon schema:byArtist ?who.} UNION {?work schema:composer ?who.} UNION {?work schema:lyricist ?who.}
 ?who schema:name ?name.
@@ -179,7 +180,17 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
 FILTER(bif:contains(?keyword, '"${keyword}"'))
 }
 
-} ORDER BY DESC(?date) LIMIT 50`
+}`
+            sortListValue = document.querySelector("#sortList").value
+            if(sortListValue == 1){
+                query = query + "ORDER BY ASC(?date) LIMIT 50"
+            } else if (sortListValue == 2){
+                query = query + "ORDER BY DESC(?spotifyPopularity) LIMIT 50"
+            } else if (sortListValue == 3){
+                query = query + "ORDER BY ASC(?spotifyPopularity) LIMIT 50"
+            } else{
+                query = query + "ORDER BY DESC(?date) LIMIT 50"
+            }
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
             console.log(reqUrl)
             fetch(reqUrl)
