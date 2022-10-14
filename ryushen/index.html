@@ -192,7 +192,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                 query = query + "ORDER BY DESC(?date) LIMIT 50"
             }
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
-            console.log(reqUrl)
             fetch(reqUrl)
                 .then(response => response.json())
                 .then(data => {
@@ -203,7 +202,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     }
                     let list = []
                     for (let item of _list) {
-                        console.log(item)
                         let itemDict = {}
                         itemDict.cover = item.cover.value
                         itemDict.date = item.date.value
@@ -220,7 +218,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         list.push(itemDict)
                     }
                     resList.totalResults = list.length;
-                    console.log(list)
                     resList.items = list;
 
 
