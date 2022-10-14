@@ -87,6 +87,7 @@
                                         <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="search(artist)">
                                             <a v-bind:href="item.cVideo">
                                                 <i class="bi bi-spotify"></i>
+                                                本家Spotify
                                             </a>
                                         </button>
                                     </li>
@@ -94,6 +95,7 @@
                                         <button class="btn btn-light p-1 mr-2 mb-1" v-on:click="search(artist)">
                                             <a v-bind:href="item.cAudio">
                                                 <i class="bi bi-youtube"></i>
+                                                本家動画
                                             </a>
                                         </button>
                                     </li>
@@ -183,6 +185,7 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                     }
                     let list = []
                     for (let item of _list) {
+                        console.log(item)
                         let itemDict = {}
                         itemDict.cover = item.cover.value
                         itemDict.date = item.date.value
@@ -190,10 +193,10 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                         itemDict.videoTitle = item.videoTitle.value
                         itemDict.videoUrl = item.video.value
                         itemDict.thumbnail = "https://i.ytimg.com/vi/" + (item.video.value).substring((item.video.value).length - 11) + "/hqdefault.jpg"
-                        if (itemDict.cAudio) {
+                        if (item.cAudio) {
                             itemDict.cAudio = item.cAudio.value
                         }
-                        if (itemDict.cVideo) {
+                        if (item.cVideo) {
                             itemDict.cVideo = item.cVideo.value
                         }
                         list.push(itemDict)
