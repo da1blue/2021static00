@@ -48,6 +48,12 @@
                     <input type="text" class="form-control col-8 col-sm-9 col-md-10 col-lg-9" id="keyword"
                         v-bind:value="keyword"></input>
                     <label for="keyword" class="form-label">キーワード</label>
+                    <select id="sortSelect" class="sort" aria-label="">
+                        <option value="0" selected="">新しい順</option>
+                        <option value="1">古い順</option>
+                        <option value="2">本家がメジャー順</option>
+                        <option value="3">本家がマイナー順</option>
+                    </select>
                 </div>
             </div>
             <div class="col-12 col-lg-3 py-md-0 col-lg-2 d-grid mb-2 mb-md-0">
