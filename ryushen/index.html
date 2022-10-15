@@ -52,7 +52,6 @@
                         <option value="0" selected="">新しい順</option>
                         <option value="1">古い順</option>
                         <option value="2">本家がメジャー順</option>
-                        <option value="3">本家がマイナー順</option>
                     </select>
                 </div>
             </div>
@@ -186,8 +185,6 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
                 query = query + "ORDER BY ASC(?date) LIMIT 50"
             } else if (sortListValue == 2){
                 query = query + "ORDER BY DESC(?spotifyPopularity) LIMIT 50"
-            } else if (sortListValue == 3){
-                query = query + "ORDER BY ASC(?spotifyPopularity) LIMIT 50"
             } else{
                 query = query + "ORDER BY DESC(?date) LIMIT 50"
             }
