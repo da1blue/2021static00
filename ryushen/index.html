@@ -40,8 +40,9 @@
             </div>
         </div>
     </header>
-    <h2 class="visually-hidden">検索フォーム</h2>
     <article class="container bg-light">
+        <div class="col-12"><a href="https://midori.lv01.biz">緑のうたのLOD</a>の検索デモです</div>
+        <h2 class="visually-hidden">検索フォーム</h2>
         <form id="inputForm" name="searchConditions" class="row g-2 mb-4">
             <div class="col-12 col-lg-9">
                 <div class="form-floating input-group">
@@ -70,6 +71,7 @@
         </div>
 
         <!-- Results -->
+        <h2 class="visually-hidden">検索結果</h2>
         <section id="resList" class="row g-2">
             <div class="col-12">
                 <div v-for="item in items" class="mb-4 row">
@@ -182,11 +184,11 @@ FILTER(bif:contains(?keyword, '"${keyword}"'))
 }`
             sortListValue = document.querySelector("#sortSelect").value
             if(sortListValue == 1){
-                query = query + "ORDER BY ASC(?date) LIMIT 50"
+                query = query + "ORDER BY ASC(?date) LIMIT 100"
             } else if (sortListValue == 2){
-                query = query + "ORDER BY DESC(?spotifyPopularity) LIMIT 50"
+                query = query + "ORDER BY DESC(?spotifyPopularity) LIMIT 100"
             } else{
-                query = query + "ORDER BY DESC(?date) LIMIT 50"
+                query = query + "ORDER BY DESC(?date) LIMIT 100"
             }
             let reqUrl = "https://midori.lv01.biz/sparql?default-graph-uri=&query=" + encodeURI(query) + "&format=application%2Fsparql-results%2Bjson"
             fetch(reqUrl)
