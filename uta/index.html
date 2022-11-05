@@ -447,6 +447,7 @@ SELECT * WHERE{
         let orgYtId = keyword.replace(/^org:/, "");
         for (cover in coverDict) {
           if (coverDict[cover]["orgYtId"] == orgYtId) {
+            console.log(orgYtId)
             let itemInfo = coverDict[cover];
             itemInfo["id"] = cover;
             itemInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + cover + "/hqdefault.jpg";
