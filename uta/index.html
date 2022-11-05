@@ -462,7 +462,7 @@ SELECT * WHERE{
         _exInfo["orgYtId"] = orgYtId;
         _exInfo["orgYtUrl"] = "https://www.youtube.com/watch?v=" + orgYtId;
         _exInfo["thumbnailUrl"] = "https://i.ytimg.com/vi/" + orgYtId + "/hqdefault.jpg";
-        _exInfo["iframeUrl"] = "https://www.youtube.com/embed/" + orgYtId + "?controls=0";
+        _exInfo["iframeUrl"] = "https://www.youtube.com/embed/" + orgYtId + "?autoplay=1&controls=1&loop=1";
         _exInfo["singers"] = orgSongDict[orgYtId]["performers"];
         _exInfo["lyricists"] = orgSongDict[orgYtId]["lyricists"];
         _exInfo["composers"] = orgSongDict[orgYtId]["composers"];
